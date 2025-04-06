@@ -1,0 +1,14 @@
+.navbar_ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar_link {
+  &:hover,
+  &:focus-visible {
+    color: var(--color-accent-400)
+  }
+}

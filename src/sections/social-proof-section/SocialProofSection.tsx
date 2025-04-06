@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { JSX } from 'react';
 
-function SocialProofSection() {
+function SocialProofSection(): JSX.Element {
   return (
     <section>
       <h2>SocialProofSection</h2>
@@ -9,6 +9,6 @@ function SocialProofSection() {
       <p>Mentions de collaborations ou projets notables. Déjà au service de plus de X particuliers et entreprises locales.</p>
     </section>
   )
-}
+};
 
 export default SocialProofSection

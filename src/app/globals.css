@@ -1,13 +1,13 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+*, 
+*::before, 
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 html,
@@ -19,24 +19,68 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-secondary), sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin: 0 auto;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+  color: var(--color-links);
+  text-decoration: none !important;
+  cursor: pointer;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+
+h1, h2, h3, h4 {
+  font-family: var(--font-primary);
+  font-weight: var(--fw-bold);
+  line-height: 1.1;
+  text-wrap: balance;
+  color: var(--color-heading);
+  margin: 0;
+}
+
+h1 { font-size: 4.25rem; }
+h2 { font-size: 2.75rem; }
+h3 { font-size: 1.625rem; }
+
+p, li {
+  text-wrap: pretty;
+  max-width: 65ch;
+}
+
+p {
+  margin: 0;
+}
+
+.base-layout {
+  display: grid;
+  grid-template-columns: [full-width-start] 100px [breakout-start] 100px [content-start] 1fr [content-end] 100px [breakout-end] 100px [full-width-end];
+}
+
+.base-layout > :not(.breakout, .full-width) {
+  grid-column: content;
+}
+
+.base-layout > .breakout {
+  grid-column: breakout;
+}
+
+.base-layout > .full-width {
+  grid-column: full-width;
+}
+
+/* Applied to enhance accessibility for "read me" buttons. 
+  This style is used on the span element that describes the action triggered when clicking the link. 
+  The element remains in the DOM for screen readers but is visually hidden from the layout to maintain accessibility. */
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }

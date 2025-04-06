@@ -1,12 +1,11 @@
-import HeroSection from "@/components/HeroSection";
-import styles from "./page.module.css";
-import BenefitsSection from "@/components/BenefitsSection";
-import QuestionsSection from "@/components/QuestionsSection";
-import SocialProofSection from "@/components/SocialProofSection";
+import HeroSection from "@/sections/hero-section/HeroSection";
+import BenefitsSection from "@/sections/benefits-section/BenefitsSection";
+import QuestionsSection from "@/sections/questions-section/QuestionsSection";
+import SocialProofSection from "@/sections/social-proof-section/SocialProofSection";
 
 export default function Home() {
   return (
-  <main>
+  <main className="base-layout">
     <HeroSection/>
     <SocialProofSection/>
     <BenefitsSection/>

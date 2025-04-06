@@ -1,0 +1,25 @@
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+  --color-default: #212529;
+  --color-heading:rgb(39, 83, 126)9;
+
+  --color-links: #212529;
+  --color-links-hover: #15171a;
+
+  --color-primary: #212529 ;
+  --color-primary-light: #26282c ;
+  --color-primary-dark: #0b0c0e ;
+
+  --color-secondary: #596d80 ;
+  --color-secondary-light: #8498aa ;
+  --color-secondary-dark: #404f5c ;
+
+  --color-accent-400: #ad1167;
+
+  --fw-regular: 400;
+  --fw-semi-bold: 700;
+  --fw-bold: 900;
+}
+
