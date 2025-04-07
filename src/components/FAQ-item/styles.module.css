@@ -1,0 +1,30 @@
+.details {
+  max-inline-size: 40rem;
+  padding: 0.5rem 1rem;
+  margin-block: 1rem 0;
+  border: 1px solid black;
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+.details__summary {
+  line-height: 1.3;
+  margin-inline-start: 1rem;
+  list-style-position: outside;
+  padding-inline: 0.5rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.details__summary::marker {
+  color: var(--color-accent);
+}
+
+
+.details p {
+  padding-block: 1rem;
+}
+
+.details li {
+  margin-left: 2rem;
+}

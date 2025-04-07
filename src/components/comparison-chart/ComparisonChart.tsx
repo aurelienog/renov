@@ -6,7 +6,7 @@ import styles from './styles.module.css';
 function ComparisonChart(): JSX.Element {
   return (
     <table className={styles.table}>
-      <caption>Tableau comparatif</caption>
+      <caption className='visually-hidden'>Tableau comparatif entre artiste peintre, grosse entreprise et peintre low-cost</caption>
       <thead>
         <tr>
           {columns.map((column, index) => (

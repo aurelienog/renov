@@ -9,3 +9,7 @@ export interface Column {
   seven?: string;
   eight?: string;
 }
+export interface FaqEntry {
+  question: string;
+  answer: React.ReactNode;
+}

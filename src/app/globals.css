@@ -1,5 +1,6 @@
 :root {
   scroll-behavior: smooth;
+  interpolate-size: allow-keywords;
 }
 
 *, 
@@ -34,10 +35,10 @@ a {
 }
 
 h1 { font-size: 4.25rem; }
-h2 { font-size: 2.75rem; }
+h2, caption { font-size: 2.75rem; }
 h3 { font-size: 1.625rem; }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, caption {
   font-family: var(--font-primary);
   font-weight: var(--fw-bold);
   line-height: 1.1;
@@ -88,4 +89,5 @@ p {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  overflow: hidden;
 }

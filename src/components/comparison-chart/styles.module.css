@@ -2,10 +2,10 @@
   border-collapse: collapse;
   margin-left: auto;
   margin-right: auto;
-  padding: 1rem;
+  padding: 2rem;
 }
 
-.table th, .table td, .table caption {
+.table th, .table td .table caption {
   padding: 1rem;
 }
 
@@ -15,12 +15,6 @@
 
 .table th {
   text-align: left;
-}
-
-.table caption {
-  font-size: 1.5rem;
-  font-weight: var(--fw-semi-bold);
-  text-transform: uppercase;
 }
 
 .table tr:nth-child(2n) {

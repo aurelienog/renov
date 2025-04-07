@@ -1,9 +1,10 @@
 .benefits {
   background-color: var(--color-secondary);
-  overflow: scroll;
-  padding: 2rem 0;
+  overflow-x: scroll;
+  max-width: 100%;
+  padding: 8rem 2rem;
 }
 
-.benefits h2, .benefits p {
-  text-align: center;
+.benefits h2 {
+  margin-bottom: 4rem;
 }
