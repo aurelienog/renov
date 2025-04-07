@@ -1,10 +1,11 @@
 import React, { JSX } from 'react';
 import Row from './Row';
 import { columns } from '@/data/data';
+import styles from './styles.module.css';
 
 function ComparisonChart(): JSX.Element {
   return (
-    <table>
+    <table className={styles.table}>
       <caption>Tableau comparatif</caption>
       <thead>
         <tr>

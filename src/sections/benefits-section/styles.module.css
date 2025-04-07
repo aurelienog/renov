@@ -1,3 +1,9 @@
 .benefits {
-  background-color: rgb(29, 199, 108);
+  background-color: var(--color-secondary);
+  overflow: scroll;
+  padding: 2rem 0;
+}
+
+.benefits h2, .benefits p {
+  text-align: center;
 }

@@ -33,6 +33,9 @@ a {
   cursor: pointer;
 }
 
+h1 { font-size: 4.25rem; }
+h2 { font-size: 2.75rem; }
+h3 { font-size: 1.625rem; }
 
 h1, h2, h3, h4 {
   font-family: var(--font-primary);
@@ -42,10 +45,6 @@ h1, h2, h3, h4 {
   color: var(--color-heading);
   margin: 0;
 }
-
-h1 { font-size: 4.25rem; }
-h2 { font-size: 2.75rem; }
-h3 { font-size: 1.625rem; }
 
 p, li {
   text-wrap: pretty;
@@ -57,8 +56,14 @@ p {
 }
 
 .base-layout {
+  --padding-inline: 2rem;
+  --content-max-width: 100ch;
+  --breakout-max-width: 130ch;
+
+  --breakout-size: calc((var(--breakout-max-width) - var(--content-max-width)) / 2);
+
   display: grid;
-  grid-template-columns: [full-width-start] 100px [breakout-start] 100px [content-start] 1fr [content-end] 100px [breakout-end] 100px [full-width-end];
+  grid-template-columns: [full-width-start] minmax(var(--padding-inline), 1fr) [breakout-start] minmax(0, var(--breakout-size)) [content-start] min(100% - (var(--padding-inline) * 2), var(--content-max-width)) [content-end] minmax(0, var(--breakout-size)) [breakout-end] minmax(var(--padding-inline), 1fr)  [full-width-end];
 }
 
 .base-layout > :not(.breakout, .full-width) {

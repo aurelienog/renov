@@ -9,6 +9,6 @@
 .navbar_link {
   &:hover,
   &:focus-visible {
-    color: var(--color-accent-400)
+    color: var(--color-accent)
   }
 }
