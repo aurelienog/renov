@@ -1,3 +1,25 @@
 .hero {
-  background-color: var(--color-accent);
+  position: relative;
+  height: 800;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+  gap: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--color-primary);
 }
+
+.hero h2, .hero p {
+  margin-left: 6rem;
+  margin-bottom: 4rem;
+}
+
+.hero h2 {
+  font-size: 4.25rem; 
+}
+
+.hero p {
+  font-size: 1.5rem; 
+}
+

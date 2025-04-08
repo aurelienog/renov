@@ -3,10 +3,11 @@
   margin-left: auto;
   margin-right: auto;
   padding: 2rem;
+  
 }
 
 .table th, .table td .table caption {
-  padding: 1rem;
+  padding: 1rem 2rem;
 }
 
 .table thead th {
@@ -21,3 +22,11 @@
   background-color: hsla(0, 0%, 100%, 0.3);
 }
 
+.table tbody > td {
+  display: flex;
+}
+
+.table td > img {
+  vertical-align: sub;
+  margin-right: 8px;
+}

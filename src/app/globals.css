@@ -91,3 +91,7 @@ p {
   width: 1px;
   overflow: hidden;
 }
+
+.section {
+  padding: 8rem 2rem;
+}

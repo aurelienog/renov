@@ -8,8 +8,8 @@ function FAQItem({ entry }: { entry: FaqEntry }) {
 
   return (
     <details className={styles.details}>
-      <summary className={styles.details__summary}>{question}</summary>
-      <div className={styles.details__content}>{answer}</div>
+      <summary>{question}</summary>
+      <>{answer}</>
     </details>
   );
 }

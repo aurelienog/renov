@@ -2,7 +2,7 @@ import React, { JSX } from 'react';
 
 function SocialProofSection(): JSX.Element {
   return (
-    <section>
+    <section className='section'>
       <h2>SocialProofSection</h2>
       <p> Ajout d’avis clients authentiques sur le site</p>
       <p>Avant / Après en images</p>

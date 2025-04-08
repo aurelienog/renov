@@ -5,9 +5,12 @@ import styles from './styles.module.css';
 
 function BenefitsSection(): JSX.Element {
   return (
-    <section className={`full-width base-layout ${styles.benefits}`}>
+    <section className={`full-width base-layout section ${styles.benefits}`}>
       <h2>Pourquoi choisir un Artisan Peintre ?</h2>
-      <ComparisonChart/>
+      <div className={styles.container}>
+        <ComparisonChart/>
+      </div>
+      
     </section>
   )
 };

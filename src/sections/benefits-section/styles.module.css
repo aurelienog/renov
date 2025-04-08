@@ -2,9 +2,13 @@
   background-color: var(--color-secondary);
   overflow-x: scroll;
   max-width: 100%;
-  padding: 8rem 2rem;
 }
 
 .benefits h2 {
   margin-bottom: 4rem;
+  text-align: center;
+}
+
+.container {
+  box-shadow: 60px 46px var(--color-primary);
 }
