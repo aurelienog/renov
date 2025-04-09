@@ -1,9 +1,18 @@
+.navbar {
+  background-color: var(--color-primary);
+  opacity: 90%;
+  font-weight: var(--fw-bold);
+  border-radius: 0 0 0 var(--border-radius);
+  height: 100%;
+}
+
 .navbar_ul {
   list-style: none;
   margin-right: 2rem;
   padding: 1rem;
   display: flex;
   gap: 2rem;
+  font-weight: var(--fw-bold);
 }
 
 .navbar_link {

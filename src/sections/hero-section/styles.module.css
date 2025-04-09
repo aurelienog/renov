@@ -1,36 +1,30 @@
 .hero {
   height: 800px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
 }
 
 .info{
-  margin-top: 5rem;
-  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  margin: 2rem 0;
   background-color: color-mix(in srgb, var(--color-primary) 90%, transparent);
-  height: 70%;
-  width: 38em;
-}
-
-.hero h2, .hero p, .hero button {
-  margin-left: 4rem;
-  margin-right: 6rem ;
-
+  height: auto;
+  max-width: 39em;
+  border-radius: 0 var(--border-radius) var(--border-radius) 0;
+  padding: 4em 6em;
 }
 
 .hero h2 {
   font-size: 4.25rem; 
-  margin-top: 1em;
   margin-bottom: 3rem;
 }
 
 .hero p {
   font-size: 1.5rem; 
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
 }
 
 .hero img {
   position: relative;
   z-index: -10;
 }
+
 

@@ -6,7 +6,7 @@ function Footer(): JSX.Element {
   return (
     <footer className={`${styles.footer}`}>
       <article>
-        <Image src='/assets/logo.png' alt='logo' width={144} height={30}/> 
+        <Image src='/assets/logo.png' alt='logo' width={300} height={180}/> 
       </article>
       <article>
         <address>

@@ -3,8 +3,5 @@
   justify-content: space-between;
   align-items: center;
   height: var(--navbar-size);
-  background-color: var(--color-primary);
-  opacity: 90%;
-  font-weight: var(--fw-bold);
 }
 

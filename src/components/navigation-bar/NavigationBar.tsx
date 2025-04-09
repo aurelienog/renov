@@ -4,7 +4,7 @@ import Link from "next/link";
 
 function NavigationBar(): JSX.Element {
   return (
-    <nav>
+    <nav className={styles.navbar}>
       <ul className={styles.navbar_ul}>
         <li>
           <Link href={"/"} className={styles.navbar_link}>Accueil</Link>

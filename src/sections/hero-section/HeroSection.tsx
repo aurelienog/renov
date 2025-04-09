@@ -9,18 +9,14 @@ function HeroSection(): JSX.Element  {
       <div className={styles.info}>
         <h1 className='visually-hidden'>Peintre en bâtiment, expert en peinture et rénovation intérieure/extérieure dans les Yvelines et le Val-d'Oise</h1>
         <h2>Redonnez vie à vos espaces</h2>
-        <p>Peintre en bâtiment, je sublime et restaure vos intérieurs dans les Yvelines et le Val d'Oise.</p>
+        <p>Peintre en bâtiment, j'embellis et restaure vos intérieurs dans les Yvelines et le Val d'Oise.</p>
         <Button>Demander un devis gratuit</Button>
-      </div>
-      
+      </div>      
       <div>
-        <Image src="/assets/hero.webp" alt='hero' quality={100} fill style={{
+        <Image src="/assets/hero.webp" priority quality={100} fill style={{
         objectFit: 'cover'
-      }} />
+      }} alt="montre une cuisine spacieuse et lumineuse. L'esthétique générale est épurée, élégante et moderne. Il y a un îlot de cuisine avec quatre chaises en bois. La cuisine est éclairée par des suspensions et dispose d'une grande fenêtre avec des stores blancs." />
       </div>
-
-      
-      
     </section>
   )
 };
