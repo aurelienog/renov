@@ -7,7 +7,7 @@ The first {} defines the criteria, the following {} are the elements to compare.
 Each key is a line */
 
 export const columns: Column[] = [{
-  title: 'Critère',
+  title: '',
   one: 'Expérience',
   two: 'Qualité des finitions',
   three: 'Accompagnement & conseils',
@@ -92,7 +92,7 @@ export const columns: Column[] = [{
   </>,
   two: <>
   <Image src='/assets/x.svg' alt='' width={24} height={24}/>
-  <span>Peut être bâclé pour gagner du temps</span>
+  <span>Peuvent être bâclées pour gagner du temps</span>
   </>,
   three: <>
   <Image src='/assets/x.svg' alt='' width={24} height={24}/>

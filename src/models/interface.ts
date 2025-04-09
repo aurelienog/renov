@@ -1,3 +1,9 @@
+import { ReactNode } from 'react'
+
+export interface ButtonProps {
+  children: ReactNode
+}
+
 export interface Column {
   title: string;
   one: string | React.ReactNode;

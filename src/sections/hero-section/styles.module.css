@@ -10,13 +10,25 @@
   background-color: var(--color-primary);
 }
 
-.hero h2, .hero p {
+.hero h2, .hero p, .hero button {
   margin-left: 6rem;
   margin-bottom: 4rem;
 }
 
 .hero h2 {
   font-size: 4.25rem; 
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.hero h2::before {
+  content: '';
+  position: absolute;
+  background-color: white;
+  width: 30%;
+  top: 0;
+  left: 0;
 }
 
 .hero p {

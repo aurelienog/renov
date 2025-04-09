@@ -1,0 +1,44 @@
+.footer {
+  background-color: var(--color-primary);
+  display: grid;
+  justify-items: center;
+  align-items: start;
+  gap: 1rem;
+  grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+  grid-template-areas: 
+  ". logo address info ."
+  ". copyright copyright copyright ." ;
+  padding: 2rem;
+  border-top: solid 2px;
+}
+
+.footer article > address{
+  font-style: normal;
+  grid-area: address;
+}
+
+.footer article:first-child {
+  grid-area: logo;
+  align-self: center;
+}
+
+.footer article:nth-child(2) {
+  grid-area: address;
+}
+
+.footer article:nth-child(3) {
+  grid-area: info;
+}
+
+.footer article:last-child {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  grid-area: copyright;
+}
+
+.footer article:last-child :nth-child(2) {
+  border-right: solid 2px;
+  border-left: solid 2px;
+  padding: 0 1rem;
+}

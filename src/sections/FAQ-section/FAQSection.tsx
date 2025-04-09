@@ -6,7 +6,7 @@ import styles from './styles.module.css';
 function FAQSection(): JSX.Element {
   return (
     <section className={`section ${styles.section}`}>
-      <h2>Frequently asked questions</h2>
+      <h2>Questions fréquentes</h2>
       <div>
       { faqEntries.map((entry, index )=> (
       <FAQItem key={index} entry={entry}/>
