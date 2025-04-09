@@ -10,7 +10,7 @@
 
   --color-primary: #CCBFB9 ;
   --color-primary-light: #26282c ;
-  --color-primary-dark: #0b0c0e ;
+  --color-primary-dark: #5A5653 ;
 
   --color-secondary: #ECE8E4 ;
   --color-secondary-light: #8498aa ;
@@ -19,7 +19,7 @@
   --color-accent: #B3C1CA;
 
   --fw-regular: 400;
-  --fw-semi-bold: 700;
+  --fw-semi-bold: 600;
   --fw-bold: 800;
 
   --navbar-size: 60px;

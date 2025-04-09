@@ -1,37 +1,36 @@
 .hero {
-  position: relative;
-  height: 800;
+  height: 800px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-content: center;
-  gap: 6rem;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: var(--color-primary);
+}
+
+.info{
+  margin-top: 5rem;
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  background-color: color-mix(in srgb, var(--color-primary) 90%, transparent);
+  height: 70%;
+  width: 38em;
 }
 
 .hero h2, .hero p, .hero button {
-  margin-left: 6rem;
-  margin-bottom: 4rem;
+  margin-left: 4rem;
+  margin-right: 6rem ;
+
 }
 
 .hero h2 {
   font-size: 4.25rem; 
-  position: relative;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.hero h2::before {
-  content: '';
-  position: absolute;
-  background-color: white;
-  width: 30%;
-  top: 0;
-  left: 0;
+  margin-top: 1em;
+  margin-bottom: 3rem;
 }
 
 .hero p {
   font-size: 1.5rem; 
+  margin-bottom: 4rem;
+}
+
+.hero img {
+  position: relative;
+  z-index: -10;
 }
 

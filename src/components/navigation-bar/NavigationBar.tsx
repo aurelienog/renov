@@ -6,7 +6,7 @@ function NavigationBar(): JSX.Element {
   return (
     <nav>
       <ul className={styles.navbar_ul}>
-      <li>
+        <li>
           <Link href={"/"} className={styles.navbar_link}>Accueil</Link>
         </li>
         <li>
