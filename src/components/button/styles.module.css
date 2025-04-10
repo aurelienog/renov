@@ -1,10 +1,10 @@
 .button {
   display: inline-block;
-  padding: 15px 50px;
+  padding: 1em;
   border: solid 2px;
   border-radius: var(--border-radius);
   cursor: pointer;
   font-weight: var(--fw-bold);
   text-transform: uppercase;
-  background-color: #9d5b5280;
+  background-color: #B58C85;
 }

@@ -8,7 +8,7 @@ function Header() {
   return (
     <header className={styles.header}>
       <Link href={"/"}> 
-        <Image src='/assets/logo.webp' alt='logo' width={170} height={100}/> 
+        <Image src='/assets/logo.webp' alt='logo' width={90} height={50}/> 
       </Link>
       <NavigationBar/>
     </header>

@@ -1,14 +1,12 @@
 import React, { JSX } from 'react';
 import styles from './styles.module.css';
 import Link from "next/link";
+import Button from '../button/Button';
 
 function NavigationBar(): JSX.Element {
   return (
     <nav className={styles.navbar}>
-      <ul className={styles.navbar_ul}>
-        <li>
-          <Link href={"/"} className={styles.navbar_link}>Accueil</Link>
-        </li>
+      <ul>
         <li>
           <Link href={"/"} className={styles.navbar_link}>Prestations</Link>
         </li>
@@ -16,10 +14,10 @@ function NavigationBar(): JSX.Element {
           <Link href={"/"} className={styles.navbar_link}>Realisations</Link>
         </li>
         <li>
-          <Link href={"/"} className={styles.navbar_link}>A propos</Link>
+          <Link href={"/"} className={styles.navbar_link}>Mon parcours</Link>
         </li>
         <li>
-          <Link href={"/"} className={styles.navbar_link}>Contact</Link>
+          <Button>Devis gratuit</Button>
         </li>
       </ul>
     </nav>

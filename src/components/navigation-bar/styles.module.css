@@ -1,16 +1,16 @@
 .navbar {
-  background-color: var(--color-primary);
   opacity: 90%;
   font-weight: var(--fw-bold);
   border-radius: 0 0 0 var(--border-radius);
-  height: 100%;
+  background-color: var(--color-primary);
+
 }
 
-.navbar_ul {
+.navbar  ul {
   list-style: none;
-  margin-right: 2rem;
   padding: 1rem;
   display: flex;
+  align-items: center;
   gap: 2rem;
   font-weight: var(--fw-bold);
 }
@@ -24,7 +24,7 @@
   }
 }
 
-.navbar_ul li:not(:first-child)  {
+.navbar ul li:not(:first-child)  {
   border-left: solid 1px;
   border-color: var(--color-accent) ;
 }

@@ -17,7 +17,7 @@ export const columns: Column[] = [{
   seven: 'Respect des délais',
   eight: 'Suivi après travaux'
   }, {
-  title: 'Votre Artisan Peintre',
+  title: 'Votre auto-entrepreneur',
   one: <>
   <Image src='/assets/check.svg' alt='' width={24} height={24}/>
   <span>+ de 10 ans d’expérience</span>
@@ -51,7 +51,7 @@ export const columns: Column[] = [{
   <span>Garantie et retouches si besoin</span>
   </>,
 }, {
-  title: 'Grosse Entreprise',
+  title: 'Grande entreprise',
   one: <>
   <Image src='/assets/warning.svg' alt='' width={24} height={24}/>
   <span>Variable selon les employés</span>

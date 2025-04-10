@@ -9,7 +9,11 @@
   height: auto;
   max-width: 39em;
   border-radius: 0 var(--border-radius) var(--border-radius) 0;
-  padding: 4em 6em;
+  padding: 4em;
+  padding-left: 8em;
+  animation-name: slideInRight;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-out;
 }
 
 .hero h2 {
@@ -27,4 +31,13 @@
   z-index: -10;
 }
 
+@keyframes slideInRight {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
 
