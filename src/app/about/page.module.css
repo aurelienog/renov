@@ -1,51 +1,31 @@
 .section {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  align-items: end;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
 
-.section h3 {
+.section > * {
+  padding: 0 8rem;
+}
+
+.title {
+  border-left: solid 4px;
+}
+
+.section :is(h3, h2) {
   font-size: 6rem;
 }
 
-.section h2 {
-  margin: 2rem 8rem;
-  display: inline;
-  position: relative;
-}
-
-.section h2::after {
-  margin: 2rem 8rem;
-  animation: underline 1s forwards 1.8s;
-  content: '';
-  position: absolute;
-  left: -2.9em;
-  bottom: -0.8em;
-  width: 0;
-  height: 6px; /* Ajusta el grosor del subrayado */
-  background-color: black; /* Ajusta el color del subrayado */
-}
-
-/* Espaciado entre letras */
-.anjContainer .n {
-  margin-left: 1rem;
-}
-
-.anjContainer .j {
-  margin-left: 5rem;
-}
-
-/* Ocultar los ::after por defecto */
+/* hide ::after by default */
 .a::after, .n::after, .j::after {
   content: "";
-  font-size: 4rem;
+  font-size: 5rem;
   opacity: 0;
-  transform: translateX(-25%);
   position: absolute;
-  margin-top: 1.95rem;
+  margin-top: 0.95rem;
 }
 
-/* Definir los textos */
+/* create names */
 .a::after { content: "ntonio"; animation: reveal 1s ease-in-out forwards 0s; }
 .n::after { content: "OGUEIRA"; animation: reveal 1s ease-in-out forwards 500ms; }
 .j::after { content: "ulien"; animation: reveal 1s ease-in-out forwards 1s; }
@@ -53,21 +33,10 @@
 @keyframes reveal {
   from {
     opacity: 0;
-    transform: translateX(-25%);
+    transform: translateX(-15%);
   }
   to {
     opacity: 1;
     transform: translateX(0%);
   }
 }
-
-@keyframes underline {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 100%;
-  }
-}
-

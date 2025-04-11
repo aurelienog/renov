@@ -1,0 +1,17 @@
+.section {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  border-radius: var(--border-radius);
+  margin-top: 2em;
+}
+
+.section h3 {
+  font-size: 1rem;
+}
+
+
+.icons {
+  display: flex;
+  justify-content: center;
+}

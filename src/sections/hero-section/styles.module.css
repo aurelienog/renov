@@ -1,19 +1,15 @@
-.hero {
-  height: 800px;
-  overflow: hidden;
-}
-
 .info{
-  margin: 2rem 0;
-  background-color: color-mix(in srgb, var(--color-primary) 90%, transparent);
-  height: auto;
-  max-width: 39em;
-  border-radius: 0 var(--border-radius) var(--border-radius) 0;
+  margin: 2rem 5rem;
+  max-width: 33em;
+  border-radius: var(--border-radius) ;
   padding: 4em;
-  padding-left: 8em;
+  display: grid;
+  justify-items: center;
+  align-items: center;
   animation-name: slideInRight;
   animation-duration: 0.8s;
   animation-timing-function: ease-out;
+
 }
 
 .hero h2 {
@@ -24,11 +20,16 @@
 .hero p {
   font-size: 1.5rem; 
   margin-bottom: 5rem;
+  font-weight: var(--fw-semi-bold);
 }
 
 .hero img {
   position: relative;
   z-index: -10;
+}
+
+.hero button {
+  justify-self: start;
 }
 
 @keyframes slideInRight {

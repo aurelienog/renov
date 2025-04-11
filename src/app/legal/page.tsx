@@ -9,8 +9,9 @@ function legal() {
         <ol>
           <li>
             <h3>Éditeur du site</h3>
-            <address>Le site RENOV est édité par :
-              <br></br>Nom de l'entreprise : RENOV
+            <p>Le site RENOV est édité par :</p>
+            <address>
+              Nom de l'entreprise : RENOV
               <br></br>Forme juridique : 
               <br></br>Nom du responsable : Henry
               <br></br>Adresse du siège social : (adresse de l’entreprise)
@@ -21,12 +22,12 @@ function legal() {
           </li>
           <li>
             <h3>Hébergement</h3>
+            
+            <p>Le site est hébergé par : </p>
             <address>
-            Le site est hébergé par : 
-            <br></br>
             Vercel Inc. 
             <br></br>
-            Adresse : 
+            Adresse : 440 N Barranca Ave Pmb 4133 Covina, <br></br> CA, 91723-1722 United States 
             </address>
           </li>
           <li>
@@ -43,8 +44,9 @@ function legal() {
           </li>
           <li>
             <h3>Contact</h3>
-            <address>Pour toute question sur cette politique de confidentialité ou l’exercice de vos droits, vous pouvez nous contacter :
-              <br></br>Email : [adresse mail]
+            <p>Pour toute question sur cette politique de confidentialité ou l’exercice de vos droits, vous pouvez nous contacter :</p>
+            <address>
+              Email : [adresse mail]
               <br></br>Téléphone : [tel]
               <br></br>Adresse : [adresse]
             </address>

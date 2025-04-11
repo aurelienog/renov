@@ -55,8 +55,9 @@ function confidentialityPage() {
         </li>
         <li>
           <h3>Contact</h3>
-          <address>Pour toute question sur cette politique de confidentialité ou l’exercice de vos droits, vous pouvez nous contacter :
-            <br></br>Email : [adresse mail]
+          <p>Pour toute question sur cette politique de confidentialité ou l’exercice de vos droits, vous pouvez nous contacter :</p>
+          <address>
+            Email : [adresse mail]
             <br></br>Téléphone : [tel]
             <br></br>Adresse : [adresse]
           </address>

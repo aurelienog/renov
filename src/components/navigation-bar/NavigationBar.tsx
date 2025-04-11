@@ -5,7 +5,7 @@ import Button from '../button/Button';
 
 function NavigationBar(): JSX.Element {
   return (
-    <nav className={styles.navbar}>
+    <nav className={`${styles.navbar} glassmorphism`}>
       <ul>
         <li>
           <Link href={"/"} className={styles.navbar_link}>Prestations</Link>
