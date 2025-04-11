@@ -7,7 +7,7 @@ function Footer(): JSX.Element {
   return (
     <footer className={`${styles.footer}`}>
       <article>
-        <Image src='/assets/logo.webp' alt='logo' width={300} height={180}/> 
+        <Image src='/assets/logo.webp' alt='logo' width={250} height={140}/> 
       </article>
       <article>
         <h2>Siège social:</h2>
@@ -23,16 +23,16 @@ function Footer(): JSX.Element {
         <h2>Plan du site</h2>
         <ul>
           <li>Accueil</li>
+          <li>Prestations</li>
           <li>Realisations</li>
-          <li>A propos</li>
-          <li>Contact</li>
-          <li><Link href="/confidentiality">Politique de confidencialité</Link></li>
+          <li><Link href="/about">Mon parcours</Link></li>
+          <li><Link href="/confidentiality">Politique de confidentialité</Link></li>
           <li><Link href="/legal">Mentions légales</Link></li>
           
         </ul>
       </article>
       <article>
-        <p>copyright 2025</p>
+        <p>© copyright 2025</p>
         <p>Tous droits réservés</p>
       </article>
     </footer>

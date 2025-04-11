@@ -14,7 +14,7 @@ function NavigationBar(): JSX.Element {
           <Link href={"/"} className={styles.navbar_link}>Realisations</Link>
         </li>
         <li>
-          <Link href={"/"} className={styles.navbar_link}>Mon parcours</Link>
+          <Link href={"/about"} className={styles.navbar_link}>Mon parcours</Link>
         </li>
         <li>
           <Button>Devis gratuit</Button>

@@ -5,7 +5,7 @@ function confidentialityPage() {
   return (
     <main className={`base-layout ${styles.page}`}>
       <section className='breakout'>
-        <h2>Politique de Confidentialité</h2>
+        <h2>Politique de confidentialité</h2>
       <ol>
         <li>
           <h3>Collecte des données personnelles</h3>
