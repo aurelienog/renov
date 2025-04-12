@@ -9,10 +9,11 @@
 }
 
 .title {
-  border-left: solid 4px;
+  border-right: solid 4px;
+  text-align: end;
 }
 
-.section :is(h3, h2) {
+.section :is(h2, h1) {
   font-size: 6rem;
 }
 
@@ -28,7 +29,8 @@
 /* create names */
 .a::after { content: "ntonio"; animation: reveal 1s ease-in-out forwards 0s; }
 .n::after { content: "OGUEIRA"; animation: reveal 1s ease-in-out forwards 500ms; }
-.j::after { content: "ulien"; animation: reveal 1s ease-in-out forwards 1s; }
+.j::after { content: "ulien "; animation: reveal 1s ease-in-out forwards 1s; }
+
 
 @keyframes reveal {
   from {

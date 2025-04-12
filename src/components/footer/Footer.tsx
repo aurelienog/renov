@@ -12,11 +12,12 @@ function Footer(): JSX.Element {
       <article>
         <h2>Siège social:</h2>
         <address>
-        6 rue Exemple <br/> 75000 Paris
-        <br/>
-        contact@renov.fr
-        <br/>
-        +33 01 00 00 00 00
+          Renov <br/>
+          6 rue Exemple <br/> 75000 Paris
+          <br/>
+          contact@renov.fr
+          <br/>
+          +33 01 00 00 00 00
         </address>
       </article>
       <article>

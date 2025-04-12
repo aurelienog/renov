@@ -5,10 +5,10 @@ function confidentialityPage() {
   return (
     <main className={`base-layout ${styles.page}`}>
       <section className='breakout'>
-        <h2>Politique de confidentialité</h2>
+        <h1>Politique de confidentialité</h1>
       <ol>
         <li>
-          <h3>Collecte des données personnelles</h3>
+          <h2>Collecte des données personnelles</h2>
           <p>Lorsque vous utilisez notre site RENOV, nous pouvons collecter les informations suivantes via nos formulaires :</p>
           <ul>
             <li>Nom et prénom</li>
@@ -19,7 +19,7 @@ function confidentialityPage() {
           <p>Ces informations sont collectées uniquement lorsque vous remplissez un formulaire de contact ou demandez un devis.</p>
         </li>
         <li>
-          <h3>Finalité de la collecte des données</h3>
+          <h2>Finalité de la collecte des données</h2>
           <p>Les données collectées sont utilisées pour :</p>
           <ul>
             <li>Vous contacter et répondre à vos demandes.</li>
@@ -29,7 +29,7 @@ function confidentialityPage() {
           <p>Nous ne partageons jamais vos données avec des tiers à des fins commerciales.</p>
         </li>
         <li>
-          <h3>Conservation des données</h3>
+          <h2>Conservation des données</h2>
           <p>Vos informations sont conservées pendant une durée maximale de 10 ans, sauf si :</p>
           <ul>
             <li>Vous exercez votre droit de suppression.</li>
@@ -38,12 +38,12 @@ function confidentialityPage() {
           <p>Une fois ce délai écoulé, vos données sont supprimées ou anonymisées.</p>
         </li>
         <li>
-          <h3>Sécurité des données</h3>
+          <h2>Sécurité des données</h2>
           <p>Nous mettons en place des mesures de sécurité pour protéger vos données contre tout accès non autorisé, modification, divulgation ou destruction. 
             <br></br>Nous utilisons des outils sécurisés et conformes aux normes en vigueur pour stocker vos informations.</p>
         </li>
         <li>
-          <h3>Vos droits</h3>
+          <h2>Vos droits</h2>
           <p>Conformément au Règlement Général sur la Protection des Données (RGPD), vous avez :</p>
           <ul>
             <li>Un droit d’accès : Vous pouvez demander quelles informations nous détenons sur vous.</li>
@@ -54,7 +54,7 @@ function confidentialityPage() {
           <address>Pour exercer vos droits, contactez-nous à contact@renov.fr</address>
         </li>
         <li>
-          <h3>Contact</h3>
+          <h2>Contact</h2>
           <p>Pour toute question sur cette politique de confidentialité ou l’exercice de vos droits, vous pouvez nous contacter :</p>
           <address>
             Email : [adresse mail]

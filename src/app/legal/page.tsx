@@ -5,10 +5,10 @@ function legal() {
   return (
     <main className={`base-layout ${styles.page}`}>
       <section className='breakout'>
-        <h2>Mentions légales</h2>
+        <h1>Mentions légales</h1>
         <ol>
           <li>
-            <h3>Éditeur du site</h3>
+            <h2>Éditeur du site</h2>
             <p>Le site RENOV est édité par :</p>
             <address>
               Nom de l'entreprise : RENOV
@@ -21,7 +21,7 @@ function legal() {
             </address>
           </li>
           <li>
-            <h3>Hébergement</h3>
+            <h2>Hébergement</h2>
             
             <p>Le site est hébergé par : </p>
             <address>
@@ -31,19 +31,19 @@ function legal() {
             </address>
           </li>
           <li>
-            <h3>Propriété intellectuelle</h3>
+            <h2>Propriété intellectuelle</h2>
             <p>L’ensemble du contenu du site RENOV (textes, images, logo, etc.) est protégé par le droit d’auteur et appartient à RENOV. Toute reproduction ou utilisation sans autorisation est interdite.</p>
           </li>
           <li>
-            <h3>Protection des données personnelles</h3>
+            <h2>Protection des données personnelles</h2>
             <p>Conformément au RGPD et à la loi Informatique et Libertés, les données collectées via ce site sont utilisées uniquement dans le cadre des services proposés (formulaire de contact, devis, etc.). Droit d’accès, de rectification et de suppression : Vous pouvez exercer vos droits en nous contactant à contact@renov.fr</p>
           </li>
           <li>
-            <h3>Responsabilité</h3>
+            <h2>Responsabilité</h2>
             <p>A.N.J RENOV s’efforce d’assurer l’exactitude des informations présentes sur le site. Toutefois, nous ne pouvons garantir l’absence d’erreurs ou d’omissions.</p>
           </li>
           <li>
-            <h3>Contact</h3>
+            <h2>Contact</h2>
             <p>Pour toute question sur cette politique de confidentialité ou l’exercice de vos droits, vous pouvez nous contacter :</p>
             <address>
               Email : [adresse mail]
