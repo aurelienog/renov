@@ -1,8 +1,11 @@
-import React from 'react'
-import styles from './page.module.css'
+import React, { JSX } from 'react';
+import styles from './page.module.css';
+import Header from '@/components/header/Header';
 
-function confidentialityPage() {
+function confidentialityPage(): JSX.Element {
   return (
+    <>
+    <Header />
     <main className={`base-layout ${styles.page}`}>
       <section className='breakout'>
         <h1>Politique de confidentialité</h1>
@@ -65,6 +68,7 @@ function confidentialityPage() {
       </ol>
       </section>
     </main>
+    </>
   )
 }
 

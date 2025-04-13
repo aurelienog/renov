@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { JSX } from 'react';
 import { Column } from '@/models/interface';
 
-function Row({ criterion, columns }: { criterion: string, columns: Column[] }) {
+function Row({ criterion, columns }: { criterion: string, columns: Column[] }): JSX.Element  {
   return (
     <tr>
       <th scope="row">{columns[0][criterion as keyof Column]}</th>

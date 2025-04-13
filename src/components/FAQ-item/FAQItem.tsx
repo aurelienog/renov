@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { JSX } from 'react';
 import { FaqEntry } from '@/models/interface';
-import styles from './styles.module.css'
+import styles from './styles.module.css';
 
 
-function FAQItem({ entry }: { entry: FaqEntry }) {
+function FAQItem({ entry }: { entry: FaqEntry }): JSX.Element  {
   const { question, answer } = entry;
 
   return (

@@ -1,0 +1,14 @@
+.section {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.section_container {
+  --grid-min-col-size: 650px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(var(--grid-min-col-size), 100%), 1fr));
+  gap: 2rem;
+  justify-items: center;
+  padding: 1rem 0;
+}
+

@@ -4,6 +4,7 @@ import "./globals.css";
 import "./variables.css";
 import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
+import BackgroundImage from "@/components/background-image/BackgroundImage";
 
 const playfair = Playfair_Display({ 
   subsets: ["latin"],
@@ -28,7 +29,6 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body className={`${nunito.variable} ${playfair.variable}`}>
-      <Header/>
         {children}
       <Footer/>
       </body>

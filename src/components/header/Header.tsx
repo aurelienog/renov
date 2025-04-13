@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { JSX } from 'react';
 import Image from "next/image";
 import Link from "next/link";
 import NavigationBar from '../navigation-bar/NavigationBar';
-import styles from './styles.module.css'
+import styles from './styles.module.css';
 
-function Header() {
+function Header(): JSX.Element {
   return (
     <header className={styles.header}>
       <Link href={"/"}> 

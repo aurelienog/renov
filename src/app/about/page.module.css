@@ -24,7 +24,10 @@
   opacity: 0;
   position: absolute;
   margin-top: 0.95rem;
+  color: gray;
 }
+
+
 
 /* create names */
 .a::after { content: "ntonio"; animation: reveal 1s ease-in-out forwards 0s; }

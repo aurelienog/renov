@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { JSX } from 'react';
 
-function ProjectsSection() {
+function ProjectsSection(): JSX.Element {
   return (
     <h2>Travaux récents</h2>
   )

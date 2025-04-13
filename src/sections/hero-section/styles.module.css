@@ -4,13 +4,9 @@
   max-width: 33em;
   border-radius: var(--border-radius) ;
   padding: 4em;
-  display: grid;
-  justify-items: center;
-  align-items: center;
   animation-name: slideInRight;
   animation-duration: 0.8s;
-  animation-timing-function: ease-out;
-
+  animation-timing-function: ease-out
 }
 
 .hero h2 {
@@ -24,14 +20,6 @@
   font-weight: var(--fw-semi-bold);
 }
 
-.hero img {
-  position: relative;
-  z-index: -10;
-}
-
-.hero button {
-  justify-self: start;
-}
 
 @keyframes slideInRight {
   from {
