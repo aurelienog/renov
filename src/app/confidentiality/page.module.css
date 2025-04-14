@@ -1,8 +1,17 @@
+/* also styling legal page */
+
 .page {
-  margin: 0 4rem;
-  
+
   & h1 {
-  margin: 4rem 0;
+  padding: 10rem 1rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  font-size: 6rem;
+  border: solid 1px black;
+  }
+
+  & h2 {
+    margin-bottom: 2rem;
   }
 
   & :is(p, address) {
@@ -10,7 +19,8 @@
   }
 
   & ol { 
-    margin-left: 4rem;
+    padding-left: 4rem;
+    place-self: center;
   }
 
   & ol li::marker{
@@ -30,6 +40,23 @@
 
   & ol > li {
     margin-bottom: 3rem;
-    list-style-type: upper-roman;
+    list-style-type: none;
   }
+}
+
+/* background texture for h1 */
+
+.wrapper {
+  background-image: url('/assets/marbre.jpg');
+  background-size: cover;
+  border-image: linear-gradient(rgba(0, 0, 0, 0.600), rgba(0, 0, 0, 0.600)) fill 1;
+  width: 100%;
+
+}
+
+.texture {
+  background-image: url('/assets/marbre.jpg');
+  color: transparent;
+  background-size: cover;
+  background-clip: text;
 }

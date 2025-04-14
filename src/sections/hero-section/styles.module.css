@@ -9,14 +9,15 @@
 }
 
 .hero {
+  height: 90vh; 
   & h2 {
-      font-size: 4.25rem; 
-  margin-bottom: 3rem;
+    font-size: 4.25rem; 
+    margin-bottom: 3rem;
   }
   & p {
-  font-size: 1.5rem; 
-  margin-bottom: 5rem;
-  font-weight: var(--fw-semi-bold);
+    font-size: 1.5rem; 
+    margin-bottom: 5rem;
+    font-weight: var(--fw-semi-bold);
   }
 }
 

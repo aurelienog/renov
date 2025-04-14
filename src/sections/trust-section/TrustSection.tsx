@@ -4,8 +4,8 @@ import Image from 'next/image';
 
 function TrustSection(): JSX.Element {
   return (
-    <section className={` ${styles.section}`}>
-      <article  className={styles.article}>
+    <section className={`full-width ${styles.section}`}>
+      <article className={styles.article}>
         <Image src="/assets/medal.svg" width={48} height={48} alt=''/>
         <h3>+10 ans d'expérience</h3>
       </article>

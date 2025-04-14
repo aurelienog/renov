@@ -35,6 +35,10 @@
   & article:nth-child(3) {
     grid-area: info;
   }
+
+  & a {
+    text-decoration: none;
+  }
 }
 
 
