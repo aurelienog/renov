@@ -2,15 +2,20 @@
   opacity: 90%;
   font-weight: var(--fw-bold);
   border-radius: 0 0 0 var(--border-radius);
-}
 
-.navbar  ul {
-  list-style: none;
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  font-weight: var(--fw-bold);
+  & ul {
+    list-style: none;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-weight: var(--fw-bold);
+  }
+
+  & ul li:not(:first-child)  {
+    border-left: solid 1px;
+    border-color: var(--color-accent) ;
+  }
 }
 
 .navbar_link {
@@ -21,10 +26,3 @@
     color: var(--color-accent)
   }
 }
-
-.navbar ul li:not(:first-child)  {
-  border-left: solid 1px;
-  border-color: var(--color-accent) ;
-}
-
-

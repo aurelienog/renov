@@ -4,27 +4,25 @@
   margin-block: 1rem 0;
   border-bottom: 1px solid var(--color-accent);
   overflow: hidden;
-}
 
-.details summary {
-  line-height: 1.3;
-  margin-inline-start: 1rem;
-  list-style-position: outside;
-  padding-inline: 0.5rem;
-  font-weight: 700;
-  cursor: pointer;
-}
+  & summary {
+    line-height: 1.3;
+    margin-inline-start: 1rem;
+    list-style-position: outside;
+    padding-inline: 0.5rem;
+    font-weight: 700;
+    cursor: pointer;
+  }
 
-.details summary::marker {
-  color: var(--color-accent);
-}
+  & summary::marker {
+    color: var(--color-accent);
+  }
 
-
-.details p {
+  & p {
   padding-block: 1rem;
-}
+  }
 
-.details li {
+  & li {
   margin-left: 2rem;
+  }
 }
-

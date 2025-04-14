@@ -9,7 +9,7 @@ function ServicesSection(): JSX.Element {
   return (
     <section className={`section breakout ${styles.section}`}>
       <h2>Mes prestations</h2>
-      <div className={styles.section_container}>
+      <div className={styles.container}>
         <ServiceCard title='Peinture Intérieure' image={indoor}/>
         <ServiceCard title='Peinture Extérieure' image={indoor}/>
         <ServiceCard title='Teinture de Bois' image={wood}/>

@@ -4,38 +4,39 @@
   padding: 2rem;
   border-top: solid 2px;
   text-align: center;
+
+  & h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  & article {
+    margin: 3rem 0;
+  }
+
+  & li {
+    list-style: none;
+  }
+
+  & article > address{
+    font-style: normal;
+    grid-area: address;
+  }
+
+  & article:first-child {
+    grid-area: logo;
+    align-self: center;
+  }
+
+  & article:nth-child(2) {
+    grid-area: address;
+  }
+
+  & article:nth-child(3) {
+    grid-area: info;
+  }
 }
 
-.footer article > address{
-  font-style: normal;
-  grid-area: address;
-}
-
-.footer article:first-child {
-  grid-area: logo;
-  align-self: center;
-}
-
-.footer article:nth-child(2) {
-  grid-area: address;
-}
-
-.footer article:nth-child(3) {
-  grid-area: info;
-}
-
-.footer h2 {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-}
-
-.footer li {
-  list-style: none;
-}
-
-.footer article {
-  margin: 3rem 0;
-}
 
 @media (width >= 48rem) { 
   .footer {

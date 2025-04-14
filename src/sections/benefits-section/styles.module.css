@@ -2,11 +2,11 @@
   background-color: var(--color-secondary);
   overflow-x: scroll;
   max-width: 100%;
-}
 
-.benefits h2 {
-  margin-bottom: 4rem;
-  text-align: center;
+  & h2 {
+    margin-bottom: 4rem;
+    text-align: center;
+  }
 }
 
 @media (min-width: 767.98px) {
