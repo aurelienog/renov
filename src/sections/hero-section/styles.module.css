@@ -1,5 +1,5 @@
 .info{
-  margin: 2rem 5rem;
+  margin: 2rem 7rem;
   max-width: 33em;
   border-radius: var(--border-radius) ;
   padding: 4em;
@@ -10,6 +10,10 @@
 
 .hero {
   height: 90vh; 
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+
   & h2 {
     font-size: 4.25rem; 
     margin-bottom: 3rem;

@@ -18,11 +18,12 @@
   }
 }
 
-.navbar_link {
+.navbar a{
   margin-left: 2rem;
   padding: 1rem;
   &:hover,
   &:focus-visible {
     color: var(--color-accent)
   }
+  text-decoration: none;
 }

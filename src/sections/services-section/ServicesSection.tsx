@@ -7,7 +7,7 @@ import wood from '../../../public/assets/images/wood.webp';
 
 function ServicesSection(): JSX.Element {
   return (
-    <section className={`section breakout ${styles.section}`}>
+    <section className={`section full-width ${styles.section}`}>
       <h2>Mes prestations</h2>
       <div className={styles.container}>
         <ServiceCard title='Peinture Intérieure' image={indoor}/>

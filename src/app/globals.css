@@ -35,7 +35,7 @@ a {
 }
 
 h1 { font-size: 4.25rem; }
-:is(h2, caption) { font-size: 2.75rem; }
+:is(h2, caption) { font-size: 2.75rem }
 h3 { font-size: 1.625rem; }
 
 :is(h1, h2, h3, h4, caption) {
@@ -98,7 +98,7 @@ p {
 .glassmorphism {
   background: rgba(255, 255, 255, 0.42);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.25);
 }
