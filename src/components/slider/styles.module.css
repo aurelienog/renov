@@ -1,0 +1,44 @@
+.wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.imagesContainer {
+  width: 100%;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  margin: auto;
+}
+
+.afterContainer {
+  position: relative;
+}
+
+.beforeContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.sliderLine {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: white;
+  cursor: ew-resize;
+  pointer-events: none;
+}
+
+.sliderBtn {
+position: absolute;
+background-color: rgba(255, 255, 255, 0.269);
+border-radius: 100vw;
+display: grid;
+place-items: center;
+top: 50%;
+pointer-events: none;
+z-index: 100;
+box-shadow: 1px 1px 1px;
+}

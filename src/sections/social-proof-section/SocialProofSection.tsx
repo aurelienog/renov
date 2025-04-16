@@ -1,3 +1,4 @@
+import Slider from '@/components/slider/Slider';
 import React, { JSX } from 'react';
 
 function SocialProofSection(): JSX.Element {
@@ -5,7 +6,7 @@ function SocialProofSection(): JSX.Element {
     <section className='section'>
       <h2>SocialProofSection</h2>
       <p> Ajout d’avis clients authentiques sur le site</p>
-      <p>Avant / Après en images</p>
+      <Slider/>
       <p>Mentions de collaborations ou projets notables. Déjà au service de plus de X particuliers et entreprises locales.</p>
     </section>
   )

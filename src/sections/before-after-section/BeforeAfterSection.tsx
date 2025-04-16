@@ -21,7 +21,7 @@ function BeforeAfterSection() {
           <Image src={after} alt='after' className={`${styles.after} ${styles.sliderImage}`}/>
         </div>
       
-      <input type='range' min="0" max="100" value="50" className={styles.slider} aria-label="pourcentage visible de la photo Avant"/>
+      <input className={styles.slider} aria-label="pourcentage visible de la photo Avant"/>
       
       <div className={styles.sliderLine}></div>
       <div className={styles.sliderBtn} aria-hidden='true'>
