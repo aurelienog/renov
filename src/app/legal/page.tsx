@@ -11,7 +11,7 @@ function legal(): JSX.Element {
           <div className={styles.wrapper}>
             <h1><span className={styles.texture}>Mentions légales</span></h1>
           </div>
-          <ol className='base-layout'>
+          <ol>
             <li>
               <h2>1) Éditeur du site</h2>
               <p>Le site RENOV est édité par :</p>

@@ -2,7 +2,9 @@ import React, { JSX } from 'react';
 
 function ProjectsSection(): JSX.Element {
   return (
-    <h2>Travaux récents</h2>
+    <div className='section'>
+      <h2>Travaux récents</h2>
+    </div>
   )
 }
 

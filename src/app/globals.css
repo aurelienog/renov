@@ -34,8 +34,9 @@ a {
   cursor: pointer;
 }
 
+
 h1 { font-size: 4.25rem; }
-:is(h2, caption) { font-size: 2.75rem }
+:is(h2, caption) { font-size: 3.75rem; margin-bottom: 7rem;}
 h3 { font-size: 1.625rem; }
 
 :is(h1, h2, h3, h4, caption) {
@@ -44,7 +45,6 @@ h3 { font-size: 1.625rem; }
   line-height: 1.1;
   text-wrap: balance;
   color: var(--color-heading);
-  margin: 0;
 }
 
 :is(p, li) {
@@ -92,7 +92,7 @@ p {
 }
 
 .section {
-  padding: 6rem 0rem;
+  padding: 10rem 0rem;
 }
 
 .glassmorphism {

@@ -6,11 +6,14 @@ import styles from './styles.module.css';
 function FAQSection(): JSX.Element {
   return (
     <section className={`section ${styles.section}`}>
-      <h2>Questions fréquentes</h2>
       <div>
+      <h2>Questions fréquentes</h2>
       { faqEntries.map((entry, index )=> (
       <FAQItem key={index} entry={entry}/>
       ))}
+      </div>   
+      <div className={styles.illustration}>
+        Aqui va una photo
       </div>      
     </section>
   )

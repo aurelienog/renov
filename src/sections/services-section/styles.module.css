@@ -1,6 +1,6 @@
 .section {
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
   background-color: var(--color-primary);
   z-index: 1;
 
@@ -10,14 +10,12 @@
 }
 
 
-
 .container {
-  place-self: center;
   --grid-min-col-size: 300px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(var(--grid-min-col-size), 100%), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(var(--grid-min-col-size), 100%), 1fr));
   gap: 2rem;
   justify-items: center;
-  margin: 4rem 0;
+  margin: 4rem auto 4rem auto;
   max-width: 100rem;
 }
