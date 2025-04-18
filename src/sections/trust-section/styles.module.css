@@ -6,6 +6,10 @@
   padding: 0 3rem 4rem 3rem;
 }
 
+.section h3 > span {
+  color: #d7845d;
+}
+
 .stars {
   display: flex;
   gap: 6px;
@@ -24,5 +28,5 @@
   align-items: center;
   text-align: center;
   margin: 1em;
-  max-width: 18rem;
+  max-width: 20rem;
 }
