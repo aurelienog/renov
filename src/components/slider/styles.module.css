@@ -5,6 +5,8 @@
   & img {
     object-fit: cover;
     border-radius: 25px;
+
+    cursor: ew-resize; 
   }
 }
 
@@ -30,7 +32,7 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 4px;
+  width: 2px;
   background: white;
   cursor: ew-resize;
   pointer-events: none;
@@ -38,13 +40,14 @@
 
 .sliderBtn {
 position: absolute;
+height: 2em;
 background-color: rgba(255, 255, 255, 0.269);
 border-radius: 100vw;
-border: solid 4px white;
-display: grid;
-place-items: center;
+aspect-ratio: 1/1;
+padding: 0.3em;
+border: solid 2px white;
 top: 50%;
 pointer-events: none;
 z-index: 100;
-box-shadow: 1px 1px 1px;
+
 }

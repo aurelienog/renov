@@ -1,11 +1,10 @@
 'use client';
 
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import React, { useState, useRef } from 'react';
 import styles from './styles.module.css';
-import arrowsIcon from '../../../public/assets/arrowsInLine.svg';
 
-function Slider({ before, after, title}) {
+function Slider({ before, after, title} : { before: StaticImageData, after:StaticImageData, title: string }) {
   const [sliderPosition, setSliderPosition] = useState(40);
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -57,18 +56,17 @@ function Slider({ before, after, title}) {
         {/* Slider visual */}
         <div
           className={styles.sliderLine}
-          style={{ left: `calc(${sliderPosition}% - 4px)` }}
+          style={{ left: `calc(${sliderPosition}% - 2px)` }}
           role="presentation"
           aria-hidden="true"
         ></div>
 
         <div
           className={styles.sliderBtn}
-          style={{ left: `calc(${sliderPosition}% - 22px)` }}
+          style={{ left: `calc(${sliderPosition}% - 1em)` }}
           role="presentation"
           aria-hidden="true"
-        >
-          <Image src={arrowsIcon} alt="" />
+        > 
         </div>
 
         {/* Slider accesible */}

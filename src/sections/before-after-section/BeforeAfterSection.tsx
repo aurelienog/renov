@@ -1,12 +1,12 @@
 import Slider from '@/components/slider/Slider';
 import React from 'react';
 import styles from './styles.module.css';
-import beforeBathroom from '../../../public/assets/beforeBathroom.webp';
-import afterBathroom from '../../../public/assets/afterBathroom.webp';
-import beforeLiving from '../../../public/assets/livingBefore.webp';
-import afterliving from '../../../public/assets/livingAfter.webp';
-import bedroomBefore from '../../../public/assets/bedroomBefore.webp';
-import bedroomAfter from '../../../public/assets/bedroomAfter.webp';
+import beforeBathroom from '../../../public/assets/images/beforeBathroom.webp';
+import afterBathroom from '../../../public/assets/images/afterBathroom.webp';
+import beforeLiving from '../../../public/assets/images/livingBefore.webp';
+import afterliving from '../../../public/assets/images/livingAfter.webp';
+import bedroomBefore from '../../../public/assets/images/bedroomBefore.webp';
+import bedroomAfter from '../../../public/assets/images/bedroomAfter.webp';
 
 function BeforeAfterSection() {
   return (
