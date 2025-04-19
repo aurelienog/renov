@@ -1,6 +1,11 @@
 import { Column } from '@/models/interface';
 import { FaqEntry } from '@/models/interface';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
+import wood from '../../public/assets/images/wood.webp'
+import bedroom from '../../public/assets/images/bedroomAfter.webp'
+import indoor from '../../public/assets/images/indoor.webp'
+
+
 
 /* Update const columns to modify the comparison chart.
 The first {} defines the criteria, the following {} are the elements to compare.
@@ -183,3 +188,5 @@ export const faqEntries: FaqEntry[] = [{
   answer: <p>Appelez-nous au 06 00 00 00 00</p>
 }
 ]
+
+export const lastProjects: StaticImageData[] = [ bedroom, indoor, wood ]

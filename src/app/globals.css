@@ -13,7 +13,8 @@
 
 :is(html, body) {
   max-width: 100vw;
-  overflow-x: hidden;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 body {
@@ -36,7 +37,7 @@ a {
 
 
 h1 { font-size: 4.25rem; }
-:is(h2, caption) { font-size: 3.5rem; margin-bottom: 12rem; text-transform: uppercase;}
+:is(h2, caption) { font-size: 3.5rem; margin-bottom: 10rem; text-transform: uppercase;}
 h3 { font-size: 1.625rem; }
 
 :is(h1, h2, h3, h4, caption) {
@@ -45,6 +46,7 @@ h3 { font-size: 1.625rem; }
   line-height: 1.1;
   text-wrap: balance;
   color: var(--color-heading);
+  max-width: 100%;
 }
 
 :is(p, li) {
@@ -92,7 +94,7 @@ p {
 }
 
 .section {
-  padding: 16rem 0rem;
+  padding: 14rem 0rem;
 }
 
 .glassmorphism {

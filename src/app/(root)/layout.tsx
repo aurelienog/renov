@@ -6,8 +6,8 @@ import BackgroundImage from '@/components/background-image/BackgroundImage';
 function layout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <div className={styles.wrapper}>
-    <Header />
-    <BackgroundImage />
+      <Header />
+      <BackgroundImage />
       {children}
     </div>
   )

@@ -1,0 +1,13 @@
+.cardContainer {
+  height: 400vh;
+  position: relative;
+
+  
+}
+.section {
+  padding-bottom: 0;
+
+  & h2 {
+    text-align: center;
+  }
+}
