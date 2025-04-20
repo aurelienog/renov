@@ -8,7 +8,7 @@ function ParallaxCard({project, index, range, targetScale, progress}: {project: 
 
   return (
     <article className={styles.container}>
-      <motion.div className={styles.card} style={{scale, top: `calc(-10% + ${index * 25}px)` }}>
+      <motion.div className={styles.card} style={{scale, top: `calc(-10% + ${index * 35}px)` }}>
         <Image src={project} alt='' fill style={{ objectFit: 'cover', borderRadius: 'var(--border-radius)'}}/>
       </motion.div>
     </article>

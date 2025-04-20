@@ -1,0 +1,78 @@
+.gallery {
+  --image-size: calc(150px - 1.5rem / 2);
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(6, var(--image-size));
+  grid-template-rows: repeat(3, var(--image-size));
+  gap: 1.5rem;
+  margin-bottom: 6rem;
+}
+
+.card {
+  position: relative;
+  grid-column: span 2;
+  border-radius: .5rem;
+  clip-path: path('M 120 30 C 150 0 150 0 180 30 C 210 60 240 90 270 120 C 300 150 300 150 270 180 C 240 210 210 240 180 270 C 150 300 150 300 120 270 C 90 240 60 210 30 180 C 0 150 0 150 30 120 Z');
+  transition: 
+      transform 500ms,
+      filter 500ms;
+
+    &:nth-of-type(4) {
+    grid-column: 2 / span 2;
+  }
+
+  & img {
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+    display: block;
+  }
+
+  &:hover {
+    transform: scale(1.25);
+    z-index: 100;
+    clip-path: path('M 120 30 C 150 0 150 0 180 30 C 210 60 240 90 270 120 C 300 150 300 150 270 180 C 240 210 210 240 180 270 C 150 300 150 300 120 270 C 90 240 60 210 30 180 C 0 150 0 150 30 120 Z');
+  }
+  
+  &:not(:hover) {
+    animation: zIndexHack 500ms;
+  }
+}
+
+
+.gallery:hover > img {
+  filter: brightness(.7) saturate(.7);
+}
+
+.gallery > img:hover {
+  filter: brightness(1) saturate(1.5);
+}
+
+
+@keyframes zIndexHack {
+  0%, 100% {
+    z-index: 10;
+  }
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  bottom: -150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none; /* evita bloquear hover */
+}
+
+.title {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 0.5rem 2rem;
+  width: 100%;
+}

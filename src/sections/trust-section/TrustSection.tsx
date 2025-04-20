@@ -13,7 +13,7 @@ function TrustSection(): JSX.Element {
       </article>
       <article  className={styles.article}>      
         <Image src="/assets/paint.svg" width={48} height={48} alt='' className='glassmorphism'/>
-        <h3><AnimatedCounter prefix={'+'} target={150} inViewDelay={1000} character={4}/>projets réalisés</h3>
+        <h3><AnimatedCounter prefix={'+'} target={150} duration={2} character={4}/>projets réalisés</h3>
       </article>
       <article className={styles.article}> 
         <div className={styles.stars}>
@@ -23,11 +23,11 @@ function TrustSection(): JSX.Element {
           <Image src="/assets/star.svg" width={48} height={48} alt='' className='glassmorphism'/>
           <Image src="/assets/star-half.svg" width={48} height={48} alt='' className='glassmorphism'/>
         </div>
-        <h3><AnimatedCounter target={98} suffix={'%'} inViewDelay={2000}/> de clients satisfaits</h3> 
+        <h3><AnimatedCounter target={98} suffix={'%'} duration={3}/> de clients satisfaits</h3> 
       </article>
       <article  className={styles.article}>
         <Image src="/assets/hourglass.svg" width={48} height={48} alt='' className='glassmorphism'/>
-        <h3><AnimatedCounter target={100} suffix={'%'} inViewDelay={3000} character={4}/> des chantiers livrés à temps</h3>
+        <h3><AnimatedCounter target={100} suffix={'%'} duration={4} character={4}/> des chantiers livrés à temps</h3>
       </article>
     </section>
   )

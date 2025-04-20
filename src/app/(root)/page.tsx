@@ -16,8 +16,8 @@ export default function Home(): JSX.Element {
     <ServicesSection/>
     <HowItWorksSection/>
     <ProjectsSection/>
-    <BeforeAfterSection/>
     <BenefitsSection/>
+    <BeforeAfterSection/>
     <QuestionsSection/>
   </main>
   );
