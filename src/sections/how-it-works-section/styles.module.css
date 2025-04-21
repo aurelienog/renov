@@ -1,6 +1,32 @@
+.section {
+  position: relative;
+  height: 1800px;
+}
+
+.timeline {
+  padding: 4rem;
+  display: grid;
+  align-items: end;
+  gap: 2rem 0rem;
+  grid-template-columns: 2fr 1fr 2fr 1fr 2fr 1fr 2fr;
+  grid-template-areas: 
+  ".  . visite . devis . ."
+  ".  . visite . devis . ."
+  ".  . visite . devis . ."
+  "contact  . visite . devis . ."
+  "contact  . visite . devis . ."
+  " . . visite . devis . validation"
+  " . . visite . devis . validation"
+  " . . controle . . . validation"
+  " suivi . controle . travaux . validation"
+  " suivi . controle  . travaux . ."
+  " suivi . .  . travaux . . ";
+
+}
 
 .path {
-  width: 100%;
+  position: absolute;
+  top: 500px;
   height: auto;
   display: block;
 }

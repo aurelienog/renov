@@ -1,11 +1,21 @@
-import { Column } from '@/models/interface';
-import { FaqEntry } from '@/models/interface';
+
+import { FaqEntry, Column, WorkStep, Service } from '@/models/interfaces';
 import Image, { StaticImageData } from 'next/image';
+
+//services images
+import autre from '../../public/assets/autre.jpg';
+import revetement from '../../public/assets/revetement.jpg';
+import interieur from '../../public/assets/interieur.jpg'
+import parquet from '../../public/assets/parquet.jpg';
+import preparation from '../../public/assets/preparation.jpg';
+import bois from '../../public/assets/bois.jpg';
+import enduit from '../../public/assets/enduit.jpg';
+import exterieur from '../../public/assets/exterieur.jpg';
+
+//last projects images 
 import wood from '../../public/assets/images/wood.webp'
 import bedroom from '../../public/assets/images/bedroomAfter.webp'
-import indoor from '../../public/assets/images/indoor.webp'
-
-
+import indoor from '../../public/assets/images/indoor.webp';
 
 /* Update const columns to modify the comparison chart.
 The first {} defines the criteria, the following {} are the elements to compare.
@@ -189,4 +199,55 @@ export const faqEntries: FaqEntry[] = [{
 }
 ]
 
-export const lastProjects: StaticImageData[] = [ bedroom, indoor, wood ]
+export const services: Service[] = [ 
+  {
+    name: 'Revêtements muraux',
+    image: revetement,
+  }, {
+    name: 'Revêtements de sols',
+    image: parquet  
+  }, {
+    name: 'Rénovation de boiseries',
+    image: bois  
+  }, {
+    name: 'Peinture intérieure',
+    image: interieur  
+  }, {
+    name: 'Peinture extérieure',
+    image: exterieur  
+  }, {
+    name: 'Préparation des supports',
+    image: preparation  
+  }, {
+    name: 'Enduits décoratifs',
+    image: enduit  
+  }, {
+    name: 'Petits travaux complémentaires',
+    image: autre  
+}];
+
+export const lastProjects: StaticImageData[] = [ bedroom, indoor, wood ];
+
+export const workSteps: WorkStep[] = [{
+  name: 'Prise de contact',
+  description: 'Vous nous contactez par téléphone ou via le formulaire en ligne pour nous parler de votre projet. Nous échangeons brièvement pour comprendre vos besoins.',
+
+}, {
+  name: 'Visite sur place',
+  description: 'Nous convenons d’un rendez-vous à votre domicile pour évaluer précisément les surfaces à peindre, vos envies (teintes, finitions…), et les éventuelles contraintes techniques.'
+}, {
+  name: 'Devis personnalisé & transparent',
+  description: 'Sous quelques jours, vous recevez un devis clair, détaillé et sans surprise. Il comprend le choix des matériaux, le planning prévisionnel, et le coût total.'
+}, {
+  name: 'Validation & planification',
+  description: 'Après votre accord, nous fixons ensemble la date de début des travaux. Vous êtes tenu(e) informé(e) de chaque étape.'
+}, {
+  name: 'Réalisation des travaux',
+  description: 'Les travaux sont réalisés avec soin, dans le respect des délais et de votre intérieur. Nous protégeons vos meubles et la zone de chantier est nettoyée chaque jour.'
+}, {
+  name: 'Contrôle qualité & finitions',
+  description: 'Avant la remise, une vérification minutieuse est faite. Nous corrigeons les moindres détails si nécessaire pour un résultat impeccable.'
+}, {
+  name: 'Livraison du chantier & suivi',
+  description: 'Le chantier est livré propre et finalisé. Nous restons disponibles en cas de retouche ou de question après la prestation.'
+}]

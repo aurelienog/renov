@@ -1,5 +1,5 @@
 import React, { JSX } from 'react';
-import { FaqEntry } from '@/models/interface';
+import { FaqEntry } from '@/models/interfaces';
 import styles from './styles.module.css';
 
 

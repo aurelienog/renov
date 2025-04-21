@@ -1,3 +1,4 @@
+import { StaticImageData } from 'next/image';
 import { ReactNode } from 'react'
 
 export interface ButtonProps {
@@ -18,4 +19,15 @@ export interface Column {
 export interface FaqEntry {
   question: string;
   answer: React.ReactNode;
+}
+
+export interface Service {
+  name: string,
+  image: StaticImageData
+}
+
+export interface WorkStep {
+    name: string,
+    description: string,
+    icon: StaticImageData,
 }

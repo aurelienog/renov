@@ -16,7 +16,6 @@
   transition: 
       transform 500ms,
       filter 500ms;
-
     &:nth-of-type(4) {
     grid-column: 2 / span 2;
   }
@@ -65,6 +64,7 @@
   align-items: center;
   justify-content: center;
   pointer-events: none; /* evita bloquear hover */
+  
 }
 
 .title {
