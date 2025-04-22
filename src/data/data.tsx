@@ -26,6 +26,11 @@ import paintRoll from '../../public/assets/icons/paint-roll.svg';
 import clipboard from '../../public/assets/icons/clipboard.svg';
 import donate  from '../../public/assets/icons/donate.svg';
 
+//FAQ icons
+import check from '../../public/assets/icons/check.svg';
+import warning from '../../public/assets/icons/warning.svg';
+import x from '../../public/assets/icons/x.svg';
+
 /* Update const columns to modify the comparison chart.
 The first {} defines the criteria, the following {} are the elements to compare.
 Each key is a line */
@@ -43,103 +48,103 @@ export const columns: Column[] = [{
   }, {
   title: 'Votre auto-entrepreneur',
   one: <>
-  <Image src='/assets/check.svg' alt='' width={24} height={24}/>
+  <Image src={check} alt='' width={24} height={24}/>
   <span>+ de 10 ans d’expérience</span>
   </>,
   two: <>
-  <Image src='/assets/check.svg' alt='' width={24} height={24}/>
+  <Image src={check} alt='' width={24} height={24}/>
   <span>Travail soigné et sur-mesure</span>
   </>,
   three: <>
-  <Image src='/assets/check.svg' alt='' width={24} height={24}/>
+  <Image src={check} alt='' width={24} height={24}/>
   <span>Conseils personnalisés (couleurs, finitions)</span>
   </>,
   four: <>
-  <Image src='/assets/check.svg' alt='' width={24} height={24}/>
+  <Image src={check} alt='' width={24} height={24}/>
   <span>Devis clair, sans surprise</span>
   </>,
   five: <>
-  <Image src='/assets/check.svg' alt='' width={24} height={24}/>
+  <Image src={check} alt='' width={24} height={24}/>
   <span>Relation directe, à l’écoute</span>
   </>,
   six: <>
-  <Image src='/assets/check.svg' alt='' width={24} height={24}/>
+  <Image src={check} alt='' width={24} height={24}/>
   <span>Peintures de qualité pro</span>
   </>,
   seven: <>
-  <Image src='/assets/check.svg' alt='' width={24} height={24}/>
+  <Image src={check} alt='' width={24} height={24}/>
   <span>Engagement respecté</span>
   </>,
   eight: <>
-  <Image src='/assets/check.svg' alt='' width={24} height={24}/>
+  <Image src={check} alt='' width={24} height={24}/>
   <span>Garantie et retouches si besoin</span>
   </>,
 }, {
   title: 'Grande entreprise',
   one: <>
-  <Image src='/assets/warning.svg' alt='' width={24} height={24}/>
+  <Image src={warning} alt='' width={24} height={24}/>
   <span>Variable selon les employés</span>
   </>,
   two: <>
-  <Image src='/assets/warning.svg' alt='' width={24} height={24}/>
+  <Image src={warning} alt='' width={24} height={24}/>
   <span>Standardisé, dépend des équipes</span>
   </>,
   three: <>
-  <Image src='/assets/warning.svg' alt='' width={24} height={24}/>
+  <Image src={warning} alt='' width={24} height={24}/>
   <span>Souvent impersonnel</span>
   </>,
   four: <>
-  <Image src='/assets/warning.svg' alt='' width={24} height={24}/>
+  <Image src={warning} alt='' width={24} height={24}/>
   <span>Frais cachés possibles</span>
   </>, 
   five: <>
-  <Image src='/assets/warning.svg' alt='' width={24} height={24}/>
+  <Image src={warning} alt='' width={24} height={24}/>
   <span>Délais longs, peu de personnalisation</span>
   </>,
   six: <>
-  <Image src='/assets/warning.svg' alt='' width={24} height={24}/>
+  <Image src={warning} alt='' width={24} height={24}/>
   <span>Qualité variable selon le contrat</span>
   </>,
   seven: <>
-  <Image src='/assets/warning.svg' alt='' width={24} height={24}/>
+  <Image src={warning} alt='' width={24} height={24}/>
   <span>Dépend du planning chargé</span>
   </>, 
   eight: <>
-  <Image src='/assets/warning.svg' alt='' width={24} height={24}/>
+  <Image src={warning} alt='' width={24} height={24}/>
   <span>Service après-vente variable</span>
   </>, 
 }, {
   title: 'Peintre Low-Cost',
   one: <>
-  <Image src='/assets/x.svg' alt='' width={24} height={24}/>
+  <Image src={x} alt='' width={24} height={24}/>
   <span>Manque d’expérience</span>
   </>,
   two: <>
-  <Image src='/assets/x.svg' alt='' width={24} height={24}/>
+  <Image src={x} alt='' width={24} height={24}/>
   <span>Peuvent être bâclées pour gagner du temps</span>
   </>,
   three: <>
-  <Image src='/assets/x.svg' alt='' width={24} height={24}/>
+  <Image src={x} alt='' width={24} height={24}/>
   <span>Peu ou pas de conseils</span>
   </>, 
   four: <>
-  <Image src='/assets/x.svg' alt='' width={24} height={24}/>
+  <Image src={x} alt='' width={24} height={24}/>
   <span>Tarifs très bas mais qualité incertaine</span>
   </>,
   five: <>
-  <Image src='/assets/x.svg' alt='' width={24} height={24}/>
+  <Image src={x} alt='' width={24} height={24}/>
   <span>Flexible mais parfois peu fiable</span>
   </>,
   six: <>
-  <Image src='/assets/x.svg' alt='' width={24} height={24}/>
+  <Image src={x} alt='' width={24} height={24}/>
   <span>Produits souvent bas de gamme</span>
   </>,
   seven: <>
-  <Image src='/assets/x.svg' alt='' width={24} height={24}/>
+  <Image src={x} alt='' width={24} height={24}/>
   <span>Souvent des retards</span>
   </>, 
   eight: <>
-  <Image src='/assets/x.svg' alt='' width={24} height={24}/>
+  <Image src={x} alt='' width={24} height={24}/>
   <span>Pas de suivi</span>
   </>, 
 }];

@@ -5,10 +5,15 @@
   z-index: 1;
   display: grid;
   place-items: center;
-
+  mask-image: url('/assets/TEST.png');
+  mask-repeat: no-repeat;
+  mask-position: center;
+  
   & h2 {
     text-align: center;
   }
+
+
 }
 
 /* 

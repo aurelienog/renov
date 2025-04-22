@@ -9,9 +9,8 @@
 
 .card {
   position: relative;
-  top: -10%;
-  width: 95%;
-  height: 78vh;
+  width: 90%;
+  height: 70vh;
 }
 
 @media (max-width: 1250px) {

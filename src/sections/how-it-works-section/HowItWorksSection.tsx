@@ -33,11 +33,11 @@ function HowItWorksSection() {
         <svg viewBox="0 0 800 800" fill="none" ref={containerRef} className={styles.path}>
         <motion.path 
           style={{ pathLength }}
-          d="M 1 118 Q 112 56 243 141 Q 390 248 509 168 Q 594 104 658 183 C 708 247 748 345 664 349 Q 570 353 501 460 C 429 565 347 434 250 428 C 157 423 124 469.5 100 548 " 
+          d="M 0 129 Q 112 56 243 141 Q 390 248 509 168 Q 594 104 658 183 C 708 247 734 342 664 349 Q 544 362 510 460 C 473 559 347 434 250 428 C 157 423 124 469.5 103 548 " 
           stroke="black" 
           stroke-width="6"
           />
-      </svg>
+        </svg>
       </div>
       
     </section>

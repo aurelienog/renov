@@ -4,12 +4,12 @@ import styles from './styles.module.css';
 
 function GalleryCard({ image, name }: { image:StaticImageData, name: string }) {
   return (
-    <div className={styles.card}>
+    <article className={styles.card}>
       <Image src={image} alt=''/>
       <div className={styles.overlay}>
         <h3 className={styles.title}>{name}</h3>
       </div>
-    </div>
+    </article>
   )
 }
 

@@ -6,7 +6,7 @@ import { services } from '../../data/data';
 
 function Gallery() {
   return (
-    <article className={styles.gallery}>
+    <div className={styles.gallery}>
       {
         services?.map((project, index: number) => (
           <GalleryCard key={`${project.name}-${index}`} image={project.image} name={project.name}/>
@@ -22,7 +22,7 @@ function Gallery() {
       <GalleryCard image={preparation} title={'Préparation des supports'}/>
       <GalleryCard image={bois} title={'Enduits décoratifs'}/>
       <GalleryCard image={autre} title={'Petits travaux complémentaires'}/> */}
-    </article>
+    </div>
   )
 }
 
