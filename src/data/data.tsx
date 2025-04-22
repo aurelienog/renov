@@ -5,7 +5,7 @@ import Image, { StaticImageData } from 'next/image';
 //services images
 import autre from '../../public/assets/autre.jpg';
 import revetement from '../../public/assets/revetement.jpg';
-import interieur from '../../public/assets/interieur.jpg'
+import interieur from '../../public/assets/interieur.jpg';
 import parquet from '../../public/assets/parquet.jpg';
 import preparation from '../../public/assets/preparation.jpg';
 import bois from '../../public/assets/bois.jpg';
@@ -13,9 +13,18 @@ import enduit from '../../public/assets/enduit.jpg';
 import exterieur from '../../public/assets/exterieur.jpg';
 
 //last projects images 
-import wood from '../../public/assets/images/wood.webp'
-import bedroom from '../../public/assets/images/bedroomAfter.webp'
+import wood from '../../public/assets/images/wood.webp';
+import bedroom from '../../public/assets/images/bedroomAfter.webp';
 import indoor from '../../public/assets/images/indoor.webp';
+
+//timeline icons
+import phone from '../../public/assets/icons/phone.svg';
+import location from '../../public/assets/icons/location.svg';
+import calendar from '../../public/assets/icons/calendar.svg';
+import search from  '../../public/assets/icons/search.svg';
+import paintRoll from '../../public/assets/icons/paint-roll.svg';
+import clipboard from '../../public/assets/icons/clipboard.svg';
+import donate  from '../../public/assets/icons/donate.svg';
 
 /* Update const columns to modify the comparison chart.
 The first {} defines the criteria, the following {} are the elements to compare.
@@ -231,23 +240,30 @@ export const lastProjects: StaticImageData[] = [ bedroom, indoor, wood ];
 export const workSteps: WorkStep[] = [{
   name: 'Prise de contact',
   description: 'Vous nous contactez par téléphone ou via le formulaire en ligne pour nous parler de votre projet. Nous échangeons brièvement pour comprendre vos besoins.',
+  icon : phone,
 
 }, {
   name: 'Visite sur place',
-  description: 'Nous convenons d’un rendez-vous à votre domicile pour évaluer précisément les surfaces à peindre, vos envies (teintes, finitions…), et les éventuelles contraintes techniques.'
+  description: 'Nous convenons d’un rendez-vous à votre domicile pour évaluer précisément les surfaces à peindre, vos envies (teintes, finitions…), et les éventuelles contraintes techniques.',
+  icon: location,
 }, {
   name: 'Devis personnalisé & transparent',
-  description: 'Sous quelques jours, vous recevez un devis clair, détaillé et sans surprise. Il comprend le choix des matériaux, le planning prévisionnel, et le coût total.'
+  description: 'Sous quelques jours, vous recevez un devis clair, détaillé et sans surprise. Il comprend le choix des matériaux, le planning prévisionnel, et le coût total.',
+  icon: clipboard
 }, {
   name: 'Validation & planification',
-  description: 'Après votre accord, nous fixons ensemble la date de début des travaux. Vous êtes tenu(e) informé(e) de chaque étape.'
+  description: 'Après votre accord, nous fixons ensemble la date de début des travaux. Vous êtes tenu(e) informé(e) de chaque étape.',
+  icon: calendar,
 }, {
   name: 'Réalisation des travaux',
-  description: 'Les travaux sont réalisés avec soin, dans le respect des délais et de votre intérieur. Nous protégeons vos meubles et la zone de chantier est nettoyée chaque jour.'
+  description: 'Les travaux sont réalisés avec soin, dans le respect des délais et de votre intérieur. Nous protégeons vos meubles et la zone de chantier est nettoyée chaque jour.',
+  icon : paintRoll,
 }, {
   name: 'Contrôle qualité & finitions',
-  description: 'Avant la remise, une vérification minutieuse est faite. Nous corrigeons les moindres détails si nécessaire pour un résultat impeccable.'
+  description: 'Avant la remise, une vérification minutieuse est faite. Nous corrigeons les moindres détails si nécessaire pour un résultat impeccable.',
+  icon : search,
 }, {
   name: 'Livraison du chantier & suivi',
-  description: 'Le chantier est livré propre et finalisé. Nous restons disponibles en cas de retouche ou de question après la prestation.'
+  description: 'Le chantier est livré propre et finalisé. Nous restons disponibles en cas de retouche ou de question après la prestation.',
+  icon: donate
 }]

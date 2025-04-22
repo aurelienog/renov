@@ -20,7 +20,7 @@ function HowItWorksSection() {
 
   return (
     <section className={`section breakout ${styles.section}`}>
-      <h2>Comment ça marche</h2>
+      <h2>Le processus</h2>
       <div className={styles.timeline}>
         {
         workSteps.map((step: WorkStep, index: number) => (
@@ -30,13 +30,12 @@ function HowItWorksSection() {
       </div>
       
       <div className='path'>
-        <svg viewBox="0 0 800 600" fill="none" ref={containerRef} className={styles.path}>
+        <svg viewBox="0 0 800 800" fill="none" ref={containerRef} className={styles.path}>
         <motion.path 
           style={{ pathLength }}
-          d="M 1 118 Q 112 56 236 162 Q 362 271 487 165 Q 603 64 658 183 C 697 272 750 336 697 349 C 558 374 591 432 537 478 Q 452 540 301 422 C 238 367 126 432 101 528  "
-          //d="M 0 100 Q 150 50 229 159 Q 304 278 486 179 Q 616 118 657 220 C 685 285 767 415 629 447 C 518 470 425 453 281 400 Q 30 292 102 500 "  
+          d="M 1 118 Q 112 56 243 141 Q 390 248 509 168 Q 594 104 658 183 C 708 247 748 345 664 349 Q 570 353 501 460 C 429 565 347 434 250 428 C 157 423 124 469.5 100 548 " 
           stroke="black" 
-          stroke-width="10"
+          stroke-width="6"
           />
       </svg>
       </div>

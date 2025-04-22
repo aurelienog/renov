@@ -1,32 +1,40 @@
 .section {
   position: relative;
   height: 1800px;
+
+  & h2 {
+    text-align: center;
+  }
+
+  & img {
+      border-radius: 100px;
+      padding: 6px;
+      background-color: white;
+  }
 }
 
 .timeline {
   padding: 4rem;
   display: grid;
   align-items: end;
-  gap: 2rem 0rem;
+
   grid-template-columns: 2fr 1fr 2fr 1fr 2fr 1fr 2fr;
   grid-template-areas: 
-  ".  . visite . devis . ."
-  ".  . visite . devis . ."
-  ".  . visite . devis . ."
+
   "contact  . visite . devis . ."
   "contact  . visite . devis . ."
   " . . visite . devis . validation"
-  " . . visite . devis . validation"
-  " . . controle . . . validation"
-  " suivi . controle . travaux . validation"
-  " suivi . controle  . travaux . ."
-  " suivi . .  . travaux . . ";
+  " . . controle . travaux . validation"
+  " . . controle . travaux . validation"
+  " suivi . controle . travaux . ."
+  " suivi . . . travaux . . "
+;
 
 }
 
 .path {
   position: absolute;
-  top: 500px;
+  top: 400px;
   height: auto;
   display: block;
 }
