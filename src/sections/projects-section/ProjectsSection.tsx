@@ -17,7 +17,7 @@ function ProjectsSection(): JSX.Element {
   const maskScale = useTransform(scrollYProgress, [0, 1], ['30%', '100%'])
 
   return (
-    <section className={`section breakout ${styles.section}`}>
+    <section className={`section full-width ${styles.section}`}>
       <h2>Travaux récents</h2>
       <div ref={scrollRef} className={styles.cardContainer}>
         { 

@@ -1,27 +1,14 @@
-'use client'
-import React, { JSX, useRef } from 'react';
+import React, { JSX } from 'react';
 import styles from './styles.module.css';
 import Gallery from '@/components/gallery/Gallery';
-import { motion, useScroll, useTransform } from 'framer-motion';
 
 
 function ServicesSection(): JSX.Element {
-  const containerRef = useRef(null);
-
-
-    const { scrollYProgress } = useScroll({
-      target: containerRef,
-      offset: ["center end", "end end"], // comienza cuando entra, termina cuando sale
-    })
-
-    const maskScale = useTransform(scrollYProgress, [0, 1], ['10%', '100%'])
   
   return (
-    <motion.section ref={containerRef} className={`section full-width ${styles.section}`} style={{
-      maskSize: maskScale
-      }}>
+    <section className={`section full-width ${styles.section}`}>
       <h2>Mes prestations</h2>
-      <div >
+      <div>
         <Gallery />
       </div>
       
@@ -32,7 +19,7 @@ function ServicesSection(): JSX.Element {
         <ServiceCard title='Réparation et Préparation des Surfaces' image={reparation}/>
       </div>
        */}
-    </motion.section>
+    </section>
   )
 }
 

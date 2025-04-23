@@ -12,7 +12,8 @@ function ParallaxSlider({ comparisons }: { comparisons: BeforeAfterComparison[] 
   })
   return (
     <div ref={container} style={{ width: '100%' }}>
-      { comparisons.map((project: BeforeAfterComparison, index: number) => { const targetScale = 1 - ((comparisons.length  - index) * 0.05);
+      { comparisons.map((project: BeforeAfterComparison, index: number) => { 
+        const targetScale = 1 - ((comparisons.length  - index) * 0.05);
           return <ParallaxSlide {...project} index={index} key={index} range={[index * 0.25, 1]} targetScale={targetScale} progress={scrollYProgress}/>
         } )}
     </div>
