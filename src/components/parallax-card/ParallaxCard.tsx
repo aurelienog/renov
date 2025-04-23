@@ -1,14 +1,24 @@
-import React from 'react';
+import React, { JSX } from 'react';
 import styles from './styles.module.css'
 import Image, { StaticImageData } from 'next/image';
+import { motion } from 'framer-motion';
 
-function ParallaxCard({ project }: { project: StaticImageData }) {
-
+function ParallaxCard({ project, maskSize, scrollRef }: { project: StaticImageData }): JSX.Element {
+  console.log(maskSize)
   return (
     <article className={styles.container}>
-      <div className={styles.card} >
+      <motion.div className={styles.card} ref={scrollRef}  style={ 
+          maskSize
+            ? {
+                maskImage: "url('/assets/TEST.png')",
+                maskRepeat: 'no-repeat',
+                maskPosition: 'center',
+                maskSize: maskSize,
+              }
+            : undefined
+        }>
         <Image src={project} alt='' fill style={{ objectFit: 'cover' }}/>
-      </div>
+      </motion.div>
     </article>
   )
 }

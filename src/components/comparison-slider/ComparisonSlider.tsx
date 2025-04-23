@@ -1,10 +1,10 @@
 'use client';
 
 import Image, { StaticImageData } from 'next/image';
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, JSX } from 'react';
 import styles from './styles.module.css';
 
-function ComparisonSlider({ before, after, name} : { before: StaticImageData, after:StaticImageData, name: string }) {
+function ComparisonSlider({ before, after, name} : { before: StaticImageData, after:StaticImageData, name: string }): JSX.Element {
   const [sliderPosition, setSliderPosition] = useState(50);
   const containerRef = useRef<HTMLDivElement>(null);
 

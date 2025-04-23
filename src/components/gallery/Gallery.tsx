@@ -1,15 +1,14 @@
-import React from 'react';
-
+import React, { JSX } from 'react';
 import styles from './styles.module.css';
 import GalleryCard from './GalleryCard';
 import { services } from '../../data/data';
 
-function Gallery() {
+function Gallery(): JSX.Element {
   return (
-    <div className={styles.gallery}>
+    <div className={ styles.gallery }>
       {
         services?.map((project, index: number) => (
-          <GalleryCard key={`${project.name}-${index}`} image={project.image} name={project.name}/>
+          <GalleryCard key={`${project.name}-${index}`} image={project.image} name={ project.name }/>
         ))
       }
 {/* 

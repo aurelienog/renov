@@ -1,5 +1,5 @@
 'use client';
-import React, { useRef } from 'react';
+import React, { JSX, useRef } from 'react';
 import { motion, useScroll, useTransform} from 'framer-motion';
 import styles from './styles.module.css';
 import TimelineCard from '@/components/timeline-card/TimelineCard';
@@ -7,7 +7,7 @@ import { workSteps } from '../../data/data';
 import { WorkStep } from '@/models/interfaces';
 
 
-function HowItWorksSection() {
+function HowItWorksSection(): JSX.Element {
   const containerRef = useRef(null);
 
   const { scrollYProgress } = useScroll({

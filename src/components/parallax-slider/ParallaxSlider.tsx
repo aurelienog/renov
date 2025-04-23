@@ -1,10 +1,10 @@
 'use client'
 import { useScroll } from 'framer-motion';
-import React, { useRef } from 'react';
+import React, { JSX, useRef } from 'react';
 import { BeforeAfterComparison } from '@/models/interfaces';
 import ParallaxSlide from './ParallaxSlide';
 
-function ParallaxSlider({ comparisons }: { comparisons: BeforeAfterComparison[] }) {
+function ParallaxSlider({ comparisons }: { comparisons: BeforeAfterComparison[] }): JSX.Element {
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
     target: container,

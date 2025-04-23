@@ -17,11 +17,11 @@ function ServicesSection(): JSX.Element {
     const maskScale = useTransform(scrollYProgress, [0, 1], ['10%', '100%'])
   
   return (
-    <motion.section className={`section full-width ${styles.section}`} style={{
+    <motion.section ref={containerRef} className={`section full-width ${styles.section}`} style={{
       maskSize: maskScale
       }}>
       <h2>Mes prestations</h2>
-      <div ref={containerRef}>
+      <div >
         <Gallery />
       </div>
       
