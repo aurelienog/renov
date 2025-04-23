@@ -11,19 +11,19 @@ function ProjectsSection(): JSX.Element {
 
   const { scrollYProgress } = useScroll({
     target: scrollRef,
-    offset: ['start 20%', 'end end']
+    offset: ['start 20%', '15% 15%']
   })
 
   const maskScale = useTransform(scrollYProgress, [0, 1], ['30%', '100%'])
 
   return (
-    <section className={`section full-width ${styles.section}`}>
+    <section className={`section breakout ${styles.section}`}>
       <h2>Travaux récents</h2>
-      <div className={styles.cardContainer}>
+      <div ref={scrollRef} className={styles.cardContainer}>
         { 
         lastProjects.map((project: StaticImageData, index:number) => {
           const isFirst = index === 0; 
-          return <ParallaxCard project={ project } key={ index } maskSize={isFirst? maskScale : undefined} scrollRef={isFirst ? scrollRef : undefined}/>
+          return <ParallaxCard project={ project } key={ index } maskSize={isFirst? maskScale : undefined}/>
         })
       }
       </div>

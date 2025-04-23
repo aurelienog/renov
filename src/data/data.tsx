@@ -13,6 +13,7 @@ import enduit from '../../public/assets/enduit.jpg';
 import exterieur from '../../public/assets/exterieur.jpg';
 
 //last projects images 
+import transparentImage from '../../public/assets/transparentImage.png';
 import wood from '../../public/assets/images/wood.webp';
 import bedroom from '../../public/assets/images/bedroomAfter.webp';
 import indoor from '../../public/assets/images/indoor.webp';
@@ -248,7 +249,8 @@ export const services: Service[] = [
     image: autre  
 }];
 
-export const lastProjects: StaticImageData[] = [indoor, wood, bedroom ];
+//the second element of the array is a tranparent png so the reveal for the first element is longer
+export const lastProjects: StaticImageData[] = [indoor, transparentImage, wood, transparentImage, bedroom, transparentImage, ];
 
 export const workSteps: WorkStep[] = [{
   name: 'Prise de contact',

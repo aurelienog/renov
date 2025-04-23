@@ -1,17 +1,11 @@
 .cardContainer {
-  height: 400vh;
+  height: 600vh;
   position: relative;
 }
 .section {
+  position: relative;
   & h2 {
     text-align: center;
     margin: 0;
   }
-
-/* aplica a la primera card un reveal on scroll 
-  & :first-child {
-    mask-image: url('/assets/TEST.png');
-    mask-repeat: no-repeat;
-    mask-position: center;
-  }*/
 }

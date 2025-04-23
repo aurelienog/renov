@@ -1,0 +1,22 @@
+.section {
+  padding-left: 4rem;
+  padding-right: 4rem;
+  background-color: var(--color-primary);
+  
+  & h2 {
+    text-align: center;
+  }
+
+
+}
+
+/* 
+.container {
+  --grid-min-col-size: 300px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(var(--grid-min-col-size), 100%), 1fr));
+  gap: 2rem;
+  justify-items: center;
+  margin: 4rem auto 4rem auto;
+  max-width: 100rem;
+} */
