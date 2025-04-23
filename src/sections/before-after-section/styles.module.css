@@ -3,10 +3,14 @@
   padding-left: 4rem;
   padding-right: 4rem;
   display: grid;
-  background-color: var(--color-primary);
+  position: relative;
 
   & h2 {
-    text-align: center;
+    position: sticky;
+    top: 0.5em;
+    bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   & h3 {

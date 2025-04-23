@@ -5,9 +5,9 @@ import { beforeAfterPhotos } from '../../data/data';
 
 function BeforeAfterSection() {
   return (
-    <section className={`section breakout ${styles.section}`} >
+    <section className={` ${styles.section}`} >
       <h2>Avant / Après</h2>
-      <ParallaxSlider comparisons={beforeAfterPhotos} />
+      <ParallaxSlider comparisons={ beforeAfterPhotos } />
     </section>
   )
 }

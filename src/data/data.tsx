@@ -248,7 +248,7 @@ export const services: Service[] = [
     image: autre  
 }];
 
-export const lastProjects: StaticImageData[] = [ bedroom, indoor, wood ];
+export const lastProjects: StaticImageData[] = [indoor, wood, bedroom ];
 
 export const workSteps: WorkStep[] = [{
   name: 'Prise de contact',
