@@ -1,5 +1,5 @@
 
-import { FaqEntry, Column, WorkStep, Service } from '@/models/interfaces';
+import { FaqEntry, Column, WorkStep, Service, BeforeAfterComparison } from '@/models/interfaces';
 import Image, { StaticImageData } from 'next/image';
 
 //services images
@@ -30,6 +30,14 @@ import donate  from '../../public/assets/icons/donate.svg';
 import check from '../../public/assets/icons/check.svg';
 import warning from '../../public/assets/icons/warning.svg';
 import x from '../../public/assets/icons/x.svg';
+
+//Before-after images
+import beforeBathroom from '../../public/assets/images/beforeBathroom.webp';
+import afterBathroom from '../../public/assets/images/afterBathroom.webp';
+import beforeLiving from '../../public/assets/images/livingBefore.webp';
+import afterliving from '../../public/assets/images/livingAfter.webp';
+import bedroomBefore from '../../public/assets/images/bedroomBefore.webp';
+import bedroomAfter from '../../public/assets/images/bedroomAfter.webp';
 
 /* Update const columns to modify the comparison chart.
 The first {} defines the criteria, the following {} are the elements to compare.
@@ -271,4 +279,20 @@ export const workSteps: WorkStep[] = [{
   name: 'Livraison du chantier & suivi',
   description: 'Le chantier est livré propre et finalisé. Nous restons disponibles en cas de retouche ou de question après la prestation.',
   icon: donate
+}]
+
+export const beforeAfterPhotos: BeforeAfterComparison[] = [{
+  name: 'bathroom',
+  before: beforeBathroom,
+  after: afterBathroom,
+},
+{
+  name: 'bedroom',
+  before: bedroomBefore,
+  after: bedroomAfter,
+},
+{
+  name: 'living',
+  before: beforeLiving,
+  after: afterliving,
 }]

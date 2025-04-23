@@ -1,0 +1,18 @@
+.container {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  width: 90%;
+  height: 80vh;
+}
+
+@media (max-width: 1250px) {
+  .container {display: none;}
+}

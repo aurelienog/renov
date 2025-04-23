@@ -31,3 +31,9 @@ export interface WorkStep {
     description: string,
     icon: StaticImageData,
 }
+
+export interface BeforeAfterComparison {
+    name: string,
+    before: StaticImageData,
+    after: StaticImageData,
+}
