@@ -23,11 +23,11 @@ function TrustSection(): JSX.Element {
           <Image src="/assets/icons/star.svg" width={48} height={48} alt='' className='glassmorphism'/>
           <Image src="/assets/icons/star-half.svg" width={48} height={48} alt='' className='glassmorphism'/>
         </div>
-        <h3><AnimatedCounter target={98} suffix={'%'} duration={2.5}/> de clients satisfaits</h3> 
+        <h3><AnimatedCounter target={98} suffix={'%'} duration={3}/> de clients satisfaits</h3> 
       </article>
       <article  className={styles.article}>
         <Image src="/assets/icons/hourglass.svg" width={48} height={48} alt='' className='glassmorphism'/>
-        <h3><AnimatedCounter target={100} suffix={'%'} duration={3} character={4}/> des chantiers livrés à temps</h3>
+        <h3><AnimatedCounter target={100} suffix={'%'} duration={4} character={4}/> des chantiers livrés à temps</h3>
       </article>
     </section>
   )

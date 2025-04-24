@@ -1,7 +1,8 @@
 'use client';
 
 import { useEffect, useState, useRef, useCallback } from 'react';
-import { motion, useMotionValue, animate, useInView } from 'framer-motion';
+import { motion, useMotionValue, animate, useInView, easeOut } from 'framer-motion';
+import { easeIn } from 'framer-motion/dom';
 
 type AnimatedCounterProps = {
   target: number;
@@ -28,7 +29,7 @@ const AnimatedCounter = ({
   const startAnimation = useCallback(() => {
     const controls = animate(motionValue, target, {
       duration,
-      ease: 'easeOut',
+      ease: [0.01, 0, 0.1, 1],
       onUpdate: (latest) => {
         setDisplayValue(Math.round(latest).toString());
       },

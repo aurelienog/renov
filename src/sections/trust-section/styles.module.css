@@ -7,7 +7,7 @@
 }
 
 .section h3 > span {
-  color: #d7845d;
+  color: var(--color-accent);
 }
 
 .stars {

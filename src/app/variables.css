@@ -16,16 +16,21 @@
   --color-secondary-light: #8498aa ;
   --color-secondary-dark: #d4b3a4 ;
 
-  --color-accent: #9aa991;
+  --color-accent: #d7845d;
 
   --fw-regular: 400;
   --fw-semi-bold: 600;
   --fw-bold: 800;
 
   --navbar-size: 60px;
-
   --border-radius: 15px;
+  --focus-border-radius: var(--border-radius); 
+  /* focus estandar */
+  --focus-outline: 2px solid var(--color-accent); 
+
+  /* focus XL */
+  --focus-outline-xl: 6px solid var(--color-accent); 
 }
 
-/* ECE8E4 */
+/* ECE8E4 9aa991*/
 

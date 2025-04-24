@@ -104,3 +104,8 @@ p {
   -webkit-backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.25);
 }
+
+*:focus {
+  outline: var(--focus-outline);
+  border-radius: var(--focus-radius);
+}
