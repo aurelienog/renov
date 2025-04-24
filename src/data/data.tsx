@@ -226,27 +226,35 @@ export const services: Service[] = [
   {
     name: 'Revêtements muraux',
     image: revetement,
+    rank: 3
   }, {
     name: 'Revêtements de sols',
-    image: parquet  
+    image: parquet,
+    rank: 4
   }, {
     name: 'Rénovation de boiseries',
-    image: bois  
+    image: bois,
+    rank: 5  
   }, {
     name: 'Peinture intérieure',
-    image: interieur  
+    image: interieur,
+    rank:  1 
   }, {
     name: 'Peinture extérieure',
-    image: exterieur  
+    image: exterieur,
+    rank:  2 
   }, {
     name: 'Préparation des supports',
-    image: preparation  
+    image: preparation,
+    rank: 6  
   }, {
     name: 'Enduits décoratifs',
-    image: enduit  
+    image: enduit,
+    rank: 7  
   }, {
     name: 'Petits travaux complémentaires',
-    image: autre  
+    image: autre,
+    rank: 8  
 }];
 
 //the second element of the array is a tranparent png so the reveal for the first element is longer

@@ -1,8 +1,7 @@
 'use client';
 
 import { useEffect, useState, useRef, useCallback } from 'react';
-import { motion, useMotionValue, animate, useInView, easeOut } from 'framer-motion';
-import { easeIn } from 'framer-motion/dom';
+import { motion, useMotionValue, animate, useInView } from 'framer-motion';
 
 type AnimatedCounterProps = {
   target: number;

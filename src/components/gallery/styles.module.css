@@ -13,9 +13,7 @@
   grid-column: span 2;
   border-radius: .5rem;
   clip-path: path('M 120 30 C 150 0 150 0 180 30 C 210 60 240 90 270 120 C 300 150 300 150 270 180 C 240 210 210 240 180 270 C 150 300 150 300 120 270 C 90 240 60 210 30 180 C 0 150 0 150 30 120 Z');
-  transition: 
-      transform 500ms,
-      filter 500ms;
+
     &:nth-of-type(4) {
     grid-column: 2 / span 2;
   }
@@ -30,14 +28,12 @@
   }
 
   &:hover {
-    transform: scale(1.25);
     z-index: 100;
-    clip-path: path('M 120 30 C 150 0 150 0 180 30 C 210 60 240 90 270 120 C 300 150 300 150 270 180 C 240 210 210 240 180 270 C 150 300 150 300 120 270 C 90 240 60 210 30 180 C 0 150 0 150 30 120 Z');
   }
-  
+/*   
   &:not(:hover) {
-    animation: zIndexHack 500ms;
-  }
+    animation: zIndexHack 250ms;
+  } */
 
   &:focus-within {
     outline: 8px solid var(--color-accent);
@@ -58,11 +54,13 @@
 }
 
 
-@keyframes zIndexHack {
-  0%, 100% {
-    z-index: 10;
-  }
-}
+/* 
+  @keyframes zIndexHack {
+    0%, 100% {
+      z-index: 10;
+    }
+}  */
+
 
 .overlay {
   position: absolute;
@@ -71,7 +69,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  pointer-events: none; /* evita bloquear hover */
+  pointer-events: none; 
+  
   &:focus-within {
     outline: var(--focus-outline-xl);
   }
@@ -85,6 +84,15 @@
   background-color: rgba(0, 0, 0, 0.7);
   padding: 0.5rem 2rem;
   width: 100%;
+}
 
-
+.zoomLayer {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-repeat: no-repeat;
+  background-size: 200%;
+  transition: background-position 0.2s ease;
+  border-radius: inherit;
+  pointer-events: none;
 }

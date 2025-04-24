@@ -23,7 +23,8 @@ export interface FaqEntry {
 
 export interface Service {
   name: string,
-  image: StaticImageData
+  image: StaticImageData,
+  rank: number,
 }
 
 export interface WorkStep {
