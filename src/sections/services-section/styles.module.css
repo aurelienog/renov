@@ -1,13 +1,11 @@
 .section {
-  padding-left: 4rem;
-  padding-right: 4rem;
   background-color: var(--color-primary);
   z-index: 1;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   place-items: center;
-  mask-image: url('/assets/TEST.png');
-  mask-repeat: no-repeat;
-  mask-position: center;
+  padding-bottom: 20em;
+  
   
   & h2 {
     text-align: center;

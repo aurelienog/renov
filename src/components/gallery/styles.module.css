@@ -5,7 +5,6 @@
   grid-template-columns: repeat(6, var(--image-size));
   grid-template-rows: repeat(3, var(--image-size));
   gap: 1.5rem;
-  margin-bottom: 6rem;
 }
 
 .card {
@@ -13,7 +12,7 @@
   grid-column: span 2;
   border-radius: .5rem;
   clip-path: path('M 120 30 C 150 0 150 0 180 30 C 210 60 240 90 270 120 C 300 150 300 150 270 180 C 240 210 210 240 180 270 C 150 300 150 300 120 270 C 90 240 60 210 30 180 C 0 150 0 150 30 120 Z');
-
+  
     &:nth-of-type(4) {
     grid-column: 2 / span 2;
   }
@@ -27,15 +26,16 @@
     display: block;
   }
 
+/* 
   &:hover {
     z-index: 100;
   }
-/*   
+
   &:not(:hover) {
     animation: zIndexHack 250ms;
-  } */
-
-  &:focus-within {
+  }
+   */
+  :is(&:focus-within, &:hover) {
     outline: 8px solid var(--color-accent);
     border-radius: var(--border-radius); 
     outline-offset: 2.4em;
@@ -69,8 +69,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  pointer-events: none; 
-  
+  pointer-events: none; /* evita bloquear hover */
   &:focus-within {
     outline: var(--focus-outline-xl);
   }
@@ -82,17 +81,14 @@
   font-weight: bold;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
   background-color: rgba(0, 0, 0, 0.7);
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 2.6rem;
   width: 100%;
 }
 
-.zoomLayer {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  background-repeat: no-repeat;
-  background-size: 200%;
-  transition: background-position 0.2s ease;
-  border-radius: inherit;
-  pointer-events: none;
-}
+
+/*  filter: brightness(1) saturate(1.5);
+    
+    &:hover {
+
+      filter: brightness(.7) saturate(.7); 
+    } */

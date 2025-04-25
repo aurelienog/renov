@@ -4,7 +4,7 @@
   background-color: var(--color-primary);
   
   & h2 {
-    text-align: center;
+    margin: 0;
   }
 
 
