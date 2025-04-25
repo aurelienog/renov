@@ -54,8 +54,6 @@ const AnimatedCounter = ({
       initial={{ opacity: 0, scale: 0.95 }}
       animate={isInView ? { opacity: 1, scale: 1 } : {}}
       transition={{ duration: 0.5, delay: inViewDelay / 1000 }}
-      aria-live="polite"
-      role="status"
       style={{ display: 'inline-block', minWidth: `${character}ch` }}
     >
       {prefix}

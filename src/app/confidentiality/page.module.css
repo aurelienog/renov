@@ -48,7 +48,7 @@
 /* background texture for h1 */
 
 .wrapper {
-  background-image: url('/assets/marbre.jpg');
+  background-image: url('/assets/images/marbre.webp');
   background-size: cover;
   border-image: linear-gradient(rgba(0, 0, 0, 0.600), rgba(0, 0, 0, 0.600)) fill 1;
   width: 100%;
@@ -56,7 +56,7 @@
 }
 
 .texture {
-  background-image: url('/assets/marbre.jpg');
+  background-image: url('/assets/images/marbre.webp');
   color: transparent;
   background-size: cover;
   background-clip: text;

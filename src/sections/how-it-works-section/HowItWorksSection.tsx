@@ -19,18 +19,15 @@ function HowItWorksSection(): JSX.Element {
     const pathLength = useTransform(scrollYProgress, [0, 1], [0, 1])
 
   return (
-    <section className={`section breakout ${styles.section}`}>
+    <section ref={containerRef} className={`section breakout ${styles.section}`}>
       <h2>Le processus</h2>
       <div className={styles.timeline}>
-        {
-        workSteps.map((step: WorkStep, index: number) => (
+        { workSteps.map((step: WorkStep, index: number) => (
           <TimelineCard key={`${step.name}${index}`} {...step}/>
-        ))
-      }
+          ))
+        } 
       </div>
-      
-      <div className='path'>
-        <svg viewBox="0 0 800 800" fill="none" ref={containerRef} className={styles.path}>
+        <svg viewBox="0 0 800 800" fill="none"  className={styles.path}>
         <motion.path 
           style={{ pathLength }}
           d="M 0 129 Q 112 56 243 141 Q 390 248 509 168 Q 594 104 658 183 C 708 247 734 342 664 349 Q 544 362 510 460 C 473 559 347 434 250 428 C 157 423 124 469.5 103 548 " 
@@ -38,8 +35,6 @@ function HowItWorksSection(): JSX.Element {
           strokeWidth="6"
           />
         </svg>
-      </div>
-      
     </section>
   )
 }

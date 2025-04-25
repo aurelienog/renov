@@ -7,7 +7,7 @@ import { useInView } from 'framer-motion';
 
 function Gallery(): JSX.Element {
   const containerRef = useRef(null)
-  const isInView = useInView(containerRef, { once: true, margin: '-50%' });
+  const isInView = useInView(containerRef, { once: true });
 
   return (
     <div ref={containerRef} className={ styles.gallery }>

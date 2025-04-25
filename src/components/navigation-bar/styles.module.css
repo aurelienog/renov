@@ -1,7 +1,4 @@
 .navbar {
-  opacity: 90%;
-  font-weight: var(--fw-bold);
-  border-radius: 0 0 0 var(--border-radius);
 
   & ul {
     list-style: none;
@@ -11,15 +8,9 @@
     gap: 2rem;
     font-weight: var(--fw-bold);
   }
-
-  & ul li:not(:first-child)  {
-    border-left: solid 1px;
-    border-color: var(--color-accent) ;
-  }
 }
 
 .navbar a{
-  margin-left: 2rem;
   padding: 1rem;
   &:hover,
   &:focus-visible {

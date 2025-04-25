@@ -11,14 +11,14 @@ function ParallaxCard({ project, maskSize }: { project: StaticImageData, maskSiz
       <motion.div className={styles.card} style={ 
           maskSize
             ? {
-                maskImage: "url('/assets/TEST.png')",
+                maskImage: "url('/assets/images/revealMask.webp')",
                 maskRepeat: 'no-repeat',
                 maskPosition: 'center',
                 maskSize: maskSize,
               }
             : undefined
         }>
-        <Image src={project} alt='' fill style={{ objectFit: 'cover' }}/>
+        <Image src={project} alt='' sizes="100vw" fill placeholder='blur' quality={70} style={{ objectFit: 'cover' }}/>
       </motion.div>
     </article>
   )

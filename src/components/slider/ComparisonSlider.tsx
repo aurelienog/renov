@@ -3,6 +3,7 @@
 import Image, { StaticImageData } from 'next/image';
 import React, { useState, useRef, JSX } from 'react';
 import styles from './styles.module.css';
+import SliderLine from './SliderLine';
 
 function ComparisonSlider({ before, after, name} : { before: StaticImageData, after:StaticImageData, name: string }): JSX.Element {
   const [sliderPosition, setSliderPosition] = useState(50);
@@ -28,10 +29,6 @@ function ComparisonSlider({ before, after, name} : { before: StaticImageData, af
     }
   };
 
-  const handleKeyboardChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setSliderPosition(Number(event.target.value));
-  };
-
   return (
     <article className={styles.wrapper} aria-label={`comparaison avant-après d'une salle ${name}`}>
       <figcaption className="visually-hidden">
@@ -53,33 +50,8 @@ function ComparisonSlider({ before, after, name} : { before: StaticImageData, af
           <Image src={before} alt="salle de bain avant la rénovation" fill style={{ objectFit: 'cover', borderRadius: 'var(--border-radius)'}}/>
         </span>
 
-        {/* Slider visual */}
-        <div
-          className={styles.sliderLine}
-          style={{ left: `calc(${sliderPosition}% - 2px)` }}
-          role="presentation"
-          aria-hidden="true"
-        ></div>
-
-        <div
-          className={styles.sliderBtn}
-          style={{ left: `calc(${sliderPosition}% - 1em)` }}
-          role="presentation"
-          aria-hidden="true"
-        > 
-        </div>
-
-        {/* Slider accesible */}
-        <input
-          type="range"
-          step={10}
-          min={5}
-          max={95}
-          value={sliderPosition}
-          onChange={handleKeyboardChange}
-          className="visually-hidden"
-          aria-label="Élément de saisie pour comparer les photos avant après" aria-valuemin={5} aria-valuemax={95} aria-valuenow={sliderPosition}
-        />
+        {/* separator visual */}
+        <SliderLine sliderPosition={sliderPosition}/>
       </figure>
     </article>
   );

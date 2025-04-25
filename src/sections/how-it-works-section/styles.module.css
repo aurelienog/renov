@@ -1,23 +1,19 @@
 .section {
   position: relative;
   height: 1800px;
+  width: 100%;
 
   & h2 {
     text-align: center;
   }
 
-  & img {
-      border-radius: 100px;
-      padding: 6px;
-      background-color: white;
-  }
 }
 
 .timeline {
+  position: relative;
   padding: 4rem;
   display: grid;
   align-items: end;
-
   grid-template-columns: 2fr 1fr 2fr 1fr 2fr 1fr 2fr;
   grid-template-areas: 
 
@@ -32,9 +28,10 @@
 
 }
 
+
 .path {
   position: absolute;
-  top: 400px;
+  top: 380px;
   height: auto;
   display: block;
 }

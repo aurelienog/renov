@@ -3,19 +3,19 @@ import { FaqEntry, Column, WorkStep, Service, BeforeAfterComparison } from '@/mo
 import Image, { StaticImageData } from 'next/image';
 
 //services images
-import autre from '../../public/assets/autre.jpg';
-import revetement from '../../public/assets/revetement.jpg';
-import interieur from '../../public/assets/interieur.jpg';
-import parquet from '../../public/assets/parquet.jpg';
-import preparation from '../../public/assets/preparation.jpg';
-import bois from '../../public/assets/bois.jpg';
-import enduit from '../../public/assets/enduit.jpg';
-import exterieur from '../../public/assets/exterieur.jpg';
+import autre from '../../public/assets/images/autre.webp';
+import revetement from '../../public/assets/images/revetement.webp';
+import interieur from '../../public/assets/images/interieur.webp';
+import parquet from '../../public/assets/images/parquet.webp';
+import preparation from '../../public/assets/images/preparation.webp';
+import bois from '../../public/assets/images/bois.webp';
+import enduit from '../../public/assets/images/enduit.webp';
+import exterieur from '../../public/assets/images/exterieur.webp';
 
 //last projects images 
-import transparentImage from '../../public/assets/transparentImage.png';
+import transparentImage from '../../public/assets/images/transparentImage.webp';
 import wood from '../../public/assets/images/wood.webp';
-import bedroom from '../../public/assets/images/bedroomAfter.webp';
+import realisation from '../../public/assets/images/realisation.webp';
 import indoor from '../../public/assets/images/indoor.webp';
 
 //timeline icons
@@ -258,7 +258,7 @@ export const services: Service[] = [
 }];
 
 //the second element of the array is a tranparent png so the reveal for the first element is longer
-export const lastProjects: StaticImageData[] = [indoor, transparentImage, wood, transparentImage, bedroom, transparentImage, ];
+export const lastProjects: StaticImageData[] = [indoor, transparentImage, wood, transparentImage, realisation, transparentImage, ];
 
 export const workSteps: WorkStep[] = [{
   name: 'Prise de contact',
