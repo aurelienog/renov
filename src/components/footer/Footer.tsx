@@ -2,12 +2,13 @@ import React, { JSX } from 'react';
 import styles from './styles.module.css';
 import Image from 'next/image'
 import Link from 'next/link';
+import logo from '../../../public/assets/images/ANJ-logo-full.webp'
 
 function Footer(): JSX.Element {
   return (
     <footer className={`${styles.footer}`}>
       <article>
-        <Image src='/assets/logo.webp' alt='logo' width={250} height={140}/> 
+        <Image src={logo} placeholder='blur' alt='logo' quality={100} width={300} height={150}/> 
       </article>
       <article>
         <h2>Siège social:</h2>

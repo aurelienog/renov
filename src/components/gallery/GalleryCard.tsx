@@ -26,7 +26,7 @@ function GalleryCard({ image, name, isInView, rank }: { image:StaticImageData, n
   <Link href="/">
     <Image src={image} alt={name}  sizes="(max-width: 768px) 55vw, (max-width: 1200px) 33vw, 20vw" quality={50} placeholder="blur"/>
     <div className={styles.overlay}>
-      <h3 className={styles.title}>{name}</h3>
+      <h3>{name}</h3>
     </div>   
   </Link>
     </motion.article>

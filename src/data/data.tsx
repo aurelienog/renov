@@ -1,6 +1,13 @@
 
-import { FaqEntry, Column, WorkStep, Service, BeforeAfterComparison } from '@/models/interfaces';
+import { FaqEntry, Column, WorkStep, Service, BeforeAfterComparison, TrustStatistic } from '@/models/interfaces';
 import Image, { StaticImageData } from 'next/image';
+
+// trust section statistics
+import paint from '../../public/assets/icons/paint.svg';
+import medal from '../../public/assets/icons/medal.svg';
+import hourglass from '../../public/assets/icons/hourglass.svg';
+import star from '../../public/assets/icons/star.svg';
+import halfStar from '../../public/assets/icons/star-half.svg';
 
 //services images
 import autre from '../../public/assets/images/autre.webp';
@@ -43,6 +50,32 @@ import bedroomAfter from '../../public/assets/images/bedroomAfter.webp';
 /* Update const columns to modify the comparison chart.
 The first {} defines the criteria, the following {} are the elements to compare.
 Each key is a line */
+
+export const statistics : TrustStatistic[] = [{
+  icon: medal,
+  stat: 10,
+  information: "ans d'expérience",
+  prefix: "+",
+  characters: 3
+}, {
+  icon: paint,
+  stat: 150,
+  information: "projets réalisés",
+  prefix: "+",
+  characters: 4
+}, {
+  icon: [star, star, star, star, halfStar],
+  stat: 98,
+  information: "de clients satisfaits",
+  suffix: "%",
+  characters: 4
+}, {
+  icon: hourglass,
+  stat: 100,
+  information: " des chantiers livrés à temps",
+  suffix: "%",
+  characters: 3
+}, ]
 
 export const columns: Column[] = [{
   title: '',

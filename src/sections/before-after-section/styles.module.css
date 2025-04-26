@@ -1,31 +1,35 @@
 .section {
-  width: 100%;
-  padding-left: 4rem;
-  padding-right: 4rem;
-  display: grid;
-  position: relative;
-
-  & h2 {
-    position: sticky;
-    top: 0.5em;
-    bottom: 0.5em;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  & h3 {
-    font-size: 3rem
-  }
+  display: none;
 }
 
-.section > article {
-  display: grid;
-  grid-template-rows: 1fr 6fr;
-  gap: 4rem;
-  margin-bottom: 8rem;
-}
+@media (min-width: 750px) {
+  .section {
+    width: 100%;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    display: grid;
+    position: relative;
+  
+    & h2 {
+      position: sticky;
+      top: 0.5em;
+      bottom: 0.5em;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    & h3 {
+      font-size: 3rem
+    }
+  }
+  
+  .section > article {
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+    gap: 4rem;
+    margin-bottom: 8rem;
+  }
 
-@media (min-width: 70rem) {
   .section > article {
     max-width: 90rem;
     height: 40rem;

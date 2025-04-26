@@ -18,6 +18,7 @@
 }
 
 body {
+  /* outline: 2px solid red; */
   color: var(--foreground);
   background: var(--color-secondary);
   font-family: var(--font-secondary), sans-serif;

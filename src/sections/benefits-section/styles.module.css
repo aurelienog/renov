@@ -2,7 +2,6 @@
   background-color: var(--color-secondary);
   overflow-x: scroll;
   max-width: 100%;
-  position: relative;
 
   & h2 {
     text-align: center;

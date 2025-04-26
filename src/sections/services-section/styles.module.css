@@ -4,7 +4,9 @@
   display: flex;
   flex-direction: column;
   place-items: center;
-  padding-bottom: 20em;
+  padding-left: 2em;
+  padding-right: 2em;
+
   
   
   & h2 {

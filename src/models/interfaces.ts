@@ -38,3 +38,12 @@ export interface BeforeAfterComparison {
     before: StaticImageData,
     after: StaticImageData,
 }
+
+export interface TrustStatistic {
+  icon: StaticImageData | StaticImageData[],
+  stat: number,
+  information: string,
+  prefix? : string,
+  suffix?: string,
+  characters?: number // necessary to animate the numbers without impacting the position of the text
+}

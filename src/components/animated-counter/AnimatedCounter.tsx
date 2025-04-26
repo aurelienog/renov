@@ -9,7 +9,7 @@ type AnimatedCounterProps = {
   suffix?: string;
   duration?: number; // en segundos
   inViewDelay?: number; // en milisegundos
-  character?: number;
+  characters?: number;
 };
 
 const AnimatedCounter = ({
@@ -18,7 +18,7 @@ const AnimatedCounter = ({
   suffix = '',
   duration = 1,
   inViewDelay = 0,
-  character = 3,
+  characters = 3,
 }: AnimatedCounterProps) => {
   const ref = useRef<HTMLSpanElement>(null);
   const isInView = useInView(ref, { once: true, margin: '-50px' });
@@ -54,7 +54,7 @@ const AnimatedCounter = ({
       initial={{ opacity: 0, scale: 0.95 }}
       animate={isInView ? { opacity: 1, scale: 1 } : {}}
       transition={{ duration: 0.5, delay: inViewDelay / 1000 }}
-      style={{ display: 'inline-block', minWidth: `${character}ch` }}
+      style={{ display: 'inline-block', minWidth: `${characters}ch` }}
     >
       {prefix}
       {displayValue}

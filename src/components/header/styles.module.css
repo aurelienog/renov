@@ -6,14 +6,5 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 4rem;
-
-
-  & :first-child {
-    display: flex;
-    text-decoration: none;
-    text-decoration-style: inherit; 
-    font-weight: var(--fw-bold);
-  }
-
 }
 

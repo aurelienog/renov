@@ -3,6 +3,7 @@
   margin-left: auto;
   margin-right: auto;
   padding: 2rem;
+  min-width: 50rem;
 }
 
 .table :is(th, .table td .table caption)  {
