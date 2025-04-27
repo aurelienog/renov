@@ -42,7 +42,7 @@
 }
 
 
-@media (width >= 48rem) { 
+@media (width >= 55rem) { 
   .footer {
     display: grid;
     justify-items: center;
@@ -52,11 +52,14 @@
     grid-template-areas: 
     ". logo address info ."
     ". copyright copyright copyright ." ;
-    text-align: start;
   }
 
   .footer article {
     margin: 0;
+  }
+
+  .footer article:first-child {
+    align-self: start;
   }
 
   .footer article:last-child {

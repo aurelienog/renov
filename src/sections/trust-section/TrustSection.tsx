@@ -18,7 +18,7 @@ function TrustSection(): JSX.Element {
             ))}
           </div>
           ) : (
-            <Image src={stat.icon} width={48} height={48} alt='' className='glassmorphism'/>
+            <Image src={stat.icon} width={48} height={48} alt='' loading='lazy' className='glassmorphism'/>
           )}
           <h3><AnimatedCounter prefix={stat.prefix} suffix={stat.suffix} target={stat.stat} duration={1 + index * 2} characters={stat.characters}/>{stat.information}</h3>
         </article>

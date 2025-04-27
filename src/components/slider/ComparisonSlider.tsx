@@ -41,13 +41,13 @@ function ComparisonSlider({ before, after, name} : { before: StaticImageData, af
         onMouseMove={handleMouseMove}
         onTouchMove={handleTouchMove}
       >
-        <Image src={after} alt="salle de bain après la rénovation" fill style={{ objectFit: 'cover', borderRadius: 'var(--border-radius)'}}/>
+        <Image src={after}  alt="salle de bain après la rénovation" fill loading='lazy' style={{ objectFit: 'cover', borderRadius: 'var(--border-radius)'}}/>
 
         <span
           className={`${styles.beforeContainer} ${styles.imagesContainer}`}
           style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
         >
-          <Image src={before} alt="salle de bain avant la rénovation" fill style={{ objectFit: 'cover', borderRadius: 'var(--border-radius)'}}/>
+          <Image src={before} alt="salle de bain avant la rénovation" fill loading='lazy' style={{ objectFit: 'cover', borderRadius: 'var(--border-radius)'}}/>
         </span>
 
         {/* separator visual */}

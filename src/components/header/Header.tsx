@@ -9,7 +9,7 @@ function Header(): JSX.Element {
   return (
     <header className={`${styles.header} glassmorphism`}>
       <Link href={"/"}> 
-        <Image src={logo} alt='logo ANJ - home' placeholder='blur' width={120} height={60}/> 
+        <Image src={logo} alt='logo ANJ - home' width={120} height={60} className={styles.test}/> 
       </Link>
       <NavigationBar/>
     </header>

@@ -18,7 +18,7 @@ function ParallaxCard({ project, maskSize }: { project: StaticImageData, maskSiz
               }
             : undefined
         }>
-        <Image src={project} alt='' sizes="100vw" fill placeholder='blur' quality={70} style={{ objectFit: 'cover' }}/>
+        <Image src={project} alt='' sizes="100vw" fill placeholder='blur' quality={70} loading='lazy' style={{ objectFit: 'cover' }}/>
       </motion.div>
     </article>
   )

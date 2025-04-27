@@ -8,7 +8,7 @@ function Footer(): JSX.Element {
   return (
     <footer className={`${styles.footer}`}>
       <article>
-        <Image src={logo} placeholder='blur' alt='logo' quality={100} width={300} height={150}/> 
+        <Image src={logo} alt='logo' quality={100} loading='lazy' width={300} height={150}/> 
       </article>
       <article>
         <h2>Siège social:</h2>
