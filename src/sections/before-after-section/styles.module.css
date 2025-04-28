@@ -1,5 +1,6 @@
 .section {
   display: none;
+  background-color: var(--color-primary);
 }
 
 @media (min-width: 750px) {
@@ -7,45 +8,13 @@
     width: 100%;
     padding-left: 4rem;
     padding-right: 4rem;
-    display: grid;
+    display: block;
     position: relative;
   
     & h2 {
+      text-align: center;
       position: sticky;
-      top: 0.5em;
-      bottom: 0.5em;
-      margin-left: auto;
-      margin-right: auto;
+      top: 1.5em;
     }
-  
-    & h3 {
-      font-size: 3rem
-    }
-  }
-  
-  .section > article {
-    display: grid;
-    grid-template-rows: 1fr 6fr;
-    gap: 4rem;
-    margin-bottom: 8rem;
-  }
-
-  .section > article {
-    max-width: 90rem;
-    height: 40rem;
-    display: flex;
-    gap: 6rem;
-    margin-bottom: 8rem;
-    place-self: center;
-    width: 100%;
-  }
-
-  .info {
-  width: 30%;
-  }
-
-  .reverse > :nth-child(2n) {
-    order: -1;
-  }
-  
+}
 }

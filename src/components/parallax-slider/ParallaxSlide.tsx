@@ -10,7 +10,7 @@ function ParallaxSlide({before, after, name, index, range, targetScale, progress
 
   return (
     <article className={styles.wrapper}>
-      <motion.div className={styles.card} style={{scale, top: `calc(+2% + ${index * 35}px)` }}>
+      <motion.div className={styles.card} style={{scale, top: `calc(+1% + ${index * 3}em)`, left: `calc(+1% + ${index * 3}em` }}>
         <ComparisonSlider before={before} after= {after} name={name}/>
       </motion.div>
     </article>

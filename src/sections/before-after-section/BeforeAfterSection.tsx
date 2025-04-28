@@ -5,7 +5,7 @@ import { beforeAfterPhotos } from '../../data/data';
 
 function BeforeAfterSection(): JSX.Element {
   return (
-    <section className={`breakout ${styles.section}`} >
+    <section className={`section full-width ${styles.section}`} >
       <h2>Avant / Après</h2>
       <ParallaxSlider comparisons={ beforeAfterPhotos } />
     </section>

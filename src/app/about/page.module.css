@@ -4,7 +4,7 @@
   align-items: center;
 
   /*background texture*/
-  background-image: url('/assets/marbre.jpg');
+  background-image: url('/assets/images/marbre.webp');
   background-size: cover;
   border-image: linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)) fill 1;
 
@@ -14,6 +14,7 @@
 
   & :is(h2, h1) {
   font-size: 6rem;
+  margin: 0;
   }
 
   & h1 {
@@ -40,7 +41,7 @@
   margin-top: 0.95rem;
   
   /* apply texture */
-  background-image: url('/assets/marbre.jpg');
+  background-image: url('/assets/images/marbre.webp');
   color: transparent;
   background-size: cover;
   background-clip: text;
@@ -94,7 +95,7 @@
 }
 
 .texture {
-  background-image: url('/assets/marbre.jpg');
+  background-image: url('/assets/images/marbre.webp');
   color: transparent;
   background-size: cover;
   background-clip: text;

@@ -18,6 +18,11 @@
     list-style: none;
   }
 
+  & article:last-child {
+    font-weight: var(--fw-semi-bold);
+    font-size: smaller;
+  }
+
   & article > address{
     font-style: normal;
     grid-area: address;
@@ -42,16 +47,16 @@
 }
 
 
-@media (width >= 55rem) { 
+@media (width >= 90rem) { 
   .footer {
     display: grid;
     justify-items: center;
     align-items: start;
-    gap: 1rem;
+    gap: 4rem;
     grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
     grid-template-areas: 
-    ". logo address info ."
-    ". copyright copyright copyright ." ;
+    ". logo info address ."
+    "copyright copyright copyright copyright copyright" ;
   }
 
   .footer article {
@@ -70,9 +75,13 @@
   }
 
 
+.footer article:last-child :nth-child(1) {
+  padding-left: 1rem;
+} 
+
 .footer article:last-child :nth-child(2) {
   border-left: solid 2px;
-  padding: 0 1rem;
-}
+  padding-left: 2rem;
+} 
   
 }

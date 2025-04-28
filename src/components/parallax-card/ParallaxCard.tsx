@@ -11,7 +11,6 @@ function ParallaxCard({ project, maskSize }: { project: StaticImageData, maskSiz
       <motion.div className={styles.card} style={ 
           maskSize
             ? {
-                maskImage: "url('/assets/images/revealMask.webp')",
                 maskRepeat: 'no-repeat',
                 maskPosition: 'center',
                 maskSize: maskSize,
