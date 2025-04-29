@@ -1,13 +1,8 @@
 .wrapper {
   position: sticky;
-  top: 0;
+  top: 8em;
   height: 100dvh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   max-width: 90rem;
-
-  
 }
 
 .card {

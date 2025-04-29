@@ -1,24 +1,26 @@
 .info{
-  margin: 2rem 0 2rem 8%;
-  max-width: 36em;
-  border-radius: var(--border-radius) ;
-  padding: 4em;
+  margin-top: 1%;
+  margin-left: 8%;
+  padding: 4em 3em;
   animation-name: slideInRight;
   animation-duration: 0.8s;
   animation-timing-function: ease-out;
+  max-width: 600px;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
-.hero {
+.hero {  
   position: relative;
-  height: 90vh; 
-  display: flex;
-  justify-content: start;
-  align-items: flex-start;
+  height: 90dvh; 
 
   & h2 {
-    font-size: 4rem; 
+    font-size: clamp(2.5rem, 6vw, 4rem);
     margin-bottom: 3rem;
     text-transform: uppercase;
+    font-weight: var(--fw-semi-bold);
+    
+    
   }
   & p {
     font-size: 1.5rem; 
@@ -41,4 +43,14 @@
   .info {
     display: none;
   }
+}
+
+.hero h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #fff;
+  margin-top: 0.5rem;
+  opacity: 0.7;
 }

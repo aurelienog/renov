@@ -7,7 +7,7 @@ import logo from '../../../public/assets/images/ANJ-logo-full.webp';
 
 function Header(): JSX.Element {
   return (
-    <header className={`${styles.header} glassmorphism`}>
+    <header className={`${styles.header}`}>
       <Link href={"/"}> 
         <Image src={logo} alt='logo ANJ - home' width={120} height={60} className={styles.test}/> 
       </Link>
