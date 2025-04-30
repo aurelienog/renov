@@ -24,7 +24,7 @@
   --fw-bold: 800;
 
   --navbar-size: 60px;
-  --border-radius: 0.75rem;;
+  --border-radius: 20px;
   --focus-border-radius: var(--border-radius); 
   /* focus estandar */
   --focus-outline: 2px solid var(--color-accent); 

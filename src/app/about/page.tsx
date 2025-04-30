@@ -1,11 +1,11 @@
-import Header from "@/components/header/Header";
 import styles from "./page.module.css";
 import { JSX } from 'react';
+import HeaderServer from "@/components/header/HeaderServer";
 
 export default function About(): JSX.Element {
   return (
   <>
-    <Header />
+    <HeaderServer />
       <main className="base-layout">
         <section className={`${styles.section} full-width section`}> 
         <div className={styles.title}>

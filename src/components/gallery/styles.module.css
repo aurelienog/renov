@@ -8,6 +8,7 @@
 .card {
   position: relative;
   background-color: var(--background);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 
   & img {
     cursor: pointer;
@@ -27,6 +28,7 @@
   :is(&:focus-within, &:hover) {
     text-decoration-color : var(--color-accent);
     outline: 4px solid var(--color-accent);
+    margin-bottom: 1px;
   }
 }
 

@@ -1,12 +1,13 @@
 .button {
   display: inline-block;
   padding: 1em;
-  border-radius: var(--border-radius);
+  border-radius: 15px;
   cursor: pointer;
   font-weight: var(--fw-bold);
   text-transform: uppercase;
   background-color: #d9bfa3;
   transition: all 0.3s ease;
+  border: solid 2px;
 }
 
 .button:hover {

@@ -1,11 +1,11 @@
 import React, { JSX } from 'react';
 import styles from "../confidentiality/page.module.css";
-import Header from '@/components/header/Header';
+import HeaderServer from '@/components/header/HeaderServer';
 
 function legal(): JSX.Element {
   return (
     <>
-      <Header/>
+      <HeaderServer/>
       <main className={`base-layout ${styles.page}`}>
         <section className='full-width'>
           <div className={styles.wrapper}>

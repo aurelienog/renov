@@ -2,9 +2,9 @@
 
   & ul {
     list-style: none;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
     gap: 2rem;
     font-weight: var(--fw-semi-bold);
     letter-spacing: 0.02em;
@@ -12,10 +12,10 @@
 }
 
 .navbar a{
-  padding: 1rem;
   &:hover,
   &:focus-visible {
-    color: var(--color-accent)
+    color: var(--color-accent);
+    font-weight: var(--fw-bold);
   }
   text-decoration: none;
 }

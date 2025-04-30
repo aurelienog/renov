@@ -1,5 +1,5 @@
 .info{
-  margin-top: 1%;
+  margin-top: 2%;
   margin-left: 8%;
   padding: 4em 3em;
   animation-name: slideInRight;
@@ -39,11 +39,7 @@
   }
 }
 
-@media(max-width: 1250px) {
-  .info {
-    display: none;
-  }
-}
+
 
 .hero h2::after {
   content: "";
