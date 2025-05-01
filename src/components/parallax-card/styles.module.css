@@ -11,7 +11,7 @@
 .card {
   position: relative;
   width: 100%;
-  mask-image: url('/assets/images/TEST.png');
+  mask-image: url('/assets/images/revealMaskVertical.webp');
   aspect-ratio: 1/2;
 }
 

@@ -1,5 +1,7 @@
 .section {
-  background-color: var(--color-primary);
+  position: relative;
+  background-image: url('/assets/images/wall.jpg');
+
   z-index: 1;
   display: flex;
   flex-direction: column;
@@ -10,6 +12,14 @@
   & h2 {
     text-align: center;
   }
+}
+
+.section::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-image: linear-gradient(rgba(166, 153, 148, 0.657),rgba(166, 153, 148, 0.657)); 
+  z-index: -2;
 }
 
 /* 

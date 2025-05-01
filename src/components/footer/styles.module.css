@@ -1,6 +1,9 @@
 
 .footer {
-  background-color: var(--color-primary);
+  position: relative;
+  background-image: url('/assets/images/wall.jpg');
+  /* background-image: url('/assets/images/test.jpg'); */
+  z-index: 1;
   padding: 2rem;
   border-top: solid 2px;
   text-align: center;
@@ -46,6 +49,14 @@
   }
 }
 
+.footer::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-image: linear-gradient(rgba(166, 153, 148, 0.657),rgba(166, 153, 148, 0.657)); 
+  /* background-image: linear-gradient(#a69994df, #a69994df);  */
+  z-index: -2;
+}
 
 @media (width >= 90rem) { 
   .footer {

@@ -1,0 +1,36 @@
+'use client'
+import React, { useRef } from 'react';
+import styles from './styles.module.css';
+import { motion, useScroll, useTransform } from 'framer-motion';
+
+function Family() {
+  const scrollRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+      target: scrollRef,
+      offset: ['start end', 'end end']
+    })
+
+    const maskScale = useTransform(scrollYProgress, [0, 1], ['1%', '700%'])
+
+  return (
+    <div ref={scrollRef} className='breakout' style={{height: '600dvh', position: 'relative', padding: '0 0 8rem 0'}}>
+      <motion.section  className={` ${styles.section}`} style={{ maskSize: maskScale }}>
+      </motion.section>
+      <div style={{
+        fontSize: '7rem',
+        width: '60%',
+        height: '100dvh',
+        position: 'absolute',
+        left: '50%',
+        bottom: '-8rem'
+      }}>
+          <h2 aria-hidden className={styles.a}><span className={styles.texture}>A</span></h2>
+          <h2 aria-hidden className={styles.n}><span className={styles.texture}>N</span></h2>
+          <h2 aria-hidden className={styles.j}><span className={styles.texture}>J</span></h2>
+      </div>
+    </div>
+
+  )
+}
+
+export default Family
