@@ -13,11 +13,6 @@ export default function About(): JSX.Element {
         <div className={styles.title}>
           <h1><span className={styles.texture}>La peinture de père en fils / Une histoire de famille</span></h1>
         </div>   
-        <div >
-          <h2 aria-hidden className={styles.a}><span className={styles.texture}>A</span></h2>
-          <h2 aria-hidden className={styles.n}><span className={styles.texture}>N</span></h2>
-          <h2 aria-hidden className={styles.j}><span className={styles.texture}>J</span></h2>
-        </div>
       </section>  
       <section className={styles.isolation}>
         <p className={styles.quote} >This is a super quote</p>

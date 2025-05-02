@@ -6,26 +6,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  mask-image: url("/assets/images/ANJMASK2.PNG");
+  mask-image: url("/assets/images/anjmask.svg");
   mask-size: 100%;
   mask-repeat: no-repeat;
   mask-position: top center;
-}
-
-
-/* create names */
-.a::after { content: "ntonio"; animation: reveal 1s ease-in-out forwards 0s; }
-.n::after { content: "OGUEIRA"; animation: reveal 1s ease-in-out forwards 500ms; }
-.j::after { content: "ulien "; animation: reveal 1s ease-in-out forwards 1s; }
-
-
-@keyframes reveal {
-  from {
-    opacity: 0;
-    transform: translateX(-15%);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0%);
-  }
 }

@@ -2,66 +2,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-
-  /*background texture*/
-  background-image: url('/assets/images/marbre.webp');
-  background-size: cover;
-  border-image: linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)) fill 1;
-
-  & > * {
-    padding: 0 8rem;
-  }
-
-  & :is(h2, h1) {
-  font-size: 6rem;
-  margin: 0;
-  }
-
-  & h1 {
-    max-width: 32rem;
-  }
-}
-
-.title {
-  border-right: solid 4px rgba(255, 255, 255, 0.45);
-  text-align: end;
-  justify-self: end;
-}
-
-:is(.a, .n, .j) {
-  position: relative;
-}
-
-/* hide ::after by default */
-.a::after, .n::after, .j::after {
-  content: "";
-  font-size: 5rem;
-  opacity: 0;
-  position: absolute;
-  margin-top: 0.95rem;
-  
-  /* apply texture */
-  background-image: url('/assets/images/marbre.webp');
-  color: transparent;
-  background-size: cover;
-  background-clip: text;
-}
-
-/* create names */
-.a::after { content: "ntonio"; animation: reveal 1s ease-in-out forwards 0s; }
-.n::after { content: "OGUEIRA"; animation: reveal 1s ease-in-out forwards 500ms; }
-.j::after { content: "ulien "; animation: reveal 1s ease-in-out forwards 1s; }
-
-
-@keyframes reveal {
-  from {
-    opacity: 0;
-    transform: translateX(-15%);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0%);
-  }
 }
 
 /* styles for quote */
@@ -92,11 +32,4 @@
   color: #3c3c3c;
   top: -5.25rem;
   z-index: -1;
-}
-
-.texture {
-  background-image: url('/assets/images/marbre.webp');
-  color: transparent;
-  background-size: cover;
-  background-clip: text;
 }

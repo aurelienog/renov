@@ -2,6 +2,7 @@
 import React, { useRef } from 'react';
 import styles from './styles.module.css';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import LettersReveal from '../letters-reveal/LettersReveal';
 
 function Family() {
   const scrollRef = useRef(null);
@@ -21,12 +22,10 @@ function Family() {
         width: '60%',
         height: '100dvh',
         position: 'absolute',
-        left: '50%',
+        left: '48%',
         bottom: '-8rem'
       }}>
-          <h2 aria-hidden className={styles.a}><span className={styles.texture}>A</span></h2>
-          <h2 aria-hidden className={styles.n}><span className={styles.texture}>N</span></h2>
-          <h2 aria-hidden className={styles.j}><span className={styles.texture}>J</span></h2>
+        <LettersReveal progress={scrollYProgress}/>
       </div>
     </div>
 
