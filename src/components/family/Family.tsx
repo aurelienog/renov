@@ -22,7 +22,7 @@ function Family() {
         width: '60%',
         height: '100dvh',
         position: 'absolute',
-        left: '48%',
+        left: '50%',
         bottom: '-8rem'
       }}>
         <LettersReveal progress={scrollYProgress}/>

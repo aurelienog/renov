@@ -1,5 +1,5 @@
 .a {
-  padding: 0 0 1rem ;
+  padding: 0 1.5rem 1rem ;
 }
 
 .n {
@@ -7,7 +7,7 @@
 }
 
 .j {
-  padding: 1rem 11rem;
+  padding: 1rem 10rem;
 }
 
 :is(.a, .n, .j) {

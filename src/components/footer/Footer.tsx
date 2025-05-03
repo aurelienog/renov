@@ -24,9 +24,9 @@ function Footer(): JSX.Element {
       <article>
         <h2>Plan du site</h2>
         <ul>
-          <li>Accueil</li>
-          <li>Prestations</li>
-          <li>Realisations</li>
+          <li><Link href="/">Accueil</Link></li>
+          <li><Link href="/prestations">Prestations</Link></li>
+          <li><Link href="/realisations">Realisations</Link></li>
           <li><Link href="/about">Mon parcours</Link></li>
           <li><Link href="/confidentiality">Politique de confidentialité</Link></li>
           <li><Link href="/legal">Mentions légales</Link></li>
