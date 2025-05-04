@@ -1,34 +1,46 @@
-.a {
-  padding: 0 1.5rem 1rem ;
+.wrapper {
+  padding-top: 5rem;
+}
+
+.title {
+  max-width: 50rem;
+  font-size: 5rem;
+  padding-bottom: 5rem;
 }
 
 .n {
-  padding: 1rem 5rem;
+  padding-left: 4rem;
 }
 
 .j {
-  padding: 1rem 10rem;
+  padding-left: 9rem;
 }
+
 
 :is(.a, .n, .j) {
   position: relative;
-  font-size: 8rem;
+  font-size: 6rem;
   margin: 0;
+  padding-bottom: 2rem;
+  color: #000000bd;
 }
 
 /* hide ::after by default */
 .a::after, .n::after, .j::after {
   content: "";
-  font-size: 7rem;
+  top: 0.25em;
+  font-size: 4rem;
   opacity: 0;
   position: absolute;
   margin-top: 0.95rem;
   transform: translateX(-15%);
   transition: opacity 0.6s, transform 0.6s ease-in-out;
+  color: black;
 }
 
 /* create names */
 .a.active::after {
+  text-transform: none;
   content: "ntonio";
   opacity: 1;
   transform: translateX(0%);
@@ -41,6 +53,7 @@
 }
 
 .j.active::after {
+  text-transform: none;
   content: "ulien";
   opacity: 1;
   transform: translateX(0%);

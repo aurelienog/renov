@@ -56,7 +56,7 @@ function Header({ logo }: { logo: StaticImageData }): JSX.Element {
     >
 
       <Link href={"/"}> 
-        <Image src={logo} alt='logo ANJ - home' width={120} height={60} className={styles.test}/> 
+        <Image src={logo} alt='logo ANJ - home' width={120} height={60}/> 
       </Link>
       <NavigationBar/>
       <Button>Devis gratuit</Button>

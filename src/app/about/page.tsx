@@ -1,14 +1,13 @@
 import styles from "./page.module.css";
 import { JSX } from 'react';
-import HeaderServer from "@/components/header/HeaderServer";
 import Family from "@/components/family/Family";
+import teamImage from '../../../public/assets/images/family.jpg';
 
 export default function About(): JSX.Element {
   return (
-  <>
-    <HeaderServer />
-      <main className="base-layout">
-      <Family />
+
+    <main className="base-layout">
+      <Family image={teamImage}/>
         <section className={`${styles.section} full-width section`}> 
         <div className={styles.title}>
           <h1><span className={styles.texture}>La peinture de père en fils / Une histoire de famille</span></h1>
@@ -18,7 +17,6 @@ export default function About(): JSX.Element {
         <p className={styles.quote} >This is a super quote</p>
       </section>
   </main>
-  </>  
 
   );
 }

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { JSX, useState } from 'react';
 import styles from './styles.module.css';
 import { motion, MotionValue, useMotionValueEvent } from 'framer-motion';
 
@@ -9,12 +9,12 @@ const letters = [
 ];
 
 
-function LettersReveal({ progress }: {progress: MotionValue}) {
+function LettersReveal({ progress }: {progress: MotionValue}): JSX.Element {
   const [revealed, setRevealed] = useState(Array(letters.length).fill(false));
   const [active, setActive] = useState(false);
 
   useMotionValueEvent(progress, 'change', (value) => {
-    const trigger = value > 0.96;
+    const trigger = value > 0.70;
     setActive(trigger);
     if (!trigger) setRevealed(Array(letters.length).fill(false)); //porque esa linea?
   });
@@ -31,12 +31,17 @@ function LettersReveal({ progress }: {progress: MotionValue}) {
 
   return (
     <div className={styles.wrapper}> 
+      <motion.h1 className={styles.title}
+              initial={{ opacity: 0 }}
+              animate={active ? { opacity: 1 } : { opacity: 0}}
+              transition={{ duration: 0.6, ease: 'linear' }}
+      >La peinture <br></br> de père en fils . . .</motion.h1>
       { letters.map((letter, index:number) => (
         <motion.h2 
         key={index} 
         className={`${styles[letter.className]} ${styles[`delay${index}`]} ${active && revealed[index] ? styles.active : ''} `}
-        initial={{ opacity: 0, y: 30 }}
-        animate={active ? { opacity: 1, y: 0 } : { opacity: 0}}
+        initial={{ opacity: 0 }}
+        animate={active ? { opacity: 1 } : { opacity: 0}}
         transition={{ delay: index * 0.2, duration: 0.6, ease: 'linear' }}
           onAnimationComplete={() => markAsRevealed(index)}
           aria-hidden

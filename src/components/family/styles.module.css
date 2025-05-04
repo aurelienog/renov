@@ -1,13 +1,12 @@
-.section {
+.figure {
   position: sticky;
   top: 4rem;
   height: 100dvh;
-  background-image: url("/assets/images/family.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
   mask-image: url("/assets/images/anjmask.svg");
   mask-size: 100%;
   mask-repeat: no-repeat;
-  mask-position: top center;
+  mask-position: center;
 }

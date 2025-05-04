@@ -4,7 +4,7 @@ import logo from '../../../public/assets/images/ANJ-logo-full.webp';
 
 function HeaderServer() {
   return (
-    <Header logo={logo}/>
+      <Header logo={logo}/>
   )
 }
 
