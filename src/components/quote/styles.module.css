@@ -1,0 +1,38 @@
+
+/* styles for quote */
+.isolation {
+  position: relative;
+  isolation: isolate;
+  font-size: 2rem;
+  font-weight: var(--fw-semi-bold);
+  width: 38ch; 
+  margin: 4rem 15%;
+
+
+  & q::before {
+  content: '“';
+  font-family: serif;
+  font-weight: 900;
+  font-size: 15rem;
+  position: absolute;
+  color: var(--color-accent);
+  opacity: 0.6;
+  top: -8.75rem;
+  left: -20%;
+  z-index: -1;
+  }
+
+  & q::after {
+  content: '”';
+  font-family: serif;
+  font-weight: 900;
+  font-size: 15rem;
+  position: absolute;
+  color: var(--color-accent);
+  opacity: 0.6;
+  top: -3rem;
+  left: 50%;
+  z-index: -1;
+  }
+}
+

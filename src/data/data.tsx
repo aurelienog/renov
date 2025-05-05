@@ -295,7 +295,7 @@ export const lastProjects: StaticImageData[] = [indoor, transparentImage, wood, 
 
 export const workSteps: WorkStep[] = [{
   name: 'Prise de contact',
-  description: 'Vous nous contactez par téléphone ou via le formulaire en ligne pour nous parler de votre projet. Nous échangeons brièvement pour comprendre vos besoins.',
+  description: 'Vous me contactez par téléphone ou via le formulaire en ligne pour me parler de votre projet. Nous échangeons brièvement pour comprendre vos besoins.',
   icon : phone,
 
 }, {
@@ -312,15 +312,15 @@ export const workSteps: WorkStep[] = [{
   icon: calendar,
 }, {
   name: 'Réalisation des travaux',
-  description: 'Les travaux sont réalisés avec soin, dans le respect des délais et de votre intérieur. Nous protégeons vos meubles et la zone de chantier est nettoyée chaque jour.',
+  description: 'Les travaux sont réalisés avec soin, dans le respect des délais et de votre intérieur. Je protège vos meubles et la zone de chantier est nettoyée chaque jour.',
   icon : paintRoll,
 }, {
   name: 'Contrôle qualité & finitions',
-  description: 'Avant la remise, une vérification minutieuse est faite. Nous corrigeons les moindres détails si nécessaire pour un résultat impeccable.',
+  description: 'Avant la remise, une vérification minutieuse est faite. Je corrige les moindres détails si nécessaire pour un résultat impeccable.',
   icon : search,
 }, {
   name: 'Livraison du chantier & suivi',
-  description: 'Le chantier est livré propre et finalisé. Nous restons disponibles en cas de retouche ou de question après la prestation.',
+  description: 'Le chantier est livré propre et finalisé. Je reste disponible en cas de retouche ou de question après la prestation.',
   icon: donate
 }]
 

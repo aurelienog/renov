@@ -1,20 +1,26 @@
-import styles from "./page.module.css";
+import BenefitsSection from "@/sections-about/benefits-section/BenefitsSection";
+import ConflictSection from "@/sections-about/conflict-section/ConflictSection";
+import Landing from "@/sections-about/landing-section/Landing";
+import MissionSection from "@/sections-about/mission-section/MissionSection";
+import Story from "@/sections-about/story-section/StorySection";
+import styles from "./page.module.css"
+
 import { JSX } from 'react';
-import Family from "@/components/family/Family";
-import teamImage from '../../../public/assets/images/family.jpg';
+import Quote from "@/components/quote/Quote";
 
 export default function About(): JSX.Element {
   return (
 
-    <main className="base-layout">
-      <Family image={teamImage}/>
-        <section className={`${styles.section} full-width section`}> 
-        <div className={styles.title}>
-          <h1><span className={styles.texture}>La peinture de père en fils / Une histoire de famille</span></h1>
-        </div>   
-      </section>  
-      <section className={styles.isolation}>
-        <p className={styles.quote} >This is a super quote</p>
+    <main className={`base-layout ${styles.page}`}>
+      <Landing/>
+      <Story/>
+      <Quote/>
+      <ConflictSection/>
+      <MissionSection/>
+      <BenefitsSection/>
+      <section className="section">
+        <h2>ANJ Renov, c’est plus qu’un nom.</h2>
+        <p> C’est l’histoire d’un artisan qui a grandi avec ce métier, et qui continue à le faire vivre avec cœur.</p>
       </section>
   </main>
 

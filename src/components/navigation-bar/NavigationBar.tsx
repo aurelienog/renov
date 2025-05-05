@@ -13,7 +13,7 @@ function NavigationBar(): JSX.Element {
           <Link href={"/"}>Realisations</Link>
         </li>
         <li>
-          <Link href={"/about"}>Mon parcours</Link>
+          <Link href={"/about"}>À propos</Link>
         </li>
       </ul>
     </nav>

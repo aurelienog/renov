@@ -12,7 +12,7 @@ function Family({ image }: { image: StaticImageData}): JSX.Element {
       offset: ['start end', 'end end']
     })
 
-    const maskScale = useTransform(scrollYProgress, [0, 1], ['1%', '540%']);
+    const maskScale = useTransform(scrollYProgress, [0, 1], ['1%', '500%']);
 
     const opacityRaw = useTransform(scrollYProgress, [0.7, 0.72], [0, 1]);
     const opacity = useSpring(opacityRaw, { stiffness: 100, damping: 20 });
@@ -20,7 +20,7 @@ function Family({ image }: { image: StaticImageData}): JSX.Element {
   return (
     <section ref={scrollRef} className='full-width' style={{height: '600dvh', position: 'relative'}}>
       <motion.figure  className={` ${styles.figure}`} style={{ maskSize: maskScale }}>
-        <Image src={image} placeholder='blur' sizes='100dvw' quality={100} style={{ objectFit: 'cover',  width: '100%', height: '100dvh'  }} alt={`Portrait d'Antonio et Julien`}/>
+        <Image src={image} placeholder='blur' priority sizes='100dvw' quality={100} style={{ objectFit: 'cover',  width: '100%', height: '100dvh'  }} alt={`Portrait d'Antonio et Julien`}/>
       </motion.figure>
       <motion.div style={{
         fontSize: '7rem',

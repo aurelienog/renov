@@ -1,36 +1,11 @@
+.page {
 
-.section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-}
-
-/* styles for quote */
-.isolation {
-  position: relative;
-  isolation: isolate;
-}
-
-
-.quote::before {
-  content: '“';
-  font-family: serif;
-  font-weight: 900;
-  font-size: 15rem;
-  position: absolute;
-  color: #3c3c3c;
-  top: -10rem;
-  left: -2.5rem;
-  z-index: -1;
-}
-
-.quote::after {
-  content: '”';
-  font-family: serif;
-  font-weight: 900;
-  font-size: 15rem;
-  position: absolute;
-  color: #3c3c3c;
-  top: -5.25rem;
-  z-index: -1;
+  & h2 {
+    text-transform: none;
+  }
+  & p {
+    font-size: 1.5rem;
+    line-height: 1.7;
+    margin-top: 2rem;
+  }
 }

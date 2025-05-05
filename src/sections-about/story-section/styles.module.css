@@ -1,0 +1,10 @@
+.section {
+  display: grid;
+  grid-template-columns: 60% 40%;
+
+  & p:first-of-type{
+    font-size: 1.8rem;
+    font-weight: var(--fw-semi-bold);
+    line-height: 1.6;
+  }
+}

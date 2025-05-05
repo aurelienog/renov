@@ -35,7 +35,9 @@ function LettersReveal({ progress }: {progress: MotionValue}): JSX.Element {
               initial={{ opacity: 0 }}
               animate={active ? { opacity: 1 } : { opacity: 0}}
               transition={{ duration: 0.6, ease: 'linear' }}
-      >La peinture <br></br> de père en fils . . .</motion.h1>
+      >Une histoire de famille 
+      </motion.h1>
+      
       { letters.map((letter, index:number) => (
         <motion.h2 
         key={index} 
