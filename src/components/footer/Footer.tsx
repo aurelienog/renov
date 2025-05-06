@@ -27,7 +27,7 @@ function Footer(): JSX.Element {
           <li><Link href="/">Accueil</Link></li>
           <li><Link href="/prestations">Prestations</Link></li>
           <li><Link href="/realisations">Realisations</Link></li>
-          <li><Link href="/about">Mon parcours</Link></li>
+          <li><Link href="/about">À propos</Link></li>
           <li><Link href="/confidentiality">Politique de confidentialité</Link></li>
           <li><Link href="/legal">Mentions légales</Link></li>
           

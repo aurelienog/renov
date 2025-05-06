@@ -1,0 +1,6 @@
+.section {
+  margin-top: 14rem;
+  & :first-child {
+    place-self: center;
+  }
+} 

@@ -1,10 +1,17 @@
 .section {
+  --grid-min-col-size: 400px;
+  padding: 12rem 4rem 0;
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns:  repeat(auto-fit, minmax(min(var(--grid-min-col-size), 100%), 2fr));
+  gap: 6rem;
+
+
+  & figure {
+    position: relative;
+  }
 
   & p:first-of-type{
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: var(--fw-semi-bold);
-    line-height: 1.6;
   }
 }

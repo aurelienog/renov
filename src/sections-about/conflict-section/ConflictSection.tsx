@@ -1,11 +1,13 @@
 import React, { JSX } from 'react';
 import styles from './styles.module.css';
+import Image from 'next/image';
+import portrait from '../../../public/assets/images/portrait.webp'
 
 function ConflictSection():JSX.Element {
   return (
-    <section className={`${styles.section}`}>
+    <section className={`breakout section ${styles.section}`}>
       <figure>
-
+        <Image src={portrait} alt='Julien et Antonio' fill placeholder='blur' style={{ objectFit: 'cover'}}/>
       </figure>
       <div>
         <h2>Un passage de relais naturel</h2>
@@ -13,7 +15,6 @@ function ConflictSection():JSX.Element {
         <p>Il m’a encouragé à <span className='highlight'>créer ma propre structure</span>, pour continuer cette belle aventure artisanale, en conservant les mêmes valeurs de proximité, d’engagement et de qualité.</p>
         <p>C’est ainsi qu’est née <span className='highlight'>ANJ RENOV</span>, avec la volonté de prolonger une tradition familiale, tout en développant mon propre style et mes engagements.</p>  
       </div>
-      
     </section>
   )
 }

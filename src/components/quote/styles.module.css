@@ -5,8 +5,6 @@
   isolation: isolate;
   font-size: 2rem;
   font-weight: var(--fw-semi-bold);
-  width: 38ch; 
-  margin: 4rem 15%;
 
 
   & q::before {
@@ -17,8 +15,8 @@
   position: absolute;
   color: var(--color-accent);
   opacity: 0.6;
-  top: -8.75rem;
-  left: -20%;
+  top: -10rem;
+  left: -12%;
   z-index: -1;
   }
 
@@ -30,9 +28,10 @@
   position: absolute;
   color: var(--color-accent);
   opacity: 0.6;
-  top: -3rem;
-  left: 50%;
   z-index: -1;
+  top: 2rem;
   }
 }
+
+/* hacer reveal de la citation de gauche a droite */
 

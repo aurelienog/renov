@@ -42,6 +42,7 @@ function LettersReveal({ progress }: {progress: MotionValue}): JSX.Element {
         <motion.h2 
         key={index} 
         className={`${styles[letter.className]} ${styles[`delay${index}`]} ${active && revealed[index] ? styles.active : ''} `}
+        style={{marginBottom: '0'}}
         initial={{ opacity: 0 }}
         animate={active ? { opacity: 1 } : { opacity: 0}}
         transition={{ delay: index * 0.2, duration: 0.6, ease: 'linear' }}

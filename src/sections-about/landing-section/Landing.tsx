@@ -1,6 +1,6 @@
 import React, { JSX } from 'react';
 import Family from '@/components/family/Family';
-import teamImage from '../../../public/assets/images/family.webp';
+import teamImage from '../../../public/assets/images/portrait.webp';
 
 
 function Landing(): JSX.Element {
