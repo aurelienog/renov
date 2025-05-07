@@ -5,7 +5,6 @@ import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import NavigationBar from '../navigation-bar/NavigationBar';
 import styles from './styles.module.css';
-import Button from '../button/Button';
 import { motion, useMotionValueEvent, useScroll } from 'framer-motion';
 
 function Header({ logo }: { logo: StaticImageData }): JSX.Element {
@@ -59,7 +58,6 @@ function Header({ logo }: { logo: StaticImageData }): JSX.Element {
         <Image src={logo} alt='logo ANJ - home' width={120} height={60}/> 
       </Link>
       <NavigationBar/>
-      <Button>Devis gratuit</Button>
     </motion.header>
   )
 }

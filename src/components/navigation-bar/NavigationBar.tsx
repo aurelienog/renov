@@ -1,6 +1,7 @@
 import React, { JSX } from 'react';
 import styles from './styles.module.css';
 import Link from "next/link";
+import Button from '../button/Button';
 
 function NavigationBar(): JSX.Element {
   return (
@@ -14,6 +15,9 @@ function NavigationBar(): JSX.Element {
         </li>
         <li>
           <Link href={"/about"}>À propos</Link>
+        </li>
+        <li>
+          <Button>Devis gratuit</Button>
         </li>
       </ul>
     </nav>

@@ -41,6 +41,11 @@ h1 { font-size: 4.25rem;  text-transform: uppercase; }
 :is(h2, caption) { font-size: 3.5rem; margin-bottom: 10rem; text-transform: uppercase;}
 h3 { font-size: 1.625rem; }
 
+@media (max-width: 768px) {
+  h1 { font-size: 2.5rem; }
+:is(h2, caption) { font-size: 2rem; margin-bottom: 10rem; text-transform: uppercase;}
+}
+
 :is(h1, h2, h3, h4, caption, q) {
   font-family: var(--font-primary);
   font-weight: var(--fw-bold);
@@ -111,11 +116,23 @@ p {
 }
 
 *:focus {
-  outline: var(--focus-outline);
+  outline: var(--focus-outline) ;
   border-radius: var(--focus-radius);
+}
+
+summary:focus {
+  outline: none;
+  font-weight: var(--fw-bold);
+  color: var(--color-accent);
+}
+
+a:focus {
+  outline: none;
+  font-weight: var(--fw-bold);
 }
 
 .highlight {
   font-weight: var(--fw-bold);
   color: var(--color-accent);
 }
+
