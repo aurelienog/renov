@@ -1,9 +1,11 @@
 
 /* styles for quote */
 .isolation {
+  text-align: center;
+  max-width: 36ch;
   position: relative;
   isolation: isolate;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: var(--fw-semi-bold);
 
 
@@ -15,8 +17,8 @@
   position: absolute;
   color: var(--color-accent);
   opacity: 0.6;
-  top: -10rem;
-  left: -12%;
+  top: -100%;
+  left: -20%;
   z-index: -1;
   }
 
@@ -29,7 +31,7 @@
   color: var(--color-accent);
   opacity: 0.6;
   z-index: -1;
-  top: 2rem;
+  right: -20%;
   }
 }
 

@@ -228,7 +228,7 @@ export const faqEntries: FaqEntry[] = [{
   </>
 }, {
   question: "Faut-il quitter son logement pendant les travaux ?",
-  answer: <p>Ce n'est pas nécessaire pour une peinture intérieure classique ! Nous utilisons des peintures sans odeur et organisons le chantier pour minimiser les nuisances.</p>
+  answer: <p>Ce n&#39;est pas nécessaire pour une peinture intérieure classique ! Nous utilisons des peintures sans odeur et organisons le chantier pour minimiser les nuisances.</p>
 }, {
   question: "Travaillez-vous avec des peintures écologiques ?",
   answer: <p>Oui, nous proposons des peintures écologiques sans COV (composés organiques volatils) pour un intérieur plus sain.</p>

@@ -4,7 +4,7 @@ import styles from './styles.module.css';
 
 function QuoteSection() {
   return (
-    <section className={`${styles.section} breakout`}>
+    <section className={`${styles.section} section breakout`}>
       <Quote/>
     </section>
   )

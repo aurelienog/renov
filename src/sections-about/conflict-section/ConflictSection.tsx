@@ -1,13 +1,13 @@
 import React, { JSX } from 'react';
 import styles from './styles.module.css';
 import Image from 'next/image';
-import portrait from '../../../public/assets/images/portrait.webp'
+import portrait from '../../../public/assets/images/julien.webp';
 
 function ConflictSection():JSX.Element {
   return (
     <section className={`breakout section ${styles.section}`}>
       <figure>
-        <Image src={portrait} alt='Julien et Antonio' fill placeholder='blur' style={{ objectFit: 'cover'}}/>
+        <Image src={portrait} alt='Julien' fill placeholder='blur' style={{ objectFit: 'cover'}}/>
       </figure>
       <div>
         <h2>Un passage de relais naturel</h2>

@@ -5,7 +5,7 @@ import teamImage from '../../../public/assets/images/portrait.webp';
 
 function Landing(): JSX.Element {
   return (
-    <section className='full-width' style={{position: 'relative'}}>
+    <section className='full-width' style={{position: 'relative', paddingBottom: '4rem' }}>
       <Family image={teamImage}/>
     </section>
   )
