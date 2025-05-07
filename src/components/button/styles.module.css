@@ -14,3 +14,10 @@
 .button:hover {
   background-color: #d3b594; /* tono más fuerte del beige */
 }
+
+.button:focus,
+.button:active {
+  outline: none;
+  border-color: black;
+  color: black;
+}
