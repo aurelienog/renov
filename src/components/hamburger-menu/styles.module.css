@@ -9,7 +9,7 @@
 & :focus,
 & :active {
   outline: solid 2px var(--color-accent);
-  
+  color: black;
 }
 }
 

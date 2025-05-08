@@ -16,7 +16,6 @@ function NavigationBar({ containerRef }: { containerRef: React.RefObject<HTMLEle
         setOpen(false);
       }
     }, [containerRef]);
-    console.log(open);
   
     useEffect(() => {
       if (open) {
