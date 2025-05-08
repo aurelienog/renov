@@ -1,17 +1,15 @@
 .section {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
-  justify-content: center;
-  padding: 6rem 4rem;
+  padding: 8em 4rem 4em;
 
-  & h3 {
-    padding: 0.4em 0em;
-  }
 }
 
 .section h3 > span {
   color: var(--color-accent);
+  margin-top: 0.5em;
 }
 
 .stars {
@@ -22,6 +20,7 @@
 .section img {
   border-radius: 100px;
   padding: 6px;
+  margin-top: 2em;
 }
 
 .article {
@@ -33,10 +32,4 @@
   text-align: center;
   margin: 1em;
   max-width: 19rem;
-}
-
-@media (min-width: 85em) {
-  .section {
-    padding: 2rem 4rem;
-  }
 }

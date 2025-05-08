@@ -18,14 +18,14 @@ function Family({ image }: { image: StaticImageData}): JSX.Element {
     const opacity = useSpring(opacityRaw, { stiffness: 100, damping: 20 });
 
   return (
-    <section ref={scrollRef} className='full-width' style={{height: '600dvh', position: 'relative'}}>
+    <section ref={scrollRef} className='full-width' style={{height: '600vh', position: 'relative'}}>
       <motion.figure  className={` ${styles.figure}`} style={{ maskSize: maskScale }}>
         <Image src={image} placeholder='blur' priority sizes='100dvw' quality={100} style={{ objectFit: 'cover',  width: '100%', height: '100dvh'  }} alt={`Portrait d'Antonio et Julien`}/>
       </motion.figure>
       <motion.div style={{
         fontSize: '7rem',
         width: '50%',
-        height: '100dvh',
+        height: '100vh',
         top: '0',
         position: 'sticky',
         left: '50%',

@@ -12,7 +12,7 @@
 
 .hero {  
   position: relative;
-  height: 90dvh; 
+  height: vh; 
 
   & h2 {
     font-size: clamp(2.5rem, 6vw, 4rem);

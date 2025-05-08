@@ -18,16 +18,21 @@
   font-weight: var(--fw-semi-bold);
   letter-spacing: 0.02em;
   position: absolute;
-  top: 100%;
+  top: 0;
+  border-radius: var(--border-radius);
   left: 0;
   right: 0;
   display: none;
   padding: 1rem;
-  z-index: 1000;
+  z-index: -50;
   background-color: var(--background);
 
   & li {
     margin: 1.5em;
+  }
+
+  & li:first-of-type{
+    margin-top: 6em;
   }
 }
 
@@ -49,6 +54,10 @@
     & li {
       margin: 0;
     }
+
+      & li:first-of-type{
+    margin-top: 0;
+  }
   }
 
 
