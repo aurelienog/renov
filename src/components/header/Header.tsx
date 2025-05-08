@@ -31,7 +31,7 @@ function Header({ logo }: { logo: StaticImageData }): JSX.Element {
 
           //set a new state only if it's different from the current state
           if (nextHidden !== isHidden) {
-            setIsTouched(false); 
+            if (nextHidden) setIsTouched(false);
             setIsHidden(nextHidden);
           }
         }
@@ -46,9 +46,12 @@ function Header({ logo }: { logo: StaticImageData }): JSX.Element {
     <motion.header 
     className={`${styles.header} header`}
     role='banner'
-    animate= { isHidden && !isTouched ? "hidden" : "visible" }
+    animate= { isHidden  ? "hidden" : "visible" }
     whileHover="visible"
-    onClick={() => setIsTouched(true)} // open the header if touched on mobile
+    onClick={() => { // open the header if touched on mobile
+      setIsTouched(true); 
+      setIsHidden(false);
+    }} 
     onFocusCapture={() => setIsHidden(false)}
     variants={{
       hidden : {

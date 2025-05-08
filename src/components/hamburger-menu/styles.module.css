@@ -4,6 +4,13 @@
   border: none;
   cursor: pointer;
   z-index: 200;
+
+
+& :focus,
+& :active {
+  outline: solid 2px var(--color-accent);
+  
+}
 }
 
 @media (min-width: 85em) {

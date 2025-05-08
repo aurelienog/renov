@@ -51,6 +51,17 @@
   & a:hover {
     font-weight: var(--fw-bold);
   }
+
+  & address {
+    display: flex;
+    flex-direction: column;
+
+    & :nth-child(3),
+    & :last-child {
+      user-select: all;
+      text-decoration: none;
+    }
+  }
 }
 
 .footer::before {
