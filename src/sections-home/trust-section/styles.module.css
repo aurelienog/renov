@@ -3,10 +3,10 @@
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
-  padding: 6dvh 4rem;
+  padding: 6rem 4rem;
 
   & h3 {
-    padding: 0.4em 0.4em;
+    padding: 0.4em 0em;
   }
 }
 
@@ -32,5 +32,11 @@
   align-items: center;
   text-align: center;
   margin: 1em;
-  max-width: 20rem;
+  max-width: 19rem;
+}
+
+@media (min-width: 85em) {
+  .section {
+    padding: 2rem 4rem;
+  }
 }
