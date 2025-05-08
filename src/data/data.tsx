@@ -74,7 +74,7 @@ export const statistics : TrustStatistic[] = [{
   stat: 100,
   information: " des chantiers livrés à temps",
   suffix: "%",
-  characters: 3
+  characters: 4
 }, ]
 
 export const columns: Column[] = [{
