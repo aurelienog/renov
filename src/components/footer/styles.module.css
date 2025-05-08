@@ -55,7 +55,6 @@
   & address {
     display: flex;
     flex-direction: column;
-    text-decoration: none;
     & :nth-child(3),
     & :last-child {
       user-select: all;

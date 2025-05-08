@@ -63,7 +63,7 @@ function Header({ logo }: { logo: StaticImageData }): JSX.Element {
     >
 
       <Link href={"/"}> 
-        <Image src={logo} alt='logo ANJ - home' width={120} height={60}/> 
+        <Image src={logo} alt='logo ANJ - home' width={120} height={60} style={{ position: 'relative', zIndex: '100'}}/> 
       </Link>
       <NavigationBar containerRef={headerRef}/>
     </motion.header>

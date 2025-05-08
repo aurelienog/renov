@@ -1,13 +1,14 @@
 .navbar {
   text-align: center;
 
-  & a {
-  &:hover,
-  &:focus-visible {
+  & a {    
+    text-decoration: none;
+
+    &:hover,
+    &:focus-visible {
     color: var(--color-accent);
     font-weight: var(--fw-bold);
-  }
-    text-decoration: none;
+    }
   }
 }
 
@@ -24,7 +25,6 @@
   right: 0;
   display: none;
   padding: 1rem;
-  z-index: -50;
   background-color: var(--background);
 
   & li {
@@ -34,6 +34,7 @@
   & li:first-of-type{
     margin-top: 6em;
   }
+
 }
 
 .links.open {
