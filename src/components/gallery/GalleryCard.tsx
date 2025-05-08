@@ -9,7 +9,7 @@ function GalleryCard({ image, name }: { image:StaticImageData, name: string }): 
   return (
     <article className={styles.card}>
       <Link href="/">
-        <Image src={image} alt={name} loading='lazy'  sizes="(max-width: 768px) 55vw, (max-width: 1200px) 33vw, 20vw" quality={50} placeholder="blur"/>
+        <Image src={image} alt="" loading='lazy'  sizes="(max-width: 768px) 55vw, (max-width: 1200px) 33vw, 20vw" quality={50} placeholder="blur"/>
         <div className={styles.overlay}>
       <h3>{name}</h3>
       </div>   

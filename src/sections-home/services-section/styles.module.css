@@ -1,6 +1,6 @@
 .section {
   position: relative;
-  background-image: url('/assets/images/wall.jpg');
+  background-image: url('/assets/images/wall-texture.webp');
 
   z-index: 1;
   display: flex;
