@@ -42,8 +42,8 @@ h1 { font-size: 4.25rem;  text-transform: uppercase; }
 h3 { font-size: 1.625rem; }
 
 @media (max-width: 768px) {
-  h1 { font-size: 2.5rem; }
-:is(h2, caption) { font-size: 2rem; margin-bottom: 10rem; text-transform: uppercase;}
+  h1 { font-size: 3rem; }
+:is(h2, caption) { font-size: 2.5rem; margin-bottom: 10rem; text-transform: uppercase;}
 }
 
 :is(h1, h2, h3, h4, caption, q) {
@@ -135,4 +135,3 @@ a:focus {
   font-weight: var(--fw-bold);
   color: var(--color-accent);
 }
-

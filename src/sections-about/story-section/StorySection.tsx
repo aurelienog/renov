@@ -9,9 +9,9 @@ function StorySection(): JSX.Element {
       <article>
         <h2>Une passion transmise de père en fils</h2>
         <p>Depuis tout jeune, j’ai grandi dans l’univers des pinceaux, des enduits et des finitions parfaites.</p>  
-        <p>Mon père, peintre depuis plusieurs décennies, m’a transmis plus qu’un savoir-faire : <span className='highlight'>une véritable exigence du travail bien fait</span>.
+        <p>Mon père, chef d&#39;entreprise dans le batiment, m’a transmis plus qu’un savoir-faire : <span className='highlight'>une véritable exigence du travail bien fait</span>.
         </p>  
-        <p>Pendant plusieurs années, j’ai travaillé à ses côtés, au sein de son entreprise, au contact direct des clients, des matières et des détails qui font la différence.
+        <p>Pendant plus de 10 ans, j’ai travaillé à ses côtés, au contact direct des clients, des matières et des détails qui font la différence.
         </p>         
       </article>
       <figure>

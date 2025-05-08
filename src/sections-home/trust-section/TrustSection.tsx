@@ -20,7 +20,7 @@ function TrustSection(): JSX.Element {
           ) : (
             <Image src={stat.icon} width={48} height={48} alt='' loading='lazy' className='glassmorphism'/>
           )}
-          <h3><AnimatedCounter prefix={stat.prefix} suffix={stat.suffix} target={stat.stat} duration={1.5 + index * 1.5} characters={stat.characters}/>{stat.information}</h3>
+          <h3><AnimatedCounter prefix={stat.prefix} suffix={stat.suffix} target={stat.stat} duration={2 + index * 0.5} characters={stat.characters}/>{stat.information}</h3>
         </article>
       ))
       }

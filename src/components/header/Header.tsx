@@ -8,6 +8,10 @@ import styles from './styles.module.css';
 import { motion, useMotionValueEvent, useScroll } from 'framer-motion';
 
 function Header({ logo }: { logo: StaticImageData }): JSX.Element {
+  // ref to detect click outside the header and close the menu if open
+  const headerRef = useRef<HTMLElement>(null);
+
+  //hide header on scroll down
   const [ isHidden, setIsHidden ] = useState(false);
   const { scrollY }  = useScroll();
   const lastYRef = useRef(0);
@@ -38,7 +42,7 @@ function Header({ logo }: { logo: StaticImageData }): JSX.Element {
 
   return (
     <motion.header 
-    className={`${styles.header}`}
+    className={`${styles.header} header`}
     role='banner'
     animate= { isHidden ? "hidden" : "visible" }
     whileHover="visible"
@@ -52,12 +56,13 @@ function Header({ logo }: { logo: StaticImageData }): JSX.Element {
       }
     }}
     transition={{ duration: 0.2}}
+    ref={headerRef}
     >
 
       <Link href={"/"}> 
         <Image src={logo} alt='logo ANJ - home' width={120} height={60}/> 
       </Link>
-      <NavigationBar/>
+      <NavigationBar containerRef={headerRef}/>
     </motion.header>
   )
 }

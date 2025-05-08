@@ -3,12 +3,12 @@
   top: 0.75rem;
   z-index: 100;
   display: grid;
-  grid-template-columns: 1fr 6fr ;
-  justify-content: center;
+  grid-template-columns: 1fr 1fr ;
+  justify-content: space-between;
   align-items: center;
   gap: 2rem;
   padding: 0 2rem;
-  width: 64%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
   border-radius: var(--border-radius);
@@ -17,8 +17,22 @@
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
   border: 1px solid rgba(255,255,255,0.2);
   will-change: transform;
+
+  & a {
+    margin: auto;
+  }
+
+  & > a:focus {
+    border: solid 1px black;
+    offset: -10px;
+  }
+
 }
 
-@media (min-width: 768px) {
-
+@media (min-width: 85em) {
+  .header {
+    width: 64%;
+    grid-template-columns: 1fr 6fr ;
+    justify-content: center;
+  }
 }

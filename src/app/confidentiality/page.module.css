@@ -1,6 +1,7 @@
 /* also styling legal page */
 
 .page {
+  position: relative;
 
   & h1 {
   padding: 10rem 1rem;
@@ -31,9 +32,11 @@
   & ul li {
   margin-left: 4rem;
   list-style-type: square;
+  position: relative;
   }
 
-  & ul li::marker{
+
+  & ol >  li::marker{
   font-weight: 700;
   font-size: large;
   }
