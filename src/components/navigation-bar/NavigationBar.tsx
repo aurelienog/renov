@@ -1,4 +1,4 @@
-import React, { JSX, useEffect, useRef, useState } from 'react';
+import React, { JSX, useCallback, useEffect, useRef, useState } from 'react';
 import styles from './styles.module.css';
 import Link from "next/link";
 import Button from '../button/Button';
@@ -11,11 +11,11 @@ function NavigationBar({ containerRef }: { containerRef: React.RefObject<HTMLEle
     const handleClick = () => {
       setOpen(prev => !prev);
     }
-    const handleClickOutside = (e: PointerEvent) => {
+    const handleClickOutside = useCallback((e: PointerEvent) => {
       if (containerRef?.current && !containerRef.current.contains(e.target as Node)) {
         setOpen(false);
       }
-    };
+    }, [containerRef]);
     console.log(open);
   
     useEffect(() => {
@@ -28,22 +28,22 @@ function NavigationBar({ containerRef }: { containerRef: React.RefObject<HTMLEle
       return () => {
         document.removeEventListener('pointerdown', handleClickOutside);
       };
-    }, [open]);
+    }, [open, handleClickOutside]);
   
   
 
   return (
-    <nav className={`${styles.navbar} `}>
+    <nav className={`${styles.navbar}`}>
       <HamburgerMenu handleClick = { handleClick }/>
-      <ul ref={menuRef} className={`${styles.links} ${open ? styles.open : ''} header`}>
+      <ul ref={menuRef} role="menu" id="main-navigation" className={`${styles.links} ${open ? styles.open : ''} header`}>
         <li>
-          <Link href={"/"}>Prestations</Link>
+          <Link href={"/"} role="menuitem">Prestations</Link>
         </li>
         <li>
-          <Link href={"/"}>Realisations</Link>
+          <Link href={"/"} role="menuitem">Realisations</Link>
         </li>
         <li>
-          <Link href={"/about"}>À propos</Link>
+          <Link href={"/about"} role="menuitem">À propos</Link>
         </li>
         <li>
           <Button>Devis gratuit</Button>

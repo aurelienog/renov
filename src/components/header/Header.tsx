@@ -13,7 +13,6 @@ function Header({ logo }: { logo: StaticImageData }): JSX.Element {
 
   //hide header on scroll down
   const [ isHidden, setIsHidden ] = useState(false);
-  const [isTouched, setIsTouched] = useState(false);
   const { scrollY }  = useScroll();
   const lastYRef = useRef(0);
   const ticking = useRef(false);
@@ -31,7 +30,6 @@ function Header({ logo }: { logo: StaticImageData }): JSX.Element {
 
           //set a new state only if it's different from the current state
           if (nextHidden !== isHidden) {
-            if (nextHidden) setIsTouched(false);
             setIsHidden(nextHidden);
           }
         }
@@ -48,8 +46,7 @@ function Header({ logo }: { logo: StaticImageData }): JSX.Element {
     role='banner'
     animate= { isHidden  ? "hidden" : "visible" }
     whileHover="visible"
-    onClick={() => { // open the header if touched on mobile
-      setIsTouched(true); 
+    onClick={() => {// open the header if touched on mobile
       setIsHidden(false);
     }} 
     onFocusCapture={() => setIsHidden(false)}

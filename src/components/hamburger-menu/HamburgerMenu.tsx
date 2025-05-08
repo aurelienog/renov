@@ -8,7 +8,7 @@ function HamburgerMenu({handleClick}: { handleClick: () => void }) {
     <>
       <button
         className={`${styles.hamburger}`}
-        aria-label="Toggle menu"
+        aria-controls="main-navigation"
         onClick={handleClick}
       >
         ☰
