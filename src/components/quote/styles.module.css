@@ -8,30 +8,90 @@
   font-size: 2.5rem;
   font-weight: var(--fw-semi-bold);
 
+  & q::before {
+    content: '“';
+    font-family: serif;
+    font-weight: 900;
+    font-size: 6lh;
+    position: absolute;
+    color: var(--color-accent);
+    opacity: 0.6;
+    top: -50%;
+    left: -5%;
+    z-index: -1;
+    }
+  
+    & q::after {
+    content: '”';
+    font-family: serif;
+    font-weight: 900;
+    font-size: 6lh;
+    position: absolute;
+    color: var(--color-accent);
+    opacity: 0.6;
+    z-index: -1;
+    bottom: -80%;
+    }
+}
+
+@media(min-width: 30em) {
+  .isolation {
 
   & q::before {
-  content: '“';
-  font-family: serif;
-  font-weight: 900;
-  font-size: 15rem;
-  position: absolute;
-  color: var(--color-accent);
-  opacity: 0.6;
-  top: -100%;
-  left: -20%;
-  z-index: -1;
+    top: -65%;
+    left: -0%;
+    }
+  
+    & q::after {
+    right: -0%;
+    top: 90%;
+    }
   }
+}
 
-  & q::after {
-  content: '”';
-  font-family: serif;
-  font-weight: 900;
-  font-size: 15rem;
-  position: absolute;
-  color: var(--color-accent);
-  opacity: 0.6;
-  z-index: -1;
-  right: -20%;
+@media(min-width: 35em) {
+  .isolation {
+
+  & q::before {
+    top: -85%;
+    left: -0%;
+    }
+  
+    & q::after {
+    right: -0%;
+    top: 90%;
+    }
+  }
+}
+
+@media(min-width: 45em) {
+  .isolation {
+
+  & q::before {
+    top: -120%;
+    left: -0%;
+    }
+  
+    & q::after {
+    right: -0%;
+    top: 90%;
+    }
+  }
+}
+
+
+@media(min-width: 80em) {
+  .isolation {
+
+  & q::before {
+    top: -95%;
+    left: -20%;
+    }
+  
+    & q::after {
+    right: -20%;
+    top: 50%;
+    }
   }
 }
 

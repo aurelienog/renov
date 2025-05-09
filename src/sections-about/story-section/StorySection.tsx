@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 function StorySection(): JSX.Element {
   return (
-    <section className={`section breakout ${styles.section}`}>
+    <section className={`section ${styles.section}`}>
       <article>
         <h2>Une passion transmise de père en fils</h2>
         <p>Depuis tout jeune, j’ai grandi dans l’univers des pinceaux, des enduits et des finitions parfaites.</p>  

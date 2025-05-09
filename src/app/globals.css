@@ -60,7 +60,8 @@ h3 { font-size: 1.625rem; }
 }
 
 p {
-  margin: 0;
+  margin: 1em 0;
+  margin: 1lh 0;
 }
 
 .base-layout {
@@ -135,3 +136,4 @@ a:focus {
   font-weight: var(--fw-bold);
   color: var(--color-accent);
 }
+

@@ -20,9 +20,9 @@ function Family({ image }: { image: StaticImageData}): JSX.Element {
   return (
     <section ref={scrollRef} className='full-width' style={{height: '600vh', position: 'relative'}}>
       <motion.figure  className={` ${styles.figure}`} style={{ maskSize: maskScale }}>
-        <Image src={image} placeholder='blur' priority sizes='100dvw' quality={100} style={{ objectFit: 'cover',  width: '100%', height: '100dvh'  }} alt={`Portrait d'Antonio et Julien`}/>
+        <Image src={image} placeholder='blur' priority sizes='100vw' quality={75} style={{ objectFit: 'cover',  width: '100%', height: '100vh'  }} alt={`Portrait d'Antonio et Julien`}/>
       </motion.figure>
-      <motion.div style={{
+      <motion.div className={styles.wrapper} style={{
         fontSize: '7rem',
         width: '50%',
         height: '100vh',
