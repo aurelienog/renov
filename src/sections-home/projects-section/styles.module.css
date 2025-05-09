@@ -1,12 +1,13 @@
-.cardContainer {
-  height: 600vh;
-  position: relative;
-}
 .section {
   position: relative;
   & h2 {
     text-align: center;
     margin: 0;
     padding: 0 3rem;
+  }
+
+  &:nth-child(2) {
+    height: 600vh;
+    position: relative;
   }
 }
