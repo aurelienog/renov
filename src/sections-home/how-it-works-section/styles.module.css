@@ -10,34 +10,6 @@
 
 }
 
-.timeline {
-  position: relative;
-  padding: 4rem;
-  display: grid;
-  align-items: end;
-  grid-template-columns: 2fr 1fr 2fr 1fr 2fr 1fr 2fr;
-  grid-template-areas: 
-
-  "contact  . visite . devis . ."
-  "contact  . visite . devis . ."
-  " . . visite . devis . validation"
-  " . . controle . travaux . validation"
-  " . . controle . travaux . validation"
-  " suivi . controle . travaux . ."
-  " suivi . . . travaux . . "
-;
-
-}
-
-
-.path {
-  position: absolute;
-  top: 320px;
-  height: auto;
-  display: block;
-}
-
-
 @media (min-width: 85em) {
   .section {
     display: block;
