@@ -3,6 +3,7 @@
 import Image, { StaticImageData } from 'next/image';
 import React, { useState, useRef, JSX } from 'react';
 import styles from './styles.module.css';
+import SliderLine from './SliderLine';
 
 function ComparisonSlider({ before, after, name} : { before: StaticImageData, after:StaticImageData, name: string }): JSX.Element {
   const [sliderPosition, setSliderPosition] = useState(50);
@@ -53,21 +54,9 @@ function ComparisonSlider({ before, after, name} : { before: StaticImageData, af
           <Image src={before} alt="salle de bain avant la rénovation"   placeholder="blur" fill sizes="(max-width: 768px) 100vw, 60vw" quality={50} style={{ objectFit: 'cover', borderRadius: 'var(--border-radius)'}}/>
         </span>
 
-        {/* Slider visual */}
-        <div
-          className={styles.sliderLine}
-          style={{ left: `calc(${sliderPosition}% - 2px)` }}
-          role="presentation"
-          aria-hidden="true"
-        ></div>
-
-        <div
-          className={styles.sliderBtn}
-          style={{ left: `calc(${sliderPosition}% - 1em)` }}
-          role="presentation"
-          aria-hidden="true"
-        > 
-        </div>
+        
+        {/* visual separator*/}
+        <SliderLine sliderPosition={sliderPosition}/>
 
         {/* Slider accesible */}
         <input
