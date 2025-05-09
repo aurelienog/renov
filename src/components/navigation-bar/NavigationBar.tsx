@@ -33,16 +33,16 @@ function NavigationBar({ containerRef }: { containerRef: React.RefObject<HTMLEle
 
   return (
     <nav className={`${styles.navbar}`}>
-      <HamburgerMenu handleClick = { handleClick }/>
-      <ul ref={menuRef} role="menu" id="main-navigation" className={`${styles.links} ${open ? styles.open : ''} header`}>
+      <HamburgerMenu handleClick = { handleClick } open={open}/>
+      <ul ref={menuRef} id="main-navigation" className={`${styles.links} ${open ? styles.open : ''} header`}>
         <li >
-          <Link href={"/"} role="menuitem">Prestations</Link>
+          <Link href={"/"}>Prestations</Link>
         </li>
         <li>
-          <Link href={"/"} role="menuitem">Realisations</Link>
+          <Link href={"/"}>Realisations</Link>
         </li>
         <li>
-          <Link href={"/about"} role="menuitem">À propos</Link>
+          <Link href={"/about"}>À propos</Link>
         </li>
         <li>
           <Button>Devis gratuit</Button>
