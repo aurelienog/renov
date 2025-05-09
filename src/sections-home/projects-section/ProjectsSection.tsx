@@ -1,7 +1,6 @@
 import React, { JSX } from 'react';
 import styles from './styles.module.css'
 import { lastProjects } from '@/data/data';
-
 import SliderWrapper from '@/components/slider/SliderWrapper';
 
 function ProjectsSection(): JSX.Element {
