@@ -3,7 +3,7 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 2em;
-  padding: 14em 4em 4em;
+  padding: 10em 4em 4em;
 
 }
 
@@ -36,10 +36,15 @@
     margin-top: 1.46lh;
   }
 }
-
-@media (min-width: 100em) {
+@media (min-width: 105em) {
   .section {
     padding: 12em 4em 4em;
+  }
+}
+
+@media (min-width: 80em) {
+  .section {
+    padding: 8em 4em 4em;
   }
 }
 
