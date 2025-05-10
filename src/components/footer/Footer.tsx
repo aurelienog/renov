@@ -10,16 +10,21 @@ function Footer(): JSX.Element {
       <article>
         <Image src={logo} alt='logo' quality={100} loading='lazy' width={300} height={150}/> 
       </article>
-      <article>
+
+      <article itemScope itemType="http://schema.org/Organization">
         <h2>Siège social:</h2>
-        <address>
-          Renov 
-          <span>6 rue Exemple</span>
-          <span>75000 Paris</span>
-          <span>contact@renov.fr</span>
-          <span>+33 01 00 00 00 00</span>          
+        <p><span itemProp="name">Renov</span></p> 
+        <p itemProp="address" itemScope itemType="http://schema.org/PostalAddress">
+          <span itemProp='streetAddress'>6 rue Exemple</span><br></br>
+          <span itemProp="postalCode">75000</span>
+          <span itemProp="addressLocality"> Paris</span> 
+        </p>
+        <address itemProp="contactPoint" itemScope itemType="http://schema.org/ContactPoint">
+          <span itemProp="email">contact@renov.fr</span>
+          <span itemProp="telephone">+33 1 00 00 00 00</span>  
         </address>
       </article>
+
       <article>
         <h2>Plan du site</h2>
         <ul>
@@ -28,8 +33,7 @@ function Footer(): JSX.Element {
           <li><Link href="/realisations">Realisations</Link></li>
           <li><Link href="/about">À propos</Link></li>
           <li><Link href="/confidentiality">Politique de confidentialité</Link></li>
-          <li><Link href="/legal">Mentions légales</Link></li>
-          
+          <li><Link href="/legal">Mentions légales</Link></li>   
         </ul>
       </article>
       <article>

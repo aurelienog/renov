@@ -55,10 +55,14 @@
   & address {
     display: flex;
     flex-direction: column;
-    & :nth-child(3),
+    & :first-child,
     & :last-child {
       user-select: all;
     }
+  }
+
+  & p {
+    margin: 0;
   }
 }
 

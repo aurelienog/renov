@@ -2,8 +2,8 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 2rem;
-  padding: 10em 4rem 4em;
+  gap: 2em;
+  padding: 14em 4em 4em;
 
 }
 
@@ -20,7 +20,6 @@
 .section img {
   border-radius: 100px;
   padding: 6px;
-  margin-top: 2em;
 }
 
 .article {
@@ -30,6 +29,22 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 1em;
+  margin: 2em;
   max-width: 19rem;
+
+  &:last-of-type {
+    margin-top: 1.46lh;
+  }
+}
+
+@media (min-width: 100em) {
+  .section {
+    padding: 12em 4em 4em;
+  }
+}
+
+@media (min-width: 54em) {
+  .article {
+    margin: 1em;
+  }
 }
