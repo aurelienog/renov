@@ -36,9 +36,10 @@
     margin-top: 1.46lh;
   }
 }
-@media (min-width: 105em) {
-  .section {
-    padding: 12em 4em 4em;
+
+@media (min-width: 54em) {
+  .article {
+    margin: 1em;
   }
 }
 
@@ -48,8 +49,8 @@
   }
 }
 
-@media (min-width: 54em) {
-  .article {
-    margin: 1em;
+@media (min-width: 105em) {
+  .section {
+    padding: 12em 4em 4em;
   }
 }
