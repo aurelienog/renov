@@ -41,7 +41,7 @@ function Header({ logo }: { logo: StaticImageData }): JSX.Element {
   })
 
   return (
-    <motion.header 
+    <motion.header
     className={`${styles.header} header`}
     role='banner'
     animate= { isHidden  ? "hidden" : "visible" }

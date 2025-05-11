@@ -5,7 +5,7 @@ import HeaderServer from '@/components/header/HeaderServer';
 function confidentialityPage(): JSX.Element {
   return (
     <>
-    <HeaderServer />
+    <HeaderServer/>
     <main className={`base-layout ${styles.page}`}>
       <section className='full-width'>
         <div className={styles.wrapper}>
