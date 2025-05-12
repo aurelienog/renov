@@ -7,7 +7,7 @@ function legal(): JSX.Element {
     <>
       <HeaderServer/>
       <main className={`base-layout ${styles.page}`}>
-        <section className='full-width'>
+        <section className={`full-width ${styles.section}`}>
           <div className={styles.wrapper}>
             <h1><span className={styles.texture}>Mentions légales</span></h1>
           </div>

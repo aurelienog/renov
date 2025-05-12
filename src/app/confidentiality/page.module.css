@@ -5,11 +5,11 @@
 
 
   & h1 {
-  padding: 10rem 1rem;
   text-align: center;
   margin-bottom: 4rem;
   font-size: clamp(2rem, 6vw, 6rem);
-  border: solid 1px black;
+  max-width: 20ch;
+  margin: auto;
   }
 
   & h2 {
@@ -25,6 +25,12 @@
     place-self: center;
   }
 
+  & ol > li {
+    margin: 6em 2em;
+    list-style-type: none;
+    max-width: 50rem;
+  }
+  
   & ol li::marker{
     font-weight: 700;
     font-size: large;
@@ -37,16 +43,12 @@
   }
 
 
-  & ol >  li::marker{
-  font-weight: 700;
-  font-size: large;
-  }
 
-  & ol > li {
-    margin: 6em 2em;
-    list-style-type: none;
-    max-width: 50rem;
-  }
+}
+
+.section {
+  position: relative;
+  top: -6rem;
 }
 
 /* background texture for h1 */
@@ -56,7 +58,8 @@
   background-size: cover;
   border-image: linear-gradient(rgba(0, 0, 0, 0.600), rgba(0, 0, 0, 0.600)) fill 1;
   width: 100%;
-
+  padding: 14rem 1rem 10rem;
+  outline: black 2px solid;
 }
 
 .texture {
