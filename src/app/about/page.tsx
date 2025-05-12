@@ -19,7 +19,7 @@ export default function About(): JSX.Element {
       <BenefitsSection/>
       <section className="section">
         <h2>ANJ RENOV, c’est plus qu’un nom.</h2>
-        <p> C’est l’histoire d’un artisan qui a grandi avec ce métier, et qui continue à le faire vivre avec cœur.</p>
+        <p> C’est l’histoire d’un passionné qui a grandi avec ce métier, et qui continue à le faire vivre avec cœur.</p>
       </section>
   </main>
 

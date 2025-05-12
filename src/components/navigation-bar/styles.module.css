@@ -26,6 +26,7 @@
   display: none;
   padding: 1rem;
   background-color: var(--background);
+  border: solid 1px black;
 
   & li {
     margin: 1.5em;
@@ -50,6 +51,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     place-items: center;
+    border: none;
 
 
     & li {

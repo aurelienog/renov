@@ -5,7 +5,7 @@
   grid-template-columns:  repeat(auto-fit, minmax(min(var(--grid-min-col-size), 100%), 1fr));
 
   & > :first-child {
-    padding: 0 2rem 2rem 2rem;
+    padding: 0 2rem 0 2rem;
   }
 
   & > :nth-child(2) {

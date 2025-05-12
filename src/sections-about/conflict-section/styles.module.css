@@ -6,8 +6,8 @@
   padding: 12rem 0;
 
 
-  & >:nth-child(2) {
-    padding: 2rem 0rem;
+  & article {
+    position: relative;
   }
 
   & figure {
@@ -25,4 +25,69 @@
   /* & img {
     object-position:  54%;
   } */
+}
+
+/* top corner */
+.section > article::before {
+  content: '';
+  position: absolute;
+  content: "";
+  top: -5%;
+  left: -10%;
+  width: 100px;
+  height: 10px;
+  z-index: 2;
+  background-color: var(--color-accent);
+}
+
+.section > article::after {
+  content: '';
+  position: absolute;
+  content: "";
+  top: -5%;
+  left: -10%;
+  width: 10px;
+  height: 100px;
+  z-index: 2;
+  background-color: var(--color-accent);
+}
+
+/* bottom corner */
+
+.section p {
+  position: relative;
+}
+
+.section > article  p:last-of-type::before {
+  content: '';
+  position: absolute;
+  content: "";
+  bottom: -30%;
+  right: -10%;
+  width: 100px;
+  height: 10px;
+  z-index: 2;
+  background-color: var(--color-accent);
+}
+
+.section > article  p:last-of-type::after {
+  content: '';
+  position: absolute;
+  content: "";
+  bottom: -30%;
+  right: -10%;
+  width: 10px;
+  height: 100px;
+  z-index: 2;
+  background-color: var(--color-accent);
+}
+
+/* figure higher than article */
+@media (min-width: 60em) {
+
+  .section {
+    & >:nth-child(2) {
+    margin: 12rem 0 0 0;
+    }
+  }
 }
