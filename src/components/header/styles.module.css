@@ -31,7 +31,6 @@
 
 @media (min-width: 85em) {
   .header {
-    width: 64%;
     grid-template-columns: 1fr 6fr ;
     justify-content: center;
   }

@@ -1,15 +1,21 @@
 .section {
   --grid-min-col-size: 400px;
-  padding: 12rem 0 4rem 0;
+  margin: auto;
   display: grid;
   grid-template-columns:  repeat(auto-fit, minmax(min(var(--grid-min-col-size), 100%), 1fr));
-  gap: 6rem;
+
+  & > :first-child {
+    padding: 0 2rem 2rem 2rem;
+  }
+
+  & > :nth-child(2) {
+    width: 80%;
+    margin: auto;
+  }
 
 
-  & figure {
-    position: relative;
-    aspect-ratio: 3 / 4;
-    width: 100%;
+  & h2 {
+    text-wrap: balance;
   }
 
   & p:first-of-type{
@@ -17,3 +23,82 @@
     font-weight: var(--fw-semi-bold);
   } 
 }
+
+.wrapper {
+  position: relative;
+  margin-top: 4rem;
+  
+      & figure {
+      aspect-ratio: 3/4;
+
+      width: 100%;
+    }
+  
+  
+    & figure:nth-child(2) {
+      display: none;
+    }
+  
+    & figure:nth-child(3) {
+      display: none;
+    }
+}
+
+
+
+@media (min-width: 89em) {
+  .section {
+
+    & > :first-child {
+      padding: 0 2rem 8rem 2rem;
+    }
+
+    & > :nth-child(2) {
+      width: 100%;
+      margin: 4rem 0 0 0;
+    }
+  
+
+    & p {
+      padding-right: 8rem;
+    }
+
+    & p:first-of-type{
+      font-size: 1.6rem;
+      font-weight: var(--fw-semi-bold);
+    } 
+  }
+
+  .wrapper {
+    max-width: 40rem;
+    position: relative;
+  
+      & figure {
+      position: absolute;
+      aspect-ratio: 5/4;
+      top: 10%;
+      left: -14%;
+      width: 55%;
+    }
+  
+  
+    & figure:nth-child(2) {
+      display: block;
+      position: absolute;
+      top: -4%;
+      left: 43%;
+      aspect-ratio: 4 / 5;
+      width: 50%;
+    }
+  
+    & figure:nth-child(3) {
+      display: block;
+      position: absolute;
+      top: 40%;
+      left: 11%;
+      aspect-ratio: 4 / 5;
+      width: 50%;
+      border: solid 0.8em var(--background);
+    }
+  }
+  }

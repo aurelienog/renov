@@ -14,7 +14,7 @@
 
   & h2 {
     margin-bottom: 2rem;
-    font-size: clamp(1.5rem, 6vw, 2rem);
+    font-size: clamp(1.125rem, 6vw, 2rem);
   }
 
   & :is(p, address) {

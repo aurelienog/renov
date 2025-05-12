@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 function StorySection(): JSX.Element {
   return (
-    <section className={`section ${styles.section}`}>
+    <section className={`section full-width ${styles.section}`}>
       <article>
         <h2>Une passion transmise de père en fils</h2>
         <p>Depuis tout jeune, j’ai grandi dans l’univers des pinceaux, des enduits et des finitions parfaites.</p>  
@@ -14,11 +14,18 @@ function StorySection(): JSX.Element {
         <p>Pendant plus de 10 ans, j’ai travaillé à ses côtés, au contact direct des clients, des matières et des détails qui font la différence.
         </p>         
       </article>
-      <figure>
-        <Image src={workingImage} alt='de Julien qui peint un mur' fill placeholder='blur' style={{objectFit: 'cover'}}/>
-      </figure>
+      <div className={styles.wrapper}>
+        <figure>
+          <Image src={workingImage} alt='de Julien qui peint un mur' fill placeholder='blur' style={{objectFit: 'cover'}}/>
+        </figure>
+        <figure>
+          <Image src={workingImage} alt='de Julien qui peint un mur' fill placeholder='blur' style={{objectFit: 'cover'}}/>
+        </figure>
+        <figure>
+          <Image src={workingImage} alt='de Julien qui peint un mur' fill placeholder='blur' style={{objectFit: 'cover'}}/>
+        </figure>
+      </div>
 
-      
     </section>
   )
 }

@@ -63,7 +63,9 @@
 
   & p {
     margin: 0;
+    user-select: all;
   }
+
 }
 
 .footer::before {
