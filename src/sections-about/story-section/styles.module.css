@@ -1,10 +1,10 @@
 .section {
   --grid-min-col-size: 400px;
-  padding-right: 10rem;
-  padding-left: 10rem;
+  padding: 12rem 1rem;
   margin: auto;
   display: grid;
   grid-template-columns:  repeat(auto-fit, minmax(min(var(--grid-min-col-size), 100%), 1fr));
+  gap: 6rem;
 
   & > :first-child {
     position: relative;
@@ -33,7 +33,7 @@
     position: absolute;
     content: "";
     top: -5%;
-    left: -2%;
+    left: -4%;
     width: 100px;
     height: 10px;
     z-index: 2;
@@ -45,7 +45,7 @@
     position: absolute;
     content: "";
     top: -5%;
-    left: -2%;
+    left: -4%;
     width: 10px;
     height: 100px;
     z-index: 2;
@@ -65,8 +65,8 @@
   content: '';
   position: absolute;
   content: "";
-  bottom: -60%;
-  right: 25%;
+  bottom: -50%;
+  right: -12%;
   width: 100px;
   height: 10px;
   z-index: 2;
@@ -77,8 +77,8 @@
   content: '';
   position: absolute;
   content: "";
-  bottom: -60%;
-  right: 25%;
+  bottom: -50%;
+  right: -12%;
   width: 10px;
   height: 100px;
   z-index: 2;
@@ -88,21 +88,17 @@
 
 
 .wrapper {
-  position: relative;
-  margin-top: 4rem;
-  
-      & figure {
-      aspect-ratio: 3/4;
-
-      width: 100%;
+  position: relative; 
+  & figure {
+    aspect-ratio: 3/4;
+    width: 100%;
     }
   
-  
-    & figure:nth-child(2) {
+  & figure:nth-child(2) {
       display: none;
     }
   
-    & figure:nth-child(3) {
+  & figure:nth-child(3) {
       display: none;
     }
 }
@@ -111,57 +107,55 @@
 
 @media (min-width: 89em) {
   .section {
+    padding: 12rem 10rem;
 
-    & > :first-child {
-      padding: 0 0rem 8rem 2rem;
+  & > :first-child {
+      padding: 0 4rem 8rem 2rem;
     }
 
-    & > :nth-child(2) {
+  & > :nth-child(2) {
       width: 100%;
       margin: 4rem 0 0 0;
     }
   
-
-    & p {
-      padding-right: 12rem;
-    }
-
-    & p:first-of-type{
+  & p:first-of-type{
       font-size: 1.6rem;
       font-weight: var(--fw-semi-bold);
     } 
   }
 
+  /* positioning images */
+
   .wrapper {
     max-width: 40rem;
     position: relative;
   
-      & figure {
-      position: absolute;
-      aspect-ratio: 5/4;
-      top: 10%;
-      left: -14%;
-      width: 55%;
+    & figure {
+    position: absolute;
+    aspect-ratio: 5/4;
+    top: 8%;
+    left: -14%;
+    width: 65%;
     }
   
   
     & figure:nth-child(2) {
       display: block;
       position: absolute;
-      top: -4%;
-      left: 43%;
+      top: -10%;
+      left: 50%;
       aspect-ratio: 4 / 5;
-      width: 50%;
+      width: 60%;
     }
   
     & figure:nth-child(3) {
       display: block;
       position: absolute;
-      top: 40%;
-      left: 11%;
+      top: 30%;
+      left: 25%;
       aspect-ratio: 4 / 5;
-      width: 50%;
+      width: 60%;
       border: solid 0.8em var(--background);
     }
   }
-  }
+}
