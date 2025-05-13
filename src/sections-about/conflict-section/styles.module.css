@@ -64,7 +64,7 @@
   position: absolute;
   content: "";
   bottom: -30%;
-  right: -4%;
+  right: -9%;
   width: 100px;
   height: 10px;
   z-index: 2;
@@ -76,7 +76,7 @@
   position: absolute;
   content: "";
   bottom: -30%;
-  right: -4%;
+  right: -9%;
   width: 10px;
   height: 100px;
   z-index: 2;

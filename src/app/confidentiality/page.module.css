@@ -14,7 +14,7 @@
 
   & h2 {
     margin-bottom: 2rem;
-    font-size: clamp(1.125rem, 6vw, 2rem);
+    font-size: clamp(1.125rem, 5vw, 2rem);
   }
 
   & :is(p, address) {
@@ -58,7 +58,10 @@
   background-size: cover;
   border-image: linear-gradient(rgba(0, 0, 0, 0.600), rgba(0, 0, 0, 0.600)) fill 1;
   width: 100%;
-  padding: 14rem 1rem 10rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-top: clamp(10rem, 10vw, 14rem);
+  padding-bottom: clamp(4rem, 10vw, 10rem);
   outline: black 2px solid;
 }
 
