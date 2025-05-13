@@ -31,7 +31,7 @@
     grid-area: address;
   }
 
-  & article:first-child {
+  & > :first-child {
     grid-area: logo;
     align-self: center;
   }

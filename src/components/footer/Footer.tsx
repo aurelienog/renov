@@ -7,9 +7,9 @@ import logo from '../../../public/assets/images/ANJ-logo-full.webp'
 function Footer(): JSX.Element {
   return (
     <footer className={`${styles.footer}`}>
-      <article>
+      <Link href={"/"}>
         <Image src={logo} alt='logo' quality={100} loading='lazy' width={300} height={150}/> 
-      </article>
+      </Link>
 
       <article itemScope itemType="http://schema.org/Organization">
         <h2>Siège social:</h2>
