@@ -1,0 +1,68 @@
+.section {
+  & ul {
+    --grid-min-colum-size: 240px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(var(--grid-min-colum-size), 100%), 1fr));
+    justify-items: center;
+    align-items: center;
+    font-weight: var(--fw-bold);
+    gap: 2em;
+    
+  }
+
+  & li {
+    position: relative;
+    height: 200px;
+    align-content: center;
+    margin: 1rem auto;
+    text-align: center;
+    list-style: none;
+
+    /* corner https://css-tip.com/corner-only-border-image/ */
+    --size: 3em; 
+    --thickness: 0.5em;  
+    --gap: 2em; 
+      
+    padding: calc(var(--gap) + var(--thickness));
+    outline: var(--thickness) solid var(--color-accent); 
+    outline-offset: calc(-1*var(--thickness));
+    mask:
+        conic-gradient(at var(--size) var(--size),#0000 75%,#000 0) 0 0/calc(100% - var(--size)) calc(100% - var(--size)),
+        conic-gradient(#000 0 0) content-box;
+    transition: .4s;
+    }
+
+  & li:hover {
+    outline-offset: calc(-1*var(--gap));
+  }
+
+
+   /* hide top corner */
+  & li::before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 0%;
+    right: 0%;
+    outline: solid var(--background) 2px;
+    width: 3em;
+    height: 3em;
+    background-color: var(--background);
+    z-index: 5;
+  }
+
+  /* hide bottom corner */
+  & li::after {
+    position: absolute;
+    content: '';
+    display: block;
+    bottom: 0%;
+    left: 0%;
+    outline: solid var(--background) 2px;
+    width: 3em;
+    height: 3em;
+    background-color: var(--background);
+    z-index: 5;
+  }
+
+}

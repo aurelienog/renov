@@ -1,8 +1,9 @@
 import React, { JSX } from 'react';
+import styles from './styles.module.css';
 
 function BenefitsSection(): JSX.Element {
   return (
-    <section className='section'>
+    <section className={` ${styles.section}`}>
       <h2>Ce qui fait ma différence</h2>
       <ul>
           <li>Un héritage familial solide et authentique</li>
