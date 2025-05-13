@@ -1,10 +1,13 @@
 .section {
   --grid-min-col-size: 400px;
+  padding-right: 10rem;
+  padding-left: 10rem;
   margin: auto;
   display: grid;
   grid-template-columns:  repeat(auto-fit, minmax(min(var(--grid-min-col-size), 100%), 1fr));
 
   & > :first-child {
+    position: relative;
     padding: 0 2rem 0 2rem;
   }
 
@@ -22,7 +25,67 @@
     font-size: 1.6rem;
     font-weight: var(--fw-semi-bold);
   } 
+
+  /* TOP corner design */
+
+  & > article::before {
+    content: '';
+    position: absolute;
+    content: "";
+    top: -5%;
+    left: -2%;
+    width: 100px;
+    height: 10px;
+    z-index: 2;
+    background-color: var(--color-accent);
+  }
+  
+  & > article::after {
+    content: '';
+    position: absolute;
+    content: "";
+    top: -5%;
+    left: -2%;
+    width: 10px;
+    height: 100px;
+    z-index: 2;
+    background-color: var(--color-accent);
+  }
+
+  
 }
+
+  /* BOTTOM corner design */
+  
+.section p {
+  position: relative;
+}
+
+.section > article  p:last-of-type::before {
+  content: '';
+  position: absolute;
+  content: "";
+  bottom: -60%;
+  right: 25%;
+  width: 100px;
+  height: 10px;
+  z-index: 2;
+  background-color: var(--color-accent);
+}
+
+.section > article  p:last-of-type::after {
+  content: '';
+  position: absolute;
+  content: "";
+  bottom: -60%;
+  right: 25%;
+  width: 10px;
+  height: 100px;
+  z-index: 2;
+  background-color: var(--color-accent);
+}
+
+
 
 .wrapper {
   position: relative;
@@ -50,7 +113,7 @@
   .section {
 
     & > :first-child {
-      padding: 0 2rem 8rem 2rem;
+      padding: 0 0rem 8rem 2rem;
     }
 
     & > :nth-child(2) {
@@ -60,7 +123,7 @@
   
 
     & p {
-      padding-right: 8rem;
+      padding-right: 12rem;
     }
 
     & p:first-of-type{

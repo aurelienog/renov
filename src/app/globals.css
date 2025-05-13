@@ -14,7 +14,6 @@
 :is(html, body) {
   max-width: 100vw;
   overflow-wrap: break-word;
-  word-break: break-word;
 }
 
 body {
@@ -38,7 +37,7 @@ a {
 
 
 h1 { font-size: clamp(1.8rem, 10vw, 6rem);  text-transform: uppercase; }
-:is(h2, caption) { font-size: clamp(1rem, 10vw, 3.5rem);; margin-bottom: 10rem; text-transform: uppercase;}
+:is(h2, caption) { font-size: clamp(1rem, 6vw, 3.5rem); margin-bottom: 10rem; text-transform: uppercase;}
 h3 { font-size: 1.625rem; }
 
 

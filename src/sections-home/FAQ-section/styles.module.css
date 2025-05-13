@@ -2,6 +2,10 @@
   display: grid;
   justify-items: center;
   align-items: center;
+
+  & h2 {
+    text-align: center;
+  }
 }
 
 .illustration {
@@ -12,6 +16,10 @@
   .section {
     grid-template-columns: 2fr 1fr;
     gap:6rem
+  }
+
+  .section h2 {
+      text-align: start;
   }
 
   .illustration {
