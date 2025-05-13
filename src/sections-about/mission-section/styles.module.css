@@ -1,3 +1,9 @@
 .section {
-  background-color: var(--color-primary);
+
+  & figure {
+    margin-top: 2rem;
+    aspect-ratio: 16/9;
+    width: 100%;
+    position: relative;
+  }
 }

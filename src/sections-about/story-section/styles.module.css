@@ -16,11 +16,6 @@
     margin: auto;
   }
 
-
-  & h2 {
-    text-wrap: balance;
-  }
-
   & p:first-of-type{
     font-size: 1.6rem;
     font-weight: var(--fw-semi-bold);
@@ -107,7 +102,7 @@
 
 @media (min-width: 89em) {
   .section {
-    padding: 12rem 10rem;
+    padding: 12rem 10rem 8rem;
 
   & > :first-child {
       padding: 0 4rem 8rem 2rem;
@@ -135,7 +130,7 @@
     aspect-ratio: 5/4;
     top: 8%;
     left: -14%;
-    width: 65%;
+    width: 62%;
     }
   
   
@@ -155,7 +150,7 @@
       left: 25%;
       aspect-ratio: 4 / 5;
       width: 60%;
-      border: solid 0.8em var(--background);
+      border: solid 0.6em var(--background);
     }
   }
 }

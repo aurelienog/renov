@@ -1,3 +1,6 @@
+.section {
+  margin-bottom: 6rem;
+}
 .section > :first-child {
   display: none;
 

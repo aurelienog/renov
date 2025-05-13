@@ -1,13 +1,5 @@
 .section {
-  padding: 10rem 0 10rem 0 ;
-
   & :first-child {
     place-self: center;
   }
 } 
-
-@media (min-width: 89em) {
-  .section {
-    padding: 2rem 0 1rem 0;
-  }
-}
