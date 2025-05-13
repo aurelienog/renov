@@ -1,6 +1,6 @@
 .info{
   margin-top: 2%;
-  margin-left: clamp(0%, 8vw, 8%);
+  margin-left: 0;
   padding: 4em 3em;
   animation-name: slideInRight;
   animation-duration: 0.8s;
@@ -34,5 +34,11 @@
 
   to {
     transform: translateX(0%);
+  }
+}
+
+@media (min-width: 500px) {
+  .info {
+    margin-left: clamp(1%, 10vw, 8%);
   }
 }

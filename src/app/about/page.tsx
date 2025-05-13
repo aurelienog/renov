@@ -18,8 +18,8 @@ export default function About(): JSX.Element {
       <MissionSection/>
       <BenefitsSection/>
       <section className="section">
-        <h2>ANJ RENOV, c’est plus qu’un nom.</h2>
-        <p style={{fontSize: '1.5rem'}}> C’est l’histoire d’un professionnel qui a grandi avec ce métier, et qui continue à le faire vivre avec cœur.</p>
+        <h2>ANJ RENOV, c{"'"}est plus qu{"'"}un nom.</h2>
+        <p style={{fontSize: '1.5rem'}}> C{"'"}est l{"'"}histoire d{"'"}un professionnel qui a grandi avec ce métier, et qui continue à le faire vivre avec cœur.</p>
       </section>
   </main>
 
