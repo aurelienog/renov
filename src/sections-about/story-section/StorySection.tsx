@@ -12,7 +12,7 @@ function StorySection(): JSX.Element {
         <p>Mon père, chef d&#39;entreprise dans le batiment, m’a transmis plus qu’un savoir-faire : <span className='highlight'>une véritable exigence du travail bien fait</span>.
         </p>  
         <p>Pendant plus de 10 ans, j’ai travaillé à ses côtés, au contact direct des clients, des matières et des détails qui font la différence.
-        </p>         
+        </p>
       </article>
       <div className={styles.wrapper}>
         <figure>

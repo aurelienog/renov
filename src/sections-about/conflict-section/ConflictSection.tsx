@@ -11,9 +11,9 @@ function ConflictSection():JSX.Element {
       </figure>
       <article>
         <h2>ANJ RENOV,<br></br> une nouvelle étape</h2>
-        <p>Quand mon père a approché l’âge de la retraite, il a choisi de fermer son entreprise, non sans émotion, mais avec une idée claire : me transmettre le flambeau.</p>
-        <p>Il m’a encouragé à <span className='highlight'>créer ma propre structure</span>, pour continuer cette belle aventure artisanale, en conservant les mêmes valeurs de proximité, d’engagement et de qualité.</p>
-        <p>C’est ainsi qu’est née <span className='highlight'>ANJ RENOV</span>, avec la volonté de prolonger une tradition familiale, tout en développant mon propre style et mes engagements.</p>  
+        <p>Quand mon père a approché l’âge de la retraite, j’ai décidé de <span className='highlight'>créer ma propre structure</span> et de poursuivre cette belle aventure à mon compte.</p>
+        <p><span className='highlight'>ANJ RENOV</span>, cest la volonté de prolonger une tradition familiale, tout en développant mon propre style et mes engagements.</p>  
+        <p>Aujourd’hui, j’accompagne chaque client avec attention, du premier contact jusqu’aux finitions, en mettant mon expérience au service de projets durables et soignés.</p>
       </article>
     </section>
   )
