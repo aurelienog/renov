@@ -1,7 +1,7 @@
 .section {
   --grid-min-col-size: 400px;
   padding: 12rem 1rem;
-  margin: auto;
+  margin: 0 1em;
   display: grid;
   grid-template-columns:  repeat(auto-fit, minmax(min(var(--grid-min-col-size), 100%), 1fr));
   gap: 6rem;
@@ -102,10 +102,12 @@
 
 @media (min-width: 89em) {
   .section {
-    padding: 12rem 10rem 8rem;
+    padding: 12rem 8rem 8rem;
+    max-width: 85em;
+    margin: auto;
 
   & > :first-child {
-      padding: 0 4rem 8rem 2rem;
+      padding: 0 2rem 8rem 2rem;
     }
 
   & > :nth-child(2) {
