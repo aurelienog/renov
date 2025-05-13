@@ -1,6 +1,6 @@
 .info{
   margin-top: 2%;
-  margin-left: 8%;
+  margin-left: clamp(0%, 8vw, 8%);
   padding: 4em 3em;
   animation-name: slideInRight;
   animation-duration: 0.8s;
