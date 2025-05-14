@@ -53,13 +53,13 @@ Each key is a line */
 
 export const statistics : TrustStatistic[] = [{
   icon: medal,
-  stat: 10,
+  stat: 15,
   information: "ans d'expérience",
   prefix: "+",
   characters: 3
 }, {
   icon: paint,
-  stat: 150,
+  stat: 500,
   information: "projets réalisés",
   prefix: "+",
   characters: 4
@@ -88,10 +88,10 @@ export const columns: Column[] = [{
   seven: 'Respect des délais',
   eight: 'Suivi après travaux'
   }, {
-  title: 'Votre auto-entrepreneur',
+  title: 'Votre artisan',
   one: <>
   <Image src={check} alt='' width={24} height={24}/>
-  <span>+ de 10 ans d’expérience</span>
+  <span>+ de 15 ans d’expérience</span>
   </>,
   two: <>
   <Image src={check} alt='' width={24} height={24}/>

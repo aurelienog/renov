@@ -21,14 +21,3 @@
   background-image: linear-gradient(rgba(166, 153, 148, 0.657),rgba(166, 153, 148, 0.657)); 
   z-index: -2;
 }
-
-/* 
-.container {
-  --grid-min-col-size: 300px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(var(--grid-min-col-size), 100%), 1fr));
-  gap: 2rem;
-  justify-items: center;
-  margin: 4rem auto 4rem auto;
-  max-width: 100rem;
-} */
