@@ -23,6 +23,15 @@ function Header({ logo }: { logo: StaticImageData }): JSX.Element {
 
       //raf necessary to only respond once per frame (60fps max) 
       window.requestAnimationFrame(() => {
+      
+      // 🔁always show header if scroll at top
+      if (currentY <= 0) {
+        setIsHidden(false);
+        lastYRef.current = 0;
+        ticking.current = false;
+        return;
+      }
+
         const delta = currentY - lastYRef.current;
 
         if (Math.abs(delta) > 10) {
