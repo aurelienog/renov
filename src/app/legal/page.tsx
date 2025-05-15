@@ -1,11 +1,8 @@
 import React, { JSX } from 'react';
 import styles from "../confidentiality/page.module.css";
-import HeaderServer from '@/components/header/HeaderServer';
 
 function legal(): JSX.Element {
   return (
-    <>
-      <HeaderServer/>
       <main className={`base-layout ${styles.page}`}>
         <section className={`full-width ${styles.section}`}>
           <div className={styles.wrapper}>
@@ -58,7 +55,6 @@ function legal(): JSX.Element {
           </ol>
         </section>
       </main>
-    </>
   )
 }
 

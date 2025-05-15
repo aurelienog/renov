@@ -9,7 +9,6 @@ import QuoteSection from "@/sections-about/quote-section/QuoteSection";
 
 export default function About(): JSX.Element {
   return (
-
     <main className={`base-layout ${styles.page}`}>
       <Landing/>
       <Story/>
@@ -21,7 +20,6 @@ export default function About(): JSX.Element {
         <h2>ANJ RENOV, c{"'"}est plus qu{"'"}un nom.</h2>
         <p style={{fontSize: '1.5rem'}}> C{"'"}est l{"'"}histoire d{"'"}un artisan qui a grandi avec ce métier, et qui continue à le faire vivre avec cœur.</p>
       </section>
-  </main>
-
+    </main>
   );
 }

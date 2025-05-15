@@ -3,6 +3,7 @@ import { Playfair_Display, Nunito } from "next/font/google";
 import "./globals.css";
 import "./variables.css";
 import Footer from "@/components/footer/Footer";
+import HeaderServer from "@/components/header/HeaderServer";
 
 const playfair = Playfair_Display({ 
   subsets: ["latin"],
@@ -27,8 +28,9 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body className={`${nunito.variable} ${playfair.variable}`}>
-        {children}
-      <Footer/>
+        <HeaderServer />
+          {children}
+        <Footer/>
       </body>
     </html>
   );
