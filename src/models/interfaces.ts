@@ -1,9 +1,4 @@
 import { StaticImageData } from 'next/image';
-import { ReactNode } from 'react'
-
-export interface ButtonProps {
-  children: ReactNode
-}
 
 export interface Column {
   title: string;

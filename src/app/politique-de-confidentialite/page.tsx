@@ -50,16 +50,16 @@ function confidentialityPage(): JSX.Element {
             <h2>5{')'}  Vos droits</h2>
             <p>Conformément au Règlement Général sur la Protection des Données (RGPD), vous avez :</p>
             <ul>
-              <li>Un droit d’accès : Vous pouvez demander quelles informations nous détenons sur vous.</li>
+              <li>Un droit d{"'"}accès : Vous pouvez demander quelles informations nous détenons sur vous.</li>
               <li>Un droit de rectification : Vous pouvez nous demander de corriger vos données.</li>
               <li>Un droit de suppression : Vous pouvez demander la suppression de vos informations.</li>
-              <li>Un droit d’opposition : Vous pouvez refuser l’utilisation de vos données.</li>
+              <li>Un droit d{"'"}opposition : Vous pouvez refuser l{"'"}utilisation de vos données.</li>
             </ul>
             <address>Pour exercer vos droits, contactez-nous à contact@renov.fr</address>
           </li>
           <li>
             <h2>6{')'}  Contact</h2>
-            <p>Pour toute question sur cette politique de confidentialité ou l’exercice de vos droits, vous pouvez nous contacter :</p>
+            <p>Pour toute question sur cette politique de confidentialité ou l{"'"}exercice de vos droits, vous pouvez nous contacter :</p>
             <address>
               Email : [adresse mail]
               <br></br>Téléphone : [tel]

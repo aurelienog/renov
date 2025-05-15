@@ -1,7 +1,10 @@
 'use client'
-import React, { JSX } from 'react';
+import React, { JSX, ReactNode } from 'react';
 import styles from './styles.module.css';
-import { ButtonProps } from '@/models/interfaces';
+
+export interface ButtonProps {
+  children: ReactNode
+}
 
 export default function Button({children}: ButtonProps): JSX.Element {
   return (

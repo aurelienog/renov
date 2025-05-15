@@ -39,10 +39,10 @@ function NavigationBar({ containerRef }: { containerRef: React.RefObject<HTMLEle
           <Link href={"/"}>Accueil</Link>
         </li>
         <li onClick={() => setOpen(false)}>
-          <Link href={"/"}>Prestations</Link>
+          <Link href={"/prestations"}>Prestations</Link>
         </li>
         <li onClick={() => setOpen(false)}>
-          <Link href={"/"}>Realisations</Link>
+          <Link href={"/realisations"}>Realisations</Link>
         </li>
         <li onClick={() => setOpen(false)}>
           <Link href={"/about"}>À propos</Link>

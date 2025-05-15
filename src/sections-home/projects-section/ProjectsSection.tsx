@@ -1,12 +1,7 @@
-'use client'
 import React, { JSX } from 'react';
 import styles from './styles.module.css'
 import { lastProjects } from '@/data/data';
-import dynamic from 'next/dynamic';
-
-const SliderWrapper = dynamic(() => import('../../components/slider/SliderWrapper'), {
-  ssr: false,  // Esto desactiva el SSR para este componente
-});
+import SliderWrapper from '@/components/slider/SliderWrapper';
 
 function ProjectsSection(): JSX.Element {
 
