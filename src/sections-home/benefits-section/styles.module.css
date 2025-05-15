@@ -1,4 +1,5 @@
 .benefits {
+  display: none;
   background-color: var(--color-secondary);
   overflow-x: scroll;
   max-width: 100%;
@@ -9,6 +10,9 @@
 }
 
 @media (min-width: 767.98px) {
+  .benefits{
+    display:inherit;
+  }
   .container {
     box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
       0 2px 2px hsl(0deg 0% 0% / 0.075),
