@@ -3,7 +3,7 @@ import React, { JSX } from 'react';
 import styles from './styles.module.css';
 import { columns } from '../../data/data';
 import MotionInView from '../../components/motion-in-view/MotionInView';
-import { fadeInUp } from '@/animations/variants';
+import { fadeInLeft } from '@/animations/variants';
 
 
 function BenefitsSection(): JSX.Element {
@@ -14,7 +14,7 @@ function BenefitsSection(): JSX.Element {
       <MotionInView 
       once= {true}
       className={styles.container}
-      variants={fadeInUp}
+      variants={fadeInLeft}
       >
         <ComparisonChart data={columns}/>
       </MotionInView>

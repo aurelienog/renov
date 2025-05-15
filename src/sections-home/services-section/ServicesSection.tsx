@@ -13,9 +13,8 @@ function ServicesSection(): JSX.Element {
       variants={fadeInUp}
       >
         <h2>Mes prestations</h2>
-        <Gallery services={services} />
-      </MotionInView>
-
+      </MotionInView>  
+      <Gallery services={services} />
     </section>
   )
 }

@@ -33,7 +33,7 @@ export const zoomIn = {
   },
 };
 
-// using with fadeInUp
+// using with fadeInUp for children
 export const staggerContainer = {
   hidden: {},
   visible: {
