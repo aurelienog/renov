@@ -1,12 +1,12 @@
 'use client'
-import React, { memo, useRef } from 'react';
+import React, { useRef } from 'react';
 import TimelineLine from '../Timeline-line/TimelineLine';
 import { WorkStep } from '@/models/interfaces';
 import { useScroll, useTransform } from 'framer-motion';
 import TimelineCard from '../timeline-card/TimelineCard';
-import styles from './styles.module.css';
-
-const TimelineWrapper = memo(function TimelineWrapper({ workSteps }: { workSteps: WorkStep[]}) {
+import styles from './styles.module.css'
+;
+function TimelineWrapper({ workSteps }: { workSteps: WorkStep[]}) {
   const containerRef = useRef(null);
   
     const { scrollYProgress } = useScroll({
@@ -26,6 +26,6 @@ const TimelineWrapper = memo(function TimelineWrapper({ workSteps }: { workSteps
       <TimelineLine pathLength={pathLength}/>
     </div>
   )
-});
+}
 
 export default TimelineWrapper
