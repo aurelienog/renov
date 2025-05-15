@@ -29,9 +29,7 @@ function Header({ logo }: { logo: StaticImageData }): JSX.Element {
         setIsHidden(false);
         lastYRef.current = 0;
         ticking.current = false;
-        return;
-      }
-
+      } else { 
         const delta = currentY - lastYRef.current;
 
         if (Math.abs(delta) > 10) {
@@ -42,12 +40,12 @@ function Header({ logo }: { logo: StaticImageData }): JSX.Element {
             setIsHidden(nextHidden);
           }
         }
-
+      }
     lastYRef.current = currentY;
     ticking.current = false;
-      })
+      });
     }
-  })
+  });
 
   return (
     <motion.header
