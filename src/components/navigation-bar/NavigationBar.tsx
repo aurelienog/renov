@@ -35,16 +35,19 @@ function NavigationBar({ containerRef }: { containerRef: React.RefObject<HTMLEle
     <nav className={`${styles.navbar}`}>
       <HamburgerMenu handleClick = { handleClick } open={open}/>
       <ul ref={menuRef} id="main-navigation" className={`${styles.links} ${open ? styles.open : ''} header`}>
-        <li >
+      <li onClick={() => setOpen(false)}>
+          <Link href={"/"}>Accueil</Link>
+        </li>
+        <li onClick={() => setOpen(false)}>
           <Link href={"/"}>Prestations</Link>
         </li>
-        <li>
+        <li onClick={() => setOpen(false)}>
           <Link href={"/"}>Realisations</Link>
         </li>
-        <li>
+        <li onClick={() => setOpen(false)}>
           <Link href={"/about"}>À propos</Link>
         </li>
-        <li>
+        <li onClick={() => setOpen(false)}>
           <Button>Devis gratuit</Button>
         </li>
       </ul>        

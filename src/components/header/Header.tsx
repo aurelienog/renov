@@ -47,6 +47,8 @@ function Header({ logo }: { logo: StaticImageData }): JSX.Element {
     }
   });
 
+  console.log(isHidden)
+
   return (
     <motion.header
     className={`${styles.header}`}
@@ -68,9 +70,8 @@ function Header({ logo }: { logo: StaticImageData }): JSX.Element {
     transition={{ duration: 0.2}}
     ref={headerRef}
     >
-
       <Link href={"/"}> 
-        <Image src={logo} alt='logo ANJ - home' width={120} height={60} style={{ position: 'relative', zIndex: '100'}}/> 
+        <Image src={logo} alt='logo ANJ - home' width={120} height={60} style={{ position: 'relative'}}/> 
       </Link>
       <NavigationBar containerRef={headerRef}/>
     </motion.header>
