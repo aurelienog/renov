@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 function BackgroundImage({ image }: {image: StaticImageData}): JSX.Element  {
   return (
     <figure className={styles.wrapper}>
-      <div style={{position: 'relative', width: '100%', height: '100vh'}}>
+      <div style={{position: 'relative', width: '100%', height: '100%'}}>
         <Image src={image} placeholder='blur' priority sizes="100vw" quality={50} fill style={{ objectFit: 'cover' }} 
         alt="montre une cuisine spacieuse et lumineuse. L'esthétique générale est épurée, élégante et moderne. Il y a un îlot de cuisine avec quatre chaises en bois. La cuisine est éclairée par des suspensions et dispose d'une grande fenêtre avec des stores blancs." />
       </div>

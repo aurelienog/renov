@@ -46,9 +46,7 @@ function Header({ logo }: { logo: StaticImageData }): JSX.Element {
       });
     }
   });
-
-  console.log(isHidden)
-
+  
   return (
     <motion.header
     className={`${styles.header}`}

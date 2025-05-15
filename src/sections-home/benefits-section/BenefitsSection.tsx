@@ -12,7 +12,7 @@ function BenefitsSection(): JSX.Element {
     <section className={`full-width base-layout section ${styles.benefits}`}>
       <h2>Quel professionnel choisir?</h2>
       <MotionInView 
-      once= {false}
+      once= {true}
       className={styles.container}
       variants={fadeInLeft}
       >
