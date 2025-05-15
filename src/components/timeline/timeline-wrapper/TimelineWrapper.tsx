@@ -4,8 +4,8 @@ import TimelineLine from '../Timeline-line/TimelineLine';
 import { WorkStep } from '@/models/interfaces';
 import { useScroll, useTransform } from 'framer-motion';
 import TimelineCard from '../timeline-card/TimelineCard';
-import styles from './styles.module.css'
-;
+import styles from './styles.module.css';
+
 function TimelineWrapper({ workSteps }: { workSteps: WorkStep[]}) {
   const containerRef = useRef(null);
   
