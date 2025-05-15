@@ -8,11 +8,6 @@
   font-size: 2.5rem;
   font-weight: var(--fw-semi-bold);
 
-  & q {
-    display: inline-block;
-    overflow: hidden;
-  }
-
   & q::before {
     content: '“';
     font-family: serif;

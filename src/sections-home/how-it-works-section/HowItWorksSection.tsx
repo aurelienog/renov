@@ -1,13 +1,7 @@
-'use client'
 import React, { JSX } from 'react';
 import styles from './styles.module.css';
 import { workSteps } from '../../data/data';
-import dynamic from 'next/dynamic';
-
-const TimelineWrapper = dynamic(() => import('@/components/timeline/timeline-wrapper/TimelineWrapper'), {
-  loading: () => <p>Loading...</p>,
-  ssr: false 
-});
+import TimelineWrapper from '@/components/timeline/timeline-wrapper/TimelineWrapper';
 
 function HowItWorksSection(): JSX.Element {
 
