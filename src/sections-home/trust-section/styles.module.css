@@ -1,12 +1,12 @@
 .section {
   display: flex;
+  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 2em;
-  margin-top: 2em;
-  padding-top: clamp(9em, 10vh, 14em);
-  padding-left: 4em;
-  padding-right: 4em;
+  gap: 1em;
+  padding-bottom: 4em;
+  padding-left: 1em;
+  padding-right: 1em;
 
 }
 
@@ -28,20 +28,14 @@
 .article {
   display: flex;
   flex-direction: column;
-  gap: 16;
+  gap: 1em;
   justify-content: center;
   align-items: center;
   text-align: center;
   margin: 2em;
-  max-width: 19rem;
+  max-width: 28ch;
 
   &:last-of-type {
     margin-top: 1.46lh;
-  }
-}
-
-@media (min-width: 1600px) {
-  .section {
-      margin-top: 1em;
   }
 }
