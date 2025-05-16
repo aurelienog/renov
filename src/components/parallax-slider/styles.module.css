@@ -1,6 +1,6 @@
 .wrapper {
   position: sticky;
-  top: 8em;
+  top: 4em;
   height: 100vh;
   max-width: 90rem;
   margin-left: auto;
@@ -9,8 +9,8 @@
 
 .card {
   position: relative;
-  width: 80%;
-  height: 70vh;
+  width: 70%;
+  height: 80vh;
   margin-left: 2rem;
 }
 
