@@ -7,7 +7,6 @@
   padding-bottom: 4em;
   padding-left: 1em;
   padding-right: 1em;
-
 }
 
 .section h3 > span {
@@ -32,7 +31,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 2em;
+  margin: 0 2em 2em 2em;
   max-width: 28ch;
 
   &:last-of-type {
