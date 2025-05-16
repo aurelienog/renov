@@ -192,63 +192,69 @@ export const columns: Column[] = [{
 }];
 
 export const faqEntries: FaqEntry[] = [{
-  question: "Quels types de travaux de peinture proposez-vous ?",
-  answer: (<>
-    <p>Nous réalisons la peinture intérieure et extérieure pour les maisons, appartements et locaux professionnels. Cela inclut :</p>
-    <ul>
-      <li>Peinture des murs et plafonds</li>
-      <li>Peinture décorative (effets, patines)</li>
-      <li>Rafraîchissement ou rénovation complète</li>
-      <li>Peinture des façades, volets et portails</li>
-    </ul>
-  </>)
+  question: "Quels types de travaux proposez-vous ?",
+  answer: <>
+  <p>Je réalise tous types de travaux de peinture et décoration, pose de revêtements muraux et sols, ainsi que vos travaux divers de rénovation en intérieur comme en extérieur.</p>
+  <p>J{`'`}interviens aussi bien chez les particuliers que les professionnels.</p>
+  </>
 }, {
   question: "Comment choisir la bonne couleur pour mon intérieur ?",
-  answer: <p>Le choix des couleurs dépend de plusieurs facteurs : la luminosité, la taille de la pièce et votre style. Nous vous conseillons gratuitement sur les harmonies de teintes et les finitions adaptées.</p>,
-}, {
+  answer: <>
+  <p>Le choix des couleurs dépend de plusieurs facteurs : la luminosité, la taille de la pièce et l{`'`}ambiance que vous souhaitez créer.</p>
+  <p>Je vous conseille gratuitement sur les harmonies de teintes et les finitions adaptées. Un nuancier est à votre disposition pour vous aider à visualiser et affiner vos choix.</p>
+</>}, {
   question: "Dois-je préparer mon logement avant les travaux ?",
   answer: <>
-    <p>Nous nous occupons de tout ! Cependant, il est recommandé de :</p>
+    <p>Ce n{`'`}est pas nécessaire, je occupe de tout ! Cependant, il est recommandé de :</p>
     <ul>
       <li>Déplacer les objets fragiles et petits meubles</li>
       <li>Retirer les rideaux et cadres si possible</li>
       <li>Nous informer de toute contrainte particulière</li>
     </ul>
+    <p>Une fois la zone de travail libérée, je prends le relais :</p>
+    <ul>
+      <li>Protection des sols et du mobilier qui ne peut pas être retiré ou déplacé</li>
+      <li>Démontage et remise en place, en fin de travaux, des luminaires, prises, interrupteurs, poignées de porte, etc.</li>
+      <li>Nettoyage complet de la zone de travail une fois les travaux terminés.</li>
+    </ul>
   </>
 }, {
-  question: "Quelle est la durée moyenne d’un chantier de peinture ?",
+  question: `Quelle est la durée moyenne d${"'"}un chantier ?`,
   answer: <>
-    <p>Tout dépend de la surface et de l’état des murs :</p>
-    <ul>
-      <li>Une pièce (20m²) → 1 à 2 jours</li>
-      <li>Un appartement (50-100m²) → 3 à 7 jours</li>
-      <li>Une façade → 4 à 10 jours selon le support</li>
-    </ul>
-    Nous vous donnons un planning précis après le devis.
+    <p>La durée d{`'`}un chantier dépend de plusieurs facteurs : la surface à rénover, l{`'`}état des supports et le type de travaux à réaliser (préparations, finitions, etc.).</p>
+    <p>Cependant pour vous permettre de vous organiser sereinement, je vous communique toujours une durée estimée des travaux dès l{`'`}établissement du devis.</p>
   </>
 }, {
   question: "Faut-il quitter son logement pendant les travaux ?",
-  answer: <p>Ce n&#39;est pas nécessaire pour une peinture intérieure classique ! Nous utilisons des peintures sans odeur et organisons le chantier pour minimiser les nuisances.</p>
-}, {
+  answer: <>
+  <p>Ce n{`'`}est pas nécessaire ! Nous utilisons des peintures sans odeur et organisons le chantier pour limiter au maximum les nuisances.</p>
+  <p>Je veille notamment à :</p>
+  <ul>
+    <li>respecter les horaires autorisés pour les travaux</li>
+    <li>rendre les pièces de vie accessibles en fin de journée ou pendant les repas (cuisine, salle de bains…).</li>
+  </ul>
+  </>}, {
   question: "Travaillez-vous avec des peintures écologiques ?",
-  answer: <p>Oui, nous proposons des peintures écologiques sans COV (composés organiques volatils) pour un intérieur plus sain.</p>
-}, {
-  question: "Quel est le prix moyen d’un chantier de peinture ?",
+  answer: <>
+  <p>Oui, la plupart des produits que j{`'`}utilise (enduits, peintures) ont un faible niveau d{`'`}émission et sont classés A+.</p>
+  <p>Pour aller plus loin, je propose également des peintures assainissantes détruisant le formaldéhyde dans vos intérieurs</p>
+  </>}, {
+  question: `Quel est le prix moyen d${`'`}un chantier de peinture ?`,
   answer: <>
     <p>Le tarif dépend de plusieurs critères :</p>
     <ul>
       <li>La surface à peindre</li>
-      <li>L’état des murs (préparation nécessaire ou non)</li>
+      <li>L{`'`}état des murs (préparation nécessaire ou non)</li>
       <li>Le type de peinture et finition choisie</li>
     </ul>
-    Nous proposons des devis gratuits et transparents. Contactez-nous !
+    <p>Nous proposons des devis gratuits et transparents. Contactez-nous !</p>
   </>
 }, {
   question: "Proposez-vous des facilités de paiement ?",
-  answer: <p>Oui, nous offrons la possibilité de paiement en plusieurs fois selon le montant du chantier.</p>
+  answer: <p>Oui, j{`'`}offre la possibilité de paiement en plusieurs fois selon le montant du chantier.</p>
 }, {
   question: "Pouvez-vous intervenir rapidement ?",
-  answer: <p>Nos plannings varient selon la demande. Il est conseillé de réserver votre projet à l’avance. Contactez-nous pour connaître nos prochaines disponibilités !</p>
+  answer: <p>Nos plannings varient selon la demande. Il est conseillé de réserver votre projet à l{`'`}avance. Contactez-nous pour connaître nos prochaines disponibilités !</p>
 }, {
   question: "Comment demander un devis ?",
   answer: <p>Appelez-nous au 06 00 00 00 00</p>
@@ -300,7 +306,7 @@ export const workSteps: WorkStep[] = [{
 
 }, {
   name: 'Visite sur place',
-  description: 'Nous convenons d’un rendez-vous à votre domicile pour évaluer précisément les surfaces à peindre, vos envies (teintes, finitions…), et les éventuelles contraintes techniques.',
+  description: `Nous convenons d${"'"}un rendez-vous à votre domicile pour évaluer précisément les surfaces à peindre, vos envies (teintes, finitions…), et les éventuelles contraintes techniques.`,
   icon: location,
 }, {
   name: 'Devis personnalisé & transparent',
