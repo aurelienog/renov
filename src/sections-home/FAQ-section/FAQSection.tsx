@@ -1,5 +1,5 @@
 import FAQItem from '@/components/FAQ-item/FAQItem';
-import React, { JSX } from 'react';
+import React, { JSX, Suspense } from 'react';
 import { faqEntries } from '@/data/data';
 import styles from './styles.module.css';
 import MotionInView from '@/components/motion-in-view/MotionInView';
@@ -12,10 +12,12 @@ function FAQSection(): JSX.Element {
       variants={staggerContainer}
       once = {true}
       >
-      <h2>Questions fréquentes</h2>
-      { faqEntries.map((entry, index )=> (
-      <FAQItem key={index} entry={entry}/>
-      ))}
+        <h2>Questions fréquentes</h2>
+        <Suspense>
+        { faqEntries.map((entry, index )=> (
+          <FAQItem key={index} entry={entry}/>
+        ))}
+        </Suspense>
       </MotionInView>   
       <div className={styles.illustration}>
         Aqui va una photo

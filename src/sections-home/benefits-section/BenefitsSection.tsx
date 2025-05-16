@@ -1,5 +1,5 @@
 import ComparisonChart from '@/components/comparison-chart/ComparisonChart';
-import React, { JSX } from 'react';
+import React, { JSX, Suspense } from 'react';
 import styles from './styles.module.css';
 import { columns } from '../../data/data';
 import MotionInView from '../../components/motion-in-view/MotionInView';
@@ -16,7 +16,9 @@ function BenefitsSection(): JSX.Element {
       className={styles.container}
       variants={fadeInLeft}
       >
-        <ComparisonChart data={columns}/>
+        <Suspense>
+          <ComparisonChart data={columns}/>
+        </Suspense>
       </MotionInView>
     </section>
   )
