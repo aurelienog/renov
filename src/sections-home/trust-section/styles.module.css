@@ -3,7 +3,10 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 2em;
-  padding: 10em 4em 4em;
+  margin-top: 2em;
+  padding-top: clamp(9em, 10vh, 14em);
+  padding-left: 4em;
+  padding-right: 4em;
 
 }
 
@@ -37,20 +40,8 @@
   }
 }
 
-@media (min-width: 54em) {
-  .article {
-    margin: 1em;
-  }
-}
-
-@media (min-width: 80em) {
+@media (min-width: 1600px) {
   .section {
-    padding: 8em 4em 4em;
-  }
-}
-
-@media (min-width: 105em) {
-  .section {
-    padding: 12em 4em 4em;
+      margin-top: 1em;
   }
 }
