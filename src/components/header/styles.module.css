@@ -1,5 +1,5 @@
 .header {
-  height: 5em;
+  height: var(--navbar-size);
   position: sticky;
   top: 1rem;
   z-index: 100;

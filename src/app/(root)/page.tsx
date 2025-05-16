@@ -14,7 +14,7 @@ export const dynamic = "force-static";
 
 export default function Home(): JSX.Element {
   return (
-  <main className="base-layout">
+  <main className="base-layout" style={{position: 'relative'}}>
     <BackgroundImage image={heroImage}/>
     <HeroSection/>
     <TrustSection/>

@@ -23,7 +23,7 @@
   --fw-semi-bold: 600;
   --fw-bold: 700;
 
-  --navbar-size: 60px;
+  --navbar-size: 5em;
   --border-radius: 20px;
   --focus-border-radius: var(--border-radius); 
   /* focus estandar */
