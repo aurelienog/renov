@@ -6,7 +6,7 @@ function BackgroundImage({ image }: {image: StaticImageData}): JSX.Element  {
   return (
     <figure className={styles.wrapper}>
       <div style={{position: 'relative', width: '100%', height: '100vh'}}>
-        <Image src={image} placeholder='blur' priority sizes="100vw" quality={100} fill style={{ objectFit: 'cover' }} 
+        <Image src={image} placeholder='blur' priority sizes="100vw" quality={75} style={{ objectFit: 'cover', width: '100%', height:'100vh' }} 
         alt="montre une cuisine spacieuse et lumineuse. L'esthétique générale est épurée, élégante et moderne. Il y a un îlot de cuisine avec quatre chaises en bois. La cuisine est éclairée par des suspensions et dispose d'une grande fenêtre avec des stores blancs." />
       </div>
       <div className={styles.overlay}></div>

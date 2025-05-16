@@ -9,6 +9,7 @@
   position: relative;
   background-color: var(--background);
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  max-width: 300px;
 
   & img {
     cursor: pointer;
@@ -32,7 +33,7 @@
   }
 }
 
-@media (min-width: 950px) {
+@media (min-width: 900px) {
 
 
   .gallery {
@@ -46,7 +47,6 @@
     grid-column: span 2;
     border-radius: .5rem;
     clip-path: path('M 120 30 C 150 0 150 0 180 30 C 210 60 240 90 270 120 C 300 150 300 150 270 180 C 240 210 210 240 180 270 C 150 300 150 300 120 270 C 90 240 60 210 30 180 C 0 150 0 150 30 120 Z');
-
 
       &:nth-of-type(4) {
       grid-column: 2 / span 2;

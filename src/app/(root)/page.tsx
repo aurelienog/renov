@@ -10,6 +10,8 @@ import HowItWorksSection from "@/sections-home/how-it-works-section/HowItWorksSe
 import BackgroundImage from "@/components/background-image/BackgroundImage";
 import heroImage from '../../../public/assets/images/hero.webp';
 
+export const dynamic = "force-static";
+
 export default function Home(): JSX.Element {
   return (
   <main className="base-layout">

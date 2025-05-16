@@ -1,6 +1,8 @@
 import React, { JSX } from 'react';
 import styles from './page.module.css';
 
+export const dynamic = "force-static"; 
+
 function confidentialityPage(): JSX.Element {
   return (
     <main className={`base-layout ${styles.page}`}>
