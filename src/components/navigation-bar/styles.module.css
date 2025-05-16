@@ -1,5 +1,11 @@
 .navbar {
+  display: flex;
+  justify-content: space-between;
   text-align: center;
+
+  & :first-child {
+    z-index: 100;
+  }
 
   & a {    
     text-decoration: none;
@@ -43,23 +49,33 @@
 }
 
 
-@media (min-width: 85em) {
+@media (min-width: 15g10px) {
+
+  .navbar {
+    justify-content:space-around;
+    gap: 8rem;
+  }
 
   .links {
     position: relative;
     background-color: transparent;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    justify-content: end;
     place-items: center;
     border: none;
 
-
     & li {
-      padding: 0;
+      padding: 0 4rem;
     }
 
-      & li:first-of-type{
-      display: none;
+    & li:first-of-type{
+      margin-top: 0;
     }
+
+    & li:last-of-type{
+      padding-right: 0;
+    } 
   }
 }

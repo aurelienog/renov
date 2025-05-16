@@ -3,8 +3,9 @@ import styles from './styles.module.css';
 import Link from "next/link";
 import Button from '../button/Button';
 import HamburgerMenu from '../hamburger-menu/HamburgerMenu';
+import Image, { StaticImageData } from "next/image";
 
-function NavigationBar({ containerRef }: { containerRef: React.RefObject<HTMLElement | null> }): JSX.Element {
+function NavigationBar({ containerRef, logo }: { logo: StaticImageData, containerRef: React.RefObject<HTMLElement | null> }): JSX.Element {
     const [open, setOpen] = useState(false);
     const menuRef = useRef<HTMLUListElement>(null);
 
@@ -33,11 +34,11 @@ function NavigationBar({ containerRef }: { containerRef: React.RefObject<HTMLEle
 
   return (
     <nav className={`${styles.navbar}`}>
+      <Link href={"/"} onClick={() => setOpen(false)}> 
+        <Image src={logo} alt='logo ANJ - home' width={120} height={60} style={{ position: 'relative'}}/> 
+      </Link>
       <HamburgerMenu handleClick = { handleClick } open={open}/>
       <ul ref={menuRef} id="main-navigation" className={`${styles.links} ${open ? styles.open : ''} header`}>
-      <li onClick={() => setOpen(false)}>
-          <Link href={"/"}>Accueil</Link>
-        </li>
         <li onClick={() => setOpen(false)}>
           <Link href={"/prestations"}>Prestations</Link>
         </li>

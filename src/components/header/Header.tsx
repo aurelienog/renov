@@ -1,11 +1,11 @@
 'use client'
 
 import React, { JSX, useRef, useState } from 'react';
-import Image, { StaticImageData } from "next/image";
-import Link from "next/link";
+
 import NavigationBar from '../navigation-bar/NavigationBar';
 import styles from './styles.module.css';
 import { motion, useMotionValueEvent, useScroll } from 'framer-motion';
+import { StaticImageData } from 'next/image';
 
 function Header({ logo }: { logo: StaticImageData }): JSX.Element {
   // ref to detect click outside the header and close the menu if open
@@ -68,10 +68,7 @@ function Header({ logo }: { logo: StaticImageData }): JSX.Element {
     transition={{ duration: 0.2}}
     ref={headerRef}
     >
-      <Link href={"/"}> 
-        <Image src={logo} alt='logo ANJ - home' width={120} height={60} style={{ position: 'relative'}}/> 
-      </Link>
-      <NavigationBar containerRef={headerRef}/>
+      <NavigationBar containerRef={headerRef} logo={logo}/>
     </motion.header>
   )
 }

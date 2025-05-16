@@ -15,7 +15,7 @@
 }
 }
 
-@media (min-width: 85em) {
+@media (min-width: 1510px) {
   .hamburger {
     display: none;
   }
