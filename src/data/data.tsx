@@ -243,21 +243,21 @@ export const faqEntries: FaqEntry[] = [{
   answer: <>
     <p>Le tarif dépend de plusieurs critères :</p>
     <ul>
-      <li>La surface à peindre</li>
-      <li>L{`'`}état des murs (préparation nécessaire ou non)</li>
-      <li>Le type de peinture et finition choisie</li>
+      <li>La surface à peindre.</li>
+      <li>L{`'`}état des murs (préparation nécessaire ou non).</li>
+      <li>Le type de peinture et finition choisie.</li>
     </ul>
-    <p>Nous proposons des devis gratuits et transparents. Contactez-nous !</p>
+    <p>Je propose des devis gratuits et transparents. Contactez-moi !</p>
   </>
 }, {
   question: "Proposez-vous des facilités de paiement ?",
   answer: <p>Oui, j{`'`}offre la possibilité de paiement en plusieurs fois selon le montant du chantier.</p>
 }, {
   question: "Pouvez-vous intervenir rapidement ?",
-  answer: <p>Nos plannings varient selon la demande. Il est conseillé de réserver votre projet à l{`'`}avance. Contactez-nous pour connaître nos prochaines disponibilités !</p>
+  answer: <p>Nos plannings varient selon la demande. Il est conseillé de réserver votre projet à l{`'`}avance. Contactez-moi pour connaître mes prochaines disponibilités !</p>
 }, {
   question: "Comment demander un devis ?",
-  answer: <p>Appelez-nous au 06 00 00 00 00</p>
+  answer: <p>Appelez-nous au 06 00 00 00 00.</p>
 }
 ]
 

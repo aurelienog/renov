@@ -14,7 +14,6 @@ function HeroSection(): JSX.Element  {
         <h2>Redonnez vie à vos espaces</h2>
         <p>Peintre en bâtiment, j{`'`}embellis et restaure vos intérieurs dans les Yvelines et le Val d{`'`}Oise.</p>
         <Button>Obtenir un devis gratuit</Button>
-
       </article>      
     </section>
   )

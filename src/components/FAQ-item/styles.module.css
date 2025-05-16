@@ -7,6 +7,7 @@
   /* hyphens: auto; */
 
   & summary {
+    margin-bottom: 0.5lh;
     margin-inline-start: 1rem;
     line-height: 1.3;
     list-style-position: outside;
@@ -24,6 +25,7 @@
   }
 
   & li {
+    padding: 0.2lh;
   margin-left: 2rem;
   }
 }
