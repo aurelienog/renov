@@ -205,16 +205,16 @@ export const faqEntries: FaqEntry[] = [{
 </>}, {
   question: "Dois-je préparer mon logement avant les travaux ?",
   answer: <>
-    <p>Ce n{`'`}est pas nécessaire, je occupe de tout ! Cependant, il est recommandé de :</p>
+    <p>Ce n{`'`}est pas nécessaire, je m{`'`}occupe de tout ! Il est néanmoins recommandé de :</p>
     <ul>
-      <li>Déplacer les objets fragiles et petits meubles</li>
-      <li>Retirer les rideaux et cadres si possible</li>
-      <li>Nous informer de toute contrainte particulière</li>
+      <li>Déplacer les objets fragiles et petits meubles.</li>
+      <li>Retirer les rideaux et cadres si possible.</li>
+      <li>M{`'`}informer de toute contrainte particulière.</li>
     </ul>
     <p>Une fois la zone de travail libérée, je prends le relais :</p>
     <ul>
-      <li>Protection des sols et du mobilier qui ne peut pas être retiré ou déplacé</li>
-      <li>Démontage et remise en place, en fin de travaux, des luminaires, prises, interrupteurs, poignées de porte, etc.</li>
+      <li>Protection des sols et du mobilier qui ne peut pas être retiré ou déplacé par vos soins.</li>
+      <li>Démontage et remise en place en fin de travaux, des luminaires, prises, interrupteurs, poignées de porte, etc.</li>
       <li>Nettoyage complet de la zone de travail une fois les travaux terminés.</li>
     </ul>
   </>
@@ -227,17 +227,17 @@ export const faqEntries: FaqEntry[] = [{
 }, {
   question: "Faut-il quitter son logement pendant les travaux ?",
   answer: <>
-  <p>Ce n{`'`}est pas nécessaire ! Nous utilisons des peintures sans odeur et organisons le chantier pour limiter au maximum les nuisances.</p>
+  <p>Ce n{`'`}est pas nécessaire ! J{"'"}utilise des peintures sans odeur et j{"'"}organise le chantier pour limiter au maximum les nuisances.</p>
   <p>Je veille notamment à :</p>
   <ul>
-    <li>respecter les horaires autorisés pour les travaux</li>
+    <li>respecter les horaires autorisés pour les travaux.</li>
     <li>rendre les pièces de vie accessibles en fin de journée ou pendant les repas (cuisine, salle de bains…).</li>
   </ul>
   </>}, {
   question: "Travaillez-vous avec des peintures écologiques ?",
   answer: <>
   <p>Oui, la plupart des produits que j{`'`}utilise (enduits, peintures) ont un faible niveau d{`'`}émission et sont classés A+.</p>
-  <p>Pour aller plus loin, je propose également des peintures assainissantes détruisant le formaldéhyde dans vos intérieurs</p>
+  <p>Pour aller plus loin, je propose également des peintures assainissantes détruisant le formaldéhyde dans vos intérieurs.</p>
   </>}, {
   question: `Quel est le prix moyen d${`'`}un chantier de peinture ?`,
   answer: <>
