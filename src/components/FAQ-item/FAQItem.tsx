@@ -14,7 +14,7 @@ function FAQItem({ entry }: { entry: FaqEntry }): JSX.Element  {
     variants={fadeInUp}
     >
       <summary>{question}</summary>
-      <>{answer}</>
+      <div>{answer}</div>
     </motion.details>
   );
 }
