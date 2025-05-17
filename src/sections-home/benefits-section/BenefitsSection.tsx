@@ -4,6 +4,7 @@ import styles from './styles.module.css';
 import { columns } from '../../data/data';
 import MotionInView from '../../components/motion-in-view/MotionInView';
 import { fadeInLeft } from '@/animations/variants';
+import Loader from '../../app/(root)/loading';
 
 
 function BenefitsSection(): JSX.Element {
@@ -16,7 +17,7 @@ function BenefitsSection(): JSX.Element {
       className={styles.container}
       variants={fadeInLeft}
       >
-        <Suspense>
+        <Suspense fallback={<Loader/>}>
           <ComparisonChart data={columns}/>
         </Suspense>
       </MotionInView>
