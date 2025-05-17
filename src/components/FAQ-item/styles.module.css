@@ -1,21 +1,21 @@
 .details {
   max-inline-size: 40rem;
-  padding: 0.5em 1em;
+  padding: 0.5em;
   margin-block: 1em 0;
   border-bottom: 1px solid var(--color-accent);
   /* hyphens: auto; */
-  height: 2.2lh;
+  height: 2.4lh;
   overflow: hidden;
-  transition: height 0.5s ease-in-out, opacity 0.5s ease;
-  opacity: 0;
+  transition: height 0.5s ease-in-out;
+  
 
   & > div {
-    padding: 0 2em ;
+    padding: 0 0.5em ;
   }
 
   &[open] {
     height: max-content;
-    opacity: 1;
+    
   }
 
 
@@ -39,6 +39,13 @@
 
   & li {
     padding: 0.2lh;
-    margin-left: 2lh;
+    margin-left: 1lh;
+  }
+}
+
+@media(min-width: 590px) {
+  .details {
+    padding: 0.5em;
+    height: 2lh;
   }
 }
