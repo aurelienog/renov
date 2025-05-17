@@ -40,8 +40,8 @@ import warning from '../../public/assets/icons/warning.svg';
 import x from '../../public/assets/icons/x.svg';
 
 //Before-after images
-import beforeBathroom from '../../public/assets/images/beforeBathroom.webp';
-import afterBathroom from '../../public/assets/images/afterBathroom.webp';
+import beforeToit from '../../public/assets/images/toit-avant.webp';
+import afterToit from '../../public/assets/images/toit-apres.webp';
 import beforeLiving from '../../public/assets/images/livingBefore.webp';
 import afterliving from '../../public/assets/images/livingAfter.webp';
 import bedroomBefore from '../../public/assets/images/bedroomBefore.webp';
@@ -332,8 +332,8 @@ export const workSteps: WorkStep[] = [{
 
 export const beforeAfterPhotos: BeforeAfterComparison[] = [{
   name: 'bathroom',
-  before: beforeBathroom,
-  after: afterBathroom,
+  before: beforeToit,
+  after: afterToit,
 },
 {
   name: 'bedroom',

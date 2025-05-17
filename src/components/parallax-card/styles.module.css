@@ -15,7 +15,7 @@
   aspect-ratio: 1/2;
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 650px) {
   .card {
     aspect-ratio: 16/9;
     mask-image: url('/assets/images/revealMask.webp');

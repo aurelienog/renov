@@ -35,7 +35,7 @@ function NavigationBar({ containerRef, logo }: { logo: StaticImageData, containe
   return (
     <nav className={`${styles.navbar}`}>
       <Link href={"/"} onClick={() => setOpen(false)}> 
-        <Image src={logo} alt='logo ANJ - home' priority placeholder='blur' quality={75} width={128} height={64} style={{ position: 'relative'}}/> 
+        <Image src={logo} alt='logo ANJ - home' priority placeholder='blur' quality={75} width={128} height={64} sizes='(max-width: 128px) 100vw' style={{ position: 'relative'}}/> 
       </Link>
       <HamburgerMenu handleClick = { handleClick } open={open}/>
       <ul ref={menuRef} id="main-navigation" className={`${styles.links} ${open ? styles.open : ''} header`}>
