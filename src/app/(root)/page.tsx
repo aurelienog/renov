@@ -8,8 +8,6 @@ import { JSX } from 'react';
 import BeforeAfterSection from "@/sections-home/before-after-section/BeforeAfterSection";
 import HowItWorksSection from "@/sections-home/how-it-works-section/HowItWorksSection";
 
-export const dynamic = "force-static";
-
 export default function Home(): JSX.Element {
   return (
   <main className="base-layout">

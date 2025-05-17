@@ -1,5 +1,4 @@
 import React from 'react';
-export const dynamic = "force-static"; 
 
 function page() {
   return (

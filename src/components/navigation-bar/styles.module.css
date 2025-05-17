@@ -67,7 +67,7 @@
     border: none;
 
     & li {
-      padding: 0 4rem;
+      padding: 0 2rem;
     }
 
     & li:first-of-type{
