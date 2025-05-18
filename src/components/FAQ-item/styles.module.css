@@ -23,8 +23,8 @@
 
 
   & summary {
+    padding-inline: 0.5lh;
     margin-bottom: 0.5lh;
-    margin-inline-start: 1lh;
     line-height: 1.3;
     list-style-position: outside;
     font-weight: 700;
@@ -51,7 +51,7 @@
     height: 2lh;
 
     & summary {
-      padding-inline: 0.5lh;
+      margin-inline-start: 1lh;
     }
   }
 }
