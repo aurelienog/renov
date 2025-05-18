@@ -29,10 +29,12 @@
   border-radius: var(--border-radius);
   left: 0;
   right: 0;
-  display: none;
+  height: var(--navbar-size);
+  opacity: 0;
   padding: 1rem;
   background-color: var(--background);
   border: solid 1px black;
+  transition: height 0.5s ease-in-out, opacity 0.5s ease-in-out;
 
   & li {
     padding: 1.5em;
@@ -46,6 +48,8 @@
 
 .links.open {
   display: flex;
+  opacity: 1;
+  height: max-content;
 }
 
 
