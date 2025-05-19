@@ -13,7 +13,6 @@
     &:hover,
     &:focus-visible {
     color: var(--color-accent);
-    font-weight: var(--fw-bold);
     }
   }
 }
@@ -52,25 +51,26 @@
 @media (min-width: 1510px) {
 
   .navbar {
-    justify-content:space-around;
-    gap: 8rem;
+    justify-content: space-around;
   }
 
   .links {
+    flex-grow: 2;
     position: relative;
     background-color: transparent;
     display: flex;
+    justify-content: space-around;
     flex-direction: row;
-    justify-content: end;
-    justify-content: end;
     place-items: center;
-    border: none;
+    border: none ;
 
     & li {
       padding: 0 2rem;
+      justify-self: center;
     }
 
     & li:first-of-type{
+      margin-left: 2em;
       margin-top: 0;
     }
 
