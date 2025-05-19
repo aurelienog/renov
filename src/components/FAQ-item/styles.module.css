@@ -42,6 +42,7 @@
   & li {
     padding: 0.2lh;
     margin-left: 1lh;
+    list-style-type: square;
   }
 }
 
@@ -51,7 +52,7 @@
     height: 2lh;
 
     & summary {
-      margin-inline-start: 1lh;
+      margin-inline-start: 1.2lh;
     }
   }
 }

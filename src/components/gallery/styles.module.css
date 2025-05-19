@@ -1,15 +1,22 @@
 .gallery {
+  place-content: center;
+  --grid-column-size: 250px;
   position: relative;
   display: grid;
-  gap: 1.5rem;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(min(var(--grid-column-size), 100%), 300px));
+  gap: 2em;  
+  text-align: center;        
 }
 
 
 .card {
   position: relative;
+  width: 100%;
+  height: auto;
   background-color: var(--background);
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  max-width: 300px;
+
 
   & img {
     cursor: pointer;
@@ -22,7 +29,7 @@
 
   & h3 {
     padding: 0.5em;
-    margin-left: 10px;
+    font-size: 1.225rem;
   }
 
 
@@ -33,7 +40,7 @@
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 990px) {
 
 
   .gallery {
@@ -101,7 +108,10 @@
     }
   }
   
-  .card h3 {
+  .card {
+    max-width: 300px;
+  
+    & h3 {
     color: white;
     text-align: center;
     font-weight: bold;
@@ -110,6 +120,9 @@
     padding: 0.5rem 2.6rem;
     width: 100%;
     margin: 0;
+    font-size: 1.625rem;
+  }
+  
   }
   
   

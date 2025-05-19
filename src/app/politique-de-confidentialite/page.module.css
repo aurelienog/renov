@@ -22,6 +22,7 @@
   }
 
   & ol { 
+    padding: 0.5em;
     place-self: center;
   }
 
@@ -37,9 +38,10 @@
   }
 
   & ul li {
-  margin-left: 4rem;
-  list-style-type: square;
-  position: relative;
+    padding: 0.2lh;
+    margin-left: 1lh;
+    list-style-type: square;
+    position: relative;
   }
 
 
