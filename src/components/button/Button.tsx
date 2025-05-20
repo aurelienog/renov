@@ -4,8 +4,8 @@ import styles from './styles.module.css';
 
 export interface ButtonProps {
   children: ReactNode,
-  disabled: boolean,
-  className: string
+  disabled?: boolean,
+  className?: string
 }
 
 export default function Button({ children, disabled, className }: ButtonProps): JSX.Element {
