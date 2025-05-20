@@ -1,9 +1,10 @@
 "use server"
 import nodemailer from 'nodemailer'; 
+import { ContactFormData } from '@/models/types';
 
 const transporter = nodemailer.createTransport({
   host: process.env.SMTP_HOST,
-  port: 587, 
+  port: 465, 
   secure: false, 
   auth: {
     user: process.env.EMAIL_FROM,
@@ -11,15 +12,9 @@ const transporter = nodemailer.createTransport({
   }
 });
 
-type FormData = {
-  name: string;
-  email: string;
-  phone?: string;
-  message: string;
-};
 
-export async function sendMail({ name, email, phone, message }: FormData) {
-  const fieldErrors: Partial<Record<keyof FormData, string>> = {};
+export async function sendMail({ name, email, phone, message }: ContactFormData) {
+  const fieldErrors: Partial<Record<keyof ContactFormData, string>> = {};
 
   if (!name) fieldErrors.name = 'name is required'
   if (!email) fieldErrors.email = 'E-mail is required'
@@ -29,9 +24,6 @@ export async function sendMail({ name, email, phone, message }: FormData) {
   if (email && !emailRegex.test(email)) {
     fieldErrors.email = 'E-mail not valid';
   }
-  // if (!emailRegex.test(email)) {
-  //   return { success: false, message: 'E-mail not valid.' };
-  // }
 
   if (phone && ! /^(0[1-9])(?:[ -]?\d{2}){4}$/.test(phone)) {
     fieldErrors.phone = 'Phone number is invalid';
@@ -69,7 +61,6 @@ export async function sendMail({ name, email, phone, message }: FormData) {
       }
     };
   }
-
 }
 
 

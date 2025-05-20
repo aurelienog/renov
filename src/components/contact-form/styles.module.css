@@ -1,0 +1,15 @@
+.form {
+  display: grid;
+  gap: 2rem;
+
+
+  & label {
+    font-weight: var(--fw-semi-bold);
+  }
+
+  & input {
+    border-radius: var(--border-radius);
+    padding: 1em;
+    line-height: 1.6;
+  }
+}

@@ -3,11 +3,13 @@ import React, { JSX, ReactNode } from 'react';
 import styles from './styles.module.css';
 
 export interface ButtonProps {
-  children: ReactNode
+  children: ReactNode,
+  disabled: boolean,
+  className: string
 }
 
-export default function Button({children}: ButtonProps): JSX.Element {
+export default function Button({ children, disabled, className }: ButtonProps): JSX.Element {
   return (
-    <button className={`${styles.button}`}>{children}</button>
+    <button disabled={disabled} type='submit' className={`${styles.button} ${className}`}>{children}</button>
   )
 }
