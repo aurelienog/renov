@@ -7,6 +7,7 @@ import ProjectsSection from "@/sections-home/projects-section/ProjectsSection";
 import { JSX } from 'react';
 import BeforeAfterSection from "@/sections-home/before-after-section/BeforeAfterSection";
 import HowItWorksSection from "@/sections-home/how-it-works-section/HowItWorksSection";
+import ContactSection from "@/sections-home/contact-section/ContactSection";
 
 export default function Home(): JSX.Element {
   return (
@@ -19,6 +20,7 @@ export default function Home(): JSX.Element {
     <BenefitsSection/>
     <BeforeAfterSection/>
     <QuestionsSection/>
+    <ContactSection/>
   </main>
   );
 }
