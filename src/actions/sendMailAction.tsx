@@ -15,52 +15,53 @@ const transporter = nodemailer.createTransport({
 
 
 export async function sendMail({ name, email, phone, message }: ContactFormData) {
-  const fieldErrors: Partial<Record<keyof ContactFormData, string>> = {};
+  // const fieldErrors: Partial<Record<keyof ContactFormData, string>> = {};
 
-  if (!name) fieldErrors.name = 'name is required'
-  if (!email) fieldErrors.email = 'E-mail is required'
-  if (!message) fieldErrors.message = 'message is required'
+  // if (!name) fieldErrors.name = 'name is required'
+  // if (!email) fieldErrors.email = 'E-mail is required'
+  // if (!message) fieldErrors.message = 'message is required'
 
-  const emailRegex =  /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-  if (email && !emailRegex.test(email)) {
-    fieldErrors.email = 'E-mail not valid';
-  }
+  // const emailRegex =  /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  // if (email && !emailRegex.test(email)) {
+  //   fieldErrors.email = 'E-mail not valid';
+  // }
 
-  if (phone && ! /^(0[1-9])(?:[ -]?\d{2}){4}$/.test(phone)) {
-    fieldErrors.phone = 'Phone number is invalid';
-  }
+  // if (phone && ! /^(0[1-9])(?:[ -]?\d{2}){4}$/.test(phone)) {
+  //   fieldErrors.phone = 'Phone number is invalid';
+  // }
 
-  if (Object.keys(fieldErrors).length > 0) {
-    throw {
-      message: 'Validation error',
-      response: {
-        data: {
-          errors: fieldErrors
-        }
-      }
-    };
-  }
+  // if (Object.keys(fieldErrors).length > 0) {
+  //   throw {
+  //     message: 'Validation error',
+  //     response: {
+  //       data: {
+  //         errors: fieldErrors
+  //       }
+  //     }
+  //   };
+  // }
 
   const mailOptions = {
   from: email,
   to:`${process.env.EMAIL_TO}`,
   subject: `Formulaire de contact`,
-  html: `<h1>From: ${name}, ${email}</h1><p>${message}</p>`
+  html: `<h1>From: ${name}, ${email}, ${phone}</h1><p>${message}</p>`
   }
 
   try {
     await transporter.sendMail(mailOptions);
-    return { success: true };
+    return { success: true, message: 'Email sent successfully!'  };
   } catch(error) {
     console.error('Error sending email', error);
-    throw {
-      message: "Error sending email",
-      response: {
-        data: {
-          errors: {}
-        }
-      }
-    };
+    return { success: false, message: 'Failed to send email.' }
+    // throw {
+    //   message: "Error sending email",
+    //   response: {
+    //     data: {
+    //       errors: {}
+    //     }
+    //   }
+    // };
   }
 }
 

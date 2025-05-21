@@ -25,19 +25,22 @@ function ContactForm() {
     try {
       setServerError(null);
       setSuccessMessage(null)
-      await sendMail(data);
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ data })
+      });
+      // await sendMail(data);
       reset();
       setSuccessMessage("Merci pour votre message! Je vous contacterai dans les plus brefs délais.")
     } catch(error) {
       const err = error as ErrorResponse;
       const errors  = err.response?.data.errors;
       if (errors) {
-        //client side errors
         console.log(errors)
         Object.keys(errors)
         .forEach((inputName) => setError(inputName as keyof ContactFormData, { message: errors[inputName]}))
       } else {
-        //server side errors
         console.error(error);
         setServerError(err.message)
       }
