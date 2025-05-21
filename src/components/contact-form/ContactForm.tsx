@@ -4,6 +4,7 @@ import { useForm } from 'react-hook-form';
 import { ContactFormData } from '@/models/types';
 import styles from './styles.module.css';
 import Button from '../button/Button';
+import { sendMail } from '@/actions/sendMailAction';
 
 type ErrorResponse = {
   message: string;
@@ -24,17 +25,17 @@ function ContactForm() {
     try {
       setServerError(null);
       setSuccessMessage(null)
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ data })
-      });
-      if (response.ok) {
-        alert('Email sent successfully!');
-      } else {
-        alert('Failed to send email.');
-      }
-      // await sendMail(data);
+      // const response = await fetch('/api/contact', {
+      //   method: 'POST',
+      //   headers: { 'Content-Type': 'application/json' },
+      //   body: JSON.stringify({ data })
+      // });
+      // if (response.ok) {
+      //   alert('Email sent successfully!');
+      // } else {
+      //   alert('Failed to send email.');
+      // }
+      await sendMail(data);
       reset();
       setSuccessMessage("Merci pour votre message! Je vous contacterai dans les plus brefs délais.")
     } catch(error) {
