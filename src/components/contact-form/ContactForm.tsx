@@ -1,7 +1,6 @@
 'use client'
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form'; 
-import {sendMail} from '../../actions/sendMailAction'
 import { ContactFormData } from '@/models/types';
 import styles from './styles.module.css';
 import Button from '../button/Button';
@@ -30,6 +29,11 @@ function ContactForm() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ data })
       });
+      if (response.ok) {
+        alert('Email sent successfully!');
+      } else {
+        alert('Failed to send email.');
+      }
       // await sendMail(data);
       reset();
       setSuccessMessage("Merci pour votre message! Je vous contacterai dans les plus brefs délais.")
