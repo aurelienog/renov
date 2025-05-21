@@ -2,6 +2,8 @@
 
 import nodemailer from 'nodemailer'; 
 import { ContactFormData } from '@/models/types';
+import { ValidationError } from '@/models/class';
+
 
 const transporter = nodemailer.createTransport({
   host: process.env.SMTP_HOST,
@@ -12,7 +14,6 @@ const transporter = nodemailer.createTransport({
     pass: process.env.EMAIL_PASS
   }
 });
-
 
 export async function sendMail({ name, email, phone, message }: ContactFormData) {
   const fieldErrors: Partial<Record<keyof ContactFormData, string>> = {};
@@ -31,14 +32,7 @@ export async function sendMail({ name, email, phone, message }: ContactFormData)
   }
 
   if (Object.keys(fieldErrors).length > 0) {
-    throw {
-      message: 'Validation error',
-      response: {
-        data: {
-          errors: fieldErrors
-        }
-      }
-    };
+    throw new ValidationError(fieldErrors)
   }
 
   const mailOptions = {
@@ -54,14 +48,6 @@ export async function sendMail({ name, email, phone, message }: ContactFormData)
   } catch(error) {
     console.error('Error sending email', error);
     return { success: false, message: 'Failed to send email.' }
-    throw {
-      message: "Error sending email",
-      response: {
-        data: {
-          errors: {}
-        }
-      }
-    };
   }
 }
 

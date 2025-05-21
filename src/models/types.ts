@@ -4,3 +4,13 @@ export type ContactFormData = {
   phone?: string;
   message: string;
 };
+
+
+export type ErrorResponse = {
+  message: string;
+  response: {
+    data: {
+      errors: Record<string, string>;
+    };
+  };
+};
