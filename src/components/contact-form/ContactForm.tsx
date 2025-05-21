@@ -1,7 +1,6 @@
 'use client'
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form'; 
-import { sendMail } from '../../actions/sendMailAction';
 import { ContactFormData } from '@/models/types';
 import styles from './styles.module.css';
 import Button from '../button/Button';
@@ -16,7 +15,7 @@ type ErrorResponse = {
 };
 
 
-function ContactForm() {
+function ContactForm({sendMail}: {sendMail: (data: ContactFormData) => Promise<{success: boolean, error: {message:string, response: string}}>}) {
   const { register, handleSubmit, reset, setError, formState: { errors, isValid, isSubmitting } } = useForm<ContactFormData>({ mode: 'onChange' });
   const [serverError, setServerError] = useState<string | null>(null)
   const [successMessage, setSuccessMessage] = useState<string | null>(null)
