@@ -25,16 +25,6 @@ function ContactForm() {
     try {
       setServerError(null);
       setSuccessMessage(null)
-      // const response = await fetch('/api/contact', {
-      //   method: 'POST',
-      //   headers: { 'Content-Type': 'application/json' },
-      //   body: JSON.stringify({ data })
-      // });
-      // if (response.ok) {
-      //   alert('Email sent successfully!');
-      // } else {
-      //   alert('Failed to send email.');
-      // }
       await sendMail(data);
       reset();
       setSuccessMessage("Merci pour votre message! Je vous contacterai dans les plus brefs délais.")
