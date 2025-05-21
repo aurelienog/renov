@@ -1,6 +1,7 @@
 'use client'
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form'; 
+import {sendMail} from '../../actions/sendMailAction'
 import { ContactFormData } from '@/models/types';
 import styles from './styles.module.css';
 import Button from '../button/Button';
@@ -15,7 +16,7 @@ type ErrorResponse = {
 };
 
 
-function ContactForm({sendMail}: {sendMail: (data: ContactFormData) => Promise<{success: boolean, error: {message:string, response: string}}>}) {
+function ContactForm() {
   const { register, handleSubmit, reset, setError, formState: { errors, isValid, isSubmitting } } = useForm<ContactFormData>({ mode: 'onChange' });
   const [serverError, setServerError] = useState<string | null>(null)
   const [successMessage, setSuccessMessage] = useState<string | null>(null)
@@ -98,9 +99,9 @@ function ContactForm({sendMail}: {sendMail: (data: ContactFormData) => Promise<{
         <label htmlFor='message'>Votre message:<span>*</span></label>
         <textarea id='message' placeholder='cb de m2 etc'
         {...register("message", { 
-        // required: "Merci de rédiger votre message.", 
-        // minLength: { value: 30, message: 'Le message doit contenir minimum 30 caractères.' },
-        // maxLength: { value: 5000, message: 'El mensaje doit contenir moins de 5000 caracteres.'} 
+        required: "Merci de rédiger votre message.", 
+        minLength: { value: 30, message: 'Le message doit contenir minimum 30 caractères.' },
+        maxLength: { value: 5000, message: 'El mensaje doit contenir moins de 5000 caracteres.'} 
         })}></textarea>
 
         { errors.message && <p id="messageError">{errors.message?.message}</p> }    
