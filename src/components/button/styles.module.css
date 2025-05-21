@@ -1,7 +1,7 @@
 .button {
   display: inline-block;
   padding: 1em;
-  border-radius: 15px;
+  border-radius: 12px;
   cursor: pointer;
   font-weight: var(--fw-bold);
   text-transform: uppercase;

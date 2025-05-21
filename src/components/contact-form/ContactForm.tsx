@@ -53,7 +53,7 @@ function ContactForm() {
         <label htmlFor='name'>Nom<span>*</span></label>
         <input id='name' type='text' placeholder='nom' {...register("name", { 
         required: "Merci d’indiquer votre nom.", 
-        minLength: { value: 3, message: 'Votre nom doit contenir entre 2 et 30 caractères.' },
+        minLength: { value: 2, message: 'Votre nom doit contenir entre 2 et 30 caractères.' },
         maxLength: { value: 30, message: 'Votre nom doit contenir entre 2 et 30 caractères.'} 
         })} />
         
@@ -99,9 +99,9 @@ function ContactForm() {
         <label htmlFor='message'>Votre message:<span>*</span></label>
         <textarea id='message' placeholder='cb de m2 etc'
         {...register("message", { 
-        required: "Merci de rédiger votre message.", 
-        minLength: { value: 30, message: 'Le message doit contenir minimum 30 caractères.' },
-        maxLength: { value: 5000, message: 'El mensaje doit contenir moins de 5000 caracteres.'} 
+        // required: "Merci de rédiger votre message.", 
+        // minLength: { value: 30, message: 'Le message doit contenir minimum 30 caractères.' },
+        // maxLength: { value: 5000, message: 'El mensaje doit contenir moins de 5000 caracteres.'} 
         })}></textarea>
 
         { errors.message && <p id="messageError">{errors.message?.message}</p> }    
@@ -109,7 +109,7 @@ function ContactForm() {
       </div>
     
       {/* button */}
-      <Button disabled={isSubmitting} className={`${!isValid || isSubmitting ? 'opacity-70 pointer-events-none' : ''}`}>
+      <Button disabled={!isValid || isSubmitting} className={`${!isValid || isSubmitting ? `${styles.disable}` : ''}`}>
         {isSubmitting ? 'envoi en cours...' : 'Envoyer un message'}
       </Button>
 
