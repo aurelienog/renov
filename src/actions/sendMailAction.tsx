@@ -42,7 +42,7 @@ export async function sendMail({ name, email, phone, message }: ContactFormData)
   // }
 
   const mailOptions = {
-  from: email,
+  from: `${process.env.EMAIL_FROM}`,
   to:`${process.env.EMAIL_TO}`,
   subject: `Formulaire de contact`,
   html: `<h1>From: ${name}, ${email}, ${phone}</h1><p>${message}</p>`
