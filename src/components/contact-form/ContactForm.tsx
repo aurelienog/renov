@@ -32,11 +32,13 @@ function ContactForm() {
       const err = error as ErrorResponse;
       const errors  = err.response?.data.errors;
       if (errors) {
+        //client side errors
         console.log(errors)
         Object.keys(errors)
         .forEach((inputName) => setError(inputName as keyof ContactFormData, { message: errors[inputName]}))
       } else {
-        console.error('je suis log', error);
+        //server side errors
+        console.error(error);
         setServerError(err.message)
       }
     }
@@ -44,10 +46,11 @@ function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit(onMessageSubmit)} className={styles.form}>
-
-      {/* name */}
-      <div>
-        <label htmlFor='name'>Nom</label>
+      <fieldset>
+      <legend className='visually-hidden'>Informations personnelles</legend>
+        {/* name */}
+        <div>
+        <label htmlFor='name'>Nom<span>*</span></label>
         <input id='name' type='text' placeholder='nom' {...register("name", { 
         required: "Merci d’indiquer votre nom.", 
         minLength: { value: 3, message: 'Votre nom doit contenir entre 2 et 30 caractères.' },
@@ -61,7 +64,7 @@ function ContactForm() {
 
       {/* email */}
       <div>
-        <label htmlFor='email'>Email</label>
+        <label htmlFor='email'>Email<span>*</span></label>
         <input id='email' type='email' placeholder='dupont@example.com' {...register("email", { 
         required: "Merci d’indiquer votre email.", 
         pattern: {
@@ -76,24 +79,24 @@ function ContactForm() {
 
 
 
-      {/* phone */}
-      <div>
-        <label htmlFor='phone'>Téléphone</label>
-        <input id='phone' type='tel' placeholder='06 00 00 00 00' {...register("phone", { 
-        pattern: {
-          value: /^(0[1-9])(?:[ -]?\d{2}){4}$/,
-          message: "Le numéro de téléphone semble invalide."
-        }
+        {/* phone */}
+        <div>
+          <label htmlFor='phone'>Téléphone</label>
+          <input id='phone' type='tel' placeholder='06 00 00 00 00' {...register("phone", { 
+            pattern: {
+            value: /^(0[1-9])(?:[ -]?\d{2}){4}$/,
+            message: "Le numéro de téléphone semble invalide."
+          }
         })} />
 
         { errors.phone && <p id="phoneError">{errors.phone?.message}</p> } 
-      </div>
-
-
+        </div>
+      </fieldset>
+      
 
       {/* message */}
       <div>
-        <label htmlFor='message'>Votre message:</label>
+        <label htmlFor='message'>Votre message:<span>*</span></label>
         <textarea id='message' placeholder='cb de m2 etc'
         {...register("message", { 
         required: "Merci de rédiger votre message.", 

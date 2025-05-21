@@ -1,15 +1,85 @@
 .form {
+  max-width: 100em;
   display: grid;
   gap: 2rem;
+  justify-items: center;
+  background-color: var(--color-primary);
+  border-radius: var(--border-radius);
+  padding: 2em;
+
+  & button {
+    margin-top: 4em;
+    width: 100%;
+  }
+
+
+  /* textarea container */
+  & > div {
+    width: 100%;
+    min-height: 20em;
+
+    & label {
+      padding: 0 1em;
+    }
+  }
+
+  & fieldset {
+    width: 100%;
+    border: none;
+
+    & div {
+      height: 7em;
+    }
+  }
 
 
   & label {
+    cursor: pointer;
     font-weight: var(--fw-semi-bold);
   }
 
   & input {
-    border-radius: var(--border-radius);
+    border-radius: 12px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
     padding: 1em;
     line-height: 1.6;
+    border: none;
+    border-bottom: solid 1px black;
+    background-color: var(--background);
+  }
+
+  & input:hover {
+    background-color: white;
+    padding: 1em;
+    line-height: 1.6;
+    border: none;
+    border-bottom: solid 2px var(--color-accent);
+  }
+
+  & textarea {
+    cursor: pointer;
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    padding: 1em;
+    line-height: 1.6;
+    background-color: var(--background);
+
+    &:hover {
+      background-color: white;
+    }
+  }
+
+  & :is(p, span) {
+    font-weight: var(--fw-semi-bold);
+    color: rgb(255, 0, 0, 0.9);
+  }
+
+  & p {
+    margin-top: 0.5em;
+    font-size: 1rem;
   }
 }
