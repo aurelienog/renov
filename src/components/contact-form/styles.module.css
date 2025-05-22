@@ -1,12 +1,12 @@
 .form {
   max-width: 100em;
   display: grid;
-  gap: 2rem;
+  gap: 1rem;
   justify-items: center;
   padding: 2em 0;
 
   & button {
-    margin-top: 4em;
+    margin-top: 6em;
     width: 100%;
   }
   
@@ -42,6 +42,7 @@
   }
 
   & textarea {
+    margin-top: 0.5em;
     cursor: pointer;
     display: block;
     height: 100%;
@@ -87,11 +88,13 @@
       order: -1;
     }
 
+
     & label.invalid::after {
     position: absolute;
+    text-align: end;
     inset: 0;
-    top: 170%;
-    left: 1em;
+    top: clamp(140%, 10vw, 190%);
+    right: 1em;
     z-index: 2;
     content: '✕';
     font-size: 1rem;
@@ -102,11 +105,10 @@
 
     input:not(:placeholder-shown) ~ .valid::after {
     position: absolute;
+    text-align: end;
     inset: 0;
-    top: 170%;
-    left: 1em;
-    width: 45px;
-    height: 45px;
+    top: clamp(140%, 10vw, 190%);
+    right: 1em;
     z-index: 2;
     content: '✓';
     color: green;
@@ -117,7 +119,7 @@
     margin-top: 0.5em;
     cursor: pointer;
     width: 100%;
-    padding: 1em 4em 0.5em;
+    padding: 1em 1em 0.5em;
     line-height: 1.6;
     border: solid 2px transparent;
     border-bottom: solid 1px black;
