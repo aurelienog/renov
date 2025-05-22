@@ -54,7 +54,9 @@ function ContactForm() {
           maxLength: { value: 30, message: 'Votre nom doit contenir entre 2 et 30 caractères.'} 
           })} />
           <label htmlFor='name' className={errors.name ? `${styles.invalid}` : `${styles.valid}`}>Nom<span>*</span></label>
+        
           { errors.name && <p>{errors.name?.message}</p> }  
+      
       </div>
 
 
@@ -93,7 +95,7 @@ function ContactForm() {
 
       {/* message */}
       <div>
-        <label htmlFor='message' className={errors.message ? `${styles.invalid}` : `${styles.valid}`}>Votre message:<span>*</span></label>
+        <label htmlFor='message'>Votre message:<span>*</span></label>
         <textarea id='message' placeholder='cb de m2 etc'
         {...register("message", { 
         required: "Merci de rédiger votre message.", 
