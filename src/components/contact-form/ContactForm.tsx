@@ -11,21 +11,31 @@ function ContactForm() {
   const [serverError, setServerError] = useState<string | null>(null)
   const [successMessage, setSuccessMessage] = useState<string | null>(null)
 
+  console.log(errors)
+
   const onMessageSubmit = async (data: ContactFormData) => {
     try {
+      // Reset previous errors and success messages
       setServerError(null);
       setSuccessMessage(null)
+
+      // Try sending the mail
       await sendMail(data);
+
+       // Reset the form and show a success message
       reset();
       setSuccessMessage("Merci pour votre message! Je vous contacterai dans les plus brefs délais.")
     } catch(error) {
+
+      // If an error occurs, handle the server-side errors
       const err = error as ErrorResponse;
       const errors  = err.response?.data.errors;
       if (errors) {
-        console.log(errors)
+      // Map and display field-specific errors
         Object.keys(errors)
         .forEach((inputName) => setError(inputName as keyof ContactFormData, { message: errors[inputName]}))
       } else {
+      // If no field-specific errors, show a generic error message
         console.error(error);
         setServerError(err.message)
       }
@@ -38,30 +48,30 @@ function ContactForm() {
       <legend className='visually-hidden'>Informations personnelles</legend>
         {/* name */}
         <div>
-        <label htmlFor='name'>Nom<span>*</span></label>
+        <label htmlFor='name' className={errors.name ? `${styles.invalid}` : `${styles.valid}`}>Nom<span>*</span></label>
         <input id='name' type='text' placeholder='nom' {...register("name", { 
-        required: "Merci d’indiquer votre nom.", 
+        required: "Merci d'indiquer votre nom.", 
         minLength: { value: 2, message: 'Votre nom doit contenir entre 2 et 30 caractères.' },
         maxLength: { value: 30, message: 'Votre nom doit contenir entre 2 et 30 caractères.'} 
         })} />
         
-        { errors.name && <p id="nameError">{errors.name?.message}</p> }  
+        { errors.name && <p>{errors.name?.message}</p> }  
       
       </div>
 
 
       {/* email */}
       <div>
-        <label htmlFor='email'>Email<span>*</span></label>
+        <label htmlFor='email' className={errors.email ? `${styles.invalid}` : `${styles.valid}`} >Email<span>*</span></label>
         <input id='email' type='email' placeholder='dupont@example.com' {...register("email", { 
-        required: "Merci d’indiquer votre email.", 
+        required: "Merci d'indiquer votre email.", 
         pattern: {
         value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/ ,
-        message: 'L’adresse e-mail semble invalide.' 
+        message: "L'adresse e-mail semble invalide." 
         }
-        })} />
+        })}/>
         
-        { errors.email && <p id="emailError">{errors.email?.message}</p> } 
+        { errors.email && <p>{errors.email?.message}</p> } 
 
       </div>
 
@@ -69,7 +79,7 @@ function ContactForm() {
 
         {/* phone */}
         <div>
-          <label htmlFor='phone'>Téléphone</label>
+          <label htmlFor='phone' className={errors.phone ? `${styles.invalid}` : `${styles.valid}`}>Téléphone</label>
           <input id='phone' type='tel' placeholder='06 00 00 00 00' {...register("phone", { 
             pattern: {
             value: /^(0[1-9])(?:[ -]?\d{2}){4}$/,
@@ -77,22 +87,22 @@ function ContactForm() {
           }
         })} />
 
-        { errors.phone && <p id="phoneError">{errors.phone?.message}</p> } 
+        { errors.phone && <p>{errors.phone?.message}</p> } 
         </div>
       </fieldset>
       
 
       {/* message */}
       <div>
-        <label htmlFor='message'>Votre message:<span>*</span></label>
+        <label htmlFor='message' className={errors.message ? `${styles.invalid}` : `${styles.valid}`}>Votre message:<span>*</span></label>
         <textarea id='message' placeholder='cb de m2 etc'
         {...register("message", { 
-        // required: "Merci de rédiger votre message.", 
-        // minLength: { value: 30, message: 'Le message doit contenir minimum 30 caractères.' },
-        // maxLength: { value: 5000, message: 'El mensaje doit contenir moins de 5000 caracteres.'} 
+        required: "Merci de rédiger votre message.", 
+        minLength: { value: 30, message: 'Le message doit contenir minimum 30 caractères.' },
+        maxLength: { value: 5000, message: 'El mensaje doit contenir moins de 5000 caracteres.'} 
         })}></textarea>
 
-        { errors.message && <p id="messageError">{errors.message?.message}</p> }    
+        { errors.message && <p>{errors.message?.message}</p> }    
         
       </div>
     
@@ -101,8 +111,8 @@ function ContactForm() {
         {isSubmitting ? 'envoi en cours...' : 'Envoyer un message'}
       </Button>
 
-      {serverError && <p>{serverError}</p>}
-      {successMessage && <p className={`${styles.success}`}>{successMessage}</p>}
+      {serverError && <p aria-live="polite" role="alert" >{serverError}</p>}
+      {successMessage && <p aria-live="polite" role="alert"  className={`${styles.success}`}>{successMessage}</p>}
 
     </form>
   )
