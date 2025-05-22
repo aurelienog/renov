@@ -30,7 +30,6 @@
 
   & label {
     position: relative;
-    padding: 0 2em;
     cursor: pointer;
     font-weight: var(--fw-semi-bold);
   }
@@ -77,43 +76,52 @@
     width: 100%;
     border: none;
 
+
     /* error message transparent if focus on the input */
     & p {
       color: rgba(255, 0, 0, 0);
     }
 
     & div {
-      height: 7em;
+      height: 7em;    
+      display: flex;
+      flex-direction: column;
+    }
+
+    & label {
+      order: -1;
     }
 
     & label.invalid::after {
     position: absolute;
     inset: 0;
-    top: 1.3lh;
-    left: 0.5em;
-    width: 45px;
-    height: 45px;
+    top: 2.5em;
+    left: 1em;
     z-index: 2;
-    content: '❌';
+    content: '✕';
+    font-size: 1rem;
+    color: red;
     }
 
-    /*need to select label before el input 
+
+
     input:not(:placeholder-shown) ~ .valid::after {
     position: absolute;
     inset: 0;
     top: 1.3lh;
-    left: 0.5em;
+    left: 1em;
     width: 45px;
     height: 45px;
     z-index: 2;
-    content: '✅';
-    } */
+    content: '✓';
+    color: green;
+    } 
 
 
   & input {
     cursor: pointer;
     width: 100%;
-    padding: 1em 1.8lh;
+    padding: 1em 4em;
     line-height: 1.6;
     border: none;
     border-bottom: solid 1px black;

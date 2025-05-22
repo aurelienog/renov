@@ -48,21 +48,18 @@ function ContactForm() {
       <legend className='visually-hidden'>Informations personnelles</legend>
         {/* name */}
         <div>
-        <label htmlFor='name' className={errors.name ? `${styles.invalid}` : `${styles.valid}`}>Nom<span>*</span></label>
-        <input id='name' type='text' placeholder='nom' {...register("name", { 
-        required: "Merci d'indiquer votre nom.", 
-        minLength: { value: 2, message: 'Votre nom doit contenir entre 2 et 30 caractères.' },
-        maxLength: { value: 30, message: 'Votre nom doit contenir entre 2 et 30 caractères.'} 
-        })} />
-        
-        { errors.name && <p>{errors.name?.message}</p> }  
-      
+          <input id='name' type='text' placeholder='nom' {...register("name", { 
+          required: "Merci d'indiquer votre nom.", 
+          minLength: { value: 2, message: 'Votre nom doit contenir entre 2 et 30 caractères.' },
+          maxLength: { value: 30, message: 'Votre nom doit contenir entre 2 et 30 caractères.'} 
+          })} />
+          <label htmlFor='name' className={errors.name ? `${styles.invalid}` : `${styles.valid}`}>Nom<span>*</span></label>
+          { errors.name && <p>{errors.name?.message}</p> }  
       </div>
 
 
       {/* email */}
       <div>
-        <label htmlFor='email' className={errors.email ? `${styles.invalid}` : `${styles.valid}`} >Email<span>*</span></label>
         <input id='email' type='email' placeholder='dupont@example.com' {...register("email", { 
         required: "Merci d'indiquer votre email.", 
         pattern: {
@@ -70,6 +67,7 @@ function ContactForm() {
         message: "L'adresse e-mail semble invalide." 
         }
         })}/>
+        <label htmlFor='email' className={errors.email ? `${styles.invalid}` : `${styles.valid}`} >Email<span>*</span></label>
         
         { errors.email && <p>{errors.email?.message}</p> } 
 
@@ -79,13 +77,14 @@ function ContactForm() {
 
         {/* phone */}
         <div>
-          <label htmlFor='phone' className={errors.phone ? `${styles.invalid}` : `${styles.valid}`}>Téléphone</label>
           <input id='phone' type='tel' placeholder='06 00 00 00 00' {...register("phone", { 
             pattern: {
             value: /^(0[1-9])(?:[ -]?\d{2}){4}$/,
             message: "Le numéro de téléphone semble invalide."
           }
         })} />
+        <label htmlFor='phone' className={errors.phone ? `${styles.invalid}` : `${styles.valid}`}>Téléphone</label>
+          
 
         { errors.phone && <p>{errors.phone?.message}</p> } 
         </div>
