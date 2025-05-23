@@ -59,7 +59,7 @@ export const statistics : TrustStatistic[] = [{
   characters: 3
 }, {
   icon: paint,
-  stat: 500,
+  stat: 400,
   information: " projets réalisés",
   prefix: "+",
   characters: 4
@@ -265,35 +265,43 @@ export const services: Service[] = [
   {
     name: 'Revêtements muraux',
     image: revetement,
-    rank: 3
+    rank: 3,
+    id: 'mur'
   }, {
     name: 'Revêtements de sols',
     image: parquet,
-    rank: 4
+    rank: 4,
+    id: 'sol'
   }, {
     name: 'Rénovation de boiseries',
     image: bois,
-    rank: 5  
+    rank: 5,
+    id: 'boiserie'  
   }, {
     name: 'Peinture intérieure',
     image: interieur,
-    rank:  1 
+    rank:  1,
+    id: 'peinture-interieure' 
   }, {
     name: 'Peinture extérieure',
     image: exterieur,
-    rank:  2 
+    rank:  2,
+    id: 'peinture-exterieure' 
   }, {
     name: 'Préparation des supports',
     image: preparation,
-    rank: 6  
+    rank: 6,
+    id: ''  
   }, {
     name: 'Enduits décoratifs',
     image: enduit,
-    rank: 7  
+    rank: 7,
+    id: 'enduit'  
   }, {
     name: 'Rénovation diverse',
     image: autre,
-    rank: 8  
+    rank: 8,
+    id: 'autre'  
 }];
 
 // services descriptions for "prestation" page
@@ -310,7 +318,8 @@ export const detailedServices: DetailedService[] = [{
   </ul>
   </>,
   result: `Un mur bien préparé, c'est un résultat qui dure.`,
-  image: autre
+  image: autre,
+  id:'mur',
 }, {
   title: 'Peinture intérieure',
   intro : 'Mettez en valeur vos espaces avec une peinture soignée et durable, adaptée à chaque pièce de votre intérieur.',
@@ -323,7 +332,8 @@ export const detailedServices: DetailedService[] = [{
   </ul>
   </>,
   result: 'Une finition nette et élégante pour un intérieur qui vous ressemble.',
-  image: autre
+  image: autre,
+  id:'peinture-interieure',
 }, {
   title: 'Enduits décoratifs & peintures à effet',
   intro : 'Pour un intérieur unique, optez pour des textures originales comme le béton ciré, le stuc ou les peintures métallisées.',
@@ -337,7 +347,8 @@ export const detailedServices: DetailedService[] = [{
   </ul>
   </>,
   result: 'Des murs qui deviennent de véritables éléments de décoration.',
-  image: autre
+  image: autre,
+  id:'enduit',
 }, {
   title: 'Peinture extérieure',
   intro : `Protégez et valorisez vos façades, boiseries ou ferronneries avec des peintures durables, adaptées à l'extérieur.`,
@@ -349,7 +360,8 @@ export const detailedServices: DetailedService[] = [{
   </ul>
   </>,
   result: 'Une protection efficace, un rendu impeccable.',
-  image: autre
+  image: autre,
+  id:'peinture-exterieure',
 }, {
   title: 'Rénovation de boiseries',
   intro : 'Redonnez vie à vos boiseries intérieures ou extérieures : portes, volets, escaliers, meubles...',
@@ -361,7 +373,8 @@ export const detailedServices: DetailedService[] = [{
   </ul>
   </>,
   result: 'Un travail soigné pour préserver et valoriser vos boiseries.',
-  image: autre
+  image: autre,
+  id:'boiserie'
 }, {
   title: 'Revêtements de sol',
   intro : `Parquet, vinyle, stratifié… Je vous accompagne dans le choix et la pose d'un sol adapté à vos besoins.`,
@@ -374,7 +387,8 @@ export const detailedServices: DetailedService[] = [{
   </ul>
   </>,
   result: 'Un sol résistant, confortable et esthétique.',
-  image: autre
+  image: autre,
+  id:'sol',
 }, {
   title: 'Travaux de rénovation diverse',
   intro : 'Des ajustements utiles pour finaliser votre projet :',
@@ -387,7 +401,8 @@ export const detailedServices: DetailedService[] = [{
   </ul>
   </>,
   result: 'Des finitions complètes pour un intérieur fonctionnel et harmonieux.',
-  image: autre
+  image: autre,
+  id: 'autre'
 }
 ]
 

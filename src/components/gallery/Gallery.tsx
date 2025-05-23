@@ -9,7 +9,7 @@ function Gallery({ services } : { services: Service[] }): JSX.Element {
     <div className={ styles.gallery }>
       {
         services?.map((service: Service, index: number) => (
-          <GalleryCard key={`${service.name}-${index}`} image={service.image} name={service.name}/>
+          <GalleryCard key={`${service.name}-${index}`} image={service.image} name={service.name} id={service.id}/>
         ))
       }
     </div>
