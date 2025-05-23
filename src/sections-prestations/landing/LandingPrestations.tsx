@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { detailedServices } from '../../data/data'
 import { DetailedService } from '@/models/interfaces';
 import GridServices from '@/components/grid-services/GridServices';
 import Link from 'next/link';
+import Loader from '../../app/prestations/loading';
 
 function LandingPrestations() {
   return (
@@ -18,9 +19,12 @@ function LandingPrestations() {
         <li><Link href={"#peinture-exterieure"}>Peinture extérieure</Link></li>
         <li><Link href={"#peinture-interieure"}>Peinture intérieure</Link></li>
       </ul>
-      { detailedServices.map((service: DetailedService, index) => (
+      <Suspense fallback={<Loader/>}>
+        { detailedServices.map((service: DetailedService, index) => (
         <GridServices service={service} key={index}></GridServices>
       ))}
+      </Suspense>
+
     </section>
   )
 }

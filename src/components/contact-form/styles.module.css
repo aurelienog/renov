@@ -94,7 +94,7 @@
     position: absolute;
     text-align: end;
     inset: 0;
-    top: clamp(174%, 10vw, 180%);
+    top: clamp(175%, 10vw, 180%);
     right: 1em;
     z-index: 2;
     content: '✕';

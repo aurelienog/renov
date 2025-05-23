@@ -7,8 +7,8 @@ import { ValidationError } from '@/models/class';
 
 const transporter = nodemailer.createTransport({
   host: process.env.SMTP_HOST,
-  port: 587, 
-  secure: false, 
+  port: 465, 
+  secure: true, 
   auth: {
     user: process.env.EMAIL_FROM,
     pass: process.env.EMAIL_PASS
