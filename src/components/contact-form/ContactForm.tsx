@@ -96,7 +96,8 @@ function ContactForm() {
       {/* message */}
       <div>
         <label htmlFor='message'>Votre message:<span>*</span></label>
-        <textarea id='message' placeholder='cb de m2 etc'
+        <textarea id='message' placeholder='Parlez-moi un peu de votre projet : pièces à rénover, surface, vos envies, délais… tout ce que vous jugez utile !
+'
         {...register("message", { 
         required: "Merci de rédiger votre message.", 
         minLength: { value: 30, message: 'Le message doit contenir minimum 30 caractères.' },

@@ -1,7 +1,7 @@
 .form {
   max-width: 100em;
   display: grid;
-  gap: 4rem;
+  gap: 3rem;
   justify-items: center;
   padding: 2em 0;
 
@@ -94,7 +94,7 @@
     position: absolute;
     text-align: end;
     inset: 0;
-    top: clamp(160%, 10vw, 180%);
+    top: clamp(174%, 10vw, 180%);
     right: 1em;
     z-index: 2;
     content: '✕';
@@ -108,7 +108,7 @@
     position: absolute;
     text-align: end;
     inset: 0;
-    top: clamp(160%, 10vw, 180%);
+    top: clamp(174%, 10vw, 180%);
     right: 1em;
     z-index: 2;
     content: '✓';
@@ -122,6 +122,7 @@
     width: 100%;
     padding: 1em 1em 0.5em;
     line-height: 1.6;
+    border-radius: none;
     border: solid 2px transparent;
     border-bottom: solid 1px black;
     background-color: var(--background);
@@ -156,11 +157,11 @@
     border-left: 0px solid var(--color-accent);
     border-top: 0px solid var(--color-accent);
     border-right: 0px solid var(--color-accent);
-    border-bottom: 2px solid var(--color-accent); /* Mantener el borde inferior */
+    border-bottom: 2px solid var(--color-accent); /* mantain border bottom of the hover */
     background-color: var(--background);
   }
   33% {
-    border-left: 2px solid var(--color-accent); /* Aparece borde izquierdo */
+    border-left: 2px solid var(--color-accent); /* left border */
     border-top: 0px solid var(--color-accent);
     border-right: 0px solid var(--color-accent);
     border-bottom: 2px solid var(--color-accent);
@@ -168,7 +169,7 @@
   }
   66% {
     border-left: 2px solid var(--color-accent);
-    border-top: 2px solid var(--color-accent); /* Aparece borde superior */
+    border-top: 2px solid var(--color-accent); /* top border*/
     border-right: 0px solid var(--color-accent);
     border-bottom: 2px solid var(--color-accent);
     background-color: rgba(255, 255, 255, 0.4);
@@ -176,8 +177,8 @@
   100% {
     border-left: 2px solid var(--color-accent);
     border-top: 2px solid var(--color-accent);
-    border-right: 2px solid var(--color-accent); /* Aparece borde derecho */
-    border-bottom: 2px solid var(--color-accent); /* Mantener borde inferior */
+    border-right: 2px solid var(--color-accent); /* right border */
+    border-bottom: 2px solid var(--color-accent); 
     background-color: rgba(255, 255, 255, 0.4);
   }
 }

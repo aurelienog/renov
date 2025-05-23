@@ -42,3 +42,11 @@ export interface TrustStatistic {
   suffix?: string,
   characters?: number // necessary to animate the numbers without impacting the position of the text
 }
+
+export interface DetailedService {
+  title: string,
+  intro : string,
+  details: React.ReactNode,
+  result: string,
+  image: StaticImageData
+}

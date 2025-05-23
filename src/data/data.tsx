@@ -1,5 +1,5 @@
 
-import { FaqEntry, Column, WorkStep, Service, BeforeAfterComparison, TrustStatistic } from '@/models/interfaces';
+import { FaqEntry, Column, WorkStep, Service, BeforeAfterComparison, TrustStatistic, DetailedService } from '@/models/interfaces';
 import Image, { StaticImageData } from 'next/image';
 
 // trust section statistics
@@ -291,10 +291,105 @@ export const services: Service[] = [
     image: enduit,
     rank: 7  
   }, {
-    name: 'Petits travaux complémentaires',
+    name: 'Rénovation diverse',
     image: autre,
     rank: 8  
 }];
+
+// services descriptions for "prestation" page
+export const detailedServices: DetailedService[] = [{
+  title: 'Revêtements muraux',
+  intro : 'Redonnez du caractère à vos murs avec une pose soignée de revêtements : papier peint, toile de verre ou intissé.',
+  details: <>
+  <p>Je m{`'`}occupe de tout, de la dépose à la finition :</p>
+  <ul>
+    <li>Retrait de l{`'`}ancien revêtement et mise en décharge professionnelle</li>
+    <li>Préparation du support (rebouchage, enduit, ponçage)</li>
+    <li>Application d{`'`}une couche d{"'"}impression</li>
+    <li>Pose du nouveau revêtement</li>
+  </ul>
+  </>,
+  result: `Un mur bien préparé, c'est un résultat qui dure.`,
+  image: autre
+}, {
+  title: 'Peinture intérieure',
+  intro : 'Mettez en valeur vos espaces avec une peinture soignée et durable, adaptée à chaque pièce de votre intérieur.',
+  details: <>
+  <ul>
+    <li>Retrait éventuelle des anciens revêtements et mise en décharge professionnelle</li>
+    <li>Préparation minutieuse des murs (rebouchage, traitement localisé ou général des fissures, enduit, ponçage)</li>
+    <li>Application d{`'`}une couche d{"'"}impression</li>
+    <li>Application de 2 couches de peinture acrylique de finition (adaptée au support et à la couleur choisie)</li>
+  </ul>
+  </>,
+  result: 'Une finition nette et élégante pour un intérieur qui vous ressemble.',
+  image: autre
+}, {
+  title: 'Enduits décoratifs & peintures à effet',
+  intro : 'Pour un intérieur unique, optez pour des textures originales comme le béton ciré, le stuc ou les peintures métallisées.',
+  details: <>
+  <ul>
+    <li>Préparation du support (rebouchage, traitement localisé ou général des fissures, enduit, ponçage)</li>
+    <li>Application d{`'`}une couche d{"'"}impression</li>
+    <li>Application d{`'`}un enduit décoratif en deux couches (béton ciré, stuc, tadelakt, etc.)</li>
+    <li>Finitions spécifiques selon le produit (bouche-pore, vernis bi-composant, cire de finition...)</li>
+    <li>Application de deux couches de peinture à effet (peinture métalisée, sablée, pailletée)</li>
+  </ul>
+  </>,
+  result: 'Des murs qui deviennent de véritables éléments de décoration.',
+  image: autre
+}, {
+  title: 'Peinture extérieure',
+  intro : `Protégez et valorisez vos façades, boiseries ou ferronneries avec des peintures durables, adaptées à l'extérieur.`,
+  details: <>
+  <ul>
+    <li>Préparation des supports (rebouchage, ponçage, traitement spécifique)</li>
+    <li>Application de sous-couche technique (fongicide, anti-rouille…)</li>
+    <li>Application de deux couches de peinture acrylique ou glycero de finition adaptée au support (Microporeuse, hydrofuge...)</li>
+  </ul>
+  </>,
+  result: 'Une protection efficace, un rendu impeccable.',
+  image: autre
+}, {
+  title: 'Rénovation de boiseries',
+  intro : 'Redonnez vie à vos boiseries intérieures ou extérieures : portes, volets, escaliers, meubles...',
+  details: <>
+  <ul>
+    <li>Ponçage, rebouchage, traitement du bois</li>
+    <li>Sous-couche selon la finition souhaitée (lasure, vernis, vitrificateur)</li>
+    <li>Finition en 2 couches résistantes et esthétiques (Lasure à haute resistance aux rayons U.V en exterieur, vitrificateur au sol ou escalier en intérieur, Vernis sur mobilier)</li>
+  </ul>
+  </>,
+  result: 'Un travail soigné pour préserver et valoriser vos boiseries.',
+  image: autre
+}, {
+  title: 'Revêtements de sol',
+  intro : `Parquet, vinyle, stratifié… Je vous accompagne dans le choix et la pose d'un sol adapté à vos besoins.`,
+  details: <>
+  <ul>
+    <li>Retrait de l{"'"}ancien sol et mise en décharge professionnelle</li>
+    <li>Préparation du support (fixateur + ragréage P3 ou P4S)</li>
+    <li>Pose du nouveau revêtement (parquet, sol stratifié, lames vyniles...)</li>
+    <li>Pose de plinthes & barres de seuil assorties ou à peindre</li>
+  </ul>
+  </>,
+  result: 'Un sol résistant, confortable et esthétique.',
+  image: autre
+}, {
+  title: 'Travaux de rénovation diverse',
+  intro : 'Des ajustements utiles pour finaliser votre projet :',
+  details: <>
+  <ul>
+    <li>Électricité : modification à partir du réseau existant (déplacement de prises ou luminaires ), remplacement d{"'"}appareillages</li>
+    <li>Plâtrerie : création, modification, suppression de cloisons en placostyl ou carreaux de plâtre. <span>Création d{"'"}ouvertures (cloison uniquement) ou de faux plafonds suspendus/autoportants</span> </li>
+    <li>Menuiserie : installations diverses : portes de placard battantes/coulissantes, coffrages, rangements, portes de placard. Création de coffrages/aménagements sur-mesure.</li>
+    <li>Autres : pose de luminaires, étagères, petits aménagements</li>
+  </ul>
+  </>,
+  result: 'Des finitions complètes pour un intérieur fonctionnel et harmonieux.',
+  image: autre
+}
+]
 
 //the second element of the array is a tranparent png so the reveal for the first element is longer
 export const lastProjects: StaticImageData[] = [indoor, transparentImage, wood, transparentImage, realisation, transparentImage, ];
