@@ -35,6 +35,8 @@
 
   & li {
     padding: 1.5em;
+    margin-left: 0;
+    list-style: none;
   }
 
   & li:first-of-type{

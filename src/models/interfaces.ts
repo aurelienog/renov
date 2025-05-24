@@ -51,4 +51,5 @@ export interface DetailedService {
   result: string
   image: StaticImageData
   id: string
+  cta?: string
 }

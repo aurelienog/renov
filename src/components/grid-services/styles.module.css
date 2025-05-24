@@ -1,0 +1,55 @@
+.section {
+
+  h2 {
+    margin-bottom: 2em;
+  }
+  
+  & figure {
+    order: -1;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 16/9;
+  }
+
+    & p:first-of-type {
+    margin-top: 2em;
+    font-size: 1.6rem;
+    font-weight: var(--fw-semi-bold);
+  }
+
+  & article p:last-of-type {
+    position: relative;
+    margin-top: 3em;
+    margin-left: 1em;
+    margin-bottom: 4em;
+    font-weight: var(--fw-semi-bold);
+    font-style: italic;
+  }
+
+  & article p:last-of-type::after {
+    position: absolute;
+    z-index: 2;
+    content: '';
+    width: 5px;
+    height: 100%;
+    top: 0;
+    left: -20;
+    background-color: var(--color-accent);
+  }
+}
+
+@media(min-width: 1400px) {
+  .section {
+    & > :nth-child(2) {
+      display: grid;
+      grid-template-columns: 400px 1fr;
+      gap: 4rem;
+    }
+
+    & figure {
+      aspect-ratio: 4/3;
+    }
+  }
+}
+

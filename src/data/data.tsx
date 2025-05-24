@@ -349,6 +349,7 @@ export const detailedServices: DetailedService[] = [{
   result: 'Des murs qui deviennent de véritables éléments de décoration.',
   image: autre,
   id:'enduit',
+  cta: `d'enduits décoratifs & peintures à effet`,
 }, {
   title: 'Peinture extérieure',
   intro : `Protégez et valorisez vos façades, boiseries ou ferronneries avec des peintures durables, adaptées à l'extérieur.`,
@@ -402,7 +403,8 @@ export const detailedServices: DetailedService[] = [{
   </>,
   result: 'Des finitions complètes pour un intérieur fonctionnel et harmonieux.',
   image: autre,
-  id: 'autre'
+  id: 'autre',
+  cta: ' '
 }
 ]
 

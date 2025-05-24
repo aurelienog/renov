@@ -38,9 +38,6 @@
   }
 
   & ul li {
-    padding: 0.2lh;
-    margin-left: 1lh;
-    list-style-type: square;
     position: relative;
   }
 

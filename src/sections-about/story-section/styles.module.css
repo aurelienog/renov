@@ -26,7 +26,6 @@
   & > article::before {
     content: '';
     position: absolute;
-    content: "";
     top: -5%;
     left: -4%;
     width: 100px;

@@ -4,10 +4,11 @@ import { DetailedService } from '@/models/interfaces';
 import GridServices from '@/components/grid-services/GridServices';
 import Link from 'next/link';
 import Loader from '../../app/prestations/loading';
+import styles from './styles.module.css';
 
 function LandingPrestations() {
   return (
-    <section className={`section`}>
+    <section className={`${styles.section}`}>
       <h1>Mes Prestations</h1>
       <p>Chaque chantier est unique, mais le soin apporté reste le même. Voici un aperçu des prestations proposées, pensées pour répondre aux besoins les plus courants de mes clients.</p>
       <ul>

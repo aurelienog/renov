@@ -58,6 +58,12 @@ h3 { font-size: 1.625rem; }
   text-wrap: pretty;
 }
 
+ul li {
+  list-style: square;
+  padding: 0.2em;
+  margin-left: 2em;
+}
+
 p {
   margin: 1em 0;
   margin: 1lh 0;
