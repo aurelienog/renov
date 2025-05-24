@@ -324,6 +324,7 @@ export const detailedServices: DetailedService[] = [{
   title: 'Peinture intérieure',
   intro : 'Mettez en valeur vos espaces avec une peinture soignée et durable, adaptée à chaque pièce de votre intérieur.',
   details: <>
+  <p> Je m{`'`}occupe de tout, du retrait des anciens revêtements à la dernière couche de finition :</p>
   <ul>
     <li>Retrait éventuelle des anciens revêtements et mise en décharge professionnelle</li>
     <li>Préparation minutieuse des murs (rebouchage, traitement localisé ou général des fissures, enduit, ponçage)</li>
@@ -338,6 +339,7 @@ export const detailedServices: DetailedService[] = [{
   title: 'Enduits décoratifs & peintures à effet',
   intro : 'Pour un intérieur unique, optez pour des textures originales comme le béton ciré, le stuc ou les peintures métallisées.',
   details: <>
+  <p> Je m{`'`}occupe de tout, de la préparation du mur aux finitions spécifiques selon le produit :</p>
   <ul>
     <li>Préparation du support (rebouchage, traitement localisé ou général des fissures, enduit, ponçage)</li>
     <li>Application d{`'`}une couche d{"'"}impression</li>
@@ -354,6 +356,7 @@ export const detailedServices: DetailedService[] = [{
   title: 'Peinture extérieure',
   intro : `Protégez et valorisez vos façades, boiseries ou ferronneries avec des peintures durables, adaptées à l'extérieur.`,
   details: <>
+  <p>Je m{`'`}occupe de tout, de la préparation du support aux deux couches de finition adaptées à l{`'`}extérieur :</p>
   <ul>
     <li>Préparation des supports (rebouchage, ponçage, traitement spécifique)</li>
     <li>Application de sous-couche technique (fongicide, anti-rouille…)</li>
@@ -367,6 +370,7 @@ export const detailedServices: DetailedService[] = [{
   title: 'Rénovation de boiseries',
   intro : 'Redonnez vie à vos boiseries intérieures ou extérieures : portes, volets, escaliers, meubles...',
   details: <>
+  <p>Je m{`'`}occupe de tout, du ponçage à la finition selon le type de bois et son usage :</p>
   <ul>
     <li>Ponçage, rebouchage, traitement du bois</li>
     <li>Sous-couche selon la finition souhaitée (lasure, vernis, vitrificateur)</li>
@@ -380,6 +384,7 @@ export const detailedServices: DetailedService[] = [{
   title: 'Revêtements de sol',
   intro : `Parquet, vinyle, stratifié… Je vous accompagne dans le choix et la pose d'un sol adapté à vos besoins.`,
   details: <>
+  <p>Je m{"'"}occupe de tout, de l{"'"}enlèvement de l{"'"}ancien sol à la pose des finitions comme les plinthes :</p>
   <ul>
     <li>Retrait de l{"'"}ancien sol et mise en décharge professionnelle</li>
     <li>Préparation du support (fixateur + ragréage P3 ou P4S)</li>
@@ -394,6 +399,7 @@ export const detailedServices: DetailedService[] = [{
   title: 'Travaux de rénovation diverse',
   intro : 'Des ajustements utiles pour finaliser votre projet :',
   details: <>
+  <p>Voici un aperçu des services proposés pour répondre à vos besoins complémentaires:</p>
   <ul>
     <li>Électricité : modification à partir du réseau existant (déplacement de prises ou luminaires ), remplacement d{"'"}appareillages</li>
     <li>Plâtrerie : création, modification, suppression de cloisons en placostyl ou carreaux de plâtre. <span>Création d{"'"}ouvertures (cloison uniquement) ou de faux plafonds suspendus/autoportants</span> </li>
