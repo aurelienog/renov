@@ -21,7 +21,7 @@ function GridServices({ service }: {service:DetailedService}): JSX.Element {
           <p>{intro}</p>
           <>{details}</>
           <p>{result}</p>
-          <Button>Voir mes réalisations {cta? cta : `de  ${title}`}</Button>
+          <Button>Voir mes réalisations <span className='visually-hidden'>{cta ? `${cta}` : `de ${title}`}</span></Button>
         </article>
 
       </div>

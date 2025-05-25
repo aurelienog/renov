@@ -21,7 +21,7 @@
   & article p:last-of-type {
     position: relative;
     margin-top: 3em;
-    margin-left: 1em;
+    padding-left: 1em;
     margin-bottom: 4em;
     font-weight: var(--fw-semi-bold);
     font-style: italic;
@@ -34,9 +34,10 @@
     width: 5px;
     height: 100%;
     top: 0;
-    left: -20;
+    left: 0;
     background-color: var(--color-accent);
   }
+
 }
 
 @media(min-width: 1400px) {
