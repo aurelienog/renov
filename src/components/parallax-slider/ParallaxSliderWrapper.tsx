@@ -1,6 +1,6 @@
 'use client'
 import React, { JSX } from 'react'
-import { BeforeAfterComparison } from '../../models/interfaces';
+import { BeforeAfterComparison } from '../../lib/models/interfaces';
 import ParallaxSlider from './ParallaxSlider';
 
 function ParallaxSliderWrapper({ comparisons }: { comparisons: BeforeAfterComparison[] }): JSX.Element  {

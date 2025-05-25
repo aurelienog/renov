@@ -1,7 +1,7 @@
 'use client'
 import { useScroll } from 'framer-motion';
 import React, { JSX, useRef } from 'react';
-import { BeforeAfterComparison } from '@/models/interfaces';
+import { BeforeAfterComparison } from '@/lib/models/interfaces';
 import ParallaxSlide from './ParallaxSlide';
 
 function ParallaxSlider({ comparisons }: { comparisons: BeforeAfterComparison[] }): JSX.Element {

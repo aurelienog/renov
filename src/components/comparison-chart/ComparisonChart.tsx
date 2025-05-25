@@ -1,7 +1,7 @@
 import React, { JSX } from 'react';
 import Row from './Row';
 import styles from './styles.module.css';
-import { Column } from '@/models/interfaces';
+import { Column } from '@/lib/models/interfaces';
 
 function ComparisonChart({data} : {data: Column[]}): JSX.Element {
   return (

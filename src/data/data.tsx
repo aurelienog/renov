@@ -1,5 +1,5 @@
 
-import { FaqEntry, Column, WorkStep, Service, BeforeAfterComparison, TrustStatistic, DetailedService } from '@/models/interfaces';
+import { FaqEntry, Column, WorkStep, Service, BeforeAfterComparison, TrustStatistic, DetailedService } from '@/lib/models/interfaces';
 import Image, { StaticImageData } from 'next/image';
 
 // trust section statistics
@@ -387,7 +387,7 @@ export const detailedServices: DetailedService[] = [{
   <p>Je m{"'"}occupe de tout, de l{"'"}enlèvement de l{"'"}ancien sol à la pose des finitions comme les plinthes :</p>
   <ul>
     <li>Retrait de l{"'"}ancien sol et mise en décharge professionnelle</li>
-    <li>Préparation du support (fixateur + ragréage P3 ou P4S)</li>
+    <li>Préparation du support (fixateur + ragréage)</li>
     <li>Pose du nouveau revêtement (parquet, sol stratifié, lames vyniles...)</li>
     <li>Pose de plinthes & barres de seuil assorties ou à peindre</li>
   </ul>

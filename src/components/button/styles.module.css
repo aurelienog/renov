@@ -1,6 +1,6 @@
 .button {
   display: inline-block;
-  padding: 1em;
+  padding: 1em 2em;
   border-radius: 12px;
   cursor: pointer;
   font-weight: var(--fw-bold);
@@ -18,5 +18,4 @@
 .button:focus,
 .button:active {
   outline: solid 2px var(--color-accent);
-  
 }

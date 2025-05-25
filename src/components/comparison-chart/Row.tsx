@@ -1,5 +1,5 @@
 import React, { JSX } from 'react';
-import { Column } from '@/models/interfaces';
+import { Column } from '@/lib/models/interfaces';
 
 function Row({ criterion, columns }: { criterion: string, columns: Column[] }): JSX.Element  {
   return (

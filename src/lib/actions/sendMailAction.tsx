@@ -1,8 +1,8 @@
 "use server"
 
 import nodemailer from 'nodemailer'; 
-import { ContactFormData } from '@/models/types';
-import { ValidationError } from '@/models/class';
+import { ContactFormData } from '@/lib/models/types';
+import { ValidationError } from '@/lib/models/class';
 
 
 const transporter = nodemailer.createTransport({

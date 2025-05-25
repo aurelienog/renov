@@ -1,7 +1,7 @@
 'use client'
 import React, { useRef } from 'react';
 import TimelineLine from '../Timeline-line/TimelineLine';
-import { WorkStep } from '@/models/interfaces';
+import { WorkStep } from '@/lib/models/interfaces';
 import { useScroll, useTransform } from 'framer-motion';
 import TimelineCard from '../timeline-card/TimelineCard';
 import styles from './styles.module.css';

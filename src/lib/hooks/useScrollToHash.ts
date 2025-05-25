@@ -1,22 +1,17 @@
 'use client'
-
-import { usePathname, useSearchParams } from "next/navigation"
 import { useEffect } from "react";
+import { useHashFromUrl } from "./useHashFromUrl";
 
 export function useScrollToHash(delay: number = 100): void {
-  const pathname = usePathname();
-  const searchParams = useSearchParams();
+  const hash = useHashFromUrl();
 
   useEffect(() => {
-    if( typeof window === 'undefined') return
-
-    const hash = window.location.hash;
     if(!hash) return
 
     const scrollToElement = (): void => {
       const element = document.querySelector<HTMLElement>(hash)
       if (element) {
-        element.scrollIntoView({ block: 'start' })
+        element.scrollIntoView({ block: 'center' })
       }
     }
 
@@ -24,5 +19,5 @@ export function useScrollToHash(delay: number = 100): void {
 
     return () => clearTimeout(timeout);
     
-  }, [pathname, searchParams, delay])
+  }, [hash, delay])
 }

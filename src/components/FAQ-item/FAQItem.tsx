@@ -1,7 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import React, { JSX } from 'react';
-import { FaqEntry } from '@/models/interfaces';
+import { FaqEntry } from '@/lib/models/interfaces';
 import styles from './styles.module.css';
 import { fadeInUp } from '../../animations/variants'
 

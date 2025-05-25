@@ -1,7 +1,7 @@
 import React, { JSX } from 'react';
 import styles from './styles.module.css';
 import GalleryCard from './GalleryCard';
-import { Service } from '@/models/interfaces';
+import { Service } from '@/lib/models/interfaces';
 
 function Gallery({ services } : { services: Service[] }): JSX.Element {
 

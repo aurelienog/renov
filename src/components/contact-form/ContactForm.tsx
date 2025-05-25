@@ -1,15 +1,17 @@
 'use client'
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form'; 
-import { ContactFormData, ErrorResponse } from '@/models/types';
+import { ContactFormData, ErrorResponse } from '@/lib/models/types';
 import styles from './styles.module.css';
 import Button from '../button/Button';
-import { sendMail } from '@/actions/sendMailAction';
+import { sendMail } from '@/lib/actions/sendMailAction';
+import { useScrollToHash } from '@/lib/hooks/useScrollToHash';
 
 function ContactForm() {
   const { register, handleSubmit, reset, setError, formState: { errors, isValid, isSubmitting } } = useForm<ContactFormData>({ mode: 'onChange' });
   const [serverError, setServerError] = useState<string | null>(null)
   const [successMessage, setSuccessMessage] = useState<string | null>(null)
+  useScrollToHash()
 
   console.log(errors)
 
@@ -43,7 +45,7 @@ function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit(onMessageSubmit)} className={styles.form}>
+    <form onSubmit={handleSubmit(onMessageSubmit)} id='contact' className={styles.form}>
       <fieldset>
       <legend className='visually-hidden'>Informations personnelles</legend>
         {/* name */}

@@ -1,7 +1,10 @@
-.section {
+.details {
 
-  & h2 {
-    margin-bottom: 2em;
+  & summary {
+    font-size: 2em;
+    font-weight: var(--fw-semi-bold);
+    padding: 1em;
+    border-top: solid 1px rgb(0, 0, 0, 0.5);
   }
   
   & figure {
@@ -16,6 +19,10 @@
     margin-top: 2em;
     font-size: 1.6rem;
     font-weight: var(--fw-semi-bold);
+  }
+
+  & article {
+    padding-bottom: 4em;
   }
 
   & article p:last-of-type {
@@ -38,18 +45,26 @@
     background-color: var(--color-accent);
   }
 
+  & button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 }
 
 @media(min-width: 1400px) {
-  .section {
+  .details {
     & > :nth-child(2) {
       display: grid;
-      grid-template-columns: 400px 1fr;
-      gap: 4rem;
+      grid-template-columns: 600px 1fr;
+      gap: 4em;
+      padding: 4em;
     }
 
     & figure {
-      aspect-ratio: 4/3;
+      margin: auto;
+      width: 100%;
+      height: 90%;
     }
   }
 }
