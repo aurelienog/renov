@@ -1,10 +1,15 @@
 .details {
 
   & summary {
-    font-size: 2em;
+    font-size: clamp(1.2rem, 10vw, 1.5rem);
     font-weight: var(--fw-semi-bold);
     padding: 1em;
     border-top: solid 1px rgb(0, 0, 0, 0.5);
+    cursor: pointer;
+
+    &:hover {
+      color: var(--color-accent);
+    }
   }
   
   & figure {
@@ -44,21 +49,19 @@
     left: 0;
     background-color: var(--color-accent);
   }
-
-  & button {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
 }
 
 @media(min-width: 1400px) {
   .details {
+
+    & summary {
+      padding: 1em 1em 1em 3em;
+    }
     & > :nth-child(2) {
       display: grid;
       grid-template-columns: 600px 1fr;
       gap: 4em;
-      padding: 4em;
+      padding: 0 4em;
     }
 
     & figure {

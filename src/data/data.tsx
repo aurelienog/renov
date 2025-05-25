@@ -21,9 +21,9 @@ import exterieur from '../../public/assets/images/exterieur.webp';
 
 //last projects images 
 import transparentImage from '../../public/assets/images/transparentImage.webp';
-import wood from '../../public/assets/images/wood.webp';
-import realisation from '../../public/assets/images/realisation.webp';
-import indoor from '../../public/assets/images/indoor.webp';
+import bedroom from '../../public/assets/images/bedroom.webp';
+import toit from '../../public/assets/images/toit.webp';
+import indoor from '../../public/assets/images/living.webp';
 
 //timeline icons
 import phone from '../../public/assets/icons/phone.svg';
@@ -42,8 +42,8 @@ import x from '../../public/assets/icons/x.svg';
 //Before-after images
 import beforeToit from '../../public/assets/images/toit-avant.webp';
 import afterToit from '../../public/assets/images/toit-apres.webp';
-import beforeLiving from '../../public/assets/images/livingBefore.webp';
-import afterliving from '../../public/assets/images/livingAfter.webp';
+import beforeLiving from '../../public/assets/images/beforeBedroom.webp';
+import afterliving from '../../public/assets/images/afterBedRoom.webp';
 import bedroomBefore from '../../public/assets/images/bedroomBefore.webp';
 import bedroomAfter from '../../public/assets/images/bedroomAfter.webp';
 
@@ -415,7 +415,7 @@ export const detailedServices: DetailedService[] = [{
 ]
 
 //the second element of the array is a tranparent png so the reveal for the first element is longer
-export const lastProjects: StaticImageData[] = [indoor, transparentImage, wood, transparentImage, realisation, transparentImage, ];
+export const lastProjects: StaticImageData[] = [indoor, transparentImage, bedroom, transparentImage, toit, transparentImage, ];
 
 export const workSteps: WorkStep[] = [{
   name: 'Prise de contact',

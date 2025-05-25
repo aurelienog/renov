@@ -6,8 +6,9 @@ import React, { JSX } from 'react';
 import styles from './styles.module.css';
 import Button from '../button/Button';
 import { useOpenDetails } from '@/lib/hooks/useOpenDetails';
+import Link from 'next/link';
 
-function GridServices({ service }: {service:DetailedService}): JSX.Element {
+function ServicesList({ service }: {service:DetailedService}): JSX.Element {
   const { title, intro, details, result, image, id, cta } = service;
   useScrollToHash()
   const isOpen = useOpenDetails(id);
@@ -23,7 +24,7 @@ function GridServices({ service }: {service:DetailedService}): JSX.Element {
           <p>{intro}</p>
           <>{details}</>
           <p>{result}</p>
-          <Button>Voir mes réalisations <span className='visually-hidden'>{cta ? `${cta}` : `de ${title}`}</span></Button>
+          <Link href={'/realisations'}><Button>Voir mes réalisations <span className='visually-hidden'>{cta ? `${cta}` : `de ${title}`}</span></Button></Link>
         </article>
       </div>
 
@@ -31,4 +32,4 @@ function GridServices({ service }: {service:DetailedService}): JSX.Element {
   )
 }
 
-export default GridServices
+export default ServicesList

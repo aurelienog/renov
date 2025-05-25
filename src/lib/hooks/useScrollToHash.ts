@@ -11,7 +11,7 @@ export function useScrollToHash(delay: number = 100): void {
     const scrollToElement = (): void => {
       const element = document.querySelector<HTMLElement>(hash)
       if (element) {
-        element.scrollIntoView({ block: 'center' })
+        element.scrollIntoView({ block: 'start' })
       }
     }
 

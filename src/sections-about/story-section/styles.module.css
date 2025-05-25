@@ -126,12 +126,16 @@
     max-width: 40rem;
     position: relative;
   
-    & figure {
+    & figure:first-of-type {
     position: absolute;
     aspect-ratio: 5/4;
     top: 8%;
     left: -14%;
     width: 62%;
+
+      & img {
+        object-position: center -10px;
+      }
     }
   
   
