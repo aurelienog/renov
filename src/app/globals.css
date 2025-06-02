@@ -35,7 +35,7 @@ a {
   cursor: pointer;
 }
 
-input, textarea, select {
+input, textarea, select, button {
   font-size: 1rem;
 }
 
