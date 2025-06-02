@@ -19,3 +19,9 @@
 .button:active {
   outline: solid 2px var(--color-accent);
 }
+
+@media (max-width: 768px) {
+  .button {
+    font-size: 1.5rem;
+  }
+}

@@ -1,6 +1,7 @@
 .navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   text-align: center;
 
   & :first-child {
@@ -63,12 +64,12 @@
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    place-items: center;
+    align-items: center;
     border: none ;
+    padding: 0;
 
     & li {
       padding: 0 2rem;
-      justify-self: center;
     }
 
     & li:first-of-type{
