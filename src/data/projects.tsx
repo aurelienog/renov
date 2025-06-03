@@ -8,20 +8,26 @@ export const projects: Project[] = [
   {
     image: sol,
     service: 'sol',
+    description: ''
   }, {
     image: mur,
     service: 'mur',
+    description: ''
   }, {
     image: bois,
     service: 'boiserie',
+    description: ''
   },   {
     image: sol,
     service: 'sol',
+    description: ''
   }, {
     image: mur,
     service: 'mur',
+    description: ''
   }, {
     image: bois,
     service: 'boiserie',
+    description: ''
   },
 ]

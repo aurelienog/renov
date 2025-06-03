@@ -26,6 +26,12 @@
     margin-bottom: 5rem;
     font-weight: var(--fw-semi-bold);
   }
+
+  & button {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .clip  {
@@ -52,5 +58,12 @@
 @media (min-width: 500px) {
   .info {
     margin-left: clamp(1%, 10vw, 8%);
+
+    & button {
+    position: static;
+    transform: none;
+    }
   }
+
+
 }

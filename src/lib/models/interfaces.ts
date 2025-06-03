@@ -55,6 +55,7 @@ export interface DetailedService {
 }
 
 export interface Project {
-  image: StaticImageData,
+  image: StaticImageData
   service: 'boiserie' | 'sol' | 'mur' | 'extérieur' | 'intérieur' | 'enduit' | 'autre'
+  description: string
 }
