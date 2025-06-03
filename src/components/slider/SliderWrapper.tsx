@@ -25,7 +25,7 @@ function SliderWrapper({lastProjects}: {lastProjects: StaticImageData[]}) {
         })
       }
       
-      {isInView && <Link href="/realisations"><Button>Mes réalisations</Button></Link>}
+      {isInView && <Link href="/realisations"><Button>Voir mes réalisations</Button></Link>}
       
     </div>
   )
