@@ -414,7 +414,7 @@ export const detailedServices: DetailedService[] = [{
 }
 ]
 
-//the second element of the array is a tranparent png so the reveal for the first element is longer
+//the second element of the array is a tranparent png, which makes revealing the first element take longer
 export const lastProjects: StaticImageData[] = [indoor, transparentImage, bedroom, transparentImage, toit, transparentImage, ];
 
 export const workSteps: WorkStep[] = [{

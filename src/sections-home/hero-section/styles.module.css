@@ -1,7 +1,7 @@
 .info{
   margin-top: 2%;
   margin-left: 0;
-  padding: 4em 3em;
+  padding: 4em 2.8em;
   animation-name: slideInRight;
   animation-duration: 0.8s;
   animation-timing-function: ease-out;
@@ -14,6 +14,7 @@
   position: relative;
   width: 100%;
   height: 100vh; 
+
   
   & h2 {
     margin-bottom: 3rem;

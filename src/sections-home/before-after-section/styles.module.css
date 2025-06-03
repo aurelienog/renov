@@ -7,7 +7,7 @@
     width: 100%;
     padding-left: 4rem;
     padding-right: 4rem;
-    display: block;
+    display: inherit;
     position: relative;
   
     & h2 {

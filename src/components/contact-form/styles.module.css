@@ -1,7 +1,6 @@
 .form {
   max-width: 100em;
   display: grid;
-  gap: 3rem;
   justify-items: center;
   padding: 2em 0;
 

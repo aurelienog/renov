@@ -10,7 +10,8 @@ function LandingPrestations() {
   return (
     <section className={`breakout ${styles.section}`}>
       <h1>Mes Prestations</h1>
-      <p>Chaque chantier est unique, mais le soin apporté reste le même. <br></br>Voici un aperçu des prestations proposées, pensées pour répondre aux besoins les plus courants de mes clients.</p>
+      <p>Chaque chantier est unique, mais le soin apporté reste le même.</p>
+      <p>Voici un aperçu des prestations proposées, pensées pour répondre aux besoins les plus courants de mes clients.</p>
       <Suspense fallback={<Loader/>}>
         { detailedServices.map((service: DetailedService, index) => (
         <GridServices service={service} key={index}></GridServices>
