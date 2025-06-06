@@ -40,12 +40,12 @@ import warning from '../../public/assets/icons/warning.svg';
 import x from '../../public/assets/icons/x.svg';
 
 //Before-after images
-import beforeToit from '../../public/assets/images/toit-avant.webp';
-import afterToit from '../../public/assets/images/toit-apres.webp';
-import beforeLiving from '../../public/assets/images/beforeBedroom.webp';
-import afterliving from '../../public/assets/images/afterBedRoom.webp';
-import bedroomBefore from '../../public/assets/images/bedroomBefore.webp';
-import bedroomAfter from '../../public/assets/images/bedroomAfter.webp';
+import beforeBedroom from '../../public/assets/images/before-after/before-chambre.webp';
+import afterBedroom from '../../public/assets/images/before-after/after-chambre.webp';
+import beforeLiving from '../../public/assets/images/before-after/before-studio.webp';
+import afterliving from '../../public/assets/images/before-after/after-studio.webp';
+import beforeOutdoor from '../../public/assets/images/before-after/before-ext.webp';
+import afterOutdoor from '../../public/assets/images/before-after/after-ext.webp';
 
 /* Update const columns to modify the comparison chart.
 The first {} defines the criteria, the following {} are the elements to compare.
@@ -450,13 +450,13 @@ export const workSteps: WorkStep[] = [{
 
 export const beforeAfterPhotos: BeforeAfterComparison[] = [{
   name: 'bathroom',
-  before: beforeToit,
-  after: afterToit,
+  before: beforeBedroom,
+  after: afterBedroom,
 },
 {
   name: 'bedroom',
-  before: bedroomBefore,
-  after: bedroomAfter,
+  before: beforeOutdoor,
+  after: afterOutdoor,
 },
 {
   name: 'living',

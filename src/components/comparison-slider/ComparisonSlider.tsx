@@ -45,13 +45,13 @@ function ComparisonSlider({ before, after, name} : { before: StaticImageData, af
         onMouseMove={handleMouseMove}
         onTouchMove={handleTouchMove}
       >
-        <Image src={after} alt="salle de bain après la rénovation"   placeholder="blur" fill sizes="(max-width: 768px) 100vw, 60vw" quality={50} style={{ objectFit: 'cover', borderRadius: 'var(--border-radius)'}}/>
+        <Image src={after} alt="salle de bain après la rénovation"   placeholder="blur" fill sizes="(max-width: 768px) 100vw, 60vw" quality={75} style={{ objectFit: 'cover', borderRadius: 'var(--border-radius)'}}/>
 
         <span
           className={`${styles.beforeContainer} ${styles.imagesContainer}`}
           style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
         >
-          <Image src={before} alt="salle de bain avant la rénovation"   placeholder="blur" fill sizes="(max-width: 768px) 100vw, 60vw" quality={50} style={{ objectFit: 'cover', borderRadius: 'var(--border-radius)'}}/>
+          <Image src={before} alt="salle de bain avant la rénovation"  placeholder="blur" fill sizes="(max-width: 768px) 100vw, 60vw" quality={75} style={{ objectFit: 'cover', borderRadius: 'var(--border-radius)'}}/>
         </span>
 
         

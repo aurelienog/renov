@@ -28,9 +28,7 @@
   }
 
   & button {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 100%;
   }
 }
 
@@ -60,8 +58,7 @@
     margin-left: clamp(1%, 10vw, 8%);
 
     & button {
-    position: static;
-    transform: none;
+      width: fit-content;
     }
   }
 
