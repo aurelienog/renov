@@ -4,7 +4,7 @@ import ProjectsGallery from '@/components/projects-gallery/ProjectsGallery';
 
 function LandingRealisation() {
   return (
-    <section className={` ${styles.section}  section`}>
+    <section className={` ${styles.section} breakout  section`}>
       <h1>Mes réalisations</h1>
       <ProjectsGallery/>
     </section>

@@ -3,6 +3,7 @@ import styles from './styles.module.css';
 import Button from '@/components/button/Button';
 import BackgroundImage from "@/components/background-image/BackgroundImage";
 import heroImage from '../../../public/assets/images/hero.webp';
+import Link from 'next/link';
 
 function HeroSection(): JSX.Element  {
   return (
@@ -13,7 +14,7 @@ function HeroSection(): JSX.Element  {
         <h1 className='visually-hidden'>Peintre en bâtiment, expert en peinture et rénovation intérieure/extérieure dans les Yvelines et le Val-d{`'`}Oise</h1>
         <h2>Redonnez vie à vos espaces</h2>
         <p>Peintre en bâtiment, j{`'`}embellis et restaure vos intérieurs dans les Yvelines et le Val d{`'`}Oise.</p>
-        <Button>Obtenir un devis gratuit</Button>
+        <Link href={"/#contact"}><Button>Obtenir un devis gratuit</Button></Link>
       </article>      
     </section>
   )

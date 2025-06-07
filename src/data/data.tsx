@@ -449,17 +449,16 @@ export const workSteps: WorkStep[] = [{
 }]
 
 export const beforeAfterPhotos: BeforeAfterComparison[] = [{
-  name: 'bathroom',
+  name: 'living',
+  before: beforeLiving,
+  after: afterliving,
+},{
+  name: 'chambre',
   before: beforeBedroom,
   after: afterBedroom,
 },
 {
-  name: 'bedroom',
+  name: 'exterieur',
   before: beforeOutdoor,
   after: afterOutdoor,
-},
-{
-  name: 'living',
-  before: beforeLiving,
-  after: afterliving,
-}]
+},]

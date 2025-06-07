@@ -8,8 +8,8 @@
     transition: transform 400ms ease-in-out;
   }
 
-  & img:hover {
+  /* & img:hover {
     transform: scale(1.05);
     filter:saturate(1.5)
-  }
+  } */
 }
