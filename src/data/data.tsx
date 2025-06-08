@@ -21,9 +21,9 @@ import exterieur from '../../public/assets/images/exterieur.webp';
 
 //last projects images 
 import transparentImage from '../../public/assets/images/transparentImage.webp';
-import bedroom from '../../public/assets/images/bedroom.webp';
-import toit from '../../public/assets/images/toit.webp';
-import indoor from '../../public/assets/images/living.webp';
+import murPapierPeint from '../../public/assets/images/projects/murs/papier-peint-living.webp';
+import boiserieLiving from '../../public/assets/images/projects/boiseries/poutres2.webp';
+import boiseriePeinture from '../../public/assets/images/projects/boiseries/peinture-boiseries.webp';
 
 //timeline icons
 import phone from '../../public/assets/icons/phone.svg';
@@ -46,6 +46,15 @@ import beforeLiving from '../../public/assets/images/before-after/before-studio.
 import afterliving from '../../public/assets/images/before-after/after-studio.webp';
 import beforeOutdoor from '../../public/assets/images/before-after/before-ext.webp';
 import afterOutdoor from '../../public/assets/images/before-after/after-ext.webp';
+
+// detailed services
+import murLiving from '../../public/assets/images/projects/murs/papier-peint-living.webp';
+import intBedroom from '../../public/assets/images/projects/interieur/horizontal/chambre-deco5.webp';
+import enduitBeton from '../../public/assets/images/projects/enduits/beton-cire4.webp';
+import extPeinture from '../../public/assets/images/projects/exterieur/peinture-ext.webp';
+import boiseriePorte from '../../public/assets/images/projects/boiseries/peinture-porte2.webp';
+import solParquet from '../../public/assets/images/projects/sols/parquet-flottant.webp';
+import divers from '../../public/assets/images/projects/autre/dressing.webp';
 
 /* Update const columns to modify the comparison chart.
 The first {} defines the criteria, the following {} are the elements to compare.
@@ -318,7 +327,7 @@ export const detailedServices: DetailedService[] = [{
   </ul>
   </>,
   result: `Un mur bien préparé, c'est un résultat qui dure.`,
-  image: autre,
+  image: murLiving,
   id:'mur',
 }, {
   title: 'Peinture intérieure',
@@ -333,7 +342,7 @@ export const detailedServices: DetailedService[] = [{
   </ul>
   </>,
   result: 'Une finition nette et élégante pour un intérieur qui vous ressemble.',
-  image: autre,
+  image: intBedroom,
   id:'peinture-interieure',
 }, {
   title: 'Enduits décoratifs & peintures à effet',
@@ -349,7 +358,7 @@ export const detailedServices: DetailedService[] = [{
   </ul>
   </>,
   result: 'Des murs qui deviennent de véritables éléments de décoration.',
-  image: autre,
+  image: enduitBeton,
   id:'enduit',
   cta: `d'enduits décoratifs & peintures à effet`,
 }, {
@@ -364,7 +373,7 @@ export const detailedServices: DetailedService[] = [{
   </ul>
   </>,
   result: 'Une protection efficace, un rendu impeccable.',
-  image: autre,
+  image: extPeinture,
   id:'peinture-exterieure',
 }, {
   title: 'Rénovation de boiseries',
@@ -378,7 +387,7 @@ export const detailedServices: DetailedService[] = [{
   </ul>
   </>,
   result: 'Un travail soigné pour préserver et valoriser vos boiseries.',
-  image: autre,
+  image: boiseriePorte,
   id:'boiserie'
 }, {
   title: 'Revêtements de sol',
@@ -393,7 +402,7 @@ export const detailedServices: DetailedService[] = [{
   </ul>
   </>,
   result: 'Un sol résistant, confortable et esthétique.',
-  image: autre,
+  image: solParquet,
   id:'sol',
 }, {
   title: 'Travaux de rénovation diverse',
@@ -408,14 +417,14 @@ export const detailedServices: DetailedService[] = [{
   </ul>
   </>,
   result: 'Des finitions complètes pour un intérieur fonctionnel et harmonieux.',
-  image: autre,
+  image: divers,
   id: 'autre',
   cta: ' '
 }
 ]
 
 //the second element of the array is a tranparent png, which makes revealing the first element take longer
-export const lastProjects: StaticImageData[] = [indoor, transparentImage, bedroom, transparentImage, toit, transparentImage, ];
+export const lastProjects: StaticImageData[] = [boiserieLiving, transparentImage, murPapierPeint, transparentImage, boiseriePeinture, transparentImage, ];
 
 export const workSteps: WorkStep[] = [{
   name: 'Prise de contact',
