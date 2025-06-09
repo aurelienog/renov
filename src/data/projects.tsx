@@ -88,106 +88,106 @@ export const projects: Project[] = [
   // intérieur
   {
     image: interieurEntreeCouloir1,
-    service: 'intérieur',
+    service: 'interieur',
     description: ''
   }, {
     image: interieurEntreeCouloir2,
-    service: 'intérieur',
+    service: 'interieur',
     description: ''
   }, {
     image: interieurEntreeCouloir3,
-    service: 'intérieur',
+    service: 'interieur',
     description: ''
   }, {
     image: interieurVertical,
-    service: 'intérieur',
+    service: 'interieur',
     description: ''
   }, {
     image: interieurPeintureSDB1,
-    service: 'intérieur',
+    service: 'interieur',
     description: ''
   }, {
     image: interieurPeintureSDB2,
-    service: 'intérieur',
+    service: 'interieur',
     description: ''
   }, {
     image: interieurChambreDeco1,
-    service: 'intérieur',
+    service: 'interieur',
     description: ''
   }, {
     image: interieurChambreDeco2,
-    service: 'intérieur',
+    service: 'interieur',
     description: ''
   }, {
     image: interieurChambreDeco3,
-    service: 'intérieur',
+    service: 'interieur',
     description: ''
   }, {
     image: interieurChambreDeco4,
-    service: 'intérieur',
+    service: 'interieur',
     description: ''
   }, {
     image: interieurChambreDeco5,
-    service: 'intérieur',
+    service: 'interieur',
     description: ''
   },   {
     image: interieurChambreEnfants1,
-    service: 'intérieur',
+    service: 'interieur',
     description: ''
   }, {
     image: interieurChambreEnfants2,
-    service: 'intérieur',
+    service: 'interieur',
     description: ''
   }, {
     image: interieurHor,
-    service: 'intérieur',
+    service: 'interieur',
     description: ''
   }, {
     image: interieurPeintureBureau1,
-    service: 'intérieur',
+    service: 'interieur',
     description: ''
   }, {
     image: interieurPeintureBureau2,
-    service: 'intérieur',
+    service: 'interieur',
     description: ''
   }, {
     image: interieurPeintureLiving1,
-    service: 'intérieur',
+    service: 'interieur',
     description: ''
   }, {
     image: interieurPeintureLiving2,
-    service: 'intérieur',
+    service: 'interieur',
     description: ''
   }, {
     image: interieurPeintureLiving3,
-    service: 'intérieur',
+    service: 'interieur',
     description: ''
   }, {
     image: interieurPeintureOffice1,
-    service: 'intérieur',
+    service: 'interieur',
     description: ''
   }, {
     image: interieurPeintureOffice2,
-    service: 'intérieur',
+    service: 'interieur',
     description: ''
   }, {
     image: interieurPeintureOffice3,
-    service: 'intérieur',
+    service: 'interieur',
     description: ''
   }, {
     image: interieurPeintureOffice4,
-    service: 'intérieur',
+    service: 'interieur',
     description: ''
   }, {
     image: interieurPeintureSDB,
-    service: 'intérieur',
+    service: 'interieur',
     description: ''
   },
 
   // extérieur
   {
     image: exterieurExt,
-    service: 'extérieur',
+    service: 'exterieur',
     description: ''
   },
 

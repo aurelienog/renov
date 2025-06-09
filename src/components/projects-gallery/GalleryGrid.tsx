@@ -3,7 +3,7 @@ import styles from './styles.module.css'
 import Image from 'next/image';
 import { Project } from '@/lib/models/interfaces';
 
-function ProjectsGallery( { projects }: { projects : Project[]} ) {
+function GalleryGrid( { projects }: { projects : Project[]} ) {
   return (
     <div className={`${styles.wrapper}`}>
       {projects.map((p : Project, index : number) => (
@@ -15,4 +15,4 @@ function ProjectsGallery( { projects }: { projects : Project[]} ) {
   )
 } 
 
-export default ProjectsGallery
+export default GalleryGrid

@@ -1,10 +1,18 @@
-import LandingRealisation from '@/sections-realisations/LandingRealisation'
-import React from 'react'
+import LandingRealisation from '@/sections-realisations/LandingRealisation';
+import React from 'react';
+import { projects } from '../../data/projects';
 
-function page() {
+async function page({ searchParams }: { 
+  searchParams: Promise< {service?: string}>
+}) {
+
+  const query = (await searchParams).service;
+  const filteredProjects = query? projects.filter((project) => project.service === query ) : projects ;
+
+  
   return (
     <main className='base-layout'>
-      <LandingRealisation/>
+      <LandingRealisation query={query} filteredProjects={filteredProjects}/>
     </main>
   )
 }
