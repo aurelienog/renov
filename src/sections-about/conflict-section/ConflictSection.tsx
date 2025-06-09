@@ -5,7 +5,7 @@ import portrait from '../../../public/assets/images/julien.webp';
 
 function ConflictSection():JSX.Element {
   return (
-    <section className={`breakout section ${styles.section}`}>
+    <section className={`full-width section ${styles.section}`}>
       <figure>
         <Image src={portrait} alt='Julien' fill placeholder='blur' style={{ objectFit: 'cover'}}/>
       </figure>

@@ -1,6 +1,6 @@
 .section {
   --grid-min-col-size: 400px;
-  padding: 12rem 1rem;
+  padding: 12rem 0rem;
   margin: 0 1em;
   display: grid;
   grid-template-columns:  repeat(auto-fit, minmax(min(var(--grid-min-col-size), 100%), 1fr));
@@ -12,7 +12,7 @@
   }
 
   & > :nth-child(2) {
-    width: 80%;
+    width: 100%;
     margin: auto;
   }
 
@@ -27,7 +27,7 @@
     content: '';
     position: absolute;
     top: -5%;
-    left: -4%;
+    left: 0%;
     width: 100px;
     height: 10px;
     z-index: 2;
@@ -39,7 +39,7 @@
     position: absolute;
     content: "";
     top: -5%;
-    left: -4%;
+    left: -0%;
     width: 10px;
     height: 100px;
     z-index: 2;
@@ -60,7 +60,7 @@
   position: absolute;
   content: "";
   bottom: -50%;
-  right: -12%;
+  right: -10%;
   width: 100px;
   height: 10px;
   z-index: 2;
@@ -72,7 +72,7 @@
   position: absolute;
   content: "";
   bottom: -50%;
-  right: -12%;
+  right: -10%;
   width: 10px;
   height: 100px;
   z-index: 2;

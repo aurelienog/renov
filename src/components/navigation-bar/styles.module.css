@@ -1,4 +1,6 @@
 .navbar {
+  max-width: 1250px;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -51,7 +53,7 @@
 }
 
 
-@media (min-width: 1510px) {
+@media (min-width: 965px) {
 
   .navbar {
     justify-content: space-around;
@@ -69,16 +71,17 @@
     padding: 0;
 
     & li {
-      padding: 0 2rem;
+      padding: 0 1em;
+      flex-grow: 2;
     }
 
     & li:first-of-type{
-      margin-left: 2em;
       margin-top: 0;
     }
 
     & li:last-of-type{
       padding-right: 0;
+      flex-grow: 0;
     } 
   }
 }
