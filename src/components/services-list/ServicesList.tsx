@@ -9,7 +9,7 @@ import { useOpenDetails } from '@/lib/hooks/useOpenDetails';
 import Link from 'next/link';
 
 function ServicesList({ service }: {service:DetailedService}): JSX.Element {
-  const { title, intro, details, result, image, id, cta } = service;
+  const { title, intro, details, result, image, id, cta, prestation } = service;
   useScrollToHash()
   const isOpen = useOpenDetails(id);
 
@@ -24,7 +24,7 @@ function ServicesList({ service }: {service:DetailedService}): JSX.Element {
           <p>{intro}</p>
           <>{details}</>
           <p>{result}</p>
-          <Link href={'/realisations'}><Button>Voir mes réalisations <span className='visually-hidden'>{cta ? `${cta}` : `de ${title}`}</span></Button></Link>
+          <Link href={`/realisations?service=${prestation}`}><Button>Voir mes réalisations <span className='visually-hidden'>{cta ? `${cta}` : `de ${title}`}</span></Button></Link>
         </article>
       </div>
 

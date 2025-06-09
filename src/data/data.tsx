@@ -327,6 +327,7 @@ export const detailedServices: DetailedService[] = [{
   </ul>
   </>,
   result: `Un mur bien préparé, c'est un résultat qui dure.`,
+  prestation: 'mur',
   image: murLiving,
   id:'mur',
 }, {
@@ -335,13 +336,14 @@ export const detailedServices: DetailedService[] = [{
   details: <>
   <p> Je m{`'`}occupe de tout, du retrait des anciens revêtements à la dernière couche de finition :</p>
   <ul>
-    <li>Retrait éventuelle des anciens revêtements et mise en décharge professionnelle</li>
+    <li>Retrait éventuel des anciens revêtements et mise en décharge professionnelle</li>
     <li>Préparation minutieuse des murs (rebouchage, traitement localisé ou général des fissures, enduit, ponçage)</li>
     <li>Application d{`'`}une couche d{"'"}impression</li>
     <li>Application de 2 couches de peinture acrylique de finition (adaptée au support et à la couleur choisie)</li>
   </ul>
   </>,
   result: 'Une finition nette et élégante pour un intérieur qui vous ressemble.',
+    prestation: 'interieur',
   image: intBedroom,
   id:'peinture-interieure',
 }, {
@@ -357,7 +359,8 @@ export const detailedServices: DetailedService[] = [{
     <li>Application de deux couches de peinture à effet (peinture métalisée, sablée, pailletée)</li>
   </ul>
   </>,
-  result: 'Des murs qui deviennent de véritables éléments de décoration.',
+  result: 'Des surfaces qui deviennent de véritables éléments de décoration.',
+      prestation: 'enduit',
   image: enduitBeton,
   id:'enduit',
   cta: `d'enduits décoratifs & peintures à effet`,
@@ -373,6 +376,7 @@ export const detailedServices: DetailedService[] = [{
   </ul>
   </>,
   result: 'Une protection efficace, un rendu impeccable.',
+      prestation: 'exterieur',
   image: extPeinture,
   id:'peinture-exterieure',
 }, {
@@ -387,6 +391,7 @@ export const detailedServices: DetailedService[] = [{
   </ul>
   </>,
   result: 'Un travail soigné pour préserver et valoriser vos boiseries.',
+      prestation: 'boiserie',
   image: boiseriePorte,
   id:'boiserie'
 }, {
@@ -402,10 +407,11 @@ export const detailedServices: DetailedService[] = [{
   </ul>
   </>,
   result: 'Un sol résistant, confortable et esthétique.',
+      prestation: 'sol',
   image: solParquet,
   id:'sol',
 }, {
-  title: 'Travaux de rénovation diverse',
+  title: 'Travaux divers de rénovation',
   intro : 'Des ajustements utiles pour finaliser votre projet :',
   details: <>
   <p>Voici un aperçu des services proposés pour répondre à vos besoins complémentaires:</p>
@@ -417,6 +423,7 @@ export const detailedServices: DetailedService[] = [{
   </ul>
   </>,
   result: 'Des finitions complètes pour un intérieur fonctionnel et harmonieux.',
+      prestation: 'autre',
   image: divers,
   id: 'autre',
   cta: ' '

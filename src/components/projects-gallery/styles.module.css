@@ -2,14 +2,41 @@
   columns: 3 20rem;
   gap: 1rem;
 
+  & div {
+    position: relative;
+
+    &:hover::after {
+      background-image: rgba(0, 0, 0, 0.3);
+    }
+
+    &:hover {
+      cursor: zoom-in;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    }
+  
+
+  &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0);
+      transition: background-image 0.4s ease;
+      pointer-events: none;
+    }
+  }
+
   & img {
     display: block;  /* reset margen */
     cursor: pointer;
-    transition: transform 400ms ease-in-out;
+    transition: transform 300ms ease-in-out;
+      width: 100%;
+      height: auto;
+      transition: transform 0.4s ease, filter 0.4s ease;
   }
 
-  /* & img:hover {
-    transform: scale(1.05);
-    filter:saturate(1.5)
-  } */
+  & img:hover {
+    transform: scale(1.02);
+    filter: brightness(0.7); 
+    cursor:zoom-in;
+  } 
 }

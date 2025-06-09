@@ -52,6 +52,7 @@ export interface DetailedService {
   image: StaticImageData
   id: string
   cta?: string
+  prestation: 'boiserie' | 'sol' | 'mur' | 'exterieur' | 'interieur' | 'enduit' | 'autre'
 }
 
 export interface Project {

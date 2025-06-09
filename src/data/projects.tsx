@@ -74,7 +74,6 @@ import boiseriesPoncageParquet1 from '../../public/assets/images/projects/boiser
 import boiseriesPoncageParquet2 from '../../public/assets/images/projects/boiseries/poncage-parquet2.webp';
 import boiseriesPoutres1 from '../../public/assets/images/projects/boiseries/poutres1.webp';
 import boiseriesPoutres2 from '../../public/assets/images/projects/boiseries/poutres2.webp';
-import boiseriesVitrification from '../../public/assets/images/projects/boiseries/vitrification.webp';
 import boiseriesVitrificationParquet from '../../public/assets/images/projects/boiseries/vitrification-parquet.webp';
 
 // images "autre"
@@ -321,10 +320,6 @@ export const projects: Project[] = [
     description: ''
   }, {
     image: boiseriesPoutres2,
-    service: 'boiserie',
-    description: ''
-  }, {
-    image: boiseriesVitrification,
     service: 'boiserie',
     description: ''
   }, {
