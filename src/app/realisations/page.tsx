@@ -12,7 +12,7 @@ async function page({ searchParams }: {
   
   return (
     <main className='base-layout'>
-      <LandingRealisation query={query} filteredProjects={filteredProjects}/>
+      <LandingRealisation filteredProjects={filteredProjects}/>
     </main>
   )
 }

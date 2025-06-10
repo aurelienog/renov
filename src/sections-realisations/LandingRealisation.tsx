@@ -11,7 +11,6 @@ function LandingRealisation({ filteredProjects }: { filteredProjects: Project[]}
       <aside>
         <GalleryFilter/>
       </aside>
-      
       <GalleryGrid projects={filteredProjects}/>
     </section>
   )
