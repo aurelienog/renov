@@ -10,9 +10,11 @@
 .wrapper {
   columns: 3 20rem;
   gap: 1rem;
+  
 
   & li {
     list-style-type: none;
+    margin: auto;
   }
 
   & img {

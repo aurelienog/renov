@@ -8,26 +8,30 @@
 
   & aside {
     position: relative;
-    text-align: center;
-    margin: 2rem auto;
-    padding: 0 3em 0 1em;
-    max-width: fit-content;
+    display: grid;
     background-color: #F1F0EF;
     border-radius: var(--border-radius);
+    background-color: #F1F0EF;
+    margin: 2rem auto;
+
+    & label {
+      padding: 0.5em 1em 0 2.5em;
+      font-weight: var(--fw-bold);
+    }
 
     & select {
       background-color: #F1F0EF;
     }
 
-  & ::before {
+    & ::before {
     position: absolute;
     content: url('/assets/icons/filter.svg');
-    top: 25%;
-    right: 5%;
+    top: 15%;
+    left: 4%;
     z-index: 10;
     color: black;
   }
-  }
+}
 
   & a {
     position: fixed;
@@ -35,4 +39,29 @@
     right: 20%;
     z-index: 2;
   }
+}
+
+@media(min-width: 567px) {
+    & aside {
+    display: block;
+    position: relative;
+    text-align: center;
+    padding: 0 3em 0 1em;
+    max-width: fit-content;
+
+    & label {
+      padding: 0;
+    }
+
+  & ::before {
+    position: absolute;
+    content: url('/assets/icons/filter.svg');
+    top: 25%;
+    right: 4%;
+    left: auto;
+    z-index: 10;
+    color: black;
+  }
+}
+
 }
