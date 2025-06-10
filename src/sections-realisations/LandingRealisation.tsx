@@ -4,12 +4,12 @@ import GalleryGrid from '@/components/projects-gallery/GalleryGrid';
 import GalleryFilter from '@/components/projects-gallery/GalleryFilter';
 import { Project } from '@/lib/models/interfaces';
 
-function LandingRealisation({ query, filteredProjects }: { query?: string, filteredProjects: Project[]}) {
+function LandingRealisation({ filteredProjects }: { filteredProjects: Project[]}) {
   return (
     <section className={` ${styles.section} breakout  section`}>
       <h1>Mes réalisations</h1>
       <aside>
-        <GalleryFilter query={query}/>
+        <GalleryFilter/>
       </aside>
       
       <GalleryGrid projects={filteredProjects}/>
