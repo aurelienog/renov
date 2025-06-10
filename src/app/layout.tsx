@@ -27,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={`${nunito.variable} ${playfair.variable}`}>
+      <body className={`${nunito.variable} ${playfair.variable}`} style={{backgroundColor: 'var(--background)'}}>
         <HeaderServer />
           {children}
         <Footer/>

@@ -13,8 +13,6 @@ function ContactForm() {
   const [successMessage, setSuccessMessage] = useState<string | null>(null)
   useScrollToHash()
 
-  console.log(errors)
-
   const onMessageSubmit = async (data: ContactFormData) => {
     try {
       // Reset previous errors and success messages

@@ -1,42 +1,33 @@
+.filter select {
+    border: none;
+    font: inherit;
+    padding: 0.5em ; 
+    margin-left: 0.5em;
+    border-radius: var(--border-radius);
+    appearance: none;
+}
+
 .wrapper {
   columns: 3 20rem;
   gap: 1rem;
 
-  & div {
-    position: relative;
-
-    &:hover::after {
-      background-image: rgba(0, 0, 0, 0.3);
-    }
-
-    &:hover {
-      cursor: zoom-in;
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
-    }
-  
-
-  &::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: rgba(0, 0, 0, 0);
-      transition: background-image 0.4s ease;
-      pointer-events: none;
-    }
+  & li {
+    list-style-type: none;
   }
 
   & img {
     display: block;  /* reset margen */
-    cursor: pointer;
+    cursor:zoom-in;
     transition: transform 300ms ease-in-out;
       width: 100%;
       height: auto;
       transition: transform 0.4s ease, filter 0.4s ease;
-  }
+  } 
+}
 
-  & img:hover {
+@media(min-width: 768px) {
+  .wrapper img:hover {
     transform: scale(1.02);
     filter: brightness(0.7); 
-    cursor:zoom-in;
-  } 
+  }
 }

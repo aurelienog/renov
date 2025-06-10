@@ -1,7 +1,7 @@
 'use client'
 import React from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
-
+import styles from './styles.module.css';
 
 function GalleryFilter() {
   const router = useRouter();
@@ -19,8 +19,8 @@ function GalleryFilter() {
   }
 
   return (
-    <form >
-      <label htmlFor="service-select">Choisissez une prestation</label>
+    <aside aria-label="Filtrer les photos" className={styles.filter}>
+      <label htmlFor="service-select">Catégories : </label>
       <select id="service-select" value={selectedValue} onChange={handleChange}>
         <option value="">Toutes</option> 
         <option value="boiserie">Rénovation de boiseries</option> 
@@ -31,7 +31,7 @@ function GalleryFilter() {
         <option value="enduit">Enduits décoratifs & peintures à effet</option> 
         <option value="autre">Rénovation diverse</option> 
       </select>
-    </form>
+    </aside>
   )
 }
 

@@ -1,8 +1,38 @@
 .section {
   padding: 5em 0;
-
+  
   & h1 {
     text-align: center;
     margin-bottom: 1.5em;
+  }
+
+  & aside {
+    position: relative;
+    text-align: center;
+    margin: 2rem auto;
+    padding: 0 3em 0 1em;
+    max-width: fit-content;
+    background-color: #F1F0EF;
+    border-radius: var(--border-radius);
+
+    & select {
+      background-color: #F1F0EF;
+    }
+
+  & ::before {
+    position: absolute;
+    content: url('/assets/icons/filter.svg');
+    top: 25%;
+    right: 5%;
+    z-index: 10;
+    color: black;
+  }
+  }
+
+  & a {
+    position: fixed;
+    bottom: 5%;
+    right: 20%;
+    z-index: 2;
   }
 }
