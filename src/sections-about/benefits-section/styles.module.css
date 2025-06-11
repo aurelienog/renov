@@ -1,4 +1,8 @@
 .section {
+    & h2 {
+    text-align: center;
+  }
+  
   & ul {
     --grid-min-colum-size: 240px;
     display: grid;

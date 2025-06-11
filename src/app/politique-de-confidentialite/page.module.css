@@ -6,8 +6,6 @@
 
   & h1 {
   text-align: center;
-  margin-bottom: 4rem;
-  font-size: clamp(2rem, 6vw, 6rem);
   max-width: 20ch;
   margin: auto;
   }
@@ -60,7 +58,7 @@
   padding-right: 1rem;
   padding-left: 1rem;
   padding-top: clamp(10rem, 10vw, 14rem);
-  padding-bottom: clamp(4rem, 10vw, 10rem);
+  padding-bottom: clamp(3rem, 10vw, 6rem);
   outline: black 2px solid;
 }
 

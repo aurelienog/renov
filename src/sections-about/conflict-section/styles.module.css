@@ -1,5 +1,4 @@
 .section {
-  
   --grid-min-col-size: 400px;
   display: grid;
   grid-template-columns:  repeat(auto-fit, minmax(min(var(--grid-min-col-size), 100%), 1fr));
@@ -73,6 +72,10 @@
     overflow: hidden;
     aspect-ratio: 3 / 4;
     width: 100%;
+
+    & img {
+      transform:rotateY(180deg);
+    }
   }
 
   & p:first-of-type {
@@ -83,11 +86,6 @@
   & p {
     padding: 0 30px;
   }
-
-
-  /* & img {
-    object-position:  54%;
-  } */
 }
 
 

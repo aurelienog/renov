@@ -1,8 +1,6 @@
 import React, { JSX } from 'react';
 import styles from './styles.module.css';
-import workingImage from '../../../public/assets/images/Julien1.webp';
-import antonio from '../../../public/assets/images/Julien3.webp';
-import up from '../../../public/assets/images/Julien2.webp';
+import up from '../../../public/assets/images/Julien.webp';
 import Image from 'next/image';
 
 function StorySection(): JSX.Element {
@@ -16,18 +14,9 @@ function StorySection(): JSX.Element {
         <p>Pendant plus de 10 ans, j’ai travaillé à ses côtés, au contact direct des clients, des matières et des détails qui font la différence.
         </p>
       </article>
-      <div className={styles.wrapper}>
-        <figure>
-          <Image src={workingImage} alt='de Julien qui peint un mur' fill placeholder='blur' style={{objectFit: 'cover'}}/>
-        </figure>
-        <figure style={{ overflow: 'hidden', position: 'relative'}}>
-          <Image src={up} alt='de Julien qui peint un mur' fill placeholder='blur' style={{objectFit: 'cover'}}/>
-        </figure>
-        <figure>
-          <Image src={antonio} alt='de Julien qui peint un mur' fill placeholder='blur' style={{objectFit: 'cover'}}/>
-        </figure>
-      </div>
-
+      <figure style={{ position: 'relative'}}>
+        <Image src={up} alt='de Julien qui peint un mur' fill placeholder='blur' style={{objectFit: 'cover'}}/>
+      </figure>
     </section>
   )
 }

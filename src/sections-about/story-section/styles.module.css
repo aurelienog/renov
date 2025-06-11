@@ -80,25 +80,6 @@
 }
 
 
-
-.wrapper {
-  position: relative; 
-  & figure {
-    aspect-ratio: 3/4;
-    width: 100%;
-    }
-  
-  & figure:nth-child(2) {
-      display: none;
-    }
-  
-  & figure:nth-child(3) {
-      display: none;
-    }
-}
-
-
-
 @media (min-width: 89em) {
   .section {
     padding: 12rem 8rem 8rem;
@@ -119,43 +100,5 @@
       font-weight: var(--fw-semi-bold);
     } 
   }
-
-  /* positioning images */
-
-  .wrapper {
-    max-width: 40rem;
-    position: relative;
-  
-    & figure:first-of-type {
-    position: absolute;
-    aspect-ratio: 5/4;
-    top: 8%;
-    left: -14%;
-    width: 62%;
-
-      & img {
-        object-position: center -10px;
-      }
-    }
-  
-  
-    & figure:nth-child(2) {
-      display: block;
-      position: absolute;
-      top: -10%;
-      left: 50%;
-      aspect-ratio: 4 / 5;
-      width: 60%;
-    }
-  
-    & figure:nth-child(3) {
-      display: block;
-      position: absolute;
-      top: 30%;
-      left: 25%;
-      aspect-ratio: 4 / 5;
-      width: 60%;
-      border: solid 0.6em var(--background);
-    }
-  }
 }
+

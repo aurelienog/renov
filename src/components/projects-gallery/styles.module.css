@@ -1,16 +1,24 @@
 .filter {
+  padding: 1em 0.5em;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+
+  & label {
+  font-weight: var(--fw-bold);
+  padding-inline-start: 0.5em;
+  width: 100%;
+  }
+  
   & select {
+    padding-inline-start: 0.5em;
+    width: 100%;
     border: none;
     font: inherit;
-    padding: 0.5em; 
     border-radius: var(--border-radius);
     appearance: none;
     background-color: #F1F0EF;
-    margin: auto;
-}
-  & label {
-  padding: 0.5em 1em 0 2.5em;
-  font-weight: var(--fw-bold);
   }
 }
 
@@ -34,9 +42,20 @@
   } 
 }
 
+
+@media(min-width: 567px) {
+  & aside {
+    position: relative;
+    padding: 0 2em;
+    max-width: fit-content;
+  }
+}
+
 @media(min-width: 768px) {
   .wrapper img:hover {
     transform: scale(1.02);
     filter: brightness(0.7); 
   }
 }
+
+

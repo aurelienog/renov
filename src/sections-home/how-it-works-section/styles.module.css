@@ -18,7 +18,7 @@
 
 }
 
-@media (min-width: 85em) {
+@media (min-width: 1460px) {
   .section {
     display: block;
   }

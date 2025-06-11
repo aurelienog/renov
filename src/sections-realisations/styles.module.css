@@ -6,7 +6,7 @@
     margin-bottom: 1.5em;
   }
 
-  & aside {
+  & > aside {
     position: relative;
     display: grid;
     background-color: #F1F0EF;
@@ -14,14 +14,7 @@
     background-color: #F1F0EF;
     margin: 2rem auto;
 
-    & ::before {
-    position: absolute;
-    content: url('/assets/icons/filter.svg');
-    top: 11%;
-    left: 4%;
-    z-index: 10;
-    color: black;
-  }
+  
 }
 
   & a {
@@ -30,29 +23,4 @@
     right: 20%;
     z-index: 2;
   }
-}
-
-@media(min-width: 567px) {
-    & aside {
-    display: block;
-    position: relative;
-    text-align: center;
-    padding: 0 3em 0 1em;
-    max-width: fit-content;
-
-    & label {
-      padding: 0;
-    }
-
-  & ::before {
-    position: absolute;
-    content: url('/assets/icons/filter.svg');
-    top: 25%;
-    right: 4%;
-    left: auto;
-    z-index: 10;
-    color: black;
-  }
-}
-
 }

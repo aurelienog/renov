@@ -1,7 +1,7 @@
 import React, { JSX } from 'react';
 import styles from './styles.module.css';
 import Image from 'next/image';
-import portrait from '../../../public/assets/images/julien.webp';
+import portrait from '../../../public/assets/images/julien2.webp';
 
 function ConflictSection():JSX.Element {
   return (
