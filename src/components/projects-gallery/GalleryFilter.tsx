@@ -22,9 +22,7 @@ function GalleryFilter() {
 
   return (
     <aside aria-label="Filtrer les photos" className={styles.filter}>
-      <Image src={filterIcon} width={44} height={44} alt=''/>
-      <div>
-        <label htmlFor="service-select">Catégorie : </label>
+        <label htmlFor="service-select"> <Image src={filterIcon}  width={24} alt=''/> Catégorie : </label>
         <select id="service-select" value={selectedValue} onChange={handleChange}>
           <option value="">Toutes les prestations</option> 
         <option value="boiserie">Rénovation de boiseries</option> 
@@ -35,8 +33,6 @@ function GalleryFilter() {
         <option value="enduit">Enduits décoratifs & peintures à effet</option> 
         <option value="autre">Rénovation diverse</option> 
         </select>
-      </div>
-
     </aside>
   )
 }

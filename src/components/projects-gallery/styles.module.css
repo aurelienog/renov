@@ -1,14 +1,16 @@
 .filter {
-  padding: 1em 0.5em;
+  padding: 0.5em;
   display: grid;
   gap: 1rem;
   grid-template-columns: auto 1fr;
   align-items: center;
 
   & label {
-  font-weight: var(--fw-bold);
-  padding-inline-start: 0.5em;
-  width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    font-weight: var(--fw-bold);
+    width: 100%;
   }
   
   & select {
@@ -46,7 +48,6 @@
 @media(min-width: 567px) {
   & aside {
     position: relative;
-    padding: 0 2em;
     max-width: fit-content;
   }
 }
