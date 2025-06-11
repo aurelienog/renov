@@ -1,6 +1,6 @@
 import React, { JSX } from 'react';
 import styles from './styles.module.css';
-import up from '../../../public/assets/images/Julien.webp';
+import up from '../../../public/assets/images/JulienWorking.webp';
 import Image from 'next/image';
 
 function StorySection(): JSX.Element {
