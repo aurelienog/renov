@@ -2,10 +2,11 @@
   & select {
     border: none;
     font: inherit;
-    padding: 0.5em 0 0.5em 1em; 
+    padding: 0.5em; 
     border-radius: var(--border-radius);
     appearance: none;
     background-color: #F1F0EF;
+    margin: auto;
 }
   & label {
   padding: 0.5em 1em 0 2.5em;

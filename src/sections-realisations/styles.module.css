@@ -17,7 +17,7 @@
     & ::before {
     position: absolute;
     content: url('/assets/icons/filter.svg');
-    top: 15%;
+    top: 11%;
     left: 4%;
     z-index: 10;
     color: black;

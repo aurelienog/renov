@@ -431,7 +431,7 @@ export const detailedServices: DetailedService[] = [{
 ]
 
 //the second element of the array is a tranparent png, which makes revealing the first element take longer
-export const lastProjects: StaticImageData[] = [boiserieLiving, transparentImage, murPapierPeint, transparentImage, boiseriePeinture, transparentImage, ];
+export const lastProjects: StaticImageData[] = [murPapierPeint, transparentImage, boiseriePeinture, transparentImage, boiserieLiving, transparentImage, ];
 
 export const workSteps: WorkStep[] = [{
   name: 'Prise de contact',

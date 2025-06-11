@@ -46,7 +46,7 @@
     display: block;
     border: none;
     width: 100%;
-    height: 79.3%;
+    height: 78.45%;
     min-height: 20em;
     border-radius: 12px;
     padding: 1em;
@@ -87,7 +87,7 @@
       height: 7em;    
       display: flex;
       flex-direction: column;
-      margin-bottom: 1em;
+      margin-bottom: 1.5em;
     }
 
     & label {
