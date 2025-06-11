@@ -19,10 +19,7 @@ function FAQSection(): JSX.Element {
           <FAQItem key={index} entry={entry}/>
         ))}
         </Suspense>
-      </MotionInView>   
-      <div className={styles.illustration}>
-        Aqui va una photo
-      </div>      
+      </MotionInView>       
     </section>
   )
 };

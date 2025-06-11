@@ -1,12 +1,11 @@
 .form {
-  max-width: 100em;
   display: grid;
   justify-items: center;
   padding: 2em 0;
 
   & button {
-    margin-top: 8em;
-    width: 100%;
+    margin-top: 6em;
+    width: 90%;
   }
   
   & p {
@@ -17,6 +16,7 @@
   }
 
   & .success {
+    margin-top: 2em;
     color: rgb(38, 116, 2);
 }
 
@@ -36,16 +36,18 @@
 
   /* textarea container */
   & > div {
-    width: 100%;
-    min-height: 20em;
+    width: 90%;
+    height: 100%;
   }
 
   & textarea {
     margin-top: 0.5em;
     cursor: pointer;
     display: block;
-    height: 100%;
+    border: none;
     width: 100%;
+    height: 79.3%;
+    min-height: 20em;
     border-radius: 12px;
     padding: 1em;
     line-height: 1.6;
@@ -55,6 +57,10 @@
   &:focus {
     outline: none;
     animation: border-appear 0.9s ease forwards;
+  }
+
+  &:hover:not(:focus) {
+    font-weight: var(--fw-semi-bold);
   }
 
     /* error message transparent if focus on the textarea */
@@ -68,7 +74,7 @@
   }
 
   & fieldset {
-    width: 100%;
+    width: 90%;
     border: none;
 
 
@@ -81,7 +87,7 @@
       height: 7em;    
       display: flex;
       flex-direction: column;
-      margin-bottom: 2em;
+      margin-bottom: 1em;
     }
 
     & label {
@@ -116,6 +122,7 @@
 
 
   & input {
+    border-radius: 12px;
     margin-top: 0.5em;
     cursor: pointer;
     width: 100%;
@@ -123,7 +130,6 @@
     line-height: 1.6;
     border-radius: none;
     border: solid 2px transparent;
-    border-bottom: solid 1px black;
     background-color: var(--background);
     animation: border 0.3s ease, color 0.3s ease;
   }
@@ -140,7 +146,7 @@
 
   & input:hover:not(:focus) {
     line-height: 1.6;
-    border-bottom: solid 2px var(--color-accent);
+    font-weight: var(--fw-semi-bold);
   }
   }
 }
@@ -150,6 +156,9 @@
   cursor: not-allowed;
 }
 
+.textareaError {
+  position: absolute;
+}
 
 @keyframes border-appear {
   0% {

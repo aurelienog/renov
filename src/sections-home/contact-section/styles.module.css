@@ -1,3 +1,22 @@
-.section h2 {
-  text-align: center;
+.section {
+  & h2 {
+    text-align: center;
+  }
+
+  /* contact form 2 columns */
+  & > :nth-child(2) {
+    background-color: var(--color-primary);
+    border-radius: var(--border-radius);
+    padding: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(min(400px , 100%), 1fr));
+
+  }
+}
+
+@media(min-width: 935px) {
+  .section > :nth-child(2) button {
+    margin-top: 3em;
+    grid-column: span 2;
+    width: 95%;
+  }
 }

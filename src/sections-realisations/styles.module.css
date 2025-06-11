@@ -14,15 +14,6 @@
     background-color: #F1F0EF;
     margin: 2rem auto;
 
-    & label {
-      padding: 0.5em 1em 0 2.5em;
-      font-weight: var(--fw-bold);
-    }
-
-    & select {
-      background-color: #F1F0EF;
-    }
-
     & ::before {
     position: absolute;
     content: url('/assets/icons/filter.svg');

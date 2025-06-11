@@ -48,7 +48,7 @@ function ContactForm() {
       <legend className='visually-hidden'>Informations personnelles</legend>
         {/* name */}
         <div>
-          <input id='name' type='text' placeholder='nom' {...register("name", { 
+          <input id='name' type='text' placeholder='Nom' {...register("name", { 
           required: "Merci d'indiquer votre nom.", 
           minLength: { value: 2, message: 'Votre nom doit contenir entre 2 et 30 caractères.' },
           maxLength: { value: 30, message: 'Votre nom doit contenir entre 2 et 30 caractères.'} 
@@ -56,9 +56,7 @@ function ContactForm() {
           <label htmlFor='name' className={errors.name ? `${styles.invalid}` : `${styles.valid}`}>Nom<span>*</span></label>
         
           { errors.name && <p>{errors.name?.message}</p> }  
-      
       </div>
-
 
       {/* email */}
       <div>
@@ -70,12 +68,9 @@ function ContactForm() {
         }
         })}/>
         <label htmlFor='email' className={errors.email ? `${styles.invalid}` : `${styles.valid}`} >Email<span>*</span></label>
-        
+
         { errors.email && <p>{errors.email?.message}</p> } 
-
       </div>
-
-
 
         {/* phone */}
         <div>
@@ -85,14 +80,12 @@ function ContactForm() {
             message: "Le numéro de téléphone semble invalide."
           }
         })} />
-        <label htmlFor='phone' className={errors.phone ? `${styles.invalid}` : `${styles.valid}`}>Téléphone</label>
-          
+        <label htmlFor='phone' className={errors.phone ? `${styles.invalid}` : `${styles.valid}`}>Téléphone</label>        
 
         { errors.phone && <p>{errors.phone?.message}</p> } 
         </div>
       </fieldset>
       
-
       {/* message */}
       <div>
         <label htmlFor='message'>Votre message:<span>*</span></label>
@@ -104,8 +97,7 @@ function ContactForm() {
         maxLength: { value: 5000, message: 'El mensaje doit contenir moins de 5000 caracteres.'} 
         })}></textarea>
 
-        { errors.message && <p>{errors.message?.message}</p> }    
-        
+        { errors.message && <p className={styles.textareaError}>{errors.message?.message}</p> }           
       </div>
     
       {/* button */}

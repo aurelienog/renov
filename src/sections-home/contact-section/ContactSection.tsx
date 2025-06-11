@@ -7,11 +7,9 @@ function ContactSection() {
   return (
     <section className={`${styles.section} section`}>
       <h2>Me contacter</h2>
-      <div>
         <Suspense fallback={<Loader/>}>
           <ContactForm/>
         </Suspense>
-      </div>
     </section>
   )
 }
