@@ -6,7 +6,7 @@
   /* contact form 2 columns */
   & > :nth-child(2) {
     background-color: var(--color-primary);
-    padding: 2em 0;
+    padding: 2em 0.5em;
     border-radius: var(--border-radius);
     grid-template-columns: repeat(auto-fit, minmax(min(400px , 100%), 1fr));
 

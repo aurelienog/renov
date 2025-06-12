@@ -23,7 +23,7 @@
 
 .j {
   opacity: 0;
-  padding-left: clamp(1rem, 37vw, 34grem);
+  padding-left: clamp(1rem, 37vw, 34rem);
   animation: reveal 0.6s ease-in-out forwards;
   animation-delay: 1s;
 }
