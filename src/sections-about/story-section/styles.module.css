@@ -1,6 +1,5 @@
 .section {
   --grid-min-col-size: 400px;
-  padding: 12rem 0rem;
   margin: 0 1em;
   display: grid;
   grid-template-columns:  repeat(auto-fit, minmax(min(var(--grid-min-col-size), 100%), 1fr));

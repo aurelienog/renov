@@ -6,7 +6,7 @@ import LettersReveal from '@/components/letters-reveal/LettersReveal';
 function Landing(): JSX.Element {
 
   return (
-    <section className={`full-width section ${styles.section}`}>
+    <section className={`full-width base-layout ${styles.section}`}>
       <h1>Une histoire de famille</h1>
       <LettersReveal/>
     </section>
