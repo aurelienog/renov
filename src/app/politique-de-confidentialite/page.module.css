@@ -8,6 +8,7 @@
   text-align: center;
   max-width: 20ch;
   margin: auto;
+  font-size: clamp(1.5rem, 9vw, 4.5rem); 
   }
 
   & h2 {

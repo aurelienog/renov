@@ -22,7 +22,7 @@ function GalleryFilter() {
 
   return (
     <aside aria-label="Filtrer les photos" className={styles.filter}>
-        <label htmlFor="service-select"> <Image src={filterIcon}  width={24} alt=''/> Catégorie : </label>
+        <label htmlFor="service-select"> <Image src={filterIcon}  width={24} alt='filtre'/> Catégorie : </label>
         <select id="service-select" value={selectedValue} onChange={handleChange}>
           <option value="">Toutes les prestations</option> 
         <option value="boiserie">Rénovation de boiseries</option> 
