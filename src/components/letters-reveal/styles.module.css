@@ -1,74 +1,83 @@
 .wrapper {
-  padding-top: 10dvh;
+  padding-top: 4dvh;
 }
 
-.title {
-  max-width: 50rem;
-  padding-bottom: 10dvh;
-}
-
+/* First letter */
 .a {
-  padding-left: 3rem;
+  opacity: 0;
+  padding-left: 34%;
+  animation: reveal 0.6s ease-in-out forwards;
+  animation-delay: 0.4s;
 }
 
 .n {
-  padding-left: 6rem;
+  opacity: 0;
+  padding-left: 40%;
+  animation: reveal 0.6s ease-in-out forwards;
+  animation-delay: 0.7s;
 }
 
 .j {
-  padding-left: 11rem;
+  opacity: 0;
+  padding-left: 47%;
+  animation: reveal 0.6s ease-in-out forwards;
+  animation-delay: 1s;
 }
-
 
 :is(.a, .n, .j) {
   position: relative;
   font-size: 6rem;
   margin: 0;
-  padding-bottom: 2rem;
   color: #000000bd;
 }
 
-/* hide ::after by default */
-.a::after, .n::after, .j::after {
-  content: "";
-  top: 0.25em;
-  font-size: 4rem;
+/* hide after at first */
+.a::after,
+.n::after,
+.j::after {
   opacity: 0;
   position: absolute;
   margin-top: 0.95rem;
+  top: 0.25em;
+  font-size: 4rem;
   transform: translateX(-15%);
-  transition: opacity 0.6s, transform 0.6s ease-in-out;
   color: black;
+  animation: revealAfter 0.6s ease-in-out forwards;
 }
 
-/* create names */
-.a.active::after {
-  text-transform: none;
+/* After appears 1 by 1 when all letters are revealed */
+.a::after {
   content: "ntonio";
-  opacity: 1;
-  transform: translateX(0%);
+  animation-delay: 1.2s;
 }
 
-.n.active::after {
+.n::after {
   content: "OGUEIRA";
-  opacity: 1;
-  transform: translateX(0%);
+  animation-delay: 1.8s;
 }
 
-.j.active::after {
-  text-transform: none;
-  content: "ulien";
-  opacity: 1;
-  transform: translateX(0%);
+.j::after {
+  content: "ulien ";
+  animation-delay: 2.4s;
 }
 
-/* Delays for sequential reveal */
-.delay0::after {
-  transition-delay: 0.5s;
+/* Animation */
+@keyframes reveal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
-.delay1::after {
-  transition-delay: 1s;
-}
-.delay2::after {
-  transition-delay: 1.5s;
+
+@keyframes revealAfter {
+  from {
+    opacity: 0;
+    transform: translateX(-15%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
 }

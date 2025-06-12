@@ -49,7 +49,7 @@ useEffect(() => {
 
 
   return (
-    <button onClick={scrollToTop} {...props} aria-label="Scroll to top" className={`${styles.button} ${props.className ?? ''}`}>
+    <button onClick={scrollToTop} {...props} aria-label="Scroll to top" className={`${styles.button} glassmorphism ${props.className ?? ''}`}>
       <Image src={arrowUp} alt='Flèche vers le haut' width={40} height={40}/>
     </button>
   )
