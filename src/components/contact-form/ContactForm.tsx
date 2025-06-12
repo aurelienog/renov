@@ -101,7 +101,7 @@ function ContactForm() {
       </div>
     
       {/* button */}
-      <Button disabled={!isValid || isSubmitting} className={`${!isValid || isSubmitting ? `${styles.disable}` : ''}`}>
+      <Button type='submit' disabled={!isValid || isSubmitting} className={`${!isValid || isSubmitting ? `${styles.disable}` : ''}`}>
         {isSubmitting ? 'envoi en cours...' : 'Envoyer un message'}
       </Button>
 

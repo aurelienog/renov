@@ -3,7 +3,8 @@ import styles from './styles.module.css';
 import GalleryGrid from '@/components/projects-gallery/GalleryGrid';
 import GalleryFilter from '@/components/projects-gallery/GalleryFilter';
 import { Project } from '@/lib/models/interfaces';
-import Link from 'next/link';
+
+import ScrollToTopButton from '@/components/scroll-to-top-button/ScrollToTopButton';
 
 function LandingRealisation({ filteredProjects }: { filteredProjects: Project[]}) {
   return (
@@ -11,12 +12,7 @@ function LandingRealisation({ filteredProjects }: { filteredProjects: Project[]}
       <h1>Mes réalisations</h1>
       <GalleryFilter/>
       <GalleryGrid projects={filteredProjects}/>
-      <Link href={'#service-select'} ><button className='glassmorphism'
-      style={{ backgroundColor: 'rgb(255, 255, 255, 0.4)', 
-      aspectRatio: '1/1',
-      width: '50px',
-      borderRadius: '50px',
-      border: 'none', cursor: 'pointer'}}>⬆</button></Link>
+      <ScrollToTopButton/>
     </section>
   )
 }

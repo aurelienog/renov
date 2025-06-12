@@ -1,3 +1,5 @@
+import { ComponentPropsWithoutRef } from "react";
+
 export type ContactFormData = {
   name: string;
   email: string;
@@ -14,3 +16,5 @@ export type ErrorResponse = {
     };
   };
 };
+
+export type ButtonProps = ComponentPropsWithoutRef<'button'>

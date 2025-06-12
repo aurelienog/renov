@@ -14,7 +14,7 @@ function StorySection(): JSX.Element {
         <p>Pendant plus de 10 ans, j’ai travaillé à ses côtés, au contact direct des clients, des matières et des détails qui font la différence.
         </p>
       </article>
-      <figure style={{ position: 'relative'}}>
+      <figure style={{ position: 'relative', width: '100%', aspectRatio: '3/4'}}>
         <Image src={up} alt='de Julien qui peint un mur' fill placeholder='blur' style={{objectFit: 'cover'}}/>
       </figure>
     </section>

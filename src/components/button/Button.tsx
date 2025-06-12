@@ -1,15 +1,10 @@
 'use client'
-import React, { JSX, ReactNode } from 'react';
+import React, { JSX } from 'react';
 import styles from './styles.module.css';
+import { ButtonProps } from '@/lib/models/types';
 
-export interface ButtonProps {
-  children: ReactNode,
-  disabled?: boolean,
-  className?: string
-}
-
-export default function Button({ children, disabled, className }: ButtonProps): JSX.Element {
+export default function Button( props: ButtonProps): JSX.Element {
   return (
-    <button disabled={disabled} type='submit' className={`${styles.button} ${className}`}>{children}</button>
+    <button {...props} className={props.className? `${styles.button} ${props.className}` : `${styles.button}`}/>
   )
 }

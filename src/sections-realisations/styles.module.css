@@ -13,14 +13,5 @@
     border-radius: var(--border-radius);
     background-color: #F1F0EF;
     margin: 2rem auto;
-
-  
-}
-
-  & a {
-    position: fixed;
-    bottom: 5%;
-    right: 20%;
-    z-index: 2;
   }
 }
