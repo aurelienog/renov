@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 function StorySection(): JSX.Element {
   return (
-    <section className={`full-width ${styles.section} section`}>
+    <section className={`breakout section ${styles.section}`}>
       <article>
         <h2>Une passion transmise de père en fils</h2>
         <p>Depuis tout jeune, j{`'`}ai grandi dans l{`'`}univers des pinceaux, des enduits et des finitions parfaites.</p>  
@@ -14,8 +14,8 @@ function StorySection(): JSX.Element {
         <p>Pendant plus de 10 ans, j{`'`}ai travaillé à ses côtés, au contact direct des clients, des matières et des détails qui font la différence.
         </p>
       </article>
-      <figure style={{ position: 'relative', width: '100%', aspectRatio: '3/4'}}>
-        <Image src={up} alt='de Julien qui peint un mur' fill placeholder='blur' style={{objectFit: 'cover'}}/>
+      <figure>
+        <Image src={up} alt='de Julien qui peint un mur' fill placeholder='blur'/>
       </figure>
     </section>
   )

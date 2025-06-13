@@ -1,19 +1,45 @@
 .section {
-  --grid-min-col-size: 400px;
-  margin: 0 1em;
+  --grid-min-col-size: 500px;
   display: grid;
-  grid-template-columns:  repeat(auto-fit, minmax(min(var(--grid-min-col-size), 100%), 1fr));
-  gap: 6rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(var(--grid-min-col-size), 100%), 1fr));
+  gap: 4rem;
+  margin: auto;
+  padding: 0 2em;
 
-  & > :first-child {
+  & > article {
     position: relative;
-    padding: 0 2rem 0 2rem;
   }
 
   & p:first-of-type{
     font-size: 1.6rem;
     font-weight: var(--fw-semi-bold);
   } 
+
+  & figure {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 3/4;
+  }
+}
+
+@media (min-width: 1150px) {
+  .section {
+    padding: 12rem 8rem 8rem;
+    margin: auto;
+    gap: 6rem;
+
+  & > figure {
+      margin: 10rem 0 0;
+    }
+  
+  & p:first-of-type{
+      font-size: 1.6rem;
+      font-weight: var(--fw-semi-bold);
+    } 
+
+  & article {
+    padding: 0 40px;
+  }
 
   /* TOP corner design */
 
@@ -71,23 +97,5 @@
   height: 100px;
   z-index: 2;
   background-color: var(--color-accent);
-}
-
-
-@media (min-width: 89em) {
-  .section {
-    padding: 12rem 8rem 8rem;
-    max-width: 85em;
-    margin: auto;
-
-  & > :nth-child(2) {
-      margin: 10rem 1rem 0 1rem;
-    }
-  
-  & p:first-of-type{
-      font-size: 1.6rem;
-      font-weight: var(--fw-semi-bold);
-    } 
   }
 }
-

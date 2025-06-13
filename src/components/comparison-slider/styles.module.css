@@ -40,14 +40,12 @@
 
 .sliderBtn {
 position: absolute;
-height: 2em;
+height: 34px;
 background-color: rgba(255, 255, 255, 0.269);
-border-radius: 100vw;
+border-radius: 20px;
 aspect-ratio: 1/1;
-padding: 0.3em;
 border: solid 2px white;
 top: 50%;
 pointer-events: none;
 z-index: 100;
-
 }
