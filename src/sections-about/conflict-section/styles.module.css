@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(var(--grid-min-col-size), 100%), 1fr));
   gap: 4rem;
-  padding: 0 2em;
+  padding: 0 1em;
   margin: auto;
 
   & > article {
@@ -13,10 +13,14 @@
   & figure {
     position: relative;
     width: 100%;
-    aspect-ratio: 3 / 4;
+    aspect-ratio: 4 / 3;
 
-    & img {
-      transform:rotateY(180deg);
+    & img {    
+    mask-image: url('/assets/masks/blob2.svg');
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    mask-position: 0 60%;
+    transform:rotateY(180deg);
     }
   }
 

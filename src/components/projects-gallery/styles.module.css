@@ -1,4 +1,5 @@
 .filter {
+  margin: auto;
   padding: 0.5em;
   display: grid;
   gap: 0.5rem;
@@ -47,7 +48,7 @@
 
 
 @media(min-width: 567px) {
-  & aside {
+  & form {
     position: relative;
     max-width: fit-content;
   }

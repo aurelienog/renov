@@ -1,6 +1,5 @@
 .section {
   display: grid;
-  justify-content: center;
   & h2 {
     text-align: center;
   }
