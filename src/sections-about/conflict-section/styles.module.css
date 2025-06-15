@@ -3,6 +3,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(var(--grid-min-col-size), 100%), 1fr));
   gap: 4rem;
+  padding: 0 1em;
   margin: auto;
 
   & > article {
@@ -15,8 +16,8 @@
     aspect-ratio: 3 / 4;
 
     & img {    
-    transform:rotateY(180deg);
     border-radius: var(--border-radius);
+    transform:rotateY(180deg);
     }
   }
 

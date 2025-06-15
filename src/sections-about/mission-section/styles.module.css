@@ -14,5 +14,9 @@
     aspect-ratio: 16/9;
     width: 100%;
     position: relative;
+
+    & img {
+      border-radius: var(--border-radius);
+    }
   }
 }
