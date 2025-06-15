@@ -3,7 +3,6 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(var(--grid-min-col-size), 100%), 1fr));
   gap: 4rem;
-  padding: 0 1em;
   margin: auto;
 
   & > article {

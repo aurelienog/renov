@@ -332,23 +332,23 @@ export const projects: Project[] = [
     {
     image: enduitsBetonCire1,
     service: 'enduit',
-    description: ''
+    description: 'Escalier en béton ciré gris foncé, avec un enduit décoratif. Les marches sont plates et régulières, formant un escalier en colimaçon. Vue de face'
   }, {
     image: enduitsBetonCire2,
     service: 'enduit',
-    description: ''
+    description: 'Escalier en béton ciré gris foncé, avec un enduit décoratif. Les marches sont plates et régulières, formant un escalier en colimaçon. Vue plongeante'
   }, {
     image: enduitsBetonCire3,
     service: 'enduit',
-    description: ''
+    description: 'Escalier en béton ciré gris foncé, avec un enduit décoratif. Les marches sont plates et régulières, formant un escalier en colimaçon. Vue latérale'
   },   {
     image: enduitsBetonCire4,
     service: 'enduit',
-    description: ''
+    description: `Escalier en béton décoratif, avec enduit gris foncé.  Les marches sont d'une forme géométrique. La couleur de l'enduit est uniforme et présente une légère texture.`
   }, {
     image: enduitsMurBetonCire,
     service: 'enduit',
-    description: ''
+    description: `Salle de bain dont les murs sont entièrement recouverts d'un enduit décoratif gris, dont les nuances subtiles et les textures légèrement irrégulières apportent une profondeur visuelle et un aspect artisanal très élégant. Une cabine de douche en verre, un lavabo en céramique blanche sur un meuble en bois clair, et un miroir rond complètent la pièce.`
   }, {
     image: enduitsTassaux,
     service: 'enduit',
@@ -358,22 +358,22 @@ export const projects: Project[] = [
   {
     image: autreDressing1,
     service: 'autre',
-    description: ''
+    description: `Photo d'un aménagement intérieur sur mesure. Des meubles, bleu foncé, sont intégrés dans un petit espace. On distingue un bureau, une partie armoire et un espace rangement. La disposition est optimisée selon l'espace.`
   }, {
     image: autreDressing2,
     service: 'autre',
-    description: ''
+    description: `Photo d'un aménagement intérieur sur mesure. Des meubles aux couleurs bleu foncé et bois clair sont disposés dans une pièce. On observe un bureau, des armoires murales et une disposition optimisant l'espace.`
   }, {
     image: autreMeuble1,
     service: 'autre',
-    description: ''
+    description: `Meuble sur mesure en bois clair, en phase de construction. On aperçoit une structure à deux niveaux avec des étagères et des fixations apparentes.`
   },   {
     image: autreMeuble2,
     service: 'autre',
-    description: ''
+    description: `Placard sur mesure en phase de construction. Deux panneaux de particules beige clair sont assemblés, décorés d'un motif géométrique composé de lignes de bois clair disposées en diagonale, créant un motif en losanges. Le meuble est posé sur un sol avec des matériaux de construction.`
   }, {
     image: autreMeuble3,
     service: 'autre',
-    description: ''
+    description: 'Placard mural fait sur mesure, peint en couleur rose pâle, avec un design géométrique composé de lignes et de formes rectangulaires.'
   },
 ]
