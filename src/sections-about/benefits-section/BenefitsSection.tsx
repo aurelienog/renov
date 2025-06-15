@@ -3,7 +3,7 @@ import styles from './styles.module.css';
 
 function BenefitsSection(): JSX.Element {
   return (
-    <section className={` ${styles.section}`}>
+    <section className={`section ${styles.section}`}>
       <h2>Ce qui fait ma différence</h2>
       <ul>
           <li>Un héritage familial solide et authentique</li>

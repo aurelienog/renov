@@ -1,7 +1,5 @@
 .page {
   background-size: contain;
-  position: relative;
-
   & h2 {
     margin-bottom: 1.5em;
   }

@@ -4,7 +4,6 @@
   grid-template-columns: repeat(auto-fit, minmax(min(var(--grid-min-col-size), 100%), 1fr));
   gap: 4rem;
   margin: auto;
-  padding: 0 1em;
 
   & > article {
     position: relative;
@@ -19,9 +18,10 @@
     position: relative;
     width: 100%;
     aspect-ratio: 3/4;
-    mask-image: url('/assets/masks/blob.svg');
-    mask-repeat: no-repeat;
-    mask-size: contain;
+
+    & img {
+      border-radius: var(--border-radius);
+    }
   }
 }
 

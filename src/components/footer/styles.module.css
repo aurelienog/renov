@@ -2,7 +2,6 @@
 .footer {
   position: relative;
   background-image: url('/assets/images/wall-texture.webp');
-  /* background-image: url('/assets/images/test.jpg'); */
   z-index: 1;
   padding: 2rem;
   border-top: solid 2px;
