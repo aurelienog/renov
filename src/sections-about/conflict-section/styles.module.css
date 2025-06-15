@@ -13,13 +13,9 @@
   & figure {
     position: relative;
     width: 100%;
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 3 / 4;
 
     & img {    
-    mask-image: url('/assets/masks/blob2.svg');
-    mask-repeat: no-repeat;
-    mask-size: cover;
-    mask-position: 0 60%;
     transform:rotateY(180deg);
     }
   }

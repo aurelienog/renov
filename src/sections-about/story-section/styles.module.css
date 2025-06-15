@@ -22,7 +22,6 @@
     mask-image: url('/assets/masks/blob.svg');
     mask-repeat: no-repeat;
     mask-size: contain;
-    mask-position: -30px -30%;
   }
 }
 
@@ -34,6 +33,7 @@
 
   & > figure {
       margin: 10rem 0 0;
+      mask-image: none;
     }
   
   & p:first-of-type{

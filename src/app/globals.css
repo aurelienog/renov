@@ -40,7 +40,7 @@ input, textarea, select, button {
 }
 
 h1 { font-size: clamp(2.8rem, 10vw, 4.5rem);  text-transform: uppercase; }
-:is(h2, caption) { font-size: clamp(2rem, 10vw, 3.5rem); margin-bottom: 8rem; letter-spacing: 0.02em;}
+:is(h2, caption) { font-size: clamp(2rem, 10vw, 3.5rem); margin-bottom: 8rem; letter-spacing: 0.02em; text-transform: capitalize;}
 h3 { font-size: 1.625rem; }
 
 
