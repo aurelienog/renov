@@ -1,4 +1,4 @@
-import LandingRealisation from '@/sections-realisations/LandingRealisation';
+import LandingRealisation from '@/sections-realisations/LandingRealisations';
 import React from 'react';
 import { projects } from '../../data/projects';
 

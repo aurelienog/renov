@@ -1,0 +1,28 @@
+.dialog {
+  opacity: 0;
+  transition-property: opacity, display;
+  transition-duration: 1s;
+  transition-behavior: allow-discrete;
+  background-color: rgba(0, 0, 0, 0.695);
+  margin: auto;
+  border: none;
+  border-radius: var(--border-radius);
+  pointer-events: none;
+  & img {
+    object-fit: contain;
+  }
+
+  &::backdrop {
+    background-color: #5c5c5c94;
+    backdrop-filter: blur(2px)
+  }
+
+  &[open] {
+    opacity: 1;
+
+    @starting-style {
+      opacity: 0;
+      pointer-events: auto;
+    }
+  }
+}
