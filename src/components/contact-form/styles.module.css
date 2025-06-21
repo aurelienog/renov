@@ -39,6 +39,7 @@
 
   /* textarea container */
   & > div {
+    
     width: 90%;
     min-height: 400px;
   }
@@ -61,7 +62,7 @@
   }
 
   &:hover:not(:focus) {
-    font-weight: var(--fw-semi-bold);
+    /* font-weight: var(--fw-semi-bold); */
   }
 
     /* error message transparent if focus on the textarea */
@@ -147,7 +148,7 @@
 
   & input:hover:not(:focus) {
     line-height: 1.6;
-    font-weight: var(--fw-semi-bold);
+    /* font-weight: var(--fw-semi-bold); */
   }
   }
 }
