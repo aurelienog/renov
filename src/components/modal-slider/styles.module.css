@@ -1,5 +1,4 @@
 .dialog {
-  position: relative;
   opacity: 0;
   transition-property: opacity, display;
   transition-duration: 1s;
