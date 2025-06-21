@@ -13,16 +13,27 @@
   }
 
   &::backdrop {
-    background-color: #5c5c5c94;
+    background-color: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(2px)
   }
 
   &[open] {
     opacity: 1;
+    pointer-events: auto;
 
     @starting-style {
-      opacity: 0;
-      pointer-events: auto;
+      opacity: 0;  
     }
+  }
+
+  & button {
+    width: 50px;
+    aspect-ratio: 1/1;
+    border-radius: 50;
+    cursor: pointer;
+    position: relative;
+    top: 2%;
+    left: 1%;
+    z-index: 2;
   }
 }

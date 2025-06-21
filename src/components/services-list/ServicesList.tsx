@@ -4,7 +4,7 @@ import { DetailedService } from '@/lib/models/interfaces'
 import Image from 'next/image';
 import React, { JSX } from 'react';
 import styles from './styles.module.css';
-import Button from '../button/Button';
+import Button from '../button-cta/Button';
 import { useOpenDetails } from '@/lib/hooks/useOpenDetails';
 import Link from 'next/link';
 

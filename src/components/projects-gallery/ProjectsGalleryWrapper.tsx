@@ -1,5 +1,5 @@
 'use client'
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import GalleryGrid from '@/components/projects-gallery/GalleryGrid';
 import { Project } from '@/lib/models/interfaces';
 import ModalSlider from '../modal-slider/ModalSlider';
@@ -7,6 +7,18 @@ import ModalSlider from '../modal-slider/ModalSlider';
 function ProjectsGalleryWrapper({ projects }: { projects : Project[]}) {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null)
   const [isOpen, setIsOpen] = useState(false)
+
+  useEffect(() => {
+  if (isOpen) {
+    document.body.style.overflow = 'hidden';
+  } else {
+    document.body.style.overflow = 'unset';
+  }
+
+  return () => {
+    document.body.style.overflow = 'unset';
+  };
+}, [isOpen]);
 
   const handleItemClick = useCallback((project: Project) => {
     setSelectedProject(project)

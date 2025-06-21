@@ -3,6 +3,7 @@ import { Project } from '@/lib/models/interfaces'
 import Image from 'next/image'
 import React, { useEffect, useRef } from 'react'
 import styles from './styles.module.css'
+import ButtonTransparent from '../button-transparent/ButtonTransparent'
 
 type Props = {
   project: Project | null
@@ -19,13 +20,15 @@ function ModalSlider({project, open, onClose}: Props) {
     if (!dialog) return
 
     if (open && project) {
-      if (!dialog.open) dialog.showModal()
+      if (!dialog.open) {
+        dialog.showModal();
+      }
     } else {
-      if (dialog.open) dialog.close()
+      if (dialog.open) dialog.close();
     }
 
-    const handleClose = () => onClose()
-    dialog.addEventListener('close', handleClose)
+    const handleClose = () => onClose();
+    dialog.addEventListener('close', handleClose);
     return () => dialog.removeEventListener('close', handleClose)
   }, [open, project, onClose])
 
@@ -33,8 +36,9 @@ function ModalSlider({project, open, onClose}: Props) {
 
 
   return (
-    <dialog ref={dialogRef} className={styles.dialog} style={{ width: '90vw', height: '95vh'}}>
-      <Image src={project.image} alt='' fill />
+    <dialog ref={dialogRef} className={styles.dialog} style={{ width: '90dvw', height: '95dvh'}}>
+      <ButtonTransparent onClick={onClose}>X</ButtonTransparent>
+      <Image src={project.image} alt={project.description} fill />
     </dialog>
   )
 }

@@ -1,6 +1,6 @@
 import React, { JSX } from 'react';
 import styles from './styles.module.css';
-import Button from '@/components/button/Button';
+import Button from '@/components/button-cta/Button';
 import BackgroundImage from "@/components/background-image/BackgroundImage";
 import heroImage from '../../../public/assets/images/hero.webp';
 import Link from 'next/link';

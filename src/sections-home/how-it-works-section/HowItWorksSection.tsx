@@ -4,7 +4,7 @@ import { workSteps } from '../../data/data';
 import TimelineWrapper from '@/components/timeline/timeline-wrapper/TimelineWrapper';
 import Loader from '../../app/(root)/loading';
 import Link from 'next/link';
-import Button from '@/components/button/Button';
+import Button from '@/components/button-cta/Button';
 
 function HowItWorksSection(): JSX.Element {
 

@@ -4,7 +4,7 @@ import { useInView, useScroll, useTransform } from 'framer-motion';
 import ParallaxCard from '../parallax-card/ParallaxCard';
 import { StaticImageData } from 'next/image';
 import Link from 'next/link';
-import Button from '../button/Button';
+import Button from '../button-cta/Button';
 
 function SliderWrapper({lastProjects}: {lastProjects: StaticImageData[]}) {
   const scrollRef= useRef(null);

@@ -1,7 +1,7 @@
 import React, { JSX, useCallback, useEffect, useRef, useState } from 'react';
 import styles from './styles.module.css';
 import Link from "next/link";
-import Button from '../button/Button';
+import Button from '../button-cta/Button';
 import HamburgerMenu from '../hamburger-menu/HamburgerMenu';
 import Image, { StaticImageData } from "next/image";
 
