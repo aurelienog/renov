@@ -43,7 +43,7 @@ function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit(onMessageSubmit)} id='contact' className={styles.form}>
+    <form onSubmit={handleSubmit(onMessageSubmit)} id='contact' className={styles.form} style={{width:'100%'}}>
       <fieldset>
       <legend className='visually-hidden'>Informations personnelles</legend>
         {/* name */}
