@@ -88,115 +88,102 @@ export const statistics : TrustStatistic[] = [{
 
 export const columns: Column[] = [{
   title: '',
-  one: 'Expérience',
-  two: 'Qualité des finitions',
-  three: 'Accompagnement & conseils',
+  one: 'Expérience & savoir-faire',
+  two: 'Qualité & finitions',
+  three: 'Conseils & accompagnement',
   four: 'Devis et transparence',
-  five: 'Flexibilité & relation client',
-  six: 'Matériaux utilisés',
-  seven: 'Respect des délais',
-  eight: 'Suivi après travaux'
+  five: `Délais & organisation`,
+  six: 'Peintures & matériaux utilisés',
+  seven: 'Tarifs',
   }, {
   title: 'Votre artisan',
   one: <>
-  <Image src={check} alt='' width={24} height={24}/>
-  <span>+ de 15 ans d’expérience</span>
+  <Image src={check} alt='Point fort' width={24} height={24}/>
+  <span>+ de 15 ans d{`'`}expérience</span>
   </>,
   two: <>
-  <Image src={check} alt='' width={24} height={24}/>
-  <span>Travail soigné et sur-mesure</span>
+  <Image src={check} alt='Point fort' width={24} height={24}/>
+  <span>Préparations adaptées & finitions soignées</span>
   </>,
   three: <>
-  <Image src={check} alt='' width={24} height={24}/>
-  <span>Conseils personnalisés (couleurs, finitions)</span>
+  <Image src={check} alt='Point fort' width={24} height={24}/>
+  <span>Proche, disponible, conseils personnalisés</span>
   </>,
   four: <>
-  <Image src={check} alt='' width={24} height={24}/>
-  <span>Devis clair, sans surprise</span>
+  <Image src={check} alt='Point fort' width={24} height={24}/>
+  <span>Devis détaillé, clair et sans surprise</span>
   </>,
   five: <>
-  <Image src={check} alt='' width={24} height={24}/>
-  <span>Relation directe, à l’écoute</span>
+  <Image src={warning} alt='Point à nuancer' width={24} height={24}/>
+  <span>Planning respecté mais durée totale plus longue pour les gros chantiers (effectif réduit)</span>
   </>,
   six: <>
-  <Image src={check} alt='' width={24} height={24}/>
-  <span>Peintures de qualité pro</span>
-  </>,
+  <Image src={check} alt='Point fort' width={24} height={24}/>
+  <span>Peintures pro haut/milieu de gamme</span>
+  </>,  
   seven: <>
-  <Image src={check} alt='' width={24} height={24}/>
-  <span>Engagement respecté</span>
-  </>,
-  eight: <>
-  <Image src={check} alt='' width={24} height={24}/>
-  <span>Garantie et retouches si besoin</span>
+  <Image src={warning} alt='Point à nuancer' width={24} height={24}/>
+  <span>Tarif élevé mais cohérent avec la qualité et le temps consacré</span>
   </>,
 }, {
   title: 'Grande entreprise',
   one: <>
-  <Image src={warning} alt='' width={24} height={24}/>
-  <span>Variable selon les employés</span>
+  <Image src={warning} alt='Point à nuancer' width={24} height={24}/>
+  <span>Compétences variables selon les équipes</span>
   </>,
   two: <>
-  <Image src={warning} alt='' width={24} height={24}/>
-  <span>Standardisé, dépend des équipes</span>
+  <Image src={warning} alt='Point à nuancer' width={24} height={24}/>
+  <span> Méthodes standardisées, le résultat dépend des équipes</span>
   </>,
   three: <>
-  <Image src={warning} alt='' width={24} height={24}/>
-  <span>Souvent impersonnel</span>
+  <Image src={x} alt='Point faible' width={24} height={24}/>
+  <span>Relation impersonnelle</span>
   </>,
   four: <>
-  <Image src={warning} alt='' width={24} height={24}/>
-  <span>Frais cachés possibles</span>
+  <Image src={check} alt='Point fort' width={24} height={24}/>
+  <span>Devis détaillé</span>
   </>, 
   five: <>
-  <Image src={warning} alt='' width={24} height={24}/>
-  <span>Délais longs, peu de personnalisation</span>
+  <Image src={warning} alt='Point à nuancer' width={24} height={24}/>
+  <span>Dépend du planning</span>
   </>,
   six: <>
-  <Image src={warning} alt='' width={24} height={24}/>
-  <span>Qualité variable selon le contrat</span>
+  <Image src={check} alt='Point fort' width={24} height={24}/>
+  <span>Peintures de qualité professionnelle</span>
   </>,
   seven: <>
-  <Image src={warning} alt='' width={24} height={24}/>
-  <span>Dépend du planning chargé</span>
-  </>, 
-  eight: <>
-  <Image src={warning} alt='' width={24} height={24}/>
-  <span>Service après-vente variable</span>
+  <Image src={warning} alt='Point à nuancer' width={24} height={24}/>
+  <span>Tarif élevé, lié à des frais fixes importants</span>
   </>, 
 }, {
-  title: 'Peintre Low-Cost',
+  title: 'Peintre bon marché',
   one: <>
-  <Image src={x} alt='' width={24} height={24}/>
-  <span>Manque d’expérience</span>
+  <Image src={warning} alt='Point à nuancer' width={24} height={24}/>
+  <span>Parcours incertain</span>
   </>,
   two: <>
-  <Image src={x} alt='' width={24} height={24}/>
-  <span>Peuvent être bâclées pour gagner du temps</span>
+  <Image src={x} alt='Point faible' width={24} height={24}/>
+  <span>Préparations baclées, qualité & tenue dans le temps incertaine</span>
   </>,
   three: <>
-  <Image src={x} alt='' width={24} height={24}/>
+  <Image src={warning} alt='Point à nuancer' width={24} height={24}/>
   <span>Peu ou pas de conseils</span>
   </>, 
   four: <>
-  <Image src={x} alt='' width={24} height={24}/>
-  <span>Tarifs très bas mais qualité incertaine</span>
+  <Image src={warning} alt='Point à nuancer' width={24} height={24}/>
+  <span>Devis peu détaillé, frais cachés possibles</span>
   </>,
   five: <>
-  <Image src={x} alt='' width={24} height={24}/>
-  <span>Flexible mais parfois peu fiable</span>
+  <Image src={check} alt='Point fort' width={24} height={24}/>
+  <span>Intervention rapide</span>
   </>,
   six: <>
-  <Image src={x} alt='' width={24} height={24}/>
+  <Image src={x} alt='Point faible' width={24} height={24}/>
   <span>Produits souvent bas de gamme</span>
   </>,
   seven: <>
-  <Image src={x} alt='' width={24} height={24}/>
-  <span>Souvent des retards</span>
-  </>, 
-  eight: <>
-  <Image src={x} alt='' width={24} height={24}/>
-  <span>Pas de suivi</span>
+  <Image src={check} alt='Point fort' width={24} height={24}/>
+  <span>Tarif attractif, mais avec compromis sur la qualité</span>
   </>, 
 }];
 

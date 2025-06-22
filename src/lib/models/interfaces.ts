@@ -1,5 +1,6 @@
 import { StaticImageData } from 'next/image';
 
+// each key is a row in the column
 export interface Column {
   title: string;
   one: string | React.ReactNode
@@ -9,7 +10,6 @@ export interface Column {
   five?: string | React.ReactNode
   six?: string | React.ReactNode
   seven?: string | React.ReactNode
-  eight?: string | React.ReactNode
 }
 export interface FaqEntry {
   question: string;
