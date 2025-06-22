@@ -3,7 +3,7 @@
   overflow-x: scroll;
   max-width: 100%;
 
-  & h2, p {
+  & :is(h2, p) {
     text-align: center;
   }
 
