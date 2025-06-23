@@ -48,10 +48,10 @@ function ModalSlider({project, open, onClose, onPrev, onNext}: Props) {
 
   return (
     <dialog ref={dialogRef} className={styles.dialog} style={{ width: '90dvw', height: '95dvh'}}>
-      <CloseButton onClick={onClose}>X</CloseButton>
+      <CloseButton onClick={onClose}/>
       <Image src={project.image} alt={project.description} fill />
-      <PrevButton onClick={handlePrev}>{'<'}</PrevButton>
-      <NextButton onClick={handleNext}>{'>'}</NextButton>
+      <PrevButton onClick={handlePrev}/>
+      <NextButton onClick={handleNext}/>
     </dialog>
   )
 }

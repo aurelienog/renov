@@ -91,7 +91,7 @@ export const columns: Column[] = [{
   one: 'Expérience & savoir-faire',
   two: 'Qualité & finitions',
   three: 'Conseils & accompagnement',
-  four: 'Devis et transparence',
+  four: 'Devis & transparence',
   five: `Délais & organisation`,
   six: 'Peintures & matériaux utilisés',
   seven: 'Tarifs',

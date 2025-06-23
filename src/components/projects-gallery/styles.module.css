@@ -16,7 +16,7 @@
   
   & select {
     overflow-x: hidden;
-    padding-inline-start: 0.2em;
+    padding-inline-start: 0.8em;
     width: 100%;
     border: none;
     font: inherit;
@@ -38,6 +38,7 @@
 
   & img {
     display: block;  /* reset margen */
+    border-radius: var(--border-radius);
     cursor:zoom-in;
     transition: transform 300ms ease-in-out;
       width: 100%;

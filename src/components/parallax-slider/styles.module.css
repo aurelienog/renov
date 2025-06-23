@@ -11,7 +11,7 @@
   position: relative;
   width: 70%;
   height: 80vh;
-  margin-left: 6rem;
+  margin: auto;
 }
 
 .card:focus-within {

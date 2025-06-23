@@ -3,7 +3,7 @@
   transition-property: opacity, display;
   transition-duration: 1s;
   transition-behavior: allow-discrete;
-  background-color: rgba(0, 0, 0, 0.695);
+  background-color: rgba(0, 0, 0, 0.465);
   margin: auto;
   border: none;
   border-radius: var(--border-radius);
@@ -35,7 +35,7 @@
 
   & button:nth-of-type(2){
     position: absolute;
-    top: 87%;
+    top: 90%;
     left: 30%;
     z-index: 2;
   }
@@ -43,7 +43,7 @@
 
   & button:nth-of-type(3){
     position: absolute;
-    top: 87%;
+    top: 90%;
     right: 30%;
     z-index: 2;
   }
@@ -51,19 +51,19 @@
 
 }
 
-@media(width >= 800px){
+@media(width >= 890px){
   .dialog {
   & button:first-of-type {
     position: absolute;
     top: 1rem;
-    left: 1rem;
+    left: 4%;
     z-index: 2;
   }
 
   & button:nth-of-type(2){
     position: absolute;
     top: 50%;
-    left: 4rem;
+    left: 4%;
     z-index: 2;
   }
 
@@ -71,7 +71,7 @@
   & button:nth-of-type(3){
     position: absolute;
     top: 50%;
-    right: 4rem;
+    right: 4%;
     z-index: 2;
   }
   }

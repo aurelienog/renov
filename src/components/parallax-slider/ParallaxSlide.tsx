@@ -15,7 +15,6 @@ function ParallaxSlide({before, after, name, index, range, targetScale, progress
       style={{
       scale, 
       top: `calc(1% + ${index * 3}em)`,
-      left: `calc(1% + ${index * 3}em)` 
       }}>
         <ComparisonSlider before={before} after= {after} name={name}/>
       </motion.div>
