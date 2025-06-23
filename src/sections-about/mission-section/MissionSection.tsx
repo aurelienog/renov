@@ -7,7 +7,7 @@ function MissionSection(): JSX.Element {
   return (
     <section className={`full-width base-layout section ${styles.section}`}>
       <article>
-        <h2>Ma mission : rénover vos intérieurs</h2>
+        <h2>Ma mission : <br></br> rénover vos intérieurs</h2>
         <p>J{"'"}interviens principalement <span className='highlight'>dans les Yvelines et le Val d{"'"}Oise</span> pour tous vos projets de peinture et rénovation.</p>
         <p>De la préparation des supports à la finition décorative, je m{"'"}engage personnellement sur chaque chantier pour vous garantir un résultat durable et soigné.</p>
       </article>

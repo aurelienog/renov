@@ -55,7 +55,7 @@
   .dialog {
   & button:first-of-type {
     position: absolute;
-    top: 1rem;
+    top: 4%;
     left: 4%;
     z-index: 2;
   }

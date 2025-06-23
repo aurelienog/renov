@@ -20,6 +20,7 @@
     width: 100%;
     border: none;
     font: inherit;
+    color: black;
     border-radius: var(--border-radius);
     appearance: none;
     background-color: #F1F0EF;
