@@ -31,7 +31,7 @@ function GalleryFilter() {
         <option value="exterieur">Peinture extérieure</option> 
         <option value="interieur">Peinture intérieure</option> 
         <option value="enduit">Enduits décoratifs & peintures à effet</option> 
-        <option value="autre">Rénovation diverse</option> 
+        <option value="autre">Rénovations diverses</option> 
         </select>
     </form>
   )

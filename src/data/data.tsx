@@ -133,7 +133,7 @@ export const columns: Column[] = [{
   </>,
   two: <>
   <Image src={warning} alt='Point à nuancer' width={24} height={24}/>
-  <span> Méthodes standardisées, le résultat dépend des équipes</span>
+  <span> Méthodes standardisées, peu de souplesse en cas de besoins spécifiques</span>
   </>,
   three: <>
   <Image src={x} alt='Point faible' width={24} height={24}/>
@@ -163,7 +163,7 @@ export const columns: Column[] = [{
   </>,
   two: <>
   <Image src={x} alt='Point faible' width={24} height={24}/>
-  <span>Préparations baclées, qualité & tenue dans le temps incertaine</span>
+  <span>Préparations baclées, qualité et tenue dans le temps incertaine</span>
   </>,
   three: <>
   <Image src={warning} alt='Point à nuancer' width={24} height={24}/>
@@ -183,7 +183,7 @@ export const columns: Column[] = [{
   </>,
   seven: <>
   <Image src={check} alt='Point fort' width={24} height={24}/>
-  <span>Tarif attractif, mais avec compromis sur la qualité</span>
+  <span>Tarif attractif, mais souvent au détriment de la qualité</span>
   </>, 
 }];
 
@@ -294,7 +294,7 @@ export const services: Service[] = [
     rank: 7,
     id: 'enduit'  
   }, {
-    name: 'Rénovation diverse',
+    name: 'Rénovations diverses',
     image: autre,
     rank: 8,
     id: 'autre'  

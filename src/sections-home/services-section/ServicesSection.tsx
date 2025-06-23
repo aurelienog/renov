@@ -3,14 +3,14 @@ import styles from './styles.module.css';
 import Gallery from '@/components/gallery/Gallery';
 import { services } from '../../data/data';
 import MotionInView from '@/components/motion-in-view/MotionInView';
-import { fadeInUp } from '../../animations/variants'
+import { fadeInRight } from '../../animations/variants'
 
 function ServicesSection(): JSX.Element {
   return (
     <section className={`section full-width ${styles.section}`}>
       <MotionInView
-      once= {false}
-      variants={fadeInUp}
+      once={true}
+      variants={fadeInRight}
       >
         <h2>Mes prestations</h2>
       </MotionInView>  
