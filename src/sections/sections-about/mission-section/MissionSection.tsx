@@ -1,7 +1,7 @@
 import React, { JSX } from 'react';
 import styles from './styles.module.css';
 import Image from 'next/image';
-import furgo from '../../../public/assets/images/furgo.webp';
+import furgo from '../../../../public/assets/images/furgo.webp';
 
 function MissionSection(): JSX.Element {
   return (

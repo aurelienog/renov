@@ -2,7 +2,7 @@ import React, { JSX, Suspense } from 'react';
 import styles from './styles.module.css'
 import { lastProjects } from '@/data/data';
 import SliderWrapper from '@/components/slider/SliderWrapper';
-import Loader from '../../app/(root)/loading';
+import Loader from '../../../app/(root)/loading';
 
 function ProjectsSection(): JSX.Element {
 

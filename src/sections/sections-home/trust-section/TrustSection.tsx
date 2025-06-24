@@ -2,7 +2,7 @@ import React, { JSX } from 'react';
 import styles from './styles.module.css'
 import Image, { StaticImageData } from 'next/image';
 import AnimatedCounter from '@/components/animated-counter/AnimatedCounter';
-import { statistics } from '../../data/data'
+import { statistics } from '../../../data/data'
 import { TrustStatistic } from '@/lib/models/interfaces';
 
 function TrustSection(): JSX.Element {

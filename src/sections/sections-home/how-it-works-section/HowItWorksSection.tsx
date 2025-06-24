@@ -1,8 +1,8 @@
 import React, { JSX, Suspense } from 'react';
 import styles from './styles.module.css';
-import { workSteps } from '../../data/data';
+import { workSteps } from '../../../data/data';
 import TimelineWrapper from '@/components/timeline/timeline-wrapper/TimelineWrapper';
-import Loader from '../../app/(root)/loading';
+import Loader from '../../../app/(root)/loading';
 import Link from 'next/link';
 import Button from '@/components/button-cta/Button';
 

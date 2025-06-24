@@ -1,11 +1,11 @@
-import BenefitsSection from "@/sections-about/benefits-section/BenefitsSection";
-import ConflictSection from "@/sections-about/conflict-section/ConflictSection";
-import Landing from "@/sections-about/landing-section/Landing";
-import MissionSection from "@/sections-about/mission-section/MissionSection";
-import Story from "@/sections-about/story-section/StorySection";
+import BenefitsSection from "@/sections/sections-about/benefits-section/BenefitsSection";
+import ConflictSection from "@/sections/sections-about/conflict-section/ConflictSection";
+import Landing from "@/sections/sections-about/landing-section/Landing";
+import MissionSection from "@/sections/sections-about/mission-section/MissionSection";
+import Story from "@/sections/sections-about/story-section/StorySection";
 import styles from "./page.module.css"
 import { JSX } from 'react';
-import QuoteSection from "@/sections-about/quote-section/QuoteSection";
+import QuoteSection from "@/sections/sections-about/quote-section/QuoteSection";
 
 export default function About(): JSX.Element {
   return (

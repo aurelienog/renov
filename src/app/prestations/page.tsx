@@ -1,4 +1,4 @@
-import LandingPrestations from '@/sections-prestations/landing/LandingPrestations';
+import LandingPrestations from '@/sections/sections-prestations/landing/LandingPrestations';
 import React from 'react';
 
 function page() {

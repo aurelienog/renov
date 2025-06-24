@@ -1,9 +1,9 @@
 import React, { JSX } from 'react';
 import styles from './styles.module.css';
 import Gallery from '@/components/gallery/Gallery';
-import { services } from '../../data/data';
+import { services } from '../../../data/data';
 import MotionInView from '@/components/motion-in-view/MotionInView';
-import { fadeInRight } from '../../animations/variants'
+import { fadeInRight } from '../../../animations/variants'
 
 function ServicesSection(): JSX.Element {
   return (

@@ -1,6 +1,6 @@
 import ContactForm from '@/components/contact-form/ContactForm';
 import React, { Suspense } from 'react';
-import Loader from '../../app/(root)/loading';
+import Loader from '../../../app/(root)/loading';
 import styles from './styles.module.css';
 
 function ContactSection() {
