@@ -269,63 +269,63 @@ export const projects: Project[] = [
   {
     image: boiseriesEscalierVitrification1,
     service: 'boiserie',
-    description: ''
+    description: `Escalier en bois récemment rénové. Les marches sont en bois brun foncé, avec des contremarches blanches. Du ruban de masquage est visible au sol, suggérant que des travaux de peinture ou de finition sont en cours ou viennent d'être terminés. L'accent est mis sur le bois riche et la netteté des lignes, mettant en valeur la qualité de la rénovation.`
   }, {
     image: boiseriesEscalierVitrification2,
     service: 'boiserie',
-    description: ''
+    description: `Escalier rénové, vu du haut. Les marches sont en bois brun foncé, et la rampe est blanche. La rénovation met en valeur le contraste entre le bois foncé et le blanc de la rampe, ainsi que la couleur vive du mur. L'ensemble donne une impression de modernité et de propreté.`
   }, {
     image: boiseriesEscalierVitrification3,
     service: 'boiserie',
-    description: ''
+    description: `Escalier récemment rénové dans une maison lumineuse. Les marches en bois foncé contrastent élégamment avec les contremarches blanches immaculées et la rampe, créant un aspect moderne et soigné.`
   },   {
     image: boiseriesPeinture,
     service: 'boiserie',
-    description: ''
+    description: `Rambarde d'escalier peinte en blanc. La rambarde présente un aspect soigné et moderne, avec une finition lisse et régulière. Le contraste entre le blanc de la rambarde et le sol en bois foncé met en valeur la qualité de la rénovation, apportant une touche de fraîcheur et de luminosité à l'espace.`
   }, {
     image: boiseriesPeinturePlacard,
     service: 'boiserie',
-    description: ''
+    description: ``
   }, {
     image: boiseriesPeinturePorte1,
     service: 'boiserie',
-    description: ''
+    description: ``
   }, {
     image: boiseriesPeinturePorte2,
     service: 'boiserie',
-    description: ''
+    description: ``
   }, {
     image: boiseriesPeinturePorte3,
     service: 'boiserie',
-    description: ''
+    description: ``
   }, {
     image: boiseriesPeinturePorte4,
     service: 'boiserie',
-    description: ''
+    description: ``
   }, {
     image: boiseriesPeintureSDB,
     service: 'boiserie',
-    description: ''
+    description: ``
   }, {
     image: boiseriesPoncageParquet1,
     service: 'boiserie',
-    description: ''
+    description: ``
   }, {
     image: boiseriesPoncageParquet2,
     service: 'boiserie',
-    description: ''
+    description: ``
   }, {
     image: boiseriesPoutres1,
     service: 'boiserie',
-    description: ''
+    description: ``
   }, {
     image: boiseriesPoutres2,
     service: 'boiserie',
-    description: ''
+    description: ``
   }, {
     image: boiseriesVitrificationParquet,
     service: 'boiserie',
-    description: ''
+    description: ``
   },
 
   // enduits
@@ -352,7 +352,7 @@ export const projects: Project[] = [
   }, {
     image: enduitsTassaux,
     service: 'enduit',
-    description: ''
+    description: `Chambre entièrement rénovée, avec un nouveau revêtement de sol et une peinture fraîche. L'un des murs se distingue par un habillage mural décoratif de couleur beige clair. Ce revêtement est composé de panneaux rectangulaires disposés en un motif géométrique qui crée une sensation de profondeur et une texture élégante à l'espace.`
   },
   // autre
   {

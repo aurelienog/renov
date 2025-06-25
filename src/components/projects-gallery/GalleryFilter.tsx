@@ -17,7 +17,7 @@ function GalleryFilter() {
     if (value) params.set('service', value);
     else params.delete('service');
 
-    router.push(`/realisations?${params.toString()}`);
+    router.replace(`/realisations?${params.toString()}`);
   }
 
   return (

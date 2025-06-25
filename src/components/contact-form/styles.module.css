@@ -20,12 +20,18 @@
 
   & .success {
     margin-top: 2em;
+    margin-left: 2em;
     color: rgb(38, 116, 2);
 }
+
+  & .failure {
+      margin-left: 2em;
+  }
 
   & span {
     font-weight: var(--fw-semi-bold);
     color: rgb(255, 0, 0, 0.9);
+    
   }
 
 
@@ -59,10 +65,6 @@
   &:focus {
     outline: none;
     animation: border-appear 0.9s ease forwards;
-  }
-
-  &:hover:not(:focus) {
-    /* font-weight: var(--fw-semi-bold); */
   }
 
     /* error message transparent if focus on the textarea */
@@ -201,6 +203,14 @@
     margin-top: 3em;
     grid-column: 1 / -1 ; 
     width: 95%;
+  }
+
+  & .success {
+    grid-column: 1 / -1 ;
+  }
+
+  & .failure {
+    grid-column: 1 / -1 ;
   }
   }
 } 

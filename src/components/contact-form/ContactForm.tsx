@@ -105,7 +105,7 @@ function ContactForm() {
         {isSubmitting ? 'envoi en cours...' : 'Envoyer un message'}
       </Button>
 
-      {serverError && <p aria-live="polite" role="alert" >{serverError}</p>}
+      {serverError && <p aria-live="polite" role="alert"  className={`${styles.failure}`}>{serverError}</p>}
       {successMessage && <p aria-live="polite" role="alert"  className={`${styles.success}`}>{successMessage}</p>}
 
     </form>

@@ -250,10 +250,10 @@ export const faqEntries: FaqEntry[] = [{
   answer: <p>Oui, j{`'`}offre la possibilité de paiement en plusieurs fois selon le montant du chantier.</p>
 }, {
   question: "Pouvez-vous intervenir rapidement ?",
-  answer: <p>Nos plannings varient selon la demande. Il est conseillé de réserver votre projet à l{`'`}avance. Contactez-moi pour connaître mes prochaines disponibilités !</p>
+  answer: <p>Mon planning varie selon la demande. Il est conseillé de réserver votre projet à l{`'`}avance. Contactez-moi pour connaître mes prochaines disponibilités !</p>
 }, {
   question: "Comment demander un devis ?",
-  answer: <p>Appelez-nous au 06 00 00 00 00.</p>
+  answer: <p>Appelez-moi au 06 00 00 00 00.</p>
 }
 ]
 

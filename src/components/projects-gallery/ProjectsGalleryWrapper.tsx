@@ -3,6 +3,7 @@ import React, { useCallback, useEffect, useState } from 'react';
 import GalleryGrid from '@/components/projects-gallery/GalleryGrid';
 import { Project } from '@/lib/models/interfaces';
 import ModalSlider from '../modal-slider/ModalSlider';
+import useThrottleCallback from '@/lib/hooks/useThrottleCallback';
 
 type SelectedProjectState = {
   project: Project;
@@ -38,7 +39,7 @@ function ProjectsGalleryWrapper({ projects }: { projects : Project[]}) {
     setSelectedState(null)
   }, [])
 
-  const handlePrev = useCallback(() => {
+  const handlePrev = useThrottleCallback(() => {
   setSelectedState((prev) => {
     if (!prev) return null;
     const newIndex = (prev.index - 1 + projects.length) % projects.length;
@@ -47,9 +48,9 @@ function ProjectsGalleryWrapper({ projects }: { projects : Project[]}) {
       project: projects[newIndex]
     };
   });
-}, [projects]);
+}, 300);
 
-const handleNext = useCallback(() => {
+const handleNext = useThrottleCallback(() => {
   setSelectedState((prev) => {
     if (!prev) return null;
     const newIndex = (prev.index + 1) % projects.length;
@@ -58,7 +59,7 @@ const handleNext = useCallback(() => {
       project: projects[newIndex]
     };
   });
-}, [projects]);
+}, 300);
 
   return (
     <>
