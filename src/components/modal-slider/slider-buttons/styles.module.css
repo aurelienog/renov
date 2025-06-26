@@ -7,4 +7,9 @@
   border-radius: 50px;
   cursor: pointer;
   border: solid 1px white;
+  transition: transform 200ms ease-in-out, background-color 200ms ease-in-out;
+  &:hover {
+    transform: scale(1.2);
+    background-color: #fed0afb8;
+  }
   }

@@ -14,7 +14,7 @@ function LandingPrestations() {
       <p>Voici un aperçu des prestations proposées, pensées pour répondre aux besoins les plus courants de mes clients.</p>
       <Suspense fallback={<Loader/>}>
         { detailedServices.map((service: DetailedService, index) => (
-        <GridServices service={service} key={index}></GridServices>
+        <GridServices service={service} key={index} index={index}></GridServices>
       ))}
       </Suspense>
 

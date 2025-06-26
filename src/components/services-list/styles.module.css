@@ -1,6 +1,7 @@
 .details {
 
   & summary {
+    font-family: var(--font-primary);
     font-size: clamp(1.2rem, 10vw, 1.5rem);
     font-weight: var(--fw-semi-bold);
     padding: 1em;
@@ -55,15 +56,17 @@
   }
 }
 
-@media(min-width: 1400px) {
+@media(width >= 1400px) {
   .details {
 
     & summary {
       padding: 1em 1em 1em 3em;
     }
+
+    /* container */
     & > :nth-child(2) {
       display: grid;
-      grid-template-columns: 600px 1fr;
+      grid-template-columns: 50% 50%;
       gap: 4em;
       padding: 0 4em;
     }
@@ -74,10 +77,13 @@
       height: 90%;
     }
 
-
-  & button {
+    & button {
     width: fit-content;
-  }
+    }
+
+    .reverse {
+      order: 1;
+    }
   }
 }
 

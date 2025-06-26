@@ -6,9 +6,9 @@ import React, { JSX } from 'react';
 import styles from './styles.module.css';
 import Button from '../button-cta/Button';
 import { useOpenDetails } from '@/lib/hooks/useOpenDetails';
-import Link from 'next/link';
+import TransitionLink from '@/lib/TransitionLink';
 
-function ServicesList({ service }: {service:DetailedService}): JSX.Element {
+function ServicesList({ service, index }: {service:DetailedService, index: number}): JSX.Element {
   const { title, intro, details, result, image, id, cta, prestation } = service;
   useScrollToHash()
   const isOpen = useOpenDetails(id);
@@ -17,14 +17,14 @@ function ServicesList({ service }: {service:DetailedService}): JSX.Element {
     <details className={`${styles.details}`} id={id} open={isOpen}>
       <summary>{title}</summary>
       <div>
-        <figure>
+        <figure className={index % 2 == 0 ? styles.reverse : ''}>
           <Image src={image} alt='' fill loading='lazy' placeholder='blur' style={{objectFit: 'cover'}}/> 
         </figure>
         <article>
           <p>{intro}</p>
           <>{details}</>
           <p>{result}</p>
-          <Link href={`/realisations?service=${prestation}`}><Button>Voir mes réalisations <span className='visually-hidden'>{cta ? `${cta}` : `de ${title}`}</span></Button></Link>
+          <TransitionLink href={`/realisations?service=${prestation}`}><Button>Voir mes réalisations <span className='visually-hidden'>{cta ? `${cta}` : `de ${title}`}</span></Button></TransitionLink>
         </article>
       </div>
 

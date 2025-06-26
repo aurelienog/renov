@@ -5,12 +5,14 @@ import TimelineWrapper from '@/components/timeline/timeline-wrapper/TimelineWrap
 import Loader from '../../../app/(root)/loading';
 import Link from 'next/link';
 import Button from '@/components/button-cta/Button';
+import MotionInView from '@/components/motion-in-view/MotionInView';
+import { fadeInLeft } from '@/animations/variants';
 
 function HowItWorksSection(): JSX.Element {
 
   return (
     <section className={`section breakout ${styles.section}`}>
-      <h2>Le processus</h2>
+      <MotionInView variants={fadeInLeft} once={true}><h2>Le processus</h2></MotionInView>
       <Suspense fallback={<Loader/>}>
         <TimelineWrapper workSteps={workSteps} />
       </Suspense>

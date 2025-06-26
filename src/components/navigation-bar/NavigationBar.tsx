@@ -4,6 +4,7 @@ import Link from "next/link";
 import Button from '../button-cta/Button';
 import HamburgerMenu from '../hamburger-menu/HamburgerMenu';
 import Image, { StaticImageData } from "next/image";
+import TransitionLink from '@/lib/TransitionLink';
 
 function NavigationBar({ containerRef, logo }: { logo: StaticImageData, containerRef: React.RefObject<HTMLElement | null> }): JSX.Element {
     const [open, setOpen] = useState(false);
@@ -40,13 +41,13 @@ function NavigationBar({ containerRef, logo }: { logo: StaticImageData, containe
       <HamburgerMenu handleClick = { handleClick } open={open}/>
       <ul ref={menuRef} id="main-navigation" className={`${styles.links} ${open ? styles.open : ''} header`}>
         <li onClick={() => setOpen(false)}>
-          <Link href={"/prestations"}>Prestations</Link>
+          <TransitionLink href={"/prestations"}>Prestations</TransitionLink>
         </li>
         <li onClick={() => setOpen(false)}>
-          <Link href={"/realisations"}>Realisations</Link>
+          <TransitionLink href={"/realisations"}>Realisations</TransitionLink>
         </li>
         <li onClick={() => setOpen(false)}>
-          <Link href={"/about"}>À propos</Link>
+          <TransitionLink href={"/about"}>À propos</TransitionLink>
         </li>
         <li onClick={() => setOpen(false)}>
           <Link href={"/#contact"}><Button>Devis gratuit</Button></Link>

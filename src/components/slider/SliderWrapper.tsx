@@ -3,8 +3,8 @@ import React, { useRef } from 'react';
 import { useInView, useScroll, useTransform } from 'framer-motion';
 import ParallaxCard from '../parallax-card/ParallaxCard';
 import { StaticImageData } from 'next/image';
-import Link from 'next/link';
 import Button from '../button-cta/Button';
+import TransitionLink from '@/lib/TransitionLink';
 
 function SliderWrapper({lastProjects}: {lastProjects: StaticImageData[]}) {
   const scrollRef= useRef(null);
@@ -25,7 +25,7 @@ function SliderWrapper({lastProjects}: {lastProjects: StaticImageData[]}) {
         })
       }
       
-      {isInView && <Link href="/realisations"><Button>Voir mes réalisations</Button></Link>}
+      {isInView && <TransitionLink href="/realisations"><Button>Voir mes réalisations</Button></TransitionLink>}
       
     </div>
   )

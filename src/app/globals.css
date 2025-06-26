@@ -3,6 +3,32 @@
   interpolate-size: allow-keywords;
 }
 
+@keyframes slide-out-to-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes slide-in-from-right {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.page-transition-out {
+  animation: slide-out-to-right 0.5s forwards;
+}
+
+.page-transition-in {
+  animation: slide-in-from-right 0.5s forwards;
+}
+
 *, 
 *::before, 
 *::after {
