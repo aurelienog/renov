@@ -3,12 +3,6 @@
   interpolate-size: allow-keywords;
 }
 
-.page-transition {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.4s ease, transform 0.4s ease;
-}
-
 *, 
 *::before, 
 *::after {
@@ -23,10 +17,6 @@
 }
 
 body {
-  transition-property: opacity, transform;
-  transition-timing-function: ease-in-out;
-  transition-duration: 300ms;
-  /* outline: 2px solid red; */
   color: var(--foreground);
   background: var(--color-secondary);
   font-family: var(--font-secondary), sans-serif;
