@@ -23,13 +23,11 @@ function TransitionLink({
   const handleTransition = async (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     e.preventDefault();
     const body = document.querySelector('body');
-    body?.classList.add('page-transition-out');
-    await sleep(500);
+    body?.classList.add('page-transition');
+    await sleep(300);
     router.push(href);
-    body?.classList.remove('page-transition-out');
-    body?.classList.add('page-transition-in');
-    await sleep(500);
-    body?.classList.remove('page-transition-in');
+    await sleep(300);
+    body?.classList.remove('page-transition');
   }
 
   return (

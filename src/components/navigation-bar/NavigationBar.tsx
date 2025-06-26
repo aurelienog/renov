@@ -50,7 +50,7 @@ function NavigationBar({ containerRef, logo }: { logo: StaticImageData, containe
           <TransitionLink href={"/about"}>À propos</TransitionLink>
         </li>
         <li onClick={() => setOpen(false)}>
-          <Link href={"/#contact"}><Button>Devis gratuit</Button></Link>
+          <TransitionLink href={"/#contact"}><Button>Devis gratuit</Button></TransitionLink>
         </li>
       </ul>        
     </nav>
