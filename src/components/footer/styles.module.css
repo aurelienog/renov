@@ -49,6 +49,10 @@
     text-decoration: none;
   }
 
+  & > a:first-of-type:focus {
+    outline: solid 3px #7E5E52;
+  }
+
   & a:hover {
     font-weight: var(--fw-bold);
   }

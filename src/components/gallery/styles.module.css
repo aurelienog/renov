@@ -34,8 +34,8 @@
 
 
   :is(&:focus-within) {
-    text-decoration-color : var(--color-accent);
-    outline: 4px solid var(--color-accent);
+    text-decoration-color : var(--color-secondary);
+    outline: 4px solid var(--color-secondary);
     margin-bottom: 1px;
   }
 }
@@ -60,7 +60,7 @@
     }
     
   &:focus-within {
-      outline: 8px solid var(--color-accent);
+      outline: 8px solid var(--color-secondary);
       outline-offset: 2.4em;
       z-index: 20;
     }

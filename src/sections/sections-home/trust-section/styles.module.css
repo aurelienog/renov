@@ -8,7 +8,7 @@
 }
 
 .section h3 > span {
-  color: var(--color-accent);
+  color: var(--color-secondary);
   margin-top: 0.5em;
 }
 

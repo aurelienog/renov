@@ -3,34 +3,44 @@
   --foreground: #171717;
 
   --color-default: #212529;
-  --color-heading:rgb(39, 83, 126)9;
+  --color-light: #fff;
 
   --color-links: #212529;
   --color-links-hover: red;
 
   --color-primary: #CCBFB9 ;
-  --color-primary-light: #26282c ;
-  --color-primary-dark: #5A5653 ;
+  --color-secondary:#d7845d ;
 
-  --color-secondary: #ECE8E4 ;
-  --color-secondary-light: #8498aa ;
-  --color-secondary-dark: #d4b3a4 ;
+/* MARRON */
+  --color-accent: #7E5E52;
+  --color-accent-hover: #9A6A57;
+  --color-accent-focus: #5C4137;  
 
+/* GREEN 
+  --color-accent: #4f6d55;
+  --color-accent-hover: #5f7f63;
+  --color-accent-focus: #3f5b45;
+*/
+
+/* TERRACOTA
   --color-accent: #d7845d;
-
+  --color-accent-hover: #e5986f;
+  --color-accent-focus: #c36e4a;  
+*/
   --fw-light: 300;
   --fw-regular: 400;
   --fw-semi-bold: 600;
   --fw-bold: 700;
 
-  --navbar-size: 5em;
+  --navbar-size: 6rem;
   --border-radius: 20px;
   --focus-border-radius: var(--border-radius); 
+
   /* focus estandar */
-  --focus-outline: 2px solid var(--color-accent); 
+  --focus-outline: 2px solid var(--color-secondary); 
 
   /* focus XL */
-  --focus-outline-xl: 6px solid var(--color-accent); 
+  --focus-outline-xl: 6px solid var(--color-secondary); 
 }
 
 /* ECE8E4 9aa991*/

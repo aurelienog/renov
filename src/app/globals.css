@@ -48,8 +48,6 @@ h3 { font-size: 1.625rem; }
   font-family: var(--font-primary);
   font-weight: var(--fw-bold);
   line-height: 1.1;
-
-  color: var(--color-heading);
   max-width: 100%;
 }
 
@@ -128,7 +126,7 @@ p {
 summary:focus {
   outline: none;
   font-weight: var(--fw-bold);
-  color: var(--color-accent);
+  color: var(--color-secondary);
 }
 
 a:focus {
@@ -138,7 +136,7 @@ a:focus {
 
 .highlight {
   font-weight: var(--fw-bold);
-  color: var(--color-accent);
+  color: var(--color-secondary);
 }
 
 textarea, input {
@@ -158,17 +156,25 @@ textarea, input {
   cursor: pointer;
   font-weight: var(--fw-semi-bold);
   text-transform: uppercase;
-  background-color: #d9bfa3;
+  border: solid 2px var(--color-default);
+  background-color: var(--color-accent);
   transition: background-color 0.3s ease, outline 0.3s ease;
-  border: black solid 2px;
-  color: black;
+  color: var(--color-light);
   text-decoration: none;
+  box-shadow:
+  inset 1px 1px 3px rgba(0,0,0,0.1),
+  inset -1px -1px 2px rgba(255,255,255,0.2),
+  2px 2px 5px rgba(0,0,0,0.05);
 
   &:hover {
-    background-color: #d3b594; 
+    color: var(--color-light);
+    background-color: var(--color-accent-hover); 
   }
 
   &:focus {
-    outline: solid 2px var(--color-accent);
+    color: var(--color-light);
+    outline: solid 3px var(--color-secondary);
+    outline-offset: -1px;
+    background-color: var(--color-accent-focus); 
   }
 }

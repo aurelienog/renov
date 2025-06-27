@@ -1,4 +1,5 @@
 .navbar {
+  height: 100%;
   max-width: 1250px;
   margin: auto;
   display: flex;
@@ -15,12 +16,12 @@
 
     &:hover,
     &:focus-visible {
-    color: var(--color-accent);
+    color: var(--color-secondary);
     }
   }
   /* logo */
   & > a:last-of-type:focus {
-    outline: solid 2px var(--color-accent);
+    outline: solid 2px #7E5E52;
   }
 }
 
@@ -52,10 +53,13 @@
   }
 
   /* button */
-  & li:last-of-type a:focus {
-    color: black;
+  & li:last-of-type a {
+    &:focus, 
+    &:hover,
+    &:focus-visible {
+    color: var(--color-light);
+    }
   }
-
 }
 
 .links.open {

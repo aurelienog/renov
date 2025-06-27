@@ -7,7 +7,7 @@
     text-align: center;
   }
 
-  & button {
+  & a {
   position: relative;
   width: 50%;
   left: 50%;

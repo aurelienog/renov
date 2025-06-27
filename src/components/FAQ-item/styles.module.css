@@ -2,7 +2,7 @@
   max-inline-size: 40rem;
   padding: 0.5em;
   margin-block: 1em 0;
-  border-bottom: 1px solid var(--color-accent);
+  border-bottom: 1px solid var(--color-secondary);
   /* hyphens: auto; */
   height: 2.7lh;
   overflow: hidden;
@@ -32,7 +32,7 @@
   }
 
   & summary::marker {
-    color: var(--color-accent);
+    color: var(--color-secondary);
   }
 
   & ul {
