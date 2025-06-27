@@ -16,7 +16,7 @@
   inset: 0;
   background-image: linear-gradient(rgba(166, 153, 148, 0.65),rgba(166, 153, 148, 0.65)); 
   z-index: -2;
-}
+  }
 
 & label {
     position: relative;
@@ -24,7 +24,7 @@
     font-weight: var(--fw-semi-bold);
 }
 
-& input, textarea {
+& :is(input, textarea) {
   box-shadow:
   inset 1px 1px 3px rgba(0,0,0,0.08),
   inset -1px -1px 2px rgba(255,255,255,0.4);
@@ -59,23 +59,24 @@
     margin-top: 6em;
     width: 90%;
     transition: transform 0.2s ease-in-out;
-    font-weight: var(--fw-semi-bold);
-    font-size: 1.05rem;
-    letter-spacing: 0.5px;
     background-color: #d8d2cc;
     transition: 
     transform 0.2s ease-in-out,
     box-shadow 0.25s ease-in-out,
     background-color 0.3s ease;
     
-    
     &:hover {
-    transform: translateY(-2px);
-    background-color: #cfc9c2;
+    background-color: #d8d2cc;
+    }   
+    
+    &:not(.disable):hover {
+    transform: translateY(-2px); 
     box-shadow:
     inset 2px 2px 4px rgba(0,0,0,0.2),
     inset -1px -1px 2px rgba(255,255,255,0.2);  
+    background-color: #cfc9c2;
     }
+    
 
     &:focus {
     outline: none;

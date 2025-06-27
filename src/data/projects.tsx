@@ -285,15 +285,15 @@ export const projects: Project[] = [
   }, {
     image: boiseriesPeinturePlacard,
     service: 'boiserie',
-    description: ``
+    description: `Placard encastré peint en gris anthracite, qui s'étend sur toute la hauteur du mur. La peinture semble uniforme et lisse, avec une finition qui réfléchit légèrement la lumière. Le travail de peinture donne au placard un aspect moderne et élégant.`
   }, {
     image: boiseriesPeinturePorte1,
     service: 'boiserie',
-    description: ``
+    description: `Porte intérieure blanche au rendu soigné, avec une finition de peinture uniforme et précise. Trois lignes verticales vertes, discrètement intégrées dans les rainures, apportent une touche graphique élégante.`
   }, {
     image: boiseriesPeinturePorte2,
     service: 'boiserie',
-    description: ``
+    description: `montre un couloir avec plusieurs portes. La particularité réside dans la peinture des portes blanches, où les rainures sont accentuées par une couleur plus foncée, créant un effet de design et de contraste. Cela met en valeur les motifs et la texture des portes.`
   }, {
     image: boiseriesPeinturePorte3,
     service: 'boiserie',

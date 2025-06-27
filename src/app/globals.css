@@ -144,3 +144,31 @@ a:focus {
 textarea, input {
   font-family: inherit;
 }
+
+.button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: var(--fw-semi-bold);
+  font-size: 1.05rem;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  text-align: center;
+  font-size: 1rem;
+  padding: 1em 2em;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: var(--fw-semi-bold);
+  text-transform: uppercase;
+  background-color: #d9bfa3;
+  transition: background-color 0.3s ease, outline 0.3s ease;
+  border: black solid 2px;
+  color: black;
+  text-decoration: none;
+
+  &:hover {
+    background-color: #d3b594; 
+  }
+
+  &:focus {
+    outline: solid 2px var(--color-accent);
+  }
+}

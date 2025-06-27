@@ -1,7 +1,6 @@
 import React, { JSX, useCallback, useEffect, useRef, useState } from 'react';
 import styles from './styles.module.css';
 import Link from "next/link";
-import Button from '../button-cta/Button';
 import HamburgerMenu from '../hamburger-menu/HamburgerMenu';
 import Image, { StaticImageData } from "next/image";
 
@@ -49,7 +48,7 @@ function NavigationBar({ containerRef, logo }: { logo: StaticImageData, containe
           <Link href={"/about"}>À propos</Link>
         </li>
         <li onClick={() => setOpen(false)}>
-          <Link href={"/#contact"}><Button>Devis gratuit</Button></Link>
+          <Link href={"/#contact"} className='button'>Devis gratuit</Link>
         </li>
       </ul>        
     </nav>

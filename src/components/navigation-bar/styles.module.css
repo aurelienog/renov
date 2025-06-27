@@ -18,7 +18,12 @@
     color: var(--color-accent);
     }
   }
+  /* logo */
+  & > a:last-of-type:focus {
+    outline: solid 2px var(--color-accent);
+  }
 }
+
 
 .links {
   display: flex;
@@ -44,6 +49,11 @@
 
   & li:first-of-type{
     margin-top: 6em;
+  }
+
+  /* button */
+  & li:last-of-type a:focus {
+    color: black;
   }
 
 }
@@ -77,6 +87,7 @@
 
     & li:first-of-type{
       margin-top: 0;
+      
     }
 
     & li:last-of-type{
