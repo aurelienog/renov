@@ -2,15 +2,92 @@
   display: grid;
   justify-items: center;
   max-width: none !important; 
-  background-color: var(--color-primary);
+  background-image: url('/assets/images/wall-texture.webp');
+  background-size: auto;
+  overflow: hidden;
   padding: 2em 0.5em;
   border-radius: var(--border-radius);
-  
-  & button {
-    margin-top: 6em;
-    width: 90%;
+  position: relative;
+  z-index: 0;
+
+  &::before{
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-image: linear-gradient(rgba(166, 153, 148, 0.65),rgba(166, 153, 148, 0.65)); 
+  z-index: -2;
+}
+
+& label {
+    position: relative;
+    cursor: pointer;
+    font-weight: var(--fw-semi-bold);
+}
+
+& input, textarea {
+  box-shadow:
+  inset 1px 1px 3px rgba(0,0,0,0.08),
+  inset -1px -1px 2px rgba(255,255,255,0.4);
+  transition: box-shadow 0.25s ease-in-out;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  background-color: var(--background);
+  cursor: pointer;
+}
+
+  & :is(input:hover:not(:focus), textarea:hover:not(:focus)) {
+    outline: none;
+    box-shadow:
+    inset 2px 2px 4px rgba(0, 0, 0, 0.15),
+    inset -1px -1px 3px rgba(255, 255, 255, 0.2);
+    background-color: #e2ddd8;
+    font-weight: var(--fw-semi-bold);
+    color: #222;
+  }
+
+    & :is(input:focus, textarea:focus) {
+    outline: none;
+    background-color: #d8d2cc;
+    box-shadow:
+    inset 4px 4px 8px rgba(0, 0, 0, 0.25),
+    inset -2px -2px 4px rgba(255, 255, 255, 0.15);
+    font-weight: var(--fw-semi-bold);
+    color: #222;
   }
   
+  & button {    
+    margin-top: 6em;
+    width: 90%;
+    transition: transform 0.2s ease-in-out;
+    font-weight: var(--fw-semi-bold);
+    font-size: 1.05rem;
+    letter-spacing: 0.5px;
+    background-color: #d8d2cc;
+    transition: 
+    transform 0.2s ease-in-out,
+    box-shadow 0.25s ease-in-out,
+    background-color 0.3s ease;
+    
+    
+    &:hover {
+    transform: translateY(-2px);
+    background-color: #cfc9c2;
+    box-shadow:
+    inset 2px 2px 4px rgba(0,0,0,0.2),
+    inset -1px -1px 2px rgba(255,255,255,0.2);  
+    }
+
+    &:focus {
+    outline: none;
+    background-color: #c3bdb7;
+    box-shadow:
+    inset 4px 4px 8px rgba(0, 0, 0, 0.25),
+    inset -2px -2px 4px rgba(255, 255, 255, 0.2);
+    transform: scale(0.98);
+    }
+  }
+  
+  /* states messages */
   & p {
     margin-top: 0.5em;
     font-size: 1rem;
@@ -34,38 +111,24 @@
     
   }
 
-
-
-  & label {
-    position: relative;
-    cursor: pointer;
-    font-weight: var(--fw-semi-bold);
+  & input {
+    margin-top: 0.5em;
+    width: 100%;
+    padding: 1em 1em 0.5em;
   }
-
 
   /* textarea container */
   & > div {
-    
     width: 90%;
     min-height: 400px;
   }
 
+  /* Textarea position */
   & textarea {
     margin-top: 0.5em;
-    cursor: pointer;
-    border: none;
     width: 100%;
     height: 78.45%;
-    border-radius: 12px;
     padding: 1em;
-    line-height: 1.6;
-    background-color: var(--background);
-    animation: border 0.3s ease, color 0.3s ease;
-
-  &:focus {
-    outline: none;
-    animation: border-appear 0.9s ease forwards;
-  }
 
     /* error message transparent if focus on the textarea */
     & ~ p {
@@ -77,12 +140,12 @@
     }
   }
 
+  /* inputs container */
   & fieldset {
     width: 90%;
     border: none;
 
-
-    /* error message transparent if focus on the input */
+  /* error message transparent if focus on the input */
     & p {
       color: rgba(255, 0, 0, 0);
     }
@@ -124,34 +187,9 @@
     color: green;
     } 
 
-
-  & input {
-    border-radius: 12px;
-    margin-top: 0.5em;
-    cursor: pointer;
-    width: 100%;
-    padding: 1em 1em 0.5em;
-    line-height: 1.6;
-    border-radius: none;
-    border: solid 2px transparent;
-    background-color: var(--background);
-    animation: border 0.3s ease, color 0.3s ease;
-  }
-
-  & input:focus {
-    border-radius: 12px;
-    outline: none; /* Quitar borde predeterminado de enfoque */
-    animation: border-appear 0.9s ease forwards;
-  }
-
-  & input:not(:focus) ~ p {
-    color: red;
-  }
-
-  & input:hover:not(:focus) {
-    line-height: 1.6;
-    /* font-weight: var(--fw-semi-bold); */
-  }
+    & input:not(:focus) ~ p {
+      color: red;
+    }
   }
 }
 
@@ -162,37 +200,6 @@
 
 .textareaError {
   position: absolute;
-}
-
-@keyframes border-appear {
-  0% {
-    border-left: 0px solid var(--color-accent);
-    border-top: 0px solid var(--color-accent);
-    border-right: 0px solid var(--color-accent);
-    border-bottom: 2px solid var(--color-accent); /* mantain border bottom of the hover */
-    background-color: var(--background);
-  }
-  33% {
-    border-left: 2px solid var(--color-accent); /* left border */
-    border-top: 0px solid var(--color-accent);
-    border-right: 0px solid var(--color-accent);
-    border-bottom: 2px solid var(--color-accent);
-    background-color: var(--background);
-  }
-  66% {
-    border-left: 2px solid var(--color-accent);
-    border-top: 2px solid var(--color-accent); /* top border*/
-    border-right: 0px solid var(--color-accent);
-    border-bottom: 2px solid var(--color-accent);
-    background-color: rgba(255, 255, 255, 0.4);
-  }
-  100% {
-    border-left: 2px solid var(--color-accent);
-    border-top: 2px solid var(--color-accent);
-    border-right: 2px solid var(--color-accent); /* right border */
-    border-bottom: 2px solid var(--color-accent); 
-    background-color: rgba(255, 255, 255, 0.4);
-  }
 }
 
 @media(min-width: 935px) {
