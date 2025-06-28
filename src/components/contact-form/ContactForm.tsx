@@ -3,9 +3,9 @@ import React, { useState } from 'react';
 import { useForm } from 'react-hook-form'; 
 import { ContactFormData, ErrorResponse } from '@/lib/models/types';
 import styles from './styles.module.css';
-import Button from '../button-cta/Button';
 import { sendMail } from '@/lib/actions/sendMailAction';
 import { useScrollToHash } from '@/lib/hooks/useScrollToHash';
+import Button from '../button-cta/Button';
 
 function ContactForm() {
   const { register, handleSubmit, reset, setError, formState: { errors, isValid, isSubmitting } } = useForm<ContactFormData>({ mode: 'onChange' });

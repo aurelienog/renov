@@ -15,7 +15,7 @@
     font-weight: 900;
     font-size: 6lh;
     position: absolute;
-    color: var(--color-accent);
+    color: var(--color-secondary);
     /* opacity: 0.6; */
     top: -150px;
     left: -0.1em;
@@ -28,7 +28,7 @@
     font-weight: 900;
     font-size: 6lh;
     position: absolute;
-    color: var(--color-accent);
+    color: var(--color-secondary);
     /* opacity: 0.6; */
     z-index: -1;
     bottom: -250px;

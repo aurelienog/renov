@@ -57,7 +57,7 @@
     &:focus, 
     &:hover,
     &:focus-visible {
-    color: var(--color-light);
+    color: var(--color-default);
     }
   }
 }

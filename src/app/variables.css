@@ -11,11 +11,16 @@
   --color-primary: #CCBFB9 ;
   --color-secondary:#d7845d ;
 
-/* MARRON */
+/* BEIGE */
+--color-accent: #D9BFA3;
+--color-accent-hover: #D3B49A;
+--color-accent-focus: #C5A78E;
+
+/* MARRON 
   --color-accent: #7E5E52;
   --color-accent-hover: #9A6A57;
   --color-accent-focus: #5C4137;  
-
+*/
 /* GREEN 
   --color-accent: #4f6d55;
   --color-accent-hover: #5f7f63;
@@ -27,6 +32,9 @@
   --color-accent-hover: #e5986f;
   --color-accent-focus: #c36e4a;  
 */
+
+/* old accent #D9BFA3 */
+
   --fw-light: 300;
   --fw-regular: 400;
   --fw-semi-bold: 600;
