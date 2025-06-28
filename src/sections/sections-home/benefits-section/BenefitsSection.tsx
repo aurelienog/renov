@@ -1,11 +1,11 @@
-import ComparisonChart from '@/components/comparison-chart/ComparisonChart';
-import React, { JSX, Suspense } from 'react';
-import styles from './styles.module.css';
-import { columns } from '../../../data/data';
-import MotionInView from '../../../components/motion-in-view/MotionInView';
-import { fadeInLeft } from '@/animations/variants';
-import Loader from '../../../app/(root)/loading';
 
+import React, { JSX, Suspense } from 'react';
+import ComparisonChart from '@/components/comparison-chart/ComparisonChart';
+import styles from '@/sections/sections-home/benefits-section/styles.module.css';
+import { fadeInLeft } from '@/animations/variants';
+import Loader from '@/app/(root)/loading';
+import MotionInView from '@/components/motion-in-view/MotionInView';
+import { columns } from '@/data/data';
 
 function BenefitsSection(): JSX.Element {
 

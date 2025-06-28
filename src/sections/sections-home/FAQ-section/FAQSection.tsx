@@ -1,10 +1,10 @@
-import FAQItem from '@/components/FAQ-item/FAQItem';
 import React, { JSX, Suspense } from 'react';
+import FAQItem from '@/components/FAQ-item/FAQItem';
 import { faqEntries } from '@/data/data';
-import styles from './styles.module.css';
+import styles from '@/sections/sections-home/FAQ-section/styles.module.css';
 import MotionInView from '@/components/motion-in-view/MotionInView';
-import { staggerContainer } from '../../../animations/variants';
-import Loader from '../../../app/(root)/loading';
+import { staggerContainer } from '@/animations/variants';
+import Loader from '@/app/(root)/loading';
 
 function FAQSection(): JSX.Element {
   return (

@@ -1,10 +1,9 @@
 import React, { Suspense } from 'react';
-import { detailedServices } from '../../../data/data'
+import { detailedServices } from '@/data/data';
 import { DetailedService } from '@/lib/models/interfaces';
 import GridServices from '@/components/services-list/ServicesList';
-// import Link from 'next/link';
-import Loader from '../../../app/prestations/loading';
-import styles from './styles.module.css';
+import Loader from '@/app/prestations/loading';
+import styles from '@/sections/sections-prestations/landing/styles.module.css';
 
 function LandingPrestations() {
   return (
@@ -17,7 +16,6 @@ function LandingPrestations() {
         <GridServices service={service} key={index} index={index}></GridServices>
       ))}
       </Suspense>
-
     </section>
   )
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './styles.module.css';
+import styles from '@/sections/sections-realisations/styles.module.css';
 import GalleryFilter from '@/components/projects-gallery/GalleryFilter';
 import { Project } from '@/lib/models/interfaces';
 import ScrollToTopButton from '@/components/scroll-to-top-button/ScrollToTopButton';

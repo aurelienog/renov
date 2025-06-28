@@ -3,6 +3,7 @@
   interpolate-size: allow-keywords;
 }
 
+/* reset */
 *, 
 *::before, 
 *::after {
@@ -11,10 +12,36 @@
   margin: 0;
 }
 
+/* layout */
 :is(html, body) {
   max-width: 100vw;
   overflow-wrap: break-word;
 }
+
+.base-layout > :not(.breakout, .full-width) {
+  grid-column: content;
+}
+
+.base-layout > .breakout {
+  grid-column: breakout;
+}
+
+.base-layout > .full-width {
+  grid-column: full-width;
+}
+
+.base-layout {
+  --padding-inline: 2rem;
+  --content-max-width: 100ch;
+  --breakout-max-width: 130ch;
+
+  --breakout-size: calc((var(--breakout-max-width) - var(--content-max-width)) / 2);
+
+  display: grid;
+  grid-template-columns: [full-width-start] minmax(var(--padding-inline), 1fr) [breakout-start] minmax(0, var(--breakout-size)) [content-start] min(100% - (var(--padding-inline) * 2), var(--content-max-width)) [content-end] minmax(0, var(--breakout-size)) [breakout-end] minmax(var(--padding-inline), 1fr)  [full-width-end];
+}
+
+/* base styles */
 
 body {
   color: var(--foreground);
@@ -27,22 +54,9 @@ body {
   margin: 0 auto;
 }
 
-a {
-  color: var(--color-links);
-  text-decoration: underline;
-  text-underline-offset: 4px;
-  cursor: pointer;
-}
-
-input, textarea, select, button {
-  font-size: 1rem;
-}
-
 h1 { font-size: clamp(2.8rem, 10vw, 4rem);  text-transform: uppercase; }
 :is(h2, caption) { font-size: clamp(2rem, 9vw, 3rem); margin-bottom: 8rem; letter-spacing: 0.02em; text-transform: uppercase;}
 h3 { font-size: 1.625rem; }
-
-
 
 :is(h1, h2, h3, h4, caption, q) {
   font-family: var(--font-primary);
@@ -66,40 +80,26 @@ p {
   margin: 1lh 0;
 }
 
-.base-layout {
-  --padding-inline: 2rem;
-  --content-max-width: 100ch;
-  --breakout-max-width: 130ch;
+a {
+  color: var(--color-links);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  cursor: pointer;
+  transition: color 300ms ease, font-weight 300ms ease;
 
-  --breakout-size: calc((var(--breakout-max-width) - var(--content-max-width)) / 2);
-
-  display: grid;
-  grid-template-columns: [full-width-start] minmax(var(--padding-inline), 1fr) [breakout-start] minmax(0, var(--breakout-size)) [content-start] min(100% - (var(--padding-inline) * 2), var(--content-max-width)) [content-end] minmax(0, var(--breakout-size)) [breakout-end] minmax(var(--padding-inline), 1fr)  [full-width-end];
+  &:focus {
+  outline: none;
+  font-weight: var(--fw-bold);
+  }
 }
 
-.base-layout > :not(.breakout, .full-width) {
-  grid-column: content;
+input, textarea, select, button {
+  font-size: 1rem;
 }
 
-.base-layout > .breakout {
-  grid-column: breakout;
-}
-
-.base-layout > .full-width {
-  grid-column: full-width;
-}
-
-/* Applied to enhance accessibility for "read me" buttons. 
-  This style is used on the span element that describes the action triggered when clicking the link. 
-  The element remains in the DOM for screen readers but is visually hidden from the layout to maintain accessibility. */
-.visually-hidden {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  overflow: hidden;
+*:focus {
+  outline: var(--focus-outline) ;
+  border-radius: var(--focus-radius);
 }
 
 .section {
@@ -118,49 +118,40 @@ p {
   -webkit-backdrop-filter: blur(4px);
 }
 
-*:focus {
-  outline: var(--focus-outline) ;
-  border-radius: var(--focus-radius);
-}
-
-summary:focus {
-  outline: none;
-  font-weight: var(--fw-bold);
-  color: var(--color-secondary);
-}
-
-a:focus {
-  outline: none;
-  font-weight: var(--fw-bold);
-}
-
-.highlight {
-  font-weight: var(--fw-bold);
-  color: var(--color-secondary);
-}
-
 textarea, input {
   font-family: inherit;
 }
 
+summary {
+  transition: color 300ms ease;
+
+  &:hover {
+  color: var(--color-secondary);
+  }
+
+  &:focus {
+  outline: none;
+  font-weight: var(--fw-bold);
+  color: var(--color-secondary);
+  }
+}
+
 .button {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;  
+  color: var(--color-default);
   font-family: Arial, Helvetica, sans-serif;
   font-weight: var(--fw-semi-bold);
-  font-size: 1.05rem;
   letter-spacing: 0.5px;
-  display: inline-block;
-  text-align: center;
+  text-align: center;  
+  text-transform: uppercase;
   font-size: 1rem;
   padding: 1em 2em;
   border-radius: 12px;
-  cursor: pointer;
-  font-weight: var(--fw-semi-bold);
-  text-transform: uppercase;
   border: solid 2px var(--color-default); 
   background: linear-gradient(145deg, var(--color-accent), #C7A88C);
   transition: background-image 0.3s ease, outline 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-  color: var(--color-default);
-  text-decoration: none;
   box-shadow:
   0 2px 5px rgba(0, 0, 0, 0.1),
   inset 1px 1px 2px rgba(255,255,255,0.3);
@@ -177,10 +168,28 @@ textarea, input {
 }
   
 
-  &:focus {
+  &:focus:not(:hover) {
     outline: solid 3px var(--color-secondary);
     outline-offset: 2px;
 
     background-image: linear-gradient(145deg, var(--color-accent-focus), var(--color-accent-focus)); 
   }
+}
+
+.highlight {
+  font-weight: var(--fw-bold);
+  color: var(--color-secondary);
+}
+
+/* Applied to enhance accessibility for "read me" buttons. 
+  This style is used on the span element that describes the action triggered when clicking the link. 
+  The element remains in the DOM for screen readers but is visually hidden from the layout to maintain accessibility. */
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  overflow: hidden;
 }

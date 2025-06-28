@@ -1,7 +1,7 @@
 import React, { JSX } from 'react';
-import styles from './styles.module.css';
+import styles from '@/sections/sections-home/hero-section/styles.module.css';
 import BackgroundImage from "@/components/background-image/BackgroundImage";
-import heroImage from '../../../../public/assets/images/hero.webp';
+import heroImage from '@/../public/assets/images/hero.webp';
 import Link from 'next/link';
 
 function HeroSection(): JSX.Element  {

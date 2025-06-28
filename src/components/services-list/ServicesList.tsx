@@ -4,7 +4,6 @@ import { DetailedService } from '@/lib/models/interfaces'
 import Image from 'next/image';
 import React, { JSX } from 'react';
 import styles from './styles.module.css';
-import Button from '../button-cta/Button';
 import { useOpenDetails } from '@/lib/hooks/useOpenDetails';
 import Link from 'next/link';
 
@@ -24,7 +23,7 @@ function ServicesList({ service, index }: {service:DetailedService, index: numbe
           <p>{intro}</p>
           <>{details}</>
           <p>{result}</p>
-          <Link href={`/realisations?service=${prestation}`}><Button>Voir mes réalisations <span className='visually-hidden'>{cta ? `${cta}` : `de ${title}`}</span></Button></Link>
+          <Link href={`/realisations?service=${prestation}`} className='button'>Voir mes réalisations <span className='visually-hidden'>{cta ? `${cta}` : `de ${title}`}</span></Link>
         </article>
       </div>
 

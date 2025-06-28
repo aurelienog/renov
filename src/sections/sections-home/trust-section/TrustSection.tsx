@@ -1,9 +1,9 @@
 import React, { JSX } from 'react';
-import styles from './styles.module.css'
+import styles from '@/sections/sections-home/trust-section/styles.module.css'
 import Image, { StaticImageData } from 'next/image';
 import AnimatedCounter from '@/components/animated-counter/AnimatedCounter';
-import { statistics } from '../../../data/data'
 import { TrustStatistic } from '@/lib/models/interfaces';
+import { statistics } from '@/data/data';
 
 function TrustSection(): JSX.Element {
 

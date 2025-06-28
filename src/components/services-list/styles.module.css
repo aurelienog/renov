@@ -7,10 +7,6 @@
     padding: 1em;
     border-top: solid 1px rgb(0, 0, 0, 0.5);
     cursor: pointer;
-
-    &:hover {
-      color: var(--color-accent);
-    }
   }
   
   & figure {
@@ -48,7 +44,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background-color: var(--color-accent);
+    background-color: var(--color-secondary);
   }
 
   & button {
