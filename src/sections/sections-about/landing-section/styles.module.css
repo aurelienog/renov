@@ -1,6 +1,22 @@
 .section {
+  position: relative;
+  overflow: hidden;
+  top: calc(-1 * var(--navbar-size));;
   padding: 5em 0;
+
+  & :is(h1, h2) {
+    text-shadow:
+    1px 1px 0 #ffffff33,  /* light */
+    -1px -1px 1px #00000022; /* shadow */
+  }
+
   & h1 {
+    margin-top: 6rem;
     text-align: center;
+  }
+  
+  & figure {
+    height: 110vh;
+    opacity: 0.1;
   }
 }

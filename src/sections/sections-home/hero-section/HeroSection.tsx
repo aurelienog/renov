@@ -8,7 +8,7 @@ function HeroSection(): JSX.Element  {
   return (
     <section className={`full-width ${styles.hero}`}>
       <div aria-hidden="true" className={styles.clip}></div>
-      <BackgroundImage image={heroImage}/>
+      <BackgroundImage image={heroImage} overlay={true}/>
       <article className={`${styles.info}`}>
         <h1 className='visually-hidden'>Peintre en bâtiment, expert en peinture et rénovation intérieure/extérieure dans les Yvelines et le Val-d{`'`}Oise</h1>
         <h2>Redonnez vie à vos espaces</h2>

@@ -19,9 +19,8 @@
     & > p {
       margin-bottom: 6rem;
     }
-  }
 
-  & section:last-of-type > p, section:last-of-type > a{
+  & :is(:last-of-type > p, :last-of-type > a){
   max-width: 50ch;
   font-family: var(--font-primary);
   font-weight: var(--fw-semi-bold);
@@ -30,9 +29,11 @@
   }
 
 
-  &  section:last-of-type > a {
+  & :last-of-type > a {
     font-style: italic;
     font-weight: var(--fw-bold);
     text-decoration-thickness: 2px;
   }
+  }
+
 }

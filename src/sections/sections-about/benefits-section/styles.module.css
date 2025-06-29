@@ -8,7 +8,6 @@
     --grid-min-colum-size: 300px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(var(--grid-min-colum-size), 100%), 1fr));
-    font-weight: var(--fw-bold);
     gap: 2em;
   }
 

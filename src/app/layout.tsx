@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Nunito } from "next/font/google";
+import { Playfair_Display, DM_Sans } from "next/font/google";
 import "./globals.css";
 import "./variables.css";
 import Footer from "@/components/footer/Footer";
@@ -11,7 +11,7 @@ const playfair = Playfair_Display({
   variable: '--font-primary'
 }); 
 
-const nunito = Nunito({ 
+const DMSans = DM_Sans({ 
   subsets: ["latin"],
   variable: '--font-secondary'
 });
@@ -28,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={`${nunito.variable} ${playfair.variable}`} style={{backgroundColor: 'var(--background)'}}>
+      <body className={`${DMSans.variable} ${playfair.variable}`} style={{backgroundColor: 'var(--background)'}}>
         <Link href={'#main'} className="visually-hidden">Aller au contenu principal</Link>
         <HeaderServer />
           {children}

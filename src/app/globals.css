@@ -60,7 +60,7 @@ h3 { font-size: 1.625rem; }
 
 :is(h1, h2, h3, h4, caption, q) {
   font-family: var(--font-primary);
-  font-weight: var(--fw-bold);
+  font-weight: var(--fw-semi-bold);
   line-height: 1.1;
   max-width: 100%;
 }
