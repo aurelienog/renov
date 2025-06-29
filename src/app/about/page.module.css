@@ -23,13 +23,12 @@
   & :is(:last-of-type > p, :last-of-type > a){
   max-width: 50ch;
   font-family: var(--font-primary);
-  font-weight: var(--fw-semi-bold);
   line-height: 1.1;
   font-size: 2rem;
   }
 
 
-  & :last-of-type > a {
+  &:last-of-type > a {
     font-style: italic;
     font-weight: var(--fw-bold);
     text-decoration-thickness: 2px;
