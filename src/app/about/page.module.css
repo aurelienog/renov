@@ -5,4 +5,34 @@
     margin-top: 2rem;
     font-size: 1.2rem;
   }
+
+  & section:last-of-type {
+    text-align: center;
+    margin: 0 auto 8rem;
+    padding-left: 1em;
+    padding-left: 1em;
+
+    & h2 {
+      margin-bottom: 10rem;
+    }
+
+    & > p {
+      margin-bottom: 6rem;
+    }
+  }
+
+  & section:last-of-type > p, section:last-of-type > a{
+  max-width: 50ch;
+  font-family: var(--font-primary);
+  font-weight: var(--fw-semi-bold);
+  line-height: 1.1;
+  font-size: 2rem;
+  }
+
+
+  &  section:last-of-type > a {
+    font-style: italic;
+    font-weight: var(--fw-bold);
+    text-decoration-thickness: 2px;
+  }
 }

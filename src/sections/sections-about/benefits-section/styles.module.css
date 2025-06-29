@@ -4,30 +4,40 @@
   }
   
   & ul {
-    --grid-min-colum-size: 320px;
+    padding: 2rem;
+    --grid-min-colum-size: 300px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(var(--grid-min-colum-size), 100%), 1fr));
     font-weight: var(--fw-bold);
-    gap: 1em;
+    gap: 2em;
   }
 
   & li {
+    min-height: 400px;
     display: grid;
-    grid-template-rows: subgrid;
+    grid-template-columns: subgrid;
+    margin: auto;
     justify-items: center;
-    grid-row: span 3; 
     list-style: none;
     padding: 2em;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: var(--border-radius);
 
     & p {
-      margin-top: 1em;
+      margin-top: 0;
     }
     }
 }
 
-@media (min-width: 800px) and (max-width: 1400px) {
+@media (min-width: 1000px) and (max-width: 1440px) {
   .section ul {
     grid-template-columns: 1fr 1fr;
   }
-} 
+}
+
+@media (width < 700px) {
+  .section ul {
+    gap: 4em
+  }
+}
+

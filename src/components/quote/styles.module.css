@@ -13,12 +13,12 @@
     content: '“';
     font-family: serif;
     font-weight: 900;
-    font-size: 6lh;
+    font-size: 5lh;
     position: absolute;
     color: var(--color-secondary);
     /* opacity: 0.6; */
     top: -150px;
-    left: -0.1em;
+    left: -0.1rem;
     z-index: -1;
     }
   
@@ -26,7 +26,8 @@
     content: '”';
     font-family: serif;
     font-weight: 900;
-    font-size: 6lh;
+    right: -0.1rem;
+    font-size: 5lh;
     position: absolute;
     color: var(--color-secondary);
     /* opacity: 0.6; */
@@ -34,68 +35,3 @@
     bottom: -250px;
     }
 }
-
-/* 
-@media(min-width: 30em) {
-  .isolation {
-
-  & q::before {
-    top: -65%;
-    left: -0%;
-    }
-  
-    & q::after {
-    right: -0%;
-    top: 90%;
-    }
-  }
-}
-
-@media(min-width: 35em) {
-  .isolation {
-
-  & q::before {
-    top: -85%;
-    left: -0%;
-    }
-  
-    & q::after {
-    right: -0%;
-    top: 90%;
-    }
-  }
-}
-
-@media(min-width: 45em) {
-  .isolation {
-
-  & q::before {
-    top: -120%;
-    left: -0%;
-    }
-  
-    & q::after {
-    right: -0%;
-    top: 90%;
-    }
-  }
-}
-
-
-@media(min-width: 80em) {
-  .isolation {
-
-  & q::before {
-    top: -95%;
-    left: -20%;
-    }
-  
-    & q::after {
-    right: -20%;
-    top: 50%;
-    }
-  }
-}
-
-/* hacer reveal de la citation de gauche a droite */
- 

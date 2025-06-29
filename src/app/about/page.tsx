@@ -6,6 +6,7 @@ import Story from "@/sections/sections-about/story-section/StorySection";
 import styles from "./page.module.css"
 import { JSX } from 'react';
 import QuoteSection from "@/sections/sections-about/quote-section/QuoteSection";
+import Link from "next/link";
 
 export default function About(): JSX.Element {
   return (
@@ -17,8 +18,9 @@ export default function About(): JSX.Element {
       <MissionSection/>
       <BenefitsSection/>
       <section className="section">
-        <h2>ANJ RENOV, c{"'"}est plus qu{"'"}un nom.</h2>
-        <p style={{fontSize: '1.5rem'}}> C{"'"}est l{"'"}histoire d{"'"}un artisan qui a grandi avec ce métier, et qui continue à le faire vivre avec cœur.</p>
+        <h2>L{`'`}engagement derrière le nom.</h2>
+        <p>ANJ RENOV, c{`'`}est le choix d{`'`}<span className='highlight'>un artisan investi</span>, proche de ses clients, et fier de chaque réalisation.</p>
+        <Link href={'/#contact'} className="highlight">Vous avez un projet ? Parlons-en.</Link>
       </section>
     </main>
   );
