@@ -20,7 +20,7 @@ export default function About(): JSX.Element {
       <section className="section">
         <h2>L{`'`}engagement derrière le nom.</h2>
         <p>ANJ RENOV, c{`'`}est le choix d{`'`}<span className='highlight'>un artisan investi</span>, proche de ses clients, et fier de chaque réalisation.</p>
-        <Link href={'/'} className="highlight">Vous avez un projet ? Parlons-en.</Link>
+        <Link href={'/#contact'} className="highlight">Vous avez un projet ? Parlons-en.</Link>
       </section>
     </main>
   );

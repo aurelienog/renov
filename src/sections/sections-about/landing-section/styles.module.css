@@ -2,7 +2,7 @@
   position: relative;
   overflow: hidden;
   top: calc(-1 * var(--navbar-size));;
-  padding: 5em 0;
+  padding: 6em 0;
 
   & :is(h1, h2) {
     text-shadow:

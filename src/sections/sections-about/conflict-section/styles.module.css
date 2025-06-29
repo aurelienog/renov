@@ -1,5 +1,5 @@
 .section {
-  --grid-min-col-size: 500px;
+  --grid-min-col-size: 400px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(var(--grid-min-col-size), 100%), 1fr));
   gap: 4rem;
@@ -26,7 +26,7 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: 1410px) {
   .section {
     padding: 12rem 8rem 8rem;
     margin: auto;
