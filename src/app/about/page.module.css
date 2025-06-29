@@ -32,6 +32,11 @@
     font-style: italic;
     font-weight: var(--fw-bold);
     text-decoration-thickness: 2px;
+      &:focus {
+        outline: 3px solid var(--color-secondary);
+        outline-offset: 18px;
+        border-radius: 0.5rem;
+      }
   }
   }
 
