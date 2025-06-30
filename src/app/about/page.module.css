@@ -21,10 +21,10 @@
     }
 
     & > p {
-      margin-bottom: 6rem;
+      margin-bottom: 4rem;
     }
 
-  & :is(:last-of-type > p, :last-of-type > a){
+  & :is(p, a){
   max-width: 50ch;
   font-family: var(--font-primary);
   line-height: 1.1;
@@ -48,12 +48,16 @@
 
 @media(width < 930px) {
     & section:last-of-type {
-    text-align: start;
     margin: 0 auto 8rem;
     padding: 2rem 0;
 
     & h2 {
-      text-align: center;
+      margin-bottom: 6rem;
+    }
+
+    & p {
+      text-align: start;
+      padding-left: 1rem;
     }
   }
 }
