@@ -1,8 +1,6 @@
 .timeline {
-  display: none;
+  display: grid;
   position: relative;
-  padding: 4rem;
-
   align-items: end;
   grid-template-columns: 2fr 1fr 2fr 1fr 2fr 1fr 2fr;
   grid-template-areas: 
@@ -14,10 +12,17 @@
   " . . controle . travaux . validation"
   " suivi . controle . travaux . ."
   " suivi . . . travaux . . ";
+
+    & svg {
+      stroke: rgba(0, 0, 0);
+    }
 }
 
 @media( min-width: 1460px) {
   .timeline {
     display: grid;
+    padding: 4rem;
+    width: 100%;
   }
 }
+

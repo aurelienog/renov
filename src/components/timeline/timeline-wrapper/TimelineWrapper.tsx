@@ -11,10 +11,10 @@ function TimelineWrapper({ workSteps }: { workSteps: WorkStep[]}) {
   
     const { scrollYProgress } = useScroll({
       target: containerRef,
-      offset: ["center end", "end end"], // comienza cuando entra, termina cuando sale
+      offset: ["center end", "end end"],
     })
   
-      // Mapea scroll [0, 1] a pathLength [0, 1]
+
       const pathLength = useTransform(scrollYProgress, [0, 1], [0, 1])
 
   return (
