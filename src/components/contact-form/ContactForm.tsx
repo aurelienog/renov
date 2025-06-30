@@ -48,7 +48,7 @@ function ContactForm() {
       <legend className='visually-hidden'>Informations personnelles</legend>
         {/* name */}
         <div>
-          <input id='name' type='text' inputMode='text' placeholder='Nom' {...register("name", { 
+          <input id='name' autoComplete="name" type='text' inputMode='text' placeholder='Nom' {...register("name", { 
           required: "Merci d'indiquer votre nom.", 
           minLength: { value: 2, message: 'Votre nom doit contenir entre 2 et 30 caractères.' },
           maxLength: { value: 30, message: 'Votre nom doit contenir entre 2 et 30 caractères.'} 
@@ -60,7 +60,7 @@ function ContactForm() {
 
       {/* email */}
       <div>
-        <input id='email' type='email' inputMode='email' placeholder='dupont@example.com' {...register("email", { 
+        <input id='email' type='email' autoComplete="email" inputMode='email' placeholder='dupont@example.com' {...register("email", { 
         required: "Merci d'indiquer votre email.", 
         pattern: {
         value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/ ,
@@ -74,7 +74,7 @@ function ContactForm() {
 
         {/* phone */}
         <div>
-          <input id='phone' type='tel'  inputMode='tel'  placeholder='06 00 00 00 00' {...register("phone", { 
+          <input id='phone' type='tel' autoComplete="tel" inputMode='tel'  placeholder='06 00 00 00 00' {...register("phone", { 
             pattern: {
             value: /^(0[1-9])(?:[ -]?\d{2}){4}$/,
             message: "Le numéro de téléphone semble invalide."

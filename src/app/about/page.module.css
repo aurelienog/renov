@@ -1,5 +1,9 @@
 .page {
   background-size: contain;
+
+  & h2 {
+    margin-bottom: 6rem;
+  }
   
   & p {
     margin-top: 2rem;
@@ -24,11 +28,11 @@
   max-width: 50ch;
   font-family: var(--font-primary);
   line-height: 1.1;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   }
 
 
-  &:last-of-type > a {
+  & > a {
     font-style: italic;
     font-weight: var(--fw-bold);
     text-decoration-thickness: 2px;
@@ -40,4 +44,16 @@
   }
   }
 
+}
+
+@media(width < 930px) {
+    & section:last-of-type {
+    text-align: start;
+    margin: 0 auto 8rem;
+    padding: 2rem 0;
+
+    & h2 {
+      text-align: center;
+    }
+  }
 }
