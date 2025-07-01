@@ -1,6 +1,6 @@
-![Status](https://img.shields.io/badge/status-live-brightgreen)
-🇪🇸 Este README está disponible únicamente en inglés para facilitar la comprensión técnica.
-🇫🇷 Ce README est disponible uniquement en anglais pour garantir une meilleure lisibilité technique.
+![Status](https://img.shields.io/badge/status-live-brightgreen)  
+🇪🇸 Este README está disponible únicamente en inglés para facilitar la comprensión técnica.  
+🇫🇷 Ce README est disponible uniquement en anglais pour garantir une meilleure lisibilité technique.  
 
 ANJ Renov – Corporate Website (Next.js 15 + TypeScript)
 
@@ -99,7 +99,7 @@ app/
 
 - How to structure a modern Next.js 15 project using the App Router and Server Actions
 - Implementing best practices for SSR, lazy loading (`Suspense`, `next/dynamic`), and code splitting
-- Enhancing accessibility through semantic HTML, color contrast, and descriptive alt text
+- Enhancing accessibility through semantic HTML, color contrast, descriptive alt text, and full keyboard (Tab) navigation support.
 - Deploying a production-ready app on Vercel and debugging common deployment issues
   
 ---
@@ -148,6 +148,6 @@ Built with 💙 by [Aurélie](https://aurelie-nogueira.vercel.app/)
 
 ## 📄 License
 
-![License](https://img.shields.io/badge/license-All_rights_reserved-red)
-This project is licensed under **All Rights Reserved**. 
-Please do not reuse or distribute the code without permission.
+![License](https://img.shields.io/badge/license-All_rights_reserved-red)  
+This project is licensed under **All Rights Reserved**.  
+Please do not reuse or distribute the code without permission.  

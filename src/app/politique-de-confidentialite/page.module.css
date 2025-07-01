@@ -46,7 +46,7 @@
 
 .section {
   position: relative;
-  top: -6rem;
+  top: calc(-1 * var(--navbar-size)); 
 }
 
 /* background texture for h1 */
