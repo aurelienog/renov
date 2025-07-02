@@ -1,6 +1,8 @@
-![Status](https://img.shields.io/badge/status-live-brightgreen)  
-🇪🇸 Este README está disponible únicamente en inglés para facilitar la comprensión técnica.  
+🇪🇸 Este README está disponible únicamente en inglés para facilitar la comprensión técnica.
+
 🇫🇷 Ce README est disponible uniquement en anglais pour garantir une meilleure lisibilité technique.  
+
+![Status](https://img.shields.io/badge/status-live-brightgreen)  
 
 ANJ Renov – Corporate Website (Next.js 15 + TypeScript)
 
@@ -67,9 +69,9 @@ app/
 │ ├── parallax-card/
 │ └── ...
 ├── sections/ # Page sections rendered on the server (SSR)
-│ └── sections-about/
-│ ├── benefits-section/
-│ └── conflict-section/
+│ └── sections-home/
+│ ├── sections-about/
+│ └── ...
 ├── data/ # Static content (TSX objects)
 │ ├── data.tsx
 │ └── projects.tsx
