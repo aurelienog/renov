@@ -5,7 +5,7 @@ import React, { useState, useRef, JSX } from 'react';
 import styles from './styles.module.css';
 import SliderLine from './SliderLine';
 
-function ComparisonSlider({ before, after, name} : { before: StaticImageData, after:StaticImageData, name: string }): JSX.Element {
+function ComparisonSlider({ before, after, name, descriptionBefore, descriptionAfter} : { before: StaticImageData, after:StaticImageData, name: string, descriptionBefore: string, descriptionAfter: string }): JSX.Element {
   const [sliderPosition, setSliderPosition] = useState(50);
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -33,25 +33,24 @@ function ComparisonSlider({ before, after, name} : { before: StaticImageData, af
     setSliderPosition(Number(event.target.value));
   };
 
-  return (
-    <article className={styles.wrapper} aria-label={`comparaison avant-après d'une salle ${name}`}>
-      <figcaption className="visually-hidden">
-      Bouger le curseur pour comparer les travaux avant après.
-      </figcaption>
+  const safeName = name.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]/g, '');
 
+  return (
+    <article className={styles.wrapper} aria-labelledby={`slider-title-${safeName}`} role="group">
+      <h3 id={`slider-title-${safeName}`} className='visually-hidden'>Comparaison avant-après {name}. Avant : {descriptionBefore}; Après : {descriptionAfter}</h3>
       <figure
         ref={containerRef}
         className={`${styles.afterContainer} ${styles.imagesContainer}`}
         onMouseMove={handleMouseMove}
         onTouchMove={handleTouchMove}
-      >
-        <Image src={after} alt="salle de bain après la rénovation"   placeholder="blur" fill sizes="(max-width: 768px) 100vw, 60vw" quality={75} style={{ objectFit: 'cover', borderRadius: 'var(--border-radius)'}}/>
+      > 
+        <Image src={after} aria-hidden='true' alt='' placeholder="blur" fill sizes="(max-width: 768px) 100vw, 60vw" quality={75} style={{ objectFit: 'cover', borderRadius: 'var(--border-radius)'}}/>
 
         <span
           className={`${styles.beforeContainer} ${styles.imagesContainer}`}
           style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
         >
-          <Image src={before} alt="salle de bain avant la rénovation"  placeholder="blur" fill sizes="(max-width: 768px) 100vw, 60vw" quality={75} style={{ objectFit: 'cover', borderRadius: 'var(--border-radius)'}}/>
+          <Image src={before} aria-hidden='true' alt=''  placeholder="blur" fill sizes="(max-width: 768px) 100vw, 60vw" quality={75} style={{ objectFit: 'cover', borderRadius: 'var(--border-radius)'}}/>
         </span>
 
         
@@ -59,7 +58,11 @@ function ComparisonSlider({ before, after, name} : { before: StaticImageData, af
         <SliderLine sliderPosition={sliderPosition}/>
 
         {/* Slider accesible */}
+        <label htmlFor={`comparison-slider-${safeName}`}>
+            Curseur de comparaison. Utilisez les flèches gauche et droite pour ajuster la vue entre les deux photos.
+        </label>
         <input
+          id={`comparison-slider-${safeName}`}
           type="range"
           step={10}
           min={5}
@@ -67,7 +70,7 @@ function ComparisonSlider({ before, after, name} : { before: StaticImageData, af
           value={sliderPosition}
           onChange={handleKeyboardChange}
           className="visually-hidden"
-          aria-label="Élément de saisie pour comparer les photos avant après" aria-valuemin={5} aria-valuemax={95} aria-valuenow={sliderPosition}
+          aria-valuemin={5} aria-valuemax={95} aria-valuenow={sliderPosition}
         />
       </figure>
     </article>

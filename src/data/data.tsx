@@ -98,91 +98,91 @@ export const columns: Column[] = [{
   }, {
   title: 'Votre artisan',
   one: <>
-  <Image src={check} alt='Point fort' width={24} height={24}/>
+  <Image src={check} alt='Point fort' width={24} height={24} aria-hidden="true"/>
   <span>+ de 15 ans d{`'`}expérience</span>
   </>,
   two: <>
-  <Image src={check} alt='Point fort' width={24} height={24}/>
+  <Image src={check} alt='Point fort' width={24} height={24} aria-hidden="true"/>
   <span>Préparations adaptées & finitions soignées</span>
   </>,
   three: <>
-  <Image src={check} alt='Point fort' width={24} height={24}/>
+  <Image src={check} alt='Point fort' width={24} height={24} aria-hidden="true"/>
   <span>Proche, disponible, conseils personnalisés</span>
   </>,
   four: <>
-  <Image src={check} alt='Point fort' width={24} height={24}/>
+  <Image src={check} alt='Point fort' width={24} height={24} aria-hidden="true"/>
   <span>Devis détaillé, clair et sans surprise</span>
   </>,
   five: <>
-  <Image src={warning} alt='Point à nuancer' width={24} height={24}/>
+  <Image src={warning} alt='Point à nuancer' width={24} height={24} aria-hidden="true"/>
   <span>Planning respecté mais durée totale plus longue pour les gros chantiers (effectif réduit)</span>
   </>,
   six: <>
-  <Image src={check} alt='Point fort' width={24} height={24}/>
+  <Image src={check} alt='Point fort' width={24} height={24} aria-hidden="true"/>
   <span>Peintures pro haut/milieu de gamme</span>
   </>,  
   seven: <>
-  <Image src={warning} alt='Point à nuancer' width={24} height={24}/>
+  <Image src={warning} alt='Point à nuancer' width={24} height={24} aria-hidden="true"/>
   <span>Tarif élevé mais cohérent avec la qualité et le temps consacré</span>
   </>,
 }, {
   title: 'Grande entreprise',
   one: <>
-  <Image src={warning} alt='Point à nuancer' width={24} height={24}/>
+  <Image src={warning} alt='Point à nuancer' width={24} height={24} aria-hidden="true"/>
   <span>Compétences variables selon les équipes</span>
   </>,
   two: <>
-  <Image src={warning} alt='Point à nuancer' width={24} height={24}/>
+  <Image src={warning} alt='Point à nuancer' width={24} height={24} aria-hidden="true"/>
   <span> Méthodes standardisées, peu de souplesse en cas de besoins spécifiques</span>
   </>,
   three: <>
-  <Image src={x} alt='Point faible' width={24} height={24}/>
+  <Image src={x} alt='Point faible' width={24} height={24} aria-hidden="true"/>
   <span>Relation impersonnelle</span>
   </>,
   four: <>
-  <Image src={check} alt='Point fort' width={24} height={24}/>
+  <Image src={check} alt='Point fort' width={24} height={24} aria-hidden="true"/>
   <span>Devis détaillé</span>
   </>, 
   five: <>
-  <Image src={warning} alt='Point à nuancer' width={24} height={24}/>
+  <Image src={warning} alt='Point à nuancer' width={24} height={24} aria-hidden="true"/>
   <span>Dépend du planning</span>
   </>,
   six: <>
-  <Image src={check} alt='Point fort' width={24} height={24}/>
+  <Image src={check} alt='Point fort' width={24} height={24} aria-hidden="true"/>
   <span>Peintures de qualité professionnelle</span>
   </>,
   seven: <>
-  <Image src={warning} alt='Point à nuancer' width={24} height={24}/>
+  <Image src={warning} alt='Point à nuancer' width={24} height={24} aria-hidden="true"/>
   <span>Tarif élevé, lié à des frais fixes importants</span>
   </>, 
 }, {
   title: 'Peintre bon marché',
   one: <>
-  <Image src={warning} alt='Point à nuancer' width={24} height={24}/>
+  <Image src={warning} alt='Point à nuancer' width={24} height={24} aria-hidden="true"/>
   <span>Parcours incertain</span>
   </>,
   two: <>
-  <Image src={x} alt='Point faible' width={24} height={24}/>
+  <Image src={x} alt='Point faible' width={24} height={24} aria-hidden="true"/>
   <span>Préparations baclées, qualité et tenue dans le temps incertaine</span>
   </>,
   three: <>
-  <Image src={warning} alt='Point à nuancer' width={24} height={24}/>
+  <Image src={warning} alt='Point à nuancer' width={24} height={24} aria-hidden="true"/>
   <span>Peu ou pas de conseils</span>
   </>, 
   four: <>
-  <Image src={warning} alt='Point à nuancer' width={24} height={24}/>
+  <Image src={warning} alt='Point à nuancer' width={24} height={24} aria-hidden="true"/>
   <span>Devis peu détaillé, frais cachés possibles</span>
   </>,
   five: <>
-  <Image src={check} alt='Point fort' width={24} height={24}/>
+  <Image src={check} alt='Point fort' width={24} height={24} aria-hidden="true"/>
   <span>Intervention rapide</span>
   </>,
   six: <>
-  <Image src={x} alt='Point faible' width={24} height={24}/>
+  <Image src={x} alt='Point faible' width={24} height={24} aria-hidden="true"/>
   <span>Produits souvent bas de gamme</span>
   </>,
   seven: <>
-  <Image src={check} alt='Point fort' width={24} height={24}/>
+  <Image src={check} alt='Point fort' width={24} height={24} aria-hidden="true"/>
   <span>Tarif attractif, mais souvent au détriment de la qualité</span>
   </>, 
 }];
@@ -452,16 +452,22 @@ export const workSteps: WorkStep[] = [{
 }]
 
 export const beforeAfterPhotos: BeforeAfterComparison[] = [{
-  name: 'living',
+  name: `d'un salon`,
   before: beforeLiving,
   after: afterliving,
+  descriptionBefore: '', 
+  descriptionAfter: ''
 },{
-  name: 'chambre',
+  name: `d'une chambre`,
   before: beforeBedroom,
   after: afterBedroom,
+  descriptionBefore: '', 
+  descriptionAfter: ''
 },
 {
-  name: 'exterieur',
+  name: 'de boiseries extérieures',
   before: beforeOutdoor,
   after: afterOutdoor,
+  descriptionBefore: '', 
+  descriptionAfter: ''
 },]

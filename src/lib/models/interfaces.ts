@@ -33,6 +33,8 @@ export interface BeforeAfterComparison {
     name: string
     before: StaticImageData
     after: StaticImageData
+    descriptionBefore: string
+    descriptionAfter: string
 }
 
 export interface TrustStatistic {

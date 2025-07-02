@@ -43,24 +43,24 @@ function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit(onMessageSubmit)} id='contact' className={styles.form} style={{width:'100%'}}>
+    <form onSubmit={handleSubmit(onMessageSubmit)} id='contact' className={styles.form} style={{width:'100%'}} aria-label='formulaire de contact'>
       <fieldset>
       <legend className='visually-hidden'>Informations personnelles</legend>
         {/* name */}
         <div>
-          <input id='name' autoComplete="name" type='text' inputMode='text' placeholder='Nom' {...register("name", { 
+          <input id='name' autoComplete="name" type='text' inputMode='text' placeholder='Nom' aria-required="true" aria-invalid={!!errors.name} aria-describedby={errors.name ? "name-error" : undefined} {...register("name", { 
           required: "Merci d'indiquer votre nom.", 
           minLength: { value: 2, message: 'Votre nom doit contenir entre 2 et 30 caractères.' },
           maxLength: { value: 30, message: 'Votre nom doit contenir entre 2 et 30 caractères.'} 
           })} />
-          <label htmlFor='name' className={errors.name ? `${styles.invalid}` : `${styles.valid}`}>Nom<span>*</span></label>
-        
-          { errors.name && <p>{errors.name?.message}</p> }  
+          <label htmlFor='name' className={errors.name ? `${styles.invalid}` : `${styles.valid}`}>Nom<span>*</span>
+          </label>
+          { errors.name && <p id="name-error" aria-live="polite" role="alert" >{errors.name?.message}</p> }  
       </div>
 
       {/* email */}
       <div>
-        <input id='email' type='email' autoComplete="email" inputMode='email' placeholder='dupont@example.com' {...register("email", { 
+        <input id='email' type='email' autoComplete="email" inputMode='email' placeholder='dupont@example.com' aria-required="true" aria-invalid={!!errors.email} aria-describedby={errors.email ? "email-error" : undefined} {...register("email", { 
         required: "Merci d'indiquer votre email.", 
         pattern: {
         value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/ ,
@@ -69,12 +69,12 @@ function ContactForm() {
         })}/>
         <label htmlFor='email' className={errors.email ? `${styles.invalid}` : `${styles.valid}`} >Email<span>*</span></label>
 
-        { errors.email && <p>{errors.email?.message}</p> } 
+        { errors.email && <p id="email-error" aria-live="polite" role="alert" >{errors.email?.message}</p> } 
       </div>
 
         {/* phone */}
         <div>
-          <input id='phone' type='tel' autoComplete="tel" inputMode='tel'  placeholder='06 00 00 00 00' {...register("phone", { 
+          <input id='phone' type='tel' autoComplete="tel" inputMode='tel' placeholder='06 00 00 00 00' aria-required="false" aria-invalid={!!errors.phone} aria-describedby={errors.phone ? "phone-error" : undefined} {...register("phone", { 
             pattern: {
             value: /^(0[1-9])(?:[ -]?\d{2}){4}$/,
             message: "Le numéro de téléphone semble invalide."
@@ -82,22 +82,24 @@ function ContactForm() {
         })} />
         <label htmlFor='phone' className={errors.phone ? `${styles.invalid}` : `${styles.valid}`}>Téléphone</label>        
 
-        { errors.phone && <p>{errors.phone?.message}</p> } 
+        { errors.phone && <p id="phone-error" aria-live="polite" role="alert" >{errors.phone?.message}</p> } 
         </div>
       </fieldset>
       
       {/* message */}
       <div>
         <label htmlFor='message'>Votre message:<span>*</span></label>
-        <textarea id='message' placeholder='Parlez-moi un peu de votre projet : pièces à rénover, surface, vos envies, délais… tout ce que vous jugez utile !
-'
+        <textarea id='message' placeholder='Parlez-moi un peu de votre projet : pièces à rénover, surface, vos envies, délais… tout ce que vous jugez utile !'
+        aria-required="true"
+        aria-invalid={!!errors.message}
+        aria-describedby={errors.message ? "message-error" : undefined}
         {...register("message", { 
         required: "Merci de rédiger votre message.", 
         minLength: { value: 30, message: 'Le message doit contenir minimum 30 caractères.' },
         maxLength: { value: 5000, message: 'El mensaje doit contenir moins de 5000 caracteres.'} 
         })}></textarea>
 
-        { errors.message && <p className={styles.textareaError}>{errors.message?.message}</p> }           
+        { errors.message && <p id="message-error" aria-live="polite" role="alert" className={styles.textareaError}>{errors.message?.message}</p> }           
       </div>
     
       {/* button */}

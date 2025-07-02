@@ -14,13 +14,14 @@ function TrustSection(): JSX.Element {
           {Array.isArray(stat.icon) ? (
             <div className={styles.stars}>
             {stat.icon.map((starIcon: StaticImageData, starIndex: number) => (
-              <Image key={starIndex} src={starIcon} width={48} height={48} alt='Star' className='glassmorphism'/>
+              <Image key={starIndex} src={starIcon} width={48} height={48} alt='Star' className='glassmorphism' aria-hidden="true"/>
             ))}
           </div>
           ) : (
-            <Image src={stat.icon} width={48} height={48} alt='' loading='lazy' className='glassmorphism'/>
+            <Image src={stat.icon} width={48} height={48} alt='' loading='lazy' className='glassmorphism' aria-hidden="true"/>
           )}
-          <h3><AnimatedCounter prefix={stat.prefix} suffix={stat.suffix} target={stat.stat} duration={0.5 + index * 0.7} characters={stat.characters}/>{stat.information}</h3>
+          <h3 aria-hidden="true"><AnimatedCounter prefix={stat?.prefix} suffix={stat?.suffix} target={stat?.stat} duration={0.5 + index * 0.7} characters={stat?.characters}/>{stat?.information}</h3>
+          <p className='visually-hidden'><span>{stat?.prefix}{stat?.stat}{stat?.suffix}</span> {stat?.information}</p>
         </article>
       ))
       }
