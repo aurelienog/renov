@@ -38,7 +38,7 @@ React Hook Form – Lightweight form handling with validation (react-hook-form@7
 
 Nodemailer – Server-side email handling (nodemailer@7)
 
-Chrome DevTools + Lighthouse – Performance & accessibility auditing
+Chrome DevTools + Lighthouse + VoiceOver – Performance & accessibility auditing
 
 Vercel – Seamless deployment & serverless backend
 

@@ -31,7 +31,7 @@
   padding: 0.5rem 1.3rem ;
 }
 
-.table td > img {
+.table td > span > img {
   vertical-align: sub;
   margin-right: 8px;
 }
@@ -54,4 +54,7 @@
 }
 
 
-
+.table p {
+  padding: 0;
+  margin: auto;
+}

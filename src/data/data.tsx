@@ -97,94 +97,94 @@ export const columns: Column[] = [{
   seven: 'Tarifs',
   }, {
   title: 'Votre artisan',
-  one: <>
-  <Image src={check} alt='Point fort' width={24} height={24} aria-hidden="true"/>
-  <span>+ de 15 ans d{`'`}expérience</span>
-  </>,
-  two: <>
-  <Image src={check} alt='Point fort' width={24} height={24} aria-hidden="true"/>
-  <span>Préparations adaptées & finitions soignées</span>
-  </>,
-  three: <>
-  <Image src={check} alt='Point fort' width={24} height={24} aria-hidden="true"/>
-  <span>Proche, disponible, conseils personnalisés</span>
-  </>,
-  four: <>
-  <Image src={check} alt='Point fort' width={24} height={24} aria-hidden="true"/>
-  <span>Devis détaillé, clair et sans surprise</span>
-  </>,
-  five: <>
-  <Image src={warning} alt='Point à nuancer' width={24} height={24} aria-hidden="true"/>
-  <span>Planning respecté mais durée totale plus longue pour les gros chantiers (effectif réduit)</span>
-  </>,
-  six: <>
-  <Image src={check} alt='Point fort' width={24} height={24} aria-hidden="true"/>
-  <span>Peintures pro haut/milieu de gamme</span>
-  </>,  
-  seven: <>
-  <Image src={warning} alt='Point à nuancer' width={24} height={24} aria-hidden="true"/>
-  <span>Tarif élevé mais cohérent avec la qualité et le temps consacré</span>
-  </>,
+  one: <span role='img' aria-label={`Point fort : + de 15 ans d'expérience`}>
+  <Image src={check} alt='' width={24} height={24}/>
+  + de 15 ans d{`'`}expérience
+  </span>,
+  two: <span role='img' aria-label={`Point fort : Préparations adaptées & finitions soignées`}>
+  <Image src={check} alt='' width={24} height={24}/>
+  Préparations adaptées & finitions soignées
+  </span>,
+  three: <span role='img' aria-label={`Point fort : Proche, disponible, conseils personnalisés`}>
+  <Image src={check} alt='' width={24} height={24}/>
+  Proche, disponible, conseils personnalisés
+  </span>,
+  four: <span role='img' aria-label={`Point fort : Devis détaillé, clair et sans surprise`}>
+  <Image src={check} alt='' width={24} height={24}/>
+  Devis détaillé, clair et sans surprise
+  </span>,
+  five: <span role='img' aria-label={`Point à nuancer : Planning respecté mais durée totale plus longue pour les gros chantiers (effectif réduit)`}>
+  <Image src={warning} alt='' width={24} height={24}/>
+  Planning respecté mais durée totale plus longue pour les gros chantiers (effectif réduit)
+  </span>,
+  six: <span role='img' aria-label={`Point fort : Peintures pro haut/milieu de gamme`}>
+  <Image src={check} alt='' width={24} height={24}/>
+  Peintures pro haut/milieu de gamme
+  </span>,  
+  seven: <span role='img' aria-label={`Point à nuancer : Tarif élevé mais cohérent avec la qualité et le temps consacré`}>
+  <Image src={warning} alt='' width={24} height={24}/>
+  Tarif élevé mais cohérent avec la qualité et le temps consacré
+  </span>,
 }, {
   title: 'Grande entreprise',
-  one: <>
-  <Image src={warning} alt='Point à nuancer' width={24} height={24} aria-hidden="true"/>
-  <span>Compétences variables selon les équipes</span>
-  </>,
-  two: <>
-  <Image src={warning} alt='Point à nuancer' width={24} height={24} aria-hidden="true"/>
-  <span> Méthodes standardisées, peu de souplesse en cas de besoins spécifiques</span>
-  </>,
-  three: <>
-  <Image src={x} alt='Point faible' width={24} height={24} aria-hidden="true"/>
-  <span>Relation impersonnelle</span>
-  </>,
-  four: <>
-  <Image src={check} alt='Point fort' width={24} height={24} aria-hidden="true"/>
-  <span>Devis détaillé</span>
-  </>, 
-  five: <>
-  <Image src={warning} alt='Point à nuancer' width={24} height={24} aria-hidden="true"/>
-  <span>Dépend du planning</span>
-  </>,
-  six: <>
-  <Image src={check} alt='Point fort' width={24} height={24} aria-hidden="true"/>
-  <span>Peintures de qualité professionnelle</span>
-  </>,
-  seven: <>
-  <Image src={warning} alt='Point à nuancer' width={24} height={24} aria-hidden="true"/>
-  <span>Tarif élevé, lié à des frais fixes importants</span>
-  </>, 
+  one: <span role='img' aria-label={`Point à nuancer : Compétences variables selon les équipes`}>
+  <Image src={warning} alt='' width={24} height={24}/>
+  Compétences variables selon les équipes
+  </span>,
+  two: <span role='img' aria-label={`Point à nuancer : Méthodes standardisées, peu de souplesse en cas de besoins spécifiques`}>
+  <Image src={warning} alt='' width={24} height={24}/>
+  Méthodes standardisées, peu de souplesse en cas de besoins spécifiques
+  </span>,
+  three: <span role='img' aria-label={`Point faible : Relation impersonnelle`}>
+  <Image src={x} alt='' width={24} height={24}/>
+  Relation impersonnelle
+  </span>,
+  four: <span role='img' aria-label={`Point fort : Devis détaillé`}>
+  <Image src={check} alt='' width={24} height={24}/>
+  Devis détaillé
+  </span>, 
+  five: <span role='img' aria-label={`Point à nuancer : Dépend du planning`}>
+  <Image src={warning} alt='' width={24} height={24}/>
+  Dépend du planning
+  </span>,
+  six: <span role='img' aria-label={`Point fort : Peintures de qualité professionnelle`}>
+  <Image src={check} alt='' width={24} height={24}/>
+  Peintures de qualité professionnelle
+  </span>,
+  seven: <span role='img' aria-label={`Point à nuancer : Tarif élevé, lié à des frais fixes importants`}>
+  <Image src={warning} alt='' width={24} height={24}/>
+  Tarif élevé, lié à des frais fixes importants
+  </span>, 
 }, {
   title: 'Peintre bon marché',
-  one: <>
-  <Image src={warning} alt='Point à nuancer' width={24} height={24} aria-hidden="true"/>
-  <span>Parcours incertain</span>
-  </>,
-  two: <>
-  <Image src={x} alt='Point faible' width={24} height={24} aria-hidden="true"/>
-  <span>Préparations baclées, qualité et tenue dans le temps incertaine</span>
-  </>,
-  three: <>
-  <Image src={warning} alt='Point à nuancer' width={24} height={24} aria-hidden="true"/>
-  <span>Peu ou pas de conseils</span>
-  </>, 
-  four: <>
-  <Image src={warning} alt='Point à nuancer' width={24} height={24} aria-hidden="true"/>
-  <span>Devis peu détaillé, frais cachés possibles</span>
-  </>,
-  five: <>
-  <Image src={check} alt='Point fort' width={24} height={24} aria-hidden="true"/>
-  <span>Intervention rapide</span>
-  </>,
-  six: <>
-  <Image src={x} alt='Point faible' width={24} height={24} aria-hidden="true"/>
-  <span>Produits souvent bas de gamme</span>
-  </>,
-  seven: <>
-  <Image src={check} alt='Point fort' width={24} height={24} aria-hidden="true"/>
-  <span>Tarif attractif, mais souvent au détriment de la qualité</span>
-  </>, 
+  one: <span role='img' aria-label={`Point à nuancer : Parcours incertain`}>
+  <Image src={warning} alt='' width={24} height={24}/>
+  Parcours incertain
+  </span>,
+  two: <span role='img' aria-label={`Point faible : Préparations baclées, qualité et tenue dans le temps incertaine`}>
+  <Image src={x} alt='' width={24} height={24}/>
+  Préparations baclées, qualité et tenue dans le temps incertaine
+  </span>,
+  three: <span role='img'  aria-label={`Point à nuancer : Peu ou pas de conseils`}>
+  <Image src={warning} alt='' width={24} height={24}/>
+  Peu ou pas de conseils
+  </span>, 
+  four: <span role='img' aria-label={`Point à nuancer :Devis peu détaillé, frais cachés possibles`}>
+  <Image src={warning} alt='' width={24} height={24}/>
+  Devis peu détaillé, frais cachés possibles
+  </span>,
+  five: <span role='img' aria-label={`Point fort : Intervention rapide`}>
+  <Image src={check} alt='' width={24} height={24}/>
+  Intervention rapide
+  </span>,
+  six: <span role='img' aria-label={`Point faible :Produits souvent bas de gamme`}>
+  <Image src={x} alt='' width={24} height={24}/>
+  Produits souvent bas de gamme
+  </span>,
+  seven: <span role='img' aria-label={`Point fort : Tarif attractif, mais souvent au détriment de la qualité`}>
+  <Image src={check} alt='' width={24} height={24}/>
+  Tarif attractif, mais souvent au détriment de la qualité
+  </span>, 
 }];
 
 export const faqEntries: FaqEntry[] = [{
