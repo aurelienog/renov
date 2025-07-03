@@ -46,10 +46,7 @@ function ComparisonSlider({ before, after, name, descriptionBefore, descriptionA
       > 
         <Image src={after} aria-hidden='true' alt='' placeholder="blur" fill sizes="(max-width: 768px) 100vw, 60vw" quality={75} style={{ objectFit: 'cover', borderRadius: 'var(--border-radius)'}}/>
 
-        <span
-          className={`${styles.beforeContainer} ${styles.imagesContainer}`}
-          style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
-        >
+        <span className={`${styles.beforeContainer} ${styles.imagesContainer}`} style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}>
           <Image src={before} aria-hidden='true' alt=''  placeholder="blur" fill sizes="(max-width: 768px) 100vw, 60vw" quality={75} style={{ objectFit: 'cover', borderRadius: 'var(--border-radius)'}}/>
         </span>
 

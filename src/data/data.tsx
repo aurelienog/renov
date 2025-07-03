@@ -1,6 +1,6 @@
 
-import { FaqEntry, Column, WorkStep, Service, BeforeAfterComparison, TrustStatistic, DetailedService } from '@/lib/models/interfaces';
-import Image, { StaticImageData } from 'next/image';
+import { FaqEntry, Column, WorkStep, Service, BeforeAfterComparison, TrustStatistic, DetailedService, Project } from '@/lib/models/interfaces';
+import Image from 'next/image';
 
 // trust section statistics
 import paint from '../../public/assets/icons/paint.svg';
@@ -418,7 +418,27 @@ export const detailedServices: DetailedService[] = [{
 ]
 
 //the second element of the array is a tranparent png, which makes revealing the first element take longer
-export const lastProjects: StaticImageData[] = [murPapierPeint, transparentImage, boiseriePeinture, transparentImage, boiserieLiving, transparentImage, ];
+export const lastProjects: Project[] = [{
+  image: murPapierPeint,
+  service: 'mur',
+  description: `Photo d'une salle à manger. Le mur principal est recouvert d'un papier peint beige clair à motif linéaire évoquant des herbes hautes, créant une ambiance naturelle et sereine.`
+}, {
+  image: transparentImage,
+  service: null,
+  description: ``
+}, {
+  image: boiseriePeinture,
+  service: null,
+  description:`Photo d'un palier d'escalier. On distingue immédiatement les boiseries peintes en blanc immaculé, particulièrement la balustrade de l'escalier. La peinture est fraîche et uniforme, suggérant une rénovation soignée qui donne un aspect propre et moderne à l'ensemble.`
+}, {
+  image: transparentImage,
+  service: null,
+  description:``
+}, {
+  image: boiserieLiving,
+  service: null,
+  description: `Photo d'un intérieur rénové dont le charme réside dans ses poutres apparentes. Ces poutres en bois, d'une teinte marron chaleureuse, ont été soigneusement mises en valeur par une peinture et un traitement récent. Elles contrastent agréablement avec le plafond blanc et illuminent l'espace, témoignant d'un travail de rénovation soigné qui a su préserver et sublimer le cachet rustique de la pièce.`
+}];
 
 export const workSteps: WorkStep[] = [{
   name: 'Prise de contact',
@@ -455,19 +475,20 @@ export const beforeAfterPhotos: BeforeAfterComparison[] = [{
   name: `d'un salon`,
   before: beforeLiving,
   after: afterliving,
-  descriptionBefore: '', 
-  descriptionAfter: ''
+  descriptionBefore: `La pièce est en très mauvais état. Les murs présentent des signes de dégradation avec des restes de papiers peints et d'enduits arrachés. Le plafond est tout aussi abîmé. Le sol est recouvert d'une bâche de protection mais il sera également rénové. 
+`, 
+  descriptionAfter: `Les murs et le plafond sont fraîchement peints d'une couleur crème claire, donnant une impression de propreté et de luminosité. Le sol est recouvert d'un parquet en chevron brun foncé et brillant, qui apporte une touche d'élégance et de classicisme à la pièce. L'état général est impeccable et suggère un espace neuf et prêt à être aménagé.`
 },{
   name: `d'une chambre`,
   before: beforeBedroom,
   after: afterBedroom,
-  descriptionBefore: '', 
-  descriptionAfter: ''
+  descriptionBefore: `La chambre est dans un état de délabrement avancé. Les murs sont recouverts d'un vieux papier peint sale et détérioré, présentant des tâches importantes et des signes d'humidité. Le sol est recouvert d'une moquette rouge usagée.`, 
+  descriptionAfter: 'Chambre rénovée avec une peinture irréprochable : un mur beige clair et un autre vert foncé créent un contraste subtil et élégant. Plafond uniformément peint, plinthes blanches parfaitement alignées, et sol en parquet clair posé avec soin pour une finition soignée.'
 },
 {
   name: 'de boiseries extérieures',
   before: beforeOutdoor,
   after: afterOutdoor,
-  descriptionBefore: '', 
-  descriptionAfter: ''
+  descriptionBefore: `Façade extérieure d'une maison montrant des balustrades et boiseries en mauvais état, avec une peinture écaillée ou décolorée laissant apparaître des zones de bois brut.`, 
+  descriptionAfter: 'Balustrades et volets fraîchement repeints en blanc, offrant un aspect propre, soigné et impeccable.'
 },]

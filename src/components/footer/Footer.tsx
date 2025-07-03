@@ -8,7 +8,7 @@ function Footer(): JSX.Element {
   return (
     <footer className={`${styles.footer}`}>
       <Link href={"/"}>
-        <Image src={logo} alt='logo' quality={75} width={300} height={150}/> 
+        <Image src={logo} alt='logo ANJ RENOV- home' quality={75} width={300} height={150}/> 
       </Link>
 
       <article itemScope itemType="http://schema.org/Organization">

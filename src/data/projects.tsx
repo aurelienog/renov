@@ -188,7 +188,7 @@ export const projects: Project[] = [
   {
     image: exterieurExt,
     service: 'exterieur',
-    description: ''
+    description: 'Balustrades et volets fraîchement repeints en blanc, offrant un aspect propre, soigné et impeccable.'
   },
 
   // murs
@@ -297,11 +297,11 @@ export const projects: Project[] = [
   }, {
     image: boiseriesPeinturePorte3,
     service: 'boiserie',
-    description: ``
+    description: `Couloir fraîchement peint avec une porte blanche moderne ornée de lignes courbes en relief. Les rainures sont mises en valeur par une teinte plus foncée, apportant un contraste subtil et une touche contemporaine à l'ensemble.`
   }, {
     image: boiseriesPeinturePorte4,
     service: 'boiserie',
-    description: ``
+    description: `Couloir rénové avec porte blanche moderne : lignes courbes en relief aux rainures soulignées d’une teinte foncée. Plinthes de plafond et encadrement assortis, créant une harmonie élégante et contemporaine.`
   }, {
     image: boiseriesPeintureSDB,
     service: 'boiserie',

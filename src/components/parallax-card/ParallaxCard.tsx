@@ -3,11 +3,10 @@ import styles from './styles.module.css'
 import Image, { StaticImageData } from 'next/image';
 import { motion, MotionValue } from 'framer-motion';
 
-
-function ParallaxCard({ project, maskSize }: { project: StaticImageData, maskSize?: MotionValue<string>, }): JSX.Element {
+function ParallaxCard({ image, description, maskSize }: { image: StaticImageData, description: string, maskSize?: MotionValue<string>, }): JSX.Element {
 
   return (
-    <article className={styles.container}>
+    <figure className={styles.container}>
       <motion.div className={styles.card} style={ 
           maskSize
             ? {
@@ -17,9 +16,9 @@ function ParallaxCard({ project, maskSize }: { project: StaticImageData, maskSiz
               }
             : undefined
         }>
-        <Image src={project} alt='' sizes="(min-width: 1260px) 100vw, 300.64vw" fill placeholder='blur' quality={70} style={{ objectFit: 'cover' }}/>
+        <Image src={image} alt={description} sizes="(min-width: 1260px) 100vw, 300.64vw" fill placeholder='blur' quality={70} style={{ objectFit: 'cover' }}/>
       </motion.div>
-    </article>
+    </figure>
   )
 }
 
