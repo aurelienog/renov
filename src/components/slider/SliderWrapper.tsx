@@ -1,8 +1,7 @@
 'use client'
 import React, { useRef } from 'react';
-import { useInView, useScroll, useTransform } from 'framer-motion';
+import { useScroll, useTransform } from 'framer-motion';
 import ParallaxCard from '../parallax-card/ParallaxCard';
-import Link from 'next/link';
 import { Project } from '@/lib/models/interfaces';
 
 function SliderWrapper({lastProjects}: {lastProjects: Project[]}) {
@@ -13,9 +12,6 @@ function SliderWrapper({lastProjects}: {lastProjects: Project[]}) {
   })
   const maskScale = useTransform(scrollYProgress, [0, 1], ['30%', '100%'])
 
-  // show CTA Button
-  const isInView = useInView(scrollRef, { amount: 0.16, once: false})
-  
   return (
     <div ref={scrollRef}>
       { lastProjects.map((project: Project, index:number) => {
@@ -24,9 +20,6 @@ function SliderWrapper({lastProjects}: {lastProjects: Project[]}) {
           return <ParallaxCard image={ project.image } aria-hidden={isInvisible ? 'true' : undefined} description={ project.description } key={ index } maskSize={isFirst? maskScale : undefined}/>
         })
       }
-      
-      {isInView && <Link className='button' href="/realisations">Voir mes réalisations</Link>}
-      
     </div>
   )
 }
