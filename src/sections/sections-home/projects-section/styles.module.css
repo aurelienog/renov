@@ -1,5 +1,6 @@
 .section {
   position: relative;
+  padding-top: 10rem;
 
   & h2 {
     padding: 1em;
@@ -16,14 +17,13 @@
     
     position: absolute;
     inset: 0;
-    padding-bottom: 8em;
+    margin-bottom: 4rem;
     margin-top: 150vh;
   }
 
     & a {
     position: sticky;
     top: 85%;
-    animation: reveal 1s ease-in-out;
     margin-inline: auto;
     max-width: 300px;
     display: block;

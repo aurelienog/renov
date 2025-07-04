@@ -10,13 +10,22 @@
 
 .card {
   position: relative;
-  width: 100%;
-  mask-image: url('/assets/images/revealMaskVertical.webp');
   aspect-ratio: 1/2;
+  height: 100vh;
+  mask-image: url('/assets/images/revealMaskVertical.webp');
 }
 
-@media (min-width: 650px) {
+
+@media (min-width: 400px) {
   .card {
+    width: 100%;
+    aspect-ratio: 3/4;
+  }
+}
+
+@media (min-width: 990px) {
+  .card {
+    width: 100%;
     aspect-ratio: 16/9;
     mask-image: url('/assets/images/revealMask.webp');
   }
