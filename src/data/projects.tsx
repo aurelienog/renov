@@ -301,31 +301,31 @@ export const projects: Project[] = [
   }, {
     image: boiseriesPeinturePorte4,
     service: 'boiserie',
-    description: `Couloir rénové avec porte blanche moderne : lignes courbes en relief aux rainures soulignées d’une teinte foncée. Plinthes de plafond et encadrement assortis, créant une harmonie élégante et contemporaine.`
+    description: `Couloir rénové avec porte blanche moderne : lignes courbes en relief aux rainures soulignées d${`'`}une teinte foncée. Plinthes de plafond et encadrement assortis, créant une harmonie élégante et contemporaine.`
   }, {
     image: boiseriesPeintureSDB,
     service: 'boiserie',
-    description: ``
+    description: `Salle de bain moderne et élégante. On y voit une vasque rectangulaire blanche posée sur un meuble sous-vasque rose poudré. La qualité de la peinture des meubles est impeccable, lisse et uniforme.`
   }, {
     image: boiseriesPoncageParquet1,
     service: 'boiserie',
-    description: ``
+    description: `Grand salon vide avec un magnifique parquet en bois clair. Le sol est impeccablement poncé et vitrifié, révélant la beauté naturelle du bois et son grain fin.`
   }, {
     image: boiseriesPoncageParquet2,
     service: 'boiserie',
-    description: ``
+    description: `Vaste espace de vie avec un parquet clair en bois, récemment poncé et parfaitement lisse. La lumière met en valeur la qualité du bois et la finesse du travail de ponçage.`
   }, {
     image: boiseriesPoutres1,
     service: 'boiserie',
-    description: ``
+    description: `Poutres en bois apparentes, de couleur brun-roux, qui forment une charpente imposante et élégante.  La rénovation met en avant la beauté du bois et du matériau d'origine, créant un espace harmonieux entre tradition et modernité.`
   }, {
     image: boiseriesPoutres2,
     service: 'boiserie',
-    description: ``
+    description: `Grand espace de vie ouvert et lumineux, rénové avec goût. Les poutres apparentes en bois foncé, restaurées et mises en valeur, constituent l'élément central de l'architecture, ajoutant un charme rustique et authentique à l'intérieur moderne et épuré.`
   }, {
     image: boiseriesVitrificationParquet,
     service: 'boiserie',
-    description: ``
+    description: `Sol en parquet chevron, récemment vitrifié. Le parquet, de couleur brun foncé, présente un aspect brillant et lisse témoignant d'une finition soignée. La disposition en chevrons est régulière et nette.`
   },
 
   // enduits

@@ -6,59 +6,59 @@
   padding: 2rem;
   border-top: solid 2px;
   text-align: center;
-
-  & h2 {
+}
+.footer h2 {
     font-size: 1.2rem;
     margin-bottom: 1rem;
     font-weight: var(--fw-bold);
   }
 
-  & article {
+.footer article {
     margin: 3rem 0;
   }
 
-  & li {
+.footer li {
     padding: 0;
     margin-left: 0;
     list-style: none;
   }
 
-  & article:last-child {
+.footer article:last-child {
     font-weight: var(--fw-semi-bold);
     font-size: smaller;
   }
 
-  & article > address{
+.footer article > address{
     font-style: normal;
     grid-area: address;
   }
 
-  & > :first-child {
+.footer > :first-child {
     grid-area: logo;
     align-self: center;
   }
 
-  & article:nth-child(2) {
+.footer article:nth-child(2) {
     grid-area: address;
   }
 
-  & article:nth-child(3) {
+.footer article:nth-child(3) {
     grid-area: info;
   }
 
-  & a {
+.footer a {
     text-decoration: none;
   }
 
-  & > a:first-of-type:focus {
+.footer > a:first-of-type:focus {
     outline: solid 3px #7E5E52;
   }
 
-  & a:hover {
+.footer a:hover {
     font-weight: var(--fw-bold);
   }
 
-  & address {
+.footer address {
     display: flex;
     flex-direction: column;
     & :first-child,
@@ -67,12 +67,12 @@
     }
   }
 
-  & p {
+.footer p {
     margin: 0;
     user-select: all;
   }
 
-}
+
 
 .footer::before {
   position: absolute;
@@ -111,13 +111,12 @@
   }
 
 
-.footer article:last-child :nth-child(1) {
-  padding-left: 1rem;
-} 
+  .footer article:last-child :nth-child(1) {
+    padding-left: 1rem;
+  } 
 
-.footer article:last-child :nth-child(2) {
-  border-left: solid 2px;
-  padding-left: 2rem;
-} 
-  
+  .footer article:last-child :nth-child(2) {
+    border-left: solid 2px;
+    padding-left: 2rem;
+  } 
 }
