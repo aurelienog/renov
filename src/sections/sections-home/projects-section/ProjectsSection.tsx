@@ -15,8 +15,7 @@ function ProjectsSection(): JSX.Element {
       </Suspense>
       <div>
         <Link className='button' href="/realisations">Voir mes réalisations</Link>
-      </div>
-      
+      </div>      
     </section>
   )
 }

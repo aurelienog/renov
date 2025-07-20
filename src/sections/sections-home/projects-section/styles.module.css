@@ -1,32 +1,31 @@
 .section {
   position: relative;
   padding-top: 10rem;
+}
 
-  & h2 {
-    padding: 1em;
-    text-align: center;
-    margin: 0;
-  }
+.section h2 {
+  padding: 1em;
+  text-align: center;
+  margin: 0;
+}
 
-  &:nth-child(2) {
-    height: 600vh;
-    position: relative;
-  }
+.section:nth-child(2) {
+  height: 600vh;
+  position: relative;
+}
 
-  & > div:last-of-type {
-    
-    position: absolute;
-    inset: 0;
-    margin-bottom: 4rem;
-    margin-top: 150vh;
-  }
+.section > div:last-of-type {
+  position: absolute;
+  inset: 0;
+  margin-bottom: 4rem;
+  margin-top: 150vh;
+}
 
-    & a {
-    position: sticky;
-    top: 85%;
-    margin-inline: auto;
-    max-width: 300px;
-    display: block;
-    text-align: center;
-  }
+.section a {
+  position: sticky;
+  top: 85%;
+  margin-inline: auto;
+  max-width: 300px;
+  display: block;
+  text-align: center;
 }

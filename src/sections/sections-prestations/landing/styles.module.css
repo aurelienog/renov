@@ -1,31 +1,26 @@
 .section {
   padding: 5em 0;
+}
+.section h1 {
+  text-align: center;
+  margin-bottom: 1.5em;
+}
 
-  & h1 {
-    text-align: center;
-    margin-bottom: 1.5em;
-  }
+.section > p {
+  font-size: 1.5rem;
+}
 
-  & > p {
-    font-size: 1.5rem;
-  }
-
-  & > p:last-of-type {
-    
-    margin-bottom: 4em;
-    margin-top: 0;
-  }
+.section > p:last-of-type {   
+  margin-bottom: 4em;
+  margin-top: 0;
 }
 
 @media(min-width:920px) {
-  .section {
-
-  & p {
+  .section p {
     margin-bottom: 0;
   }
 
-  & > p {
+  .section > p {
     text-align: center;
-  }
   }
 }

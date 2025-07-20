@@ -34,9 +34,7 @@
   --padding-inline: 2rem;
   --content-max-width: 100ch;
   --breakout-max-width: 130ch;
-
   --breakout-size: calc((var(--breakout-max-width) - var(--content-max-width)) / 2);
-
   display: grid;
   grid-template-columns: [full-width-start] minmax(var(--padding-inline), 1fr) [breakout-start] minmax(0, var(--breakout-size)) [content-start] min(100% - (var(--padding-inline) * 2), var(--content-max-width)) [content-end] minmax(0, var(--breakout-size)) [breakout-end] minmax(var(--padding-inline), 1fr)  [full-width-end];
 }
@@ -86,11 +84,11 @@ a {
   text-underline-offset: 4px;
   cursor: pointer;
   transition: color 300ms ease, font-weight 300ms ease;
+}
 
-  &:focus {
+a:focus {
   outline: none;
   font-weight: var(--fw-bold);
-  }
 }
 
 input, textarea, select, button {
@@ -124,16 +122,16 @@ textarea, input {
 
 summary {
   transition: color 300ms ease;
+}
 
-  &:hover {
+summary:hover {
   color: var(--color-secondary);
-  }
+}
 
-  &:focus {
+summary:focus {
   outline: none;
   font-weight: var(--fw-bold);
   color: var(--color-secondary);
-  }
 }
 
 .button {
@@ -155,25 +153,22 @@ summary {
   box-shadow:
   0 2px 5px rgba(0, 0, 0, 0.1),
   inset 1px 1px 2px rgba(255,255,255,0.3);
+}
 
-  &:hover {
+.button:hover {
   background-image: linear-gradient(145deg, var(--color-accent-hover), #C3A184);
   transform: translateY(-2px);
   box-shadow:
   3px 6px #BFA38A,
   inset 0 0 0 transparent;
-
   /* box-shadow: 0 3px 6px #BFA38A,
     inset 0 0 0 transparent; */
 }
-  
 
-  &:focus:not(:hover) {
+.button:focus:not(:hover) {
     outline: solid 3px var(--color-secondary);
     outline-offset: 2px;
-
     background-image: linear-gradient(145deg, var(--color-accent-focus), var(--color-accent-focus)); 
-  }
 }
 
 .highlight {

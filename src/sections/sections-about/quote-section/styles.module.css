@@ -1,7 +1,8 @@
 .section {
   margin: 0 1em;
-  
-  & :first-child {
-    margin: auto;
-  }
-} 
+}   
+
+.section :first-child {
+  margin: auto;
+}
+

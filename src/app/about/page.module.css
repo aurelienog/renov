@@ -1,55 +1,55 @@
 .page {
   background-size: contain;
+}
 
-  & p {
-    margin-top: 2rem;
-    font-size: 1.2rem;
-  }
+.page p {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
 
-  & section:last-of-type {
-    text-align: center;
-    margin: 0 auto 8rem;
-    padding-left: 1em;
-    padding-left: 1em;
+.page section:last-of-type {
+  text-align: center;
+  margin: 0 auto 8rem;
+  padding-left: 1em;
+  padding-left: 1em;
+}
 
-    & h2 {
-      margin-bottom: 10rem;
-    }
+.page section:last-of-type h2 {
+  margin-bottom: 10rem;
+}
 
-    & > p {
-      margin-bottom: 4rem;
-    }
+.page section:last-of-type > p {
+  margin-bottom: 4rem;
+}
 
-  & :is(p, a){
+.page section:last-of-type :is(p, a){
   max-width: 50ch;
   font-family: var(--font-primary);
   line-height: 1.1;
   font-size: 1.6rem;
-  }
-
-
-  & > a {
-    font-style: italic;
-    font-weight: var(--fw-bold);
-    text-decoration-thickness: 2px;
-      &:focus {
-        outline: 3px solid var(--color-secondary);
-        outline-offset: 18px;
-        border-radius: 0.5rem;
-      }
-  }
-  }
-
 }
 
-@media(width < 930px) {
-    & section:last-of-type {
+
+.page section:last-of-type > a {
+  font-style: italic;
+  font-weight: var(--fw-bold);
+  text-decoration-thickness: 2px;
+}
+
+.page section:last-of-type > a:focus {
+  outline: 3px solid var(--color-secondary);
+  outline-offset: 18px;
+  border-radius: 0.5rem;
+}
+
+@media(width < 930px) {  
+  .page section:last-of-type {
     margin: 0 auto 8rem;
     padding: 2rem 0;
+  }
 
-    & p {
-      text-align: start;
-      padding-left: 1rem;
-    }
+  .page p {
+    text-align: start;
+    padding-left: 1rem;  
   }
 }

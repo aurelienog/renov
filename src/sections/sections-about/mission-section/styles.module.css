@@ -1,24 +1,21 @@
-.section {
+.section h2 {
+  text-align: center;
+}
 
-  & h2 {
-    text-align: center;
-  }
+.section p:first-of-type{
+  font-size: 1.6rem;
+  font-weight: var(--fw-semi-bold);
+} 
 
-  & p:first-of-type{
-    font-size: 1.6rem;
-    font-weight: var(--fw-semi-bold);
-  } 
+.section figure {
+  margin-top: 2rem;
+  aspect-ratio: 16/9;
+  width: 100%;
+  position: relative;
+}
 
-  & figure {
-    margin-top: 2rem;
-    aspect-ratio: 16/9;
-    width: 100%;
-    position: relative;
-
-    & img {
-      border-radius: var(--border-radius);
-    }
-  }
+.section figure img {
+  border-radius: var(--border-radius);
 }
 
 @media (max-width: 930px) {

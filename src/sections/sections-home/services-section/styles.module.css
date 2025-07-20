@@ -5,10 +5,10 @@
   padding-left: 2em;
   padding-right: 2em;
   overflow: hidden;
+}
 
-  & h2 {
-    text-align: center;
-  }
+.section h2 {
+  text-align: center;
 }
 
 /* change background color */

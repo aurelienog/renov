@@ -2,18 +2,17 @@
   display: none;
   position: relative;
   width: 100%;
+}
 
-  & h2 {
-    text-align: center;
-  }
+.section h2 {
+  text-align: center;
+}
 
-  & a {
+.section a {
   display: block;
   width: 50%;
   padding: 1em 6em;
   margin: 4em auto;
-  }
-
 }
 
 @media (min-width: 1460px) {

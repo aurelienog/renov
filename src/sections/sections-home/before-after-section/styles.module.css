@@ -9,11 +9,8 @@
     padding-right: 4rem;
     display: inherit;
     position: relative;
-  
-    & h2 {
-      text-align: center;
-      /* position: sticky;
-      top: 1.5em; */
-    }
-}
+  }
+  .section h2 {
+    text-align: center;
+  }
 }

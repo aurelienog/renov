@@ -5,25 +5,25 @@
   grid-template-columns: repeat(auto-fit, minmax(min(var(--grid-min-col-size), 100%), 1fr));
   gap: 4rem;
   margin: auto;
+}
 
-  & h2 {
-    margin-bottom: 2em;
-  }
+.section h2 {
+  margin-bottom: 2em;
+}
 
-  & p:first-of-type{
-    font-size: 1.6rem;
-    font-weight: var(--fw-semi-bold);
-  } 
+.section p:first-of-type{
+  font-size: 1.6rem;
+  font-weight: var(--fw-semi-bold);
+} 
 
-  & figure {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 3/4;
+.section figure {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3/4;
+}
 
-    & img {
-      border-radius: var(--border-radius);
-    }
-  }
+.section figure img {
+  border-radius: var(--border-radius);
 }
 
 @media (min-width: 1410px) {
@@ -31,25 +31,25 @@
     padding: 12rem 8rem 8rem;
     margin: auto;
     gap: 6rem;
-
-    & > article {
+  }
+  .section > article {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: var(--border-radius);
     padding: 2em;
   }
 
-  & > figure {
-      margin: 12rem 0 0;
-      mask-image: none;
-    }
+  .section > figure {
+    margin: 12rem 0 0;
+    mask-image: none;
+  }
   
-  & p:first-of-type{
-      font-size: 1.6rem;
-      font-weight: var(--fw-semi-bold);
-    }  
+  .section p:first-of-type{
+    font-size: 1.6rem;
+    font-weight: var(--fw-semi-bold);
+  }  
 
-    & article {
-      margin-bottom: 8em;
-    }
-}
+  .section article {
+    margin-bottom: 8em;
+  }
+
 }
