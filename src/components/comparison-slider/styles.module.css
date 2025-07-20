@@ -1,13 +1,12 @@
 .wrapper {
   height: 100%;
   position: relative;
+}
 
-  & img {
-    object-fit: cover;
-    border-radius: 25px;
-
-    cursor: ew-resize; 
-  }
+.wrapper img {
+  object-fit: cover;
+  border-radius: 25px;
+  cursor: ew-resize; 
 }
 
 .imagesContainer {

@@ -7,60 +7,61 @@
   margin: auto;
   border: none;
   border-radius: var(--border-radius);
-  pointer-events: none;
-  & img {
-    object-fit: contain;
+  pointer-events: none; 
+}
+
+.dialog:focus {
+  border-radius: var(--border-radius);
+}
+
+.dialog img {
+  object-fit: contain;
+}
+
+.dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(2px)
+}
+
+.dialog[open] {
+  opacity: 1;
+  pointer-events: auto;
+
+  @starting-style {
+    opacity: 0;  
   }
+}
 
-  &::backdrop {
-    background-color: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(2px)
-  }
+.dialog button:first-of-type {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 2;
+}
 
-  &[open] {
-    opacity: 1;
-    pointer-events: auto;
+.dialog button:nth-of-type(2){
+  position: absolute;
+  top: 90%;
+  left: 30%;
+  z-index: 2;
+}
 
-    @starting-style {
-      opacity: 0;  
-    }
-  }
-
-  & button:first-of-type {
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    z-index: 2;
-  }
-
-  & button:nth-of-type(2){
-    position: absolute;
-    top: 90%;
-    left: 30%;
-    z-index: 2;
-  }
-
-
-  & button:nth-of-type(3){
-    position: absolute;
-    top: 90%;
-    right: 30%;
-    z-index: 2;
-  }
-
-
+.dialog button:nth-of-type(3){
+  position: absolute;
+  top: 90%;
+  right: 30%;
+  z-index: 2;
 }
 
 @media(width >= 890px){
-  .dialog {
-  & button:first-of-type {
+  .dialog button:first-of-type {
     position: absolute;
     top: 4%;
     left: 4%;
     z-index: 2;
   }
-
-  & button:nth-of-type(2){
+  
+  .dialog button:nth-of-type(2){
     position: absolute;
     top: 50%;
     left: 4%;
@@ -68,11 +69,10 @@
   }
 
 
-  & button:nth-of-type(3){
+  .dialog button:nth-of-type(3){
     position: absolute;
     top: 50%;
     right: 4%;
     z-index: 2;
-  }
   }
 }

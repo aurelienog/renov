@@ -5,58 +5,56 @@
   gap: 0.5rem;
   grid-template-columns: auto 1fr;
   align-items: center;
+}
 
-  & label {
-    display: flex;
-    align-items: center;
-    gap: 0.5em;
-    font-weight: var(--fw-bold);
-    width: 100%;
-  }
+.filter label {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  font-weight: var(--fw-bold);
+  width: 100%;
+}
   
-  & select {
-    overflow-x: hidden;
-    padding-inline-start: 0.8em;
-    width: 100%;
-    border: none;
-    font: inherit;
-    color: black;
-    border-radius: var(--border-radius);
-    appearance: none;
-    background-color: #F1F0EF;
-  }
+.filter select {
+  overflow-x: hidden;
+  padding-inline-start: 0.8em;
+  width: 100%;
+  border: none;
+  font: inherit;
+  color: black;
+  border-radius: var(--border-radius);
+  appearance: none;
+  background-color: #F1F0EF;
 }
 
 .wrapper {
   columns: 3 20rem;
   gap: 1rem;
-  
+} 
 
-  & li {
+.wrapper li {
     list-style-type: none;
     margin: auto;
   }
 
-  & img {
-    display: block;  /* reset margen */
-    border-radius: var(--border-radius);
-    cursor:zoom-in;
-    transition: transform 300ms ease-in-out;
-      width: 100%;
-      height: auto;
-      transition: transform 0.4s ease, filter 0.4s ease;
+.wrapper img {
+  display: block;  /* reset margen */
+  border-radius: var(--border-radius);
+  cursor:zoom-in;
+  transition: transform 300ms ease-in-out;
+  width: 100%;
+  height: auto;
+  transition: transform 0.4s ease, filter 0.4s ease;
+} 
 
-      &:focus {
-        outline: 3px solid var(--color-secondary);
-        outline-offset: 4px;
-        border-radius: 0.5rem;
-      }
-  } 
+.wrapper img:focus {
+  outline: 3px solid var(--color-secondary);
+  outline-offset: 4px;
+  border-radius: 0.5rem;
 }
 
-
 @media(min-width: 567px) {
-  & form {
+  .filter {
     position: relative;
     max-width: fit-content;
   }
@@ -68,5 +66,3 @@
     filter: brightness(0.7); 
   }
 }
-
-

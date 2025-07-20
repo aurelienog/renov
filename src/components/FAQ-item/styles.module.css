@@ -7,46 +7,46 @@
   height: 2.7lh;
   overflow: hidden;
   transition: height 0.5s ease-in-out;
-  
-  &:last-of-type{
-    height: 2lh;
-  }
-
-  & > div {
-    padding: 0 0.5em ;
-  }
-
-  &[open] {
-    height: max-content;
-    
-  }
-
-
-  & summary {
-    padding-inline: 0.5lh;
-    margin-bottom: 0.5lh;
-    line-height: 1.3;
-    list-style-position: outside;
-    font-weight: 700;
-    cursor: pointer;
-  }
-
-  & summary::marker {
-    color: var(--color-secondary);
-  }
-
-  & ul {
-    margin-bottom: 1em;
-  }
 }
+
+.details:last-of-type{
+  height: 2lh;
+}
+
+.details > div {
+  padding: 0 0.5em ;
+}
+
+.details[open] {
+  height: max-content;  
+}
+
+
+.details summary {
+  padding-inline: 0.5lh;
+  margin-bottom: 0.5lh;
+  line-height: 1.3;
+  list-style-position: outside;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.details summary::marker {
+  color: var(--color-secondary);
+}
+
+.details ul {
+  margin-bottom: 1em;
+}
+
 
 @media(min-width: 590px) {
   .details {
     padding: 0.5em;
     height: 2lh;
-
-    & summary {
-      margin-inline-start: 1.2lh;
-    }
   }
+  .details summary {
+    margin-inline-start: 1.2lh;
+  }
+  
 }

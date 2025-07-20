@@ -1,11 +1,12 @@
 .wrapper {
   margin: 4em auto;
   width: 50%;
-
-  & h2 {
-    margin-bottom: 20px;
-  }
 }
+
+.wrapper h2 {
+  margin-bottom: 20px;
+}
+
 
 /* First letter */
 .a {

@@ -8,30 +8,29 @@
   font-size: 2.5rem;
   font-weight: var(--fw-semi-bold);
   padding: clamp(2%, 2vw, 10%);
-
-  & q::before {
-    content: '“';
-    font-family: serif;
-    font-weight: 900;
-    font-size: 5lh;
-    position: absolute;
-    color: var(--color-secondary);
-    /* opacity: 0.6; */
-    top: -150px;
-    left: -0.1rem;
-    z-index: -1;
-    }
-  
-    & q::after {
-    content: '”';
-    font-family: serif;
-    font-weight: 900;
-    right: -0.1rem;
-    font-size: 5lh;
-    position: absolute;
-    color: var(--color-secondary);
-    /* opacity: 0.6; */
-    z-index: -1;
-    bottom: -250px;
-    }
 }
+
+.isolation q::before {
+  content: '“';
+  font-family: serif;
+  font-weight: 900;
+  font-size: 5lh;
+  position: absolute;
+  color: var(--color-secondary);
+  top: -150px;
+  left: -0.1rem;
+  z-index: -1;
+}
+  
+.isolation q::after {
+  content: '”';
+  font-family: serif;
+  font-weight: 900;
+  right: -0.1rem;
+  font-size: 5lh;
+  position: absolute;
+  color: var(--color-secondary);
+  z-index: -1;
+  bottom: -250px;
+}
+

@@ -11,9 +11,8 @@
   backdrop-filter: blur(10px);
   /* box-shadow: 0 2px 10px rgba(0,0,0,0.05);
   border: 1px solid rgba(255,255,255,0.2); */
-
-  & > a:focus {
-    border: solid 1px bla ck;
-    offset: -10px;
-  }
+}
+.header > a:focus {
+  border: solid 1px bla ck;
+  offset: -10px;
 }

@@ -9,40 +9,37 @@
   text-align: center;        
 }
 
-
 .card {
   position: relative;
   width: 100%;
   height: auto;
   background-color: var(--background);
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-
-
-  & img {
-    cursor: pointer;
-    width: 100%;
-    height: auto;
-    aspect-ratio: 1;
-    object-fit: cover;
-    display: block;
-  }
-
-  & h3 {
-    padding: 0.7em;
-    font-size: 1.225rem;
-  }
-
-
-  :is(&:focus-within) {
-    text-decoration-color : var(--color-secondary);
-    outline: 4px solid var(--color-secondary);
-    margin-bottom: 1px;
-  }
 }
 
+.card img {
+  cursor: pointer;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  display: block;
+}
+
+.card h3 {
+  padding: 0.7em;
+  font-size: 1.225rem;
+}
+
+
+.card :is(&:focus-within) {
+  text-decoration-color : var(--color-secondary);
+  outline: 4px solid var(--color-secondary);
+  margin-bottom: 1px;
+}
+
+
 @media (min-width: 990px) {
-
-
   .gallery {
     --image-size: calc(150px - 1.5rem / 2);
     grid-template-columns: repeat(6, var(--image-size));
@@ -51,31 +48,44 @@
   }
   
   .card {
+    max-width: 300px;
     grid-column: span 2;
     border-radius: .5rem;
     clip-path: path('M 120 30 C 150 0 150 0 180 30 C 210 60 240 90 270 120 C 300 150 300 150 270 180 C 240 210 210 240 180 270 C 150 300 150 300 120 270 C 90 240 60 210 30 180 C 0 150 0 150 30 120 Z');
-
-      &:nth-of-type(4) {
-      grid-column: 2 / span 2;
-    }
-    
-  &:focus-within {
-      outline: 8px solid var(--color-secondary);
-      outline-offset: 2.4em;
-      z-index: 20;
-    }
-
-    &:hover {
-      animation: bounceIn 0.4s ease forwards;
-      z-index: 100;
-      outline: none;
-    }
-  
-    &:not(:hover) {
-      animation: bounceOut 0.4s ease-out forwards;
-    }
-
   }
+  .card:nth-of-type(4) {
+    grid-column: 2 / span 2;
+  }
+    
+  .card:focus-within {
+    outline: 8px solid var(--color-secondary);
+    outline-offset: 2.4em;
+    z-index: 20;
+  }
+
+  .card:hover {
+    animation: bounceIn 0.4s ease forwards;
+    z-index: 100;
+    outline: none;
+  }
+  
+  .card:not(:hover) {
+    animation: bounceOut 0.4s ease-out forwards;
+  }
+
+  .card h3 {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0.5rem 2.6rem;
+    width: 100%;
+    margin: 0;
+    font-size: 1.625rem;
+  }
+  
+  
 /*   
   
   .gallery:hover > img {
@@ -103,28 +113,11 @@
     align-items: center;
     justify-content: center;
     pointer-events: none; /* evita bloquear hover */
-    &:focus-within {
-      outline: var(--focus-outline-xl);
-    }
+  }  
+  
+  .overlay:focus-within {
+    outline: var(--focus-outline-xl);
   }
-  
-  .card {
-    max-width: 300px;
-  
-    & h3 {
-    color: white;
-    text-align: center;
-    font-weight: bold;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 0.5rem 2.6rem;
-    width: 100%;
-    margin: 0;
-    font-size: 1.625rem;
-  }
-  
-  }
-  
   
   /*  filter: brightness(1) saturate(1.5);
       
