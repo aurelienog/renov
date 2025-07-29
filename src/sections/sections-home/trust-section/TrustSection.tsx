@@ -8,7 +8,7 @@ import { statistics } from '@/data/data';
 function TrustSection(): JSX.Element {
 
   return (
-    <section className={`full-width ${styles.section}`}>
+    <section id="trust" className={`full-width ${styles.section}`}>
       {statistics.map((stat: TrustStatistic, index: number) => (
         <article key={index} className={styles.article}>
           {Array.isArray(stat.icon) ? (

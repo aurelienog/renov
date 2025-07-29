@@ -8,7 +8,7 @@ import Link from 'next/link';
 function ProjectsSection(): JSX.Element {
 
   return (
-    <section className={`full-width ${styles.section}`}>
+    <section id="projects" className={`full-width ${styles.section}`}>
       <h2>Travaux récents</h2>  
       <Suspense fallback={<Loader/>}>
         <SliderWrapper lastProjects={lastProjects}/>

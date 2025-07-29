@@ -7,7 +7,7 @@ import { fadeInRight } from '@/animations/variants';
 
 function ServicesSection(): JSX.Element {
   return (
-    <section className={`section full-width ${styles.section}`}>
+    <section id="services" className={`section full-width ${styles.section}`}>
       <MotionInView
       once={true}
       variants={fadeInRight}

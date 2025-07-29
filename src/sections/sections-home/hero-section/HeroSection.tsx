@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 function HeroSection(): JSX.Element  {
   return (
-    <section className={`full-width ${styles.hero}`}>
+    <section id="hero" className={`full-width ${styles.hero}`}>
       <div aria-hidden="true" className={styles.clip}></div>
       <BackgroundImage image={heroImage} overlay={true}/>
       <article className={`${styles.info}`}>

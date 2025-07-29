@@ -8,7 +8,7 @@ import Loader from '@/app/(root)/loading';
 
 function FAQSection(): JSX.Element {
   return (
-    <section className={`section ${styles.section}`}>
+    <section id="faq" className={`section ${styles.section}`}>
       <MotionInView
       variants={staggerContainer}
       once = {true}

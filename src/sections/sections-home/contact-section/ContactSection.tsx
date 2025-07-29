@@ -5,7 +5,7 @@ import styles from '@/sections/sections-home/contact-section/styles.module.css';
 
 function ContactSection() {
   return (
-    <section className={`${styles.section} section`}>
+    <section id="contact" className={`${styles.section} section`}>
       <h2>Me contacter</h2>
         <Suspense fallback={<Loader/>}>
           <ContactForm/>
