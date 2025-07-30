@@ -8,8 +8,8 @@ import texture from '@/../public/assets/images/backgroundWood.webp'
 function Landing(): JSX.Element {
 
   return (
-    <section className={`full-width base-layout ${styles.section}`}>
-      <h1>Une histoire de famille</h1>
+    <section aria-labelledby='about-landing' className={`full-width base-layout ${styles.section}`}>
+      <h1 id="about-landing">Une histoire de famille</h1>
       <LettersReveal/>
       <BackgroundImage image={texture}/> 
     </section>

@@ -8,8 +8,8 @@ import palette from '@/../public/assets/icons/palette.svg';
 
 function BenefitsSection(): JSX.Element {
   return (
-    <section className={`section breakout ${styles.section}`}>
-      <h2>Ce qui me distingue</h2>
+    <section aria-labelledby='why-us' className={`section breakout ${styles.section}`}>
+      <h2 id="why-us">Ce qui me distingue</h2>
       <ul>
           <li>
             <Image src={userCheck} alt='' width={44} height={44}/>

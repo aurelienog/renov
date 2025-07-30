@@ -9,7 +9,7 @@ function Quote(): JSX.Element {
     variants={fadeInUp}
     once={true}
     className={`full-width ${styles.isolation}`}>
-      <q>C{`'`}est sur les chantiers que j{`'`}ai appris le métier, aux côtés de mon père.</q>
+      <q id="quote">C{`'`}est sur les chantiers que j{`'`}ai appris le métier, aux côtés de mon père.</q>
     </MotionInView>
   )
 }

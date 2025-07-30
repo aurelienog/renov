@@ -5,9 +5,9 @@ import Image from 'next/image';
 
 function StorySection(): JSX.Element {
   return (
-    <section className={`breakout section ${styles.section}`}>
+    <section aria-labelledby='our-story' className={`breakout section ${styles.section}`}>
       <article>
-        <h2>Une passion transmise de père en fils</h2>
+        <h2 id="our-story">Une passion transmise de père en fils</h2>
         <p>Depuis tout jeune, j{`'`}ai grandi dans l{`'`}univers des pinceaux, des enduits et des finitions parfaites.</p>  
         <p>Mon père, chef d{`'`}entreprise dans le batiment, m{`'`}a transmis plus qu{`'`}un savoir-faire : <span className='highlight'>une véritable exigence du travail bien fait</span>.
         </p>  
