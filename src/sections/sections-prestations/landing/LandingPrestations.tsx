@@ -7,8 +7,8 @@ import styles from '@/sections/sections-prestations/landing/styles.module.css';
 
 function LandingPrestations() {
   return (
-    <section className={`breakout ${styles.section}`}>
-      <h1>Mes Prestations</h1>
+    <section aria-labelledby='prestations-accueil' className={`breakout ${styles.section}`}>
+      <h1 id="prestations-accueil">Mes Prestations</h1>
       <p>Chaque chantier est unique, mais le soin apporté reste le même.</p>
       <p>Voici un aperçu des prestations proposées, pensées pour répondre aux besoins les plus courants de mes clients.</p>
       <Suspense fallback={<Loader/>}>

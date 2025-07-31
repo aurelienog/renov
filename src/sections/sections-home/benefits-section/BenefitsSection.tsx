@@ -10,8 +10,8 @@ import { columns } from '@/data/data';
 function BenefitsSection(): JSX.Element {
 
   return (
-    <section id="comparison" className={`full-width base-layout section ${styles.benefits}`}>
-      <h2>Quel professionnel choisir?</h2>
+    <section aria-labelledby="comparatif" className={`full-width base-layout section ${styles.benefits}`}>
+      <h2 id="comparatif">Quel professionnel choisir?</h2>
       <p>Chaque prestataire dispose de ses propres forces et contraintes. Comparer ses options est essentiel pour faire le bon choix.</p>
       <MotionInView 
       once= {true}

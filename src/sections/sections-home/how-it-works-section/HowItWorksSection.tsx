@@ -11,8 +11,8 @@ import { fadeInLeft } from '@/animations/variants';
 function HowItWorksSection(): JSX.Element {
 
   return (
-    <section id="how-it-works" className={`section breakout ${styles.section}`}>
-      <MotionInView variants={fadeInLeft} once={true}><h2>Le processus</h2></MotionInView>
+    <section aria-labelledby='processus' className={`section breakout ${styles.section}`}>
+      <MotionInView variants={fadeInLeft} once={true}><h2 id="processus">Le processus</h2></MotionInView>
       <Suspense fallback={<Loader/>}>
         <TimelineWrapper workSteps={workSteps} />
       </Suspense>

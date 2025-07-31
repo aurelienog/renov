@@ -7,8 +7,8 @@ import ProjectsGalleryWrapper from '@/components/projects-gallery/ProjectsGaller
 
 function LandingRealisations({ filteredProjects }: { filteredProjects: Project[]}) {
   return (
-    <section className={`${styles.section} breakout section`}>
-      <h1>Mes réalisations</h1>
+    <section aria-labelledby='realisations-accueil' className={`${styles.section} breakout section`}>
+      <h1 id="realisations-accueil">Mes réalisations</h1>
       <GalleryFilter/>
       <ProjectsGalleryWrapper projects={filteredProjects}/>
       <ScrollToTopButton/>

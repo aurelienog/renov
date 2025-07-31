@@ -6,8 +6,8 @@ import Loader from '@/app/(root)/loading';
 
 function BeforeAfterSection(): JSX.Element {
   return (
-    <section id="before-after" className={`section full-width ${styles.section}`} >
-      <h2>Avant / Après</h2>
+    <section aria-labelledby="avant-apres" className={`section full-width ${styles.section}`} >
+      <h2 id="avant-apres">Avant / Après</h2>
       <Suspense fallback={<Loader/>}>
         <ParallaxSliderWrapper comparisons={ beforeAfterPhotos } />
       </Suspense>

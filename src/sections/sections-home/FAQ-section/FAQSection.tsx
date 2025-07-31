@@ -8,12 +8,12 @@ import Loader from '@/app/(root)/loading';
 
 function FAQSection(): JSX.Element {
   return (
-    <section id="faq" className={`section ${styles.section}`}>
+    <section aria-labelledby="faq" className={`section ${styles.section}`}>
       <MotionInView
       variants={staggerContainer}
       once = {true}
       >
-        <h2>Questions fréquentes</h2>
+        <h2 id="faq">Questions fréquentes</h2>
         <Suspense fallback={<Loader/>}>
         { faqEntries.map((entry, index )=> (
           <FAQItem key={index} entry={entry}/>
