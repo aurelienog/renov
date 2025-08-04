@@ -218,51 +218,51 @@ export const projects: Project[] = [
 {
     image: solsSol1,
     service: 'sol',
-    description: ''
+    description: "Parquet en bois clair, collé en pose droite."
   }, {
     image: solsSol2,
     service: 'sol',
-    description: ''
+    description: "Sol en parquet collé, pose droite. Parquet en bois clair apportant luminosité et douceur à la pièce. Pose précise, alignement impeccable des lames."
   }, {
     image: solsParquetColle1,
     service: 'sol',
-    description: ''
+    description: "Sol en parquet collé, pose droite. Les lames sont parfaitement alignées, sans espacement visible entre elles. Travail précis et soigné."
   },   {
     image: solsParquetColle2,
     service: 'sol',
-    description: ''
+    description: "Sol en parquet collé, pose droite. De couleur brun, le parquet donne une impression de chaleur et d'élégance à la pièce."
   }, {
     image: solsParquetColle3,
     service: 'sol',
-    description: ''
+    description: 'Sol en parquet collé, pose droite. Parquet brun au rendu élégant, chaleureux, avec des lames parfaitement alignées et une pose soignée.'
   }, {
     image: solsParquetFlottant1,
     service: 'sol',
-    description: ''
+    description: 'Parquet flottant en bois clair, pose droite. Finition élégante et uniforme, lames bien ajustées pour un rendu harmonieux.'
   }, {
     image: solsParquetFlottant2,
     service: 'sol',
-    description: ''
+    description: 'Sol en parquet flottant, bois clair. Pose droite soignée avec un alignement précis des lames, offrant une ambiance douce et moderne.'
   }, {
     image: solsParquetFlottant3,
     service: 'sol',
-    description: ''
+    description: "Parquet flottant clair, installé en pose droite. Lames sans défauts d'espacement, travail net et professionnel."
   }, {
     image: solsParquetStratifie1,
     service: 'sol',
-    description: ''
+    description: 'Parquet stratifié blanc, pose flottante droite. Lames bien alignées, rendu lumineux et contemporain.'
   }, {
     image: solsParquetStratifie2,
     service: 'sol',
-    description: ''
+    description: 'Sol en parquet stratifié blanc, pose droite précise. Finition lisse et uniforme, parfait pour un intérieur épuré.'
   }, {
     image: solsParquetStratifie3,
     service: 'sol',
-    description: ''
+    description: 'Parquet stratifié clair, teinte blanche. Pose flottante impeccable, lames jointives pour un effet visuel net et soigné.'
   }, {
     image: solsParquetStratifie4,
     service: 'sol',
-    description: ''
+    description: 'Parquet stratifié blanc en pose droite. Aspect propre et lumineux, lames parfaitement ajustées pour un rendu élégant et moderne.'
   }, 
 
   // boiseries
