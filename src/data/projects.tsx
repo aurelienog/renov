@@ -195,23 +195,23 @@ export const projects: Project[] = [
   {
     image: mursPapierPeint1,
     service: 'mur',
-    description: ''
+    description: "Chambre récemment rénovée avec un mur habillé d'un papier peint imitation brique gris clair, apportant du caractère à l'espace. Les autres murs sont peints en rose pâle, créant une ambiance douce et contemporaine."
   }, {
     image: mursPapierPeint2,
     service: 'mur',
-    description: ''
+    description: "Vue d'angle sur une chambre rénovée, mettant en valeur le contraste entre le mur en papier peint imitation brique gris clair et les murs rose pâle. Ambiance moderne et apaisante."
   }, {
     image: mursPapierPeintChambre,
     service: 'mur',
-    description: ''
+    description: 'Papier peint beige clair à motif géométrique en relief, pose soignée avec raccords parfaits, texture mise en valeur par la lumière.'
   }, {
     image: mursPapierPeintLiving,
     service: 'mur',
-    description: ''
+    description: 'Papier peint beige clair à motif linéaire évoquant des herbes hautes stylisées. Pose soignée, sans défauts visibles, avec un alignement régulier du motif.'
   }, {
     image: mursToile,
     service: 'mur',
-    description: ''
+    description: 'Kitchenette avec murs recouverts de toile de verre. Revêtement posé proprement, surface uniforme et finitions soignées'
   },
 
   // sols
