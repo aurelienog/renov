@@ -89,35 +89,55 @@ export const projects: Project[] = [
   {
     image: interieurEntreeCouloir1,
     service: 'interieur',
-    description: ''
+    description: 'Couloir aux murs bleu-gris pâle avec moulures blanches, créant une ambiance élégante et sophistiquée grâce à des éléments de style classique.'
   }, {
     image: interieurEntreeCouloir2,
     service: 'interieur',
-    description: ''
+    description: "Vue d'un autre angle du couloir aux murs bleu-gris pâle et moulures blanches. Les lignes classiques et les tons doux renforcent l'élégance de l'espace."
   }, {
     image: interieurEntreeCouloir3,
     service: 'interieur',
+    description: 'Autre perspective du couloir, mettant en valeur le contraste subtil entre les murs bleu-gris et les moulures blanches, dans une ambiance sobre et raffinée.'
+  }, {
+    image: interieurHor,
+    service: 'interieur',
     description: ''
   }, {
-    image: interieurVertical,
+    image: interieurChambreEnfants1,
+    service: 'interieur',
+    description: ''
+  }, {
+    image: interieurChambreEnfants2,
+    service: 'interieur',
+    description: ''
+  }, {
+    image: interieurPeintureBureau1,
+    service: 'interieur',
+    description: ''
+  }, {
+    image: interieurPeintureBureau2,
     service: 'interieur',
     description: ''
   }, {
     image: interieurPeintureSDB1,
     service: 'interieur',
+    description: 'Salle de bain contemporaine avec un meuble vasque peint dans le même ton rose poudré que les murs. Une arche peinte en blanc encadre élégamment le miroir, créant un contraste subtil et raffiné.'
+  }, {
+    image: interieurPeintureSDB,
+    service: 'interieur',
     description: ''
   }, {
     image: interieurPeintureSDB2,
     service: 'interieur',
-    description: ''
+    description: "Autre vue d'une salle de bain contemporaine où le meuble vasque se fond dans les murs rose poudré. L'arche blanche autour du miroir apporte contraste et élégance."
   }, {
     image: interieurChambreDeco1,
     service: 'interieur',
-    description: ''
+    description: 'Chambre récemment rénovée. Le mur principal, peint en taupe, est habillé de tasseaux en relief formant un motif géométrique élégant.'
   }, {
     image: interieurChambreDeco2,
     service: 'interieur',
-    description: ''
+    description: 'Chambre récemment rénovée. Les murs sont gris clair, et le plafond blanc renforce la luminosité. Le sol est en parquet imitation bois clair, ajoutant une touche chaleureuse.'
   }, {
     image: interieurChambreDeco3,
     service: 'interieur',
@@ -128,26 +148,6 @@ export const projects: Project[] = [
     description: ''
   }, {
     image: interieurChambreDeco5,
-    service: 'interieur',
-    description: ''
-  },   {
-    image: interieurChambreEnfants1,
-    service: 'interieur',
-    description: ''
-  }, {
-    image: interieurChambreEnfants2,
-    service: 'interieur',
-    description: ''
-  }, {
-    image: interieurHor,
-    service: 'interieur',
-    description: ''
-  }, {
-    image: interieurPeintureBureau1,
-    service: 'interieur',
-    description: ''
-  }, {
-    image: interieurPeintureBureau2,
     service: 'interieur',
     description: ''
   }, {
@@ -171,6 +171,10 @@ export const projects: Project[] = [
     service: 'interieur',
     description: ''
   }, {
+    image: interieurVertical,
+    service: 'interieur',
+    description: "Pièce aux murs peints en blanc, finition légèrement satinée qui capte subtilement la lumière du jour, apportant clarté et douceur à l'espace."
+  }, {
     image: interieurPeintureOffice3,
     service: 'interieur',
     description: ''
@@ -178,11 +182,7 @@ export const projects: Project[] = [
     image: interieurPeintureOffice4,
     service: 'interieur',
     description: ''
-  }, {
-    image: interieurPeintureSDB,
-    service: 'interieur',
-    description: ''
-  },
+  }, 
 
   // extérieur
   {
