@@ -13,14 +13,14 @@ function Footer(): JSX.Element {
 
       <article itemScope itemType="http://schema.org/Organization">
         <h2>Siège social:</h2>
-        <p><span itemProp="name">Renov</span></p> 
+        <p><span itemProp="name">A.N.J. RENOV</span></p> 
         <p itemProp="address" itemScope itemType="http://schema.org/PostalAddress">
-          <span itemProp='streetAddress'>6 rue Exemple</span><br></br>
-          <span itemProp="postalCode">75000</span>
-          <span itemProp="addressLocality"> Paris</span> 
+          <span itemProp='streetAddress'>99 Boulevard de la Reine</span><br></br>
+          <span itemProp="postalCode">78000</span>
+          <span itemProp="addressLocality"> Versailles</span> 
         </p>
         <address itemProp="contactPoint" itemScope itemType="http://schema.org/ContactPoint">
-          <span itemProp="email">contact@renov.fr</span>
+          <span itemProp="email">contact@anj-renov.fr</span>
           <span itemProp="telephone">+33 1 00 00 00 00</span>  
         </address>
       </article>

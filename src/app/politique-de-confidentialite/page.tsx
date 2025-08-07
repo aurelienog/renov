@@ -55,15 +55,15 @@ function confidentialityPage(): JSX.Element {
               <li>Un droit de suppression : Vous pouvez demander la suppression de vos informations.</li>
               <li>Un droit d{"'"}opposition : Vous pouvez refuser l{"'"}utilisation de vos données.</li>
             </ul>
-            <address>Pour exercer vos droits, contactez-nous à contact@renov.fr</address>
+            <address>Pour exercer vos droits, contactez-nous à contact@anj-renov.fr</address>
           </li>
           <li>
             <h2>6{')'}  Contact</h2>
             <p>Pour toute question sur cette politique de confidentialité ou l{"'"}exercice de vos droits, vous pouvez nous contacter :</p>
             <address>
-              Email : [adresse mail]
+              Email : contact@anj-renov.fr
               <br></br>Téléphone : [tel]
-              <br></br>Adresse : [adresse]
+              <br></br>Adresse : 99 Boulevard de la Reine 78000 Versailles
             </address>
           </li>
         </ol>

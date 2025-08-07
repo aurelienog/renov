@@ -32,6 +32,7 @@
 .footer article > address{
     font-style: normal;
     grid-area: address;
+    text-transform: lowercase;
   }
 
 .footer > :first-child {
@@ -41,6 +42,7 @@
 
 .footer article:nth-child(2) {
     grid-area: address;
+    text-transform: capitalize;
   }
 
 .footer article:nth-child(3) {
