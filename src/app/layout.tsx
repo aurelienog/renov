@@ -17,8 +17,58 @@ const nunito = Nunito({
 });
 
 export const metadata: Metadata = {
-  title: "Renov",
-  description: "Site peintre",
+  title: " A.N.J. RENOV - Artisan Peintre & Rénovation dans les Yvelines et le Val d'Oise",
+  description: "ANJ Renov propose des services professionnels de peinture et rénovation pour maisons et entreprises dans les Yvelines et le Val d'Oise. Qualité artisanale, prix justes et résultats impeccables.",
+  keywords: [
+    "peinture",
+    "artisan peintre",
+    "rénovation",
+    "travaux",
+    "Yvelines",
+    "Val d'Oise",
+    "ANJ Renov",
+    "peintre Yvelines",
+    "peintre Val d'Oise",
+    "artisan Yvelines",
+    "artisan Val d'Oise",
+    "enduits décoratifs", 
+    "peintures à effet",
+    "revêtements muraux",
+    "revêtements de sol",
+    "rénovation de boiseries",
+    "boiseries",
+    "papier peint",
+    "peinture intérieure",
+    "peinture extérieure"
+  ],
+  metadataBase: new URL("https://renov-three.vercel.app"),
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "A.N.J. RENOV - Artisan Peintre & Rénovation dans les Yvelines et le Val d'Oise",
+    description:
+      "Peinture et rénovation professionnelle pour maisons et entreprises dans les Yvelines et le Val d'Oise. Qualité artisanale garantie.",
+    url: "/",
+    siteName: "ANJ RENOV",
+    images: [
+      {
+        url: "/assets/images/preview.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "ANJ Renov peinture et rénovation",
+      },
+    ],
+    locale: "fr_FR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "A.N.J. RENOV - Artisan Peintre & Rénovation",
+    description:
+      "Services professionnels de peinture et rénovation dans les Yvelines et le Val d'Oise. Qualité et expertise garanties.",
+    images: ["/assets/images/preview.jpeg"],
+  },
 };
 
 export default function RootLayout({

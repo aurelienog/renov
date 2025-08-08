@@ -13,7 +13,7 @@ function confidentialityPage(): JSX.Element {
         <ol>
           <li>
             <h2>1{')'} Collecte des données personnelles</h2>
-            <p>Lorsque vous utilisez notre site RENOV, nous pouvons collecter les informations suivantes via nos formulaires :</p>
+            <p>Lorsque vous utilisez notre site A.N.J. RENOV, nous pouvons collecter les informations suivantes via nos formulaires :</p>
             <ul>
               <li>Nom et prénom</li>
               <li>Adresse e-mail</li>

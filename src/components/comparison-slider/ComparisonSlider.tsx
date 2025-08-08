@@ -36,7 +36,7 @@ function ComparisonSlider({ before, after, name, descriptionBefore, descriptionA
   const safeName = name.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]/g, '');
 
   return (
-    <article className={styles.wrapper} aria-labelledby={`slider-title-${safeName}`} role="group">
+    <article className={styles.wrapper} aria-labelledby={`slider-title-${safeName}`}>
       <h3 id={`slider-title-${safeName}`} className='visually-hidden'>Comparaison avant-après {name}. Avant : {descriptionBefore}; Après : {descriptionAfter}</h3>
       <figure
         ref={containerRef}

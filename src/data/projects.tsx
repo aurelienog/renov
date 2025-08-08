@@ -101,7 +101,7 @@ export const projects: Project[] = [
   }, {
     image: interieurHor,
     service: 'interieur',
-    description: ''
+    description: "Entrée spacieuse aux murs bleu-gris. Un grand miroir au centre est entouré d'un cadre sculpté peint en blanc. Des boiseries blanches ornées soulignent élégamment le bas des murs."
   }, {
     image: interieurChambreEnfants1,
     service: 'interieur',
@@ -125,7 +125,7 @@ export const projects: Project[] = [
   }, {
     image: interieurPeintureSDB,
     service: 'interieur',
-    description: ''
+    description: 'Salle de bain avec meuble vasque rose poudré et mur habillé de carreaux blancs.'
   }, {
     image: interieurPeintureSDB2,
     service: 'interieur',
@@ -133,7 +133,7 @@ export const projects: Project[] = [
   }, {
     image: interieurChambreDeco1,
     service: 'interieur',
-    description: 'Chambre récemment rénovée. Le mur principal, peint en taupe, est habillé de tasseaux en relief formant un motif géométrique élégant.'
+    description: 'Chambre rénovée avec un mur en tasseaux peint en taupe, les autres murs en gris clair et parquet immitation bois.'
   }, {
     image: interieurChambreDeco2,
     service: 'interieur',
@@ -141,15 +141,15 @@ export const projects: Project[] = [
   }, {
     image: interieurChambreDeco3,
     service: 'interieur',
-    description: ''
+    description: 'Chambre rénovée aux murs gris clair et parquet immitation bois.'
   }, {
     image: interieurChambreDeco4,
     service: 'interieur',
-    description: ''
+    description: "Chambre rénovée avec un mur en tasseaux peint en taupe, les autres murs en gris clair."
   }, {
     image: interieurChambreDeco5,
     service: 'interieur',
-    description: ''
+    description: 'Chambre récemment rénovée. Le mur principal, peint en taupe, est habillé de tasseaux en relief formant un motif géométrique élégant.'
   }, {
     image: interieurPeintureLiving1,
     service: 'interieur',
@@ -157,7 +157,7 @@ export const projects: Project[] = [
   }, {
     image: interieurPeintureLiving2,
     service: 'interieur',
-    description: ''
+    description: 'Salon avec murs fraîchement repeints en blanc et poutres apparentes peintes en gris clair.'
   }, {
     image: interieurPeintureLiving3,
     service: 'interieur',
@@ -356,14 +356,6 @@ export const projects: Project[] = [
   },
   // autre
   {
-    image: autreDressing1,
-    service: 'autre',
-    description: `Photo d'un aménagement intérieur sur mesure. Des meubles, bleu foncé, sont intégrés dans un petit espace. On distingue un bureau, une partie armoire et un espace rangement. La disposition est optimisée selon l'espace.`
-  }, {
-    image: autreDressing2,
-    service: 'autre',
-    description: `Photo d'un aménagement intérieur sur mesure. Des meubles aux couleurs bleu foncé et bois clair sont disposés dans une pièce. On observe un bureau, des armoires murales et une disposition optimisant l'espace.`
-  }, {
     image: autreMeuble1,
     service: 'autre',
     description: `Meuble sur mesure en bois clair, en phase de construction. On aperçoit une structure à deux niveaux avec des étagères et des fixations apparentes.`
@@ -375,5 +367,13 @@ export const projects: Project[] = [
     image: autreMeuble3,
     service: 'autre',
     description: 'Placard mural fait sur mesure, peint en couleur rose pâle, avec un design géométrique composé de lignes et de formes rectangulaires.'
-  },
+  }, {
+    image: autreDressing1,
+    service: 'autre',
+    description: `Photo d'un aménagement intérieur sur mesure. Des meubles, bleu foncé, sont intégrés dans un petit espace. On distingue un bureau, une partie armoire et un espace rangement. La disposition est optimisée selon l'espace.`
+  }, {
+    image: autreDressing2,
+    service: 'autre',
+    description: `Photo d'un aménagement intérieur sur mesure. Des meubles aux couleurs bleu foncé et bois clair sont disposés dans une pièce. On observe un bureau, des armoires murales et une disposition optimisant l'espace.`
+  }
 ]
