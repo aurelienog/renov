@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     "peinture intérieure",
     "peinture extérieure"
   ],
-  metadataBase: new URL("https://www.anjrenov.com"),
+  metadataBase: new URL("https://anj-renov.vercel.app/"),
   alternates: {
     canonical: "/",
   },
