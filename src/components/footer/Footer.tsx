@@ -31,7 +31,7 @@ function Footer(): JSX.Element {
           <li><Link href="/">Accueil</Link></li>
           <li><Link href="/prestations">Prestations</Link></li>
           <li><Link href="/realisations">Realisations</Link></li>
-          <li><Link href="/about">À propos</Link></li>
+          <li><Link href="/a-propos">À propos</Link></li>
           <li><Link href="/politique-de-confidentialite">Politique de confidentialité</Link></li>
           <li><Link href="/mentions-legales">Mentions légales</Link></li>   
         </ul>

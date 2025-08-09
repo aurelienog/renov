@@ -7,6 +7,11 @@ import styles from "./page.module.css"
 import { JSX } from 'react';
 import QuoteSection from "@/sections/sections-about/quote-section/QuoteSection";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "À Propos"
+}
 
 export default function About(): JSX.Element {
   return (

@@ -1,6 +1,11 @@
 import LandingRealisation from '@/sections/sections-realisations/LandingRealisations';
 import React from 'react';
 import { projects } from '../../data/projects';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Mes Réalisations"
+}
 
 async function page({ searchParams }: { 
   searchParams: Promise< {service?: string}>

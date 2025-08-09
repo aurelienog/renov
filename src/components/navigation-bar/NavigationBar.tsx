@@ -45,7 +45,7 @@ function NavigationBar({ containerRef, logo }: { logo: StaticImageData, containe
           <Link href={"/realisations"}>Realisations</Link>
         </li>
         <li onClick={() => setOpen(false)}>
-          <Link href={"/about"}>À propos</Link>
+          <Link href={"/a-propos"}>À propos</Link>
         </li>
         <li onClick={() => setOpen(false)}>
           <Link href={"/#contact"} className='button'>Devis gratuit</Link>

@@ -1,5 +1,10 @@
 import React, { JSX } from 'react';
 import styles from './page.module.css';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Politique De Confidentialité"
+}
 
 function confidentialityPage(): JSX.Element {
   return (

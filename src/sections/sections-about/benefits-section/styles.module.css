@@ -1,10 +1,9 @@
-.section h2 {
+.section h2, .section h3 {
   text-align: center;
 }
   
 .section ul {
-  padding: 2rem;
-  --grid-min-colum-size: 300px;
+  --grid-min-colum-size: 250px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(var(--grid-min-colum-size), 100%), 1fr));
   gap: 2em;
@@ -23,7 +22,8 @@
 }
 
 .section li p {
-  margin-top: 0;
+  margin-top: 1em;
+  padding: 0;
 }
 
 @media (min-width: 1000px) and (max-width: 1440px) {
@@ -33,8 +33,8 @@
 }
 
 @media (width < 700px) {
-  .section ul {
-    gap: 4em
+  .section li {
+    margin-top: 2em
   }
 }
 

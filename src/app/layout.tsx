@@ -17,7 +17,10 @@ const nunito = Nunito({
 });
 
 export const metadata: Metadata = {
-  title: " A.N.J. RENOV - Artisan Peintre & Rénovation dans les Yvelines et le Val d'Oise",
+  title: {
+    default: "A.N.J. RENOV - Artisan Peintre & Rénovation - Yvelines & Val d'Oise",
+    template: "%s - A.N.J. RENOV - Artisan Peintre & Rénovation" 
+  },
   description: "ANJ Renov propose des services professionnels de peinture et rénovation pour maisons et entreprises dans les Yvelines et le Val d'Oise. Qualité artisanale, prix justes et résultats impeccables.",
   keywords: [
     "peinture",
@@ -41,7 +44,7 @@ export const metadata: Metadata = {
     "peinture intérieure",
     "peinture extérieure"
   ],
-  metadataBase: new URL("https://renov-three.vercel.app"),
+  metadataBase: new URL("https://www.anjrenov.com"),
   alternates: {
     canonical: "/",
   },

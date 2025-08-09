@@ -1,5 +1,10 @@
 import React, { JSX } from 'react';
 import styles from "../politique-de-confidentialite/page.module.css";
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Mentions Légales"
+}
 
 function legal(): JSX.Element {
   return (
