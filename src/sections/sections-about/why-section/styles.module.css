@@ -1,0 +1,31 @@
+
+.section {
+  text-align: center;
+  margin: 0 auto 8rem;
+  padding-left: 1em;
+  padding-left: 1em;
+}
+
+.section p {
+  margin-bottom: 4rem;
+}
+
+.section p, .section a {
+  max-width: 50ch;
+  font-family: var(--font-primary);
+  line-height: 1.1;
+  font-size: 1.6rem;
+}
+
+
+.section a {
+  font-style: italic;
+  font-weight: var(--fw-bold);
+  text-decoration-thickness: 2px;
+}
+
+.section a:focus {
+  outline: 3px solid var(--color-secondary);
+  outline-offset: 18px;
+  border-radius: 0.5rem;
+}
