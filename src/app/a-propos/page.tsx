@@ -22,7 +22,7 @@ export default function About(): JSX.Element {
       <ConflictSection/>
       <MissionSection/>
       <BenefitsSection/>
-      <WhySection />
+      <WhySection/>
     </main>
   );
 }

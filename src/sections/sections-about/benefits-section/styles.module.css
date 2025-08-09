@@ -1,6 +1,10 @@
 .section h2, .section h3 {
   text-align: center;
 }
+
+.section h3 {
+  margin-top: 0.5em;
+}
   
 .section ul {
   --grid-min-colum-size: 250px;
@@ -10,7 +14,7 @@
 }
 
 .section li {
-  min-height: 400px;
+  height: 100%;
   display: grid;
   grid-template-columns: subgrid;
   margin: auto;
@@ -22,7 +26,7 @@
 }
 
 .section li p {
-  margin-top: 1em;
+  margin-top: 2em;
   padding: 0;
 }
 
@@ -31,10 +35,3 @@
     grid-template-columns: 1fr 1fr;
   }
 }
-
-@media (width < 700px) {
-  .section li {
-    margin-top: 2em
-  }
-}
-
