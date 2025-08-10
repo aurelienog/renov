@@ -11,9 +11,9 @@ const letters = [
 function LettersReveal(): JSX.Element {
 
   return (
-    <div className={styles.wrapper}>       
+    <div className={styles.wrapper} aria-label="ANJ-Antonio-Nogueira-Julien" >       
       { letters.map((letter, index:number) => (
-        <h2 
+        <h2 aria-hidden
         key={index} 
         className={`${styles[letter.className]} ${styles[`delay${index}`]}  `}
         >{letter.char}</h2>

@@ -4,7 +4,7 @@
   height: 100vh;
   max-width: 90rem;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto;    
 }
 
 .card {
@@ -17,6 +17,7 @@
 .card:focus-within {
     outline: var(--focus-outline-xl);
     border-radius: var(--border-radius); 
+
   }
 
 @media (max-width: 1250px) {
