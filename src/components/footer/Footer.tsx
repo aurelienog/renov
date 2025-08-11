@@ -21,7 +21,7 @@ function Footer(): JSX.Element {
         </p>
         <address itemProp="contactPoint" itemScope itemType="http://schema.org/ContactPoint">
           <span itemProp="email">contact@anj-renov.fr</span>
-          <span itemProp="telephone">+33 1 00 00 00 00</span>  
+          <span itemProp="telephone">06 67 23 08 15</span>  
         </address>
       </article>
 

@@ -253,7 +253,7 @@ export const faqEntries: FaqEntry[] = [{
   answer: <p>Mon planning varie selon la demande. Il est conseillé de réserver votre projet à l{`'`}avance. Contactez-moi pour connaître mes prochaines disponibilités !</p>
 }, {
   question: "Comment demander un devis ?",
-  answer: <p>Appelez-moi au 06 00 00 00 00.</p>
+  answer: <p>Vous pouvez me joindre au numéro suivant : 06 67 23 08 15.</p>
 }
 ]
 

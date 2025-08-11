@@ -23,7 +23,7 @@ function legal(): JSX.Element {
                 <br></br>Nom du responsable : Julien Nogueira
                 <br></br>Adresse du siège social : 99 Boulevard de la Reine 78000 Versailles
                 <br></br>SIRET : 84176974800028
-                <br></br>Téléphone : (numéro de contact)
+                <br></br>Téléphone : 01 84 73 23 07
                 <br></br>E-mail : contact@anj-renov.fr
               </address>
             </li>
@@ -53,7 +53,7 @@ function legal(): JSX.Element {
               <p>Pour toute question sur cette politique de confidentialité ou l{"'"}exercice de vos droits, vous pouvez nous contacter :</p>
               <address>
                 Email : contact@anj-renov.fr
-                <br></br>Téléphone : [tel]
+                <br></br>Téléphone : 01 84 73 23 07
                 <br></br>Adresse : 99 Boulevard de la Reine 78000 Versailles
               </address>
             </li>

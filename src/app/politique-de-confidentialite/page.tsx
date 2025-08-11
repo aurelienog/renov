@@ -67,7 +67,7 @@ function confidentialityPage(): JSX.Element {
             <p>Pour toute question sur cette politique de confidentialité ou l{"'"}exercice de vos droits, vous pouvez nous contacter :</p>
             <address>
               Email : contact@anj-renov.fr
-              <br></br>Téléphone : [tel]
+              <br></br>Téléphone : 01 84 73 23 07
               <br></br>Adresse : 99 Boulevard de la Reine 78000 Versailles
             </address>
           </li>
