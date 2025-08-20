@@ -141,7 +141,7 @@ Environment: Desktop, no throttling, production build
 
 ## 🔗 Live Demo & Contact
 
-[![Live](https://img.shields.io/badge/🔗%20Live_Demo-Visit-blue)](https://renov-three.vercel.app/)
+[![Live](https://img.shields.io/badge/🔗%20Live_Demo-Visit-blue)](https://www.anj-renov.fr/)
 
 Built with 💙 by [Aurélie](https://aurelie-nogueira.vercel.app/)
 👉 [LinkedIn](https://linkedin.com/in/aurelie-nogueira) • [GitHub](https://github.com/aurelienog)
