@@ -153,7 +153,7 @@ export const projects: Project[] = [
   }, {
     image: interieurPeintureLiving1,
     service: 'interieur',
-    description: ''
+    description: 'Salon rénové avec poutres apparentes peintes en gris clair, finition lisse et soignée.'
   }, {
     image: interieurPeintureLiving2,
     service: 'interieur',
@@ -161,27 +161,27 @@ export const projects: Project[] = [
   }, {
     image: interieurPeintureLiving3,
     service: 'interieur',
-    description: ''
+    description: 'Mur et poutres gris clair, peinture uniforme'
   }, {
     image: interieurPeintureOffice1,
     service: 'interieur',
-    description: ''
+    description: 'Intérieur lumineux aux murs blancs fraîchement peints, revêtement clair effet bois'
   }, {
     image: interieurPeintureOffice2,
     service: 'interieur',
-    description: ''
+    description: 'Pièce au style épuré, murs blancs fraîchement peints, revêtement clair effet bois'
   }, {
     image: interieurVertical,
     service: 'interieur',
-    description: "Pièce aux murs peints en blanc, finition légèrement satinée qui capte subtilement la lumière du jour, apportant clarté et douceur à l'espace."
+    description: "Pièce aux murs peints en blanc, finition légèrement satinée"
   }, {
     image: interieurPeintureOffice3,
     service: 'interieur',
-    description: ''
+    description: 'Pièce rectangulaire fraîchement repeinte en blanc, avec un sol clair effet bois.'
   }, {
     image: interieurPeintureOffice4,
     service: 'interieur',
-    description: ''
+    description: 'Intérieur lumineux aux murs blancs, sol clair effet bois'
   }, 
 
   // extérieur
