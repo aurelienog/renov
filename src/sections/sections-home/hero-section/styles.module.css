@@ -18,7 +18,7 @@
   min-height: 800px;
 }
   
-.hero h2 {
+.hero h1 {
   margin-bottom: 3rem;
   font-weight: var(--fw-semi-bold);
   text-transform: uppercase;
