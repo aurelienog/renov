@@ -72,7 +72,7 @@
     width: fit-content;
   }
 
-  .reverse {
+  .details .reverse {
     order: 1;
   }
 }

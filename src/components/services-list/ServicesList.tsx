@@ -26,7 +26,6 @@ function ServicesList({ service, index }: {service:DetailedService, index: numbe
           <Link href={`/realisations?service=${prestation}`} className='button'>Voir mes réalisations <span className='visually-hidden'>{cta ? `${cta}` : `de ${title}`}</span></Link>
         </article>
       </div>
-
     </details>
   )
 }
