@@ -26,6 +26,12 @@ import interieurPeintureOffice2 from '../../public/assets/images/projects/interi
 import interieurPeintureOffice3 from '../../public/assets/images/projects/interieur/horizontal/peinture-office3.webp';
 import interieurPeintureOffice4 from '../../public/assets/images/projects/interieur/horizontal/peinture-office4.webp';
 import interieurPeintureSDB from '../../public/assets/images/projects/interieur/horizontal/peinture-sdb.webp';
+import interieurChambreBleu1 from '../../public/assets/images/projects/interieur/horizontal/peinture-chambre-bleu.webp';
+import interieurChambreBleu2 from '../../public/assets/images/projects/interieur/horizontal/peinture-chambre-bleu-roi.webp';
+import interieurPlacardBleu from '../../public/assets/images/projects/interieur/peinture-placard-bleu.webp';
+import interieurChambreRose1 from '../../public/assets/images/projects/interieur/horizontal/peinture-chambre-rose.webp';
+import interieurChambreRose2 from '../../public/assets/images/projects/interieur/horizontal/peinture-chambre-rose-face.webp';
+
 
 // images "peinture extérieure"
 import exterieurExt from '../../public/assets/images/projects/exterieur/peinture-ext.webp';
@@ -86,7 +92,39 @@ import autreMeuble3 from '../../public/assets/images/projects/autre/meuble3.webp
 
 export const projects: Project[] = [
   // intérieur
+    {
+    image: interieurChambreRose1,
+    service: 'interieur',
+    description: "Chambre rénovée avec un mur rose, en contraste avec les autres murs ainsi que les portes et encadrements peints en blanc."
+  },
   {
+    image: interieurChambreRose2,
+    service: 'interieur',
+    description: "Chambre rénovée où un mur rose apporte une touche de couleur, tandis que les autres murs, portes et encadrements restent blancs."
+  },
+  {
+    image: interieurChambreBleu1,
+    service: 'interieur',
+    description: "Chambre rénovée avec un mur bleu, en contraste avec les autres murs ainsi que les portes et encadrements peints en blanc."
+  },
+  {
+    image: interieurChambreBleu2,
+    service: 'interieur',
+    description: "Chambre rénovée où un mur bleu apporte une touche de couleur, tandis que les autres murs, portes et encadrements restent blancs."
+  },
+  {
+    image: interieurPlacardBleu,
+    service: 'interieur',
+    description: "Placard peint en bleu, mis en valeur par une finition lisse et uniforme."
+  }, {
+    image: interieurChambreEnfants1,
+    service: 'interieur',
+    description: 'Chambre rénovée avec un mur vert, en contraste avec les autres murs ainsi que les portes et encadrements peints en rose.'
+  }, {
+    image: interieurChambreEnfants2,
+    service: 'interieur',
+    description: "Chambre avec murs peints en rose, dont un mur d'accent peint en vert."
+  }, {
     image: interieurEntreeCouloir1,
     service: 'interieur',
     description: 'Couloir aux murs bleu-gris pâle avec moulures blanches, créant une ambiance élégante et sophistiquée grâce à des éléments de style classique.'
@@ -103,21 +141,13 @@ export const projects: Project[] = [
     service: 'interieur',
     description: "Entrée spacieuse aux murs bleu-gris. Un grand miroir au centre est entouré d'un cadre sculpté peint en blanc. Des boiseries blanches ornées soulignent élégamment le bas des murs."
   }, {
-    image: interieurChambreEnfants1,
-    service: 'interieur',
-    description: ''
-  }, {
-    image: interieurChambreEnfants2,
-    service: 'interieur',
-    description: ''
-  }, {
     image: interieurPeintureBureau1,
     service: 'interieur',
-    description: ''
+    description: 'Chambre rénovée aux murs gris clair'
   }, {
     image: interieurPeintureBureau2,
     service: 'interieur',
-    description: ''
+    description: 'Autre vue. Chambre rénovée aux murs gris clair'
   }, {
     image: interieurPeintureSDB1,
     service: 'interieur',
@@ -139,10 +169,6 @@ export const projects: Project[] = [
     service: 'interieur',
     description: 'Chambre récemment rénovée. Les murs sont gris clair, et le plafond blanc renforce la luminosité. Le sol est en parquet imitation bois clair, ajoutant une touche chaleureuse.'
   }, {
-    image: interieurChambreDeco3,
-    service: 'interieur',
-    description: 'Chambre rénovée aux murs gris clair et parquet immitation bois.'
-  }, {
     image: interieurChambreDeco4,
     service: 'interieur',
     description: "Chambre rénovée avec un mur en tasseaux peint en taupe, les autres murs en gris clair."
@@ -150,6 +176,10 @@ export const projects: Project[] = [
     image: interieurChambreDeco5,
     service: 'interieur',
     description: 'Chambre récemment rénovée. Le mur principal, peint en taupe, est habillé de tasseaux en relief formant un motif géométrique élégant.'
+  }, {
+    image: interieurChambreDeco3,
+    service: 'interieur',
+    description: 'Chambre rénovée aux murs gris clair et parquet immitation bois.'
   }, {
     image: interieurPeintureLiving1,
     service: 'interieur',
