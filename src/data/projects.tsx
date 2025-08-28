@@ -125,6 +125,14 @@ export const projects: Project[] = [
     service: 'interieur',
     description: "Chambre avec murs peints en rose, dont un mur d'accent peint en vert."
   }, {
+    image: interieurPeintureBureau1,
+    service: 'interieur',
+    description: 'Chambre rénovée aux murs gris clair'
+  }, {
+    image: interieurPeintureBureau2,
+    service: 'interieur',
+    description: 'Autre vue. Chambre rénovée aux murs gris clair'
+  }, {
     image: interieurEntreeCouloir1,
     service: 'interieur',
     description: 'Couloir aux murs bleu-gris pâle avec moulures blanches, créant une ambiance élégante et sophistiquée grâce à des éléments de style classique.'
@@ -140,14 +148,6 @@ export const projects: Project[] = [
     image: interieurHor,
     service: 'interieur',
     description: "Entrée spacieuse aux murs bleu-gris. Un grand miroir au centre est entouré d'un cadre sculpté peint en blanc. Des boiseries blanches ornées soulignent élégamment le bas des murs."
-  }, {
-    image: interieurPeintureBureau1,
-    service: 'interieur',
-    description: 'Chambre rénovée aux murs gris clair'
-  }, {
-    image: interieurPeintureBureau2,
-    service: 'interieur',
-    description: 'Autre vue. Chambre rénovée aux murs gris clair'
   }, {
     image: interieurPeintureSDB1,
     service: 'interieur',
