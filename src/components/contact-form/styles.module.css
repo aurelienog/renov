@@ -5,7 +5,7 @@
   background-image: url('/assets/images/wall-texture.webp');
   background-size: auto;
   overflow: hidden;
-  padding: 2em 0.5em;
+  padding: 2em 0em;
   border-radius: var(--border-radius);
   position: relative;
   z-index: 0;
@@ -57,7 +57,7 @@
 }
   
 .form button {    
-  margin-top: 6em;
+  margin-top: 3em;
   width: 90%;
   transition: 
     transform 0.2s ease-in-out,
@@ -89,7 +89,8 @@
   
 /* states messages */
 .form p {
-  margin-top: 0.5em;
+  margin-top: 2px;
+  line-height: 1.4;
   font-size: 1rem;
   font-weight: var(--fw-semi-bold);
   color: red;
@@ -153,7 +154,7 @@
     height: 7em;    
     display: flex;
     flex-direction: column;
-    margin-bottom: 1.5em;
+    margin-bottom: 0.5em;
 }
 
 .form fieldset label {
