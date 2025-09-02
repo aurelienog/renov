@@ -20,7 +20,7 @@ import interieurPeintureBureau1 from '../../public/assets/images/projects/interi
 import interieurPeintureBureau2 from '../../public/assets/images/projects/interieur/horizontal/peinture-bureau2.webp';
 import interieurPeintureLiving1 from '../../public/assets/images/projects/interieur/horizontal/peinture-living.webp';
 import interieurPeintureLiving2 from '../../public/assets/images/projects/interieur/horizontal/peinture-living2.webp';
-import interieurPeintureLiving3 from '../../public/assets/images/projects/interieur/horizontal/peinture-living.webp';
+import interieurPeintureLiving3 from '../../public/assets/images/projects/interieur/horizontal/peinture-living3.webp';
 import interieurPeintureOffice1 from '../../public/assets/images/projects/interieur/horizontal/peinture-office.webp';
 import interieurPeintureOffice2 from '../../public/assets/images/projects/interieur/horizontal/peinture-office2.webp';
 import interieurPeintureOffice3 from '../../public/assets/images/projects/interieur/horizontal/peinture-office3.webp';
@@ -52,10 +52,7 @@ import solsParquetColle3 from '../../public/assets/images/projects/sols/parquet-
 import solsParquetFlottant1 from '../../public/assets/images/projects/sols/parquet-flottant.webp';
 import solsParquetFlottant2 from '../../public/assets/images/projects/sols/parquet-flottant2.webp';
 import solsParquetFlottant3 from '../../public/assets/images/projects/sols/parquet-flottant3.webp';
-import solsParquetStratifie1 from '../../public/assets/images/projects/sols/parquet-stratifie.webp';
-import solsParquetStratifie2 from '../../public/assets/images/projects/sols/parquet-stratifie2.webp';
-import solsParquetStratifie3 from '../../public/assets/images/projects/sols/parquet-stratifie3.webp';
-import solsParquetStratifie4 from '../../public/assets/images/projects/sols/parquet-stratifie4.webp';
+import solsParquetStratifie from '../../public/assets/images/projects/sols/parquet-stratifie4.webp';
 
 // images "enduits"
 import enduitsBetonCire1 from '../../public/assets/images/projects/enduits/beton-cire.webp';
@@ -92,7 +89,7 @@ import autreMeuble3 from '../../public/assets/images/projects/autre/meuble3.webp
 
 export const projects: Project[] = [
   // intérieur
-    {
+  {
     image: interieurChambreRose1,
     service: 'interieur',
     description: "Chambre rénovée avec un mur rose, en contraste avec les autres murs ainsi que les portes et encadrements peints en blanc."
@@ -245,7 +242,7 @@ export const projects: Project[] = [
   },
 
   // sols
-{
+  {
     image: solsSol1,
     service: 'sol',
     description: "Parquet en bois clair, collé en pose droite."
@@ -278,21 +275,9 @@ export const projects: Project[] = [
     service: 'sol',
     description: "Parquet flottant clair, installé en pose droite. Lames sans défauts d'espacement, travail net et professionnel."
   }, {
-    image: solsParquetStratifie1,
+    image: solsParquetStratifie,
     service: 'sol',
-    description: 'Parquet stratifié blanc, pose flottante droite. Lames bien alignées, rendu lumineux et contemporain.'
-  }, {
-    image: solsParquetStratifie2,
-    service: 'sol',
-    description: 'Sol en parquet stratifié blanc, pose droite précise. Finition lisse et uniforme, parfait pour un intérieur épuré.'
-  }, {
-    image: solsParquetStratifie3,
-    service: 'sol',
-    description: 'Parquet stratifié clair, teinte blanche. Pose flottante impeccable, lames jointives pour un effet visuel net et soigné.'
-  }, {
-    image: solsParquetStratifie4,
-    service: 'sol',
-    description: 'Parquet stratifié blanc en pose droite. Aspect propre et lumineux, lames parfaitement ajustées pour un rendu élégant et moderne.'
+    description: 'Sol en parquet stratifié brun clair, pose droite. Rendu élégant, chaleureux, avec des lames parfaitement alignées et une pose soignée.'
   }, 
 
   // boiseries
