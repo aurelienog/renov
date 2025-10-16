@@ -438,7 +438,11 @@ export const lastProjects: Project[] = [{
   image: boiserieLiving,
   service: null,
   description: `Photo d'un intérieur rénové dont le charme réside dans ses poutres apparentes. Ces poutres en bois, d'une teinte marron chaleureuse, ont été soigneusement mises en valeur par une peinture et un traitement récent. Elles contrastent agréablement avec le plafond blanc et illuminent l'espace, témoignant d'un travail de rénovation soigné qui a su préserver et sublimer le cachet rustique de la pièce.`
-}];
+}, {
+  image: transparentImage,
+  service: null,
+  description: ``
+}, ];
 
 export const workSteps: WorkStep[] = [{
   name: 'Prise de contact',

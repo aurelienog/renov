@@ -3,16 +3,14 @@
 }
   
 .section ul {
-  --grid-min-colum-size: 250px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(var(--grid-min-colum-size), 100%), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
   gap: 60px;
 }
 
 .section li {
   min-height: 400px;
   display: grid;
-  grid-template-columns: subgrid;
   margin: auto;
   justify-items: center;
   list-style: none;
