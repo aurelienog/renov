@@ -9,21 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "framer-motion": "^12.7.4",
-    "next": "^15.2.6",
-    "nodemailer": "^7.0.3",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-hook-form": "^7.56.4"
+    "framer-motion": "12.7.4",
+    "next": "15.2.6",
+    "nodemailer": "7.0.3",
+    "react": "^19.0.1",
+    "react-dom": "^19.0.1",
+    "react-hook-form": "7.56.4"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3",
-    "@types/node": "^20",
-    "@types/nodemailer": "^6.4.17",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
+    "@eslint/eslintrc": "3",
+    "@types/node": "20",
+    "@types/nodemailer": "6.4.17",
+    "@types/react": "19",
+    "@types/react-dom": "19",
     "eslint": "^9",
     "eslint-config-next": "15.2.4",
-    "typescript": "^5"
+    "typescript": "5"
   }
 }
