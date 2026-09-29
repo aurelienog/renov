@@ -68,7 +68,7 @@ export const statistics : TrustStatistic[] = [{
   characters: 3
 }, {
   icon: paint,
-  stat: 400,
+  stat: 300,
   information: " projets réalisés",
   prefix: "+",
   characters: 4
